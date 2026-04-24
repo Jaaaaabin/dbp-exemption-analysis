@@ -1,0 +1,7 @@
+# text_processing:
+#   llm_model: ${LLM_MODEL:google/gemini-2.5-flash}
+#   temperature: 0.2
+#   verbose: false
+#   output_filename: suggestions.json
+data: data
+analysis_type: test
