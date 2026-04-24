@@ -1,5 +1,7 @@
 # src/utils/env_utils.py
-# Console-only environment utilities (no plotting).
+# Environment and filesystem utilities.
+#   show_system_info  – print platform, Python version, cwd, and current time
+#   print_tree        – render a directory tree up to a configurable depth
 
 import sys
 import os

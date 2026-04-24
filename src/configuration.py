@@ -1,3 +1,9 @@
+# src/configuration.py
+# Project configuration loader.
+#   load_config                     – load config/path.yaml with env-var substitution; LRU-cached
+#   get_dbp_data_management_config  – resolve raw and cleaned data folder paths
+#   get_suggestions_config          – resolve LLM suggestions output paths and model settings
+
 from __future__ import annotations
 
 import os

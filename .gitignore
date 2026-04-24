@@ -1,0 +1,54 @@
+# ── uv / Python ───────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.python-version
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+
+# ── Temporary ────────────────────────────────────────────────────────────
+tempo*.*
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Project-specific untracked files ──────────────────────────────────────────
+visualize_permits.py
+QUICKSTART.md
+PROJECT_SETUP_SUMMARY.md
+
+# ── Editors / IDEs ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Raw source data — uncomment if you don't want to track input files in git
+# data/raw/
+
+# Generated outputs are ignored via data/cleaned/.gitignore

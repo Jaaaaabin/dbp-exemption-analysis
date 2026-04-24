@@ -1,188 +1,86 @@
-# Data Analysis Project
+# DBP Exemption Analysis
 
-A Python project for analyzing Excel data using pandas, built with UV for dependency management.
+A Python project for loading, cleaning, and analysing Digital Building Permit (DBP) exemption data from Excel, built with [uv](https://github.com/astral-sh/uv) for dependency management.
 
 ## Project Structure
 
 ```
-data-analysis-project/
+dbp-exemption-analysis/
+├── config/
+│   └── path.yaml             # data-folder and analysis-type settings
 ├── data/
-│   ├── raw/              # Place your Excel files here
-│   └── processed/        # Cleaned and processed data
+│   ├── raw/                  # source Excel files (not tracked)
+│   └── cleaned/              # pipeline outputs (not tracked)
+│       ├── data_cleaned.csv
+│       ├── data_out_exemption.csv
+│       └── data_out_regulation.csv
 ├── src/
-│   └── data_analysis_project/
-│       ├── __init__.py
-│       ├── data_clean.py     # Data loading and cleaning
-│       ├── data_filter.py    # Data filtering functions
-│       └── data_analysis.py  # Analysis and reporting
-├── example_workflow.py   # Example usage script
-├── pyproject.toml        # Project configuration
-└── README.md            # This file
+│   ├── configuration.py      # config loader (path.yaml + env-var substitution)
+│   ├── data_clean.py         # Excel ingestion and DataFrame cleaning
+│   ├── data_filter.py        # filtering and subset splitting
+│   ├── data_analysis.py      # descriptive statistics and aggregations
+│   └── utils/
+│       ├── cli_utils.py      # spinner, progress bars, coloured output
+│       ├── env_utils.py      # system info display and directory tree printer
+│       └── time_utils.py     # @measure_runtime decorator for function timing
+├── test.py                   # main workflow script
+├── pyproject.toml
+└── uv.lock
 ```
 
 ## Setup
 
-This project uses [UV](https://github.com/astral-sh/uv) for fast Python package management.
-
 ### Prerequisites
-- UV installed on your system
-- Python 3.12+
+
+- [uv](https://github.com/astral-sh/uv) installed
+- Python 3.11+
 
 ### Installation
 
-1. The project is already initialized with UV
-2. Dependencies are already installed in the virtual environment
-
-### Activate the virtual environment
-
 ```bash
-# On Linux/Mac
-source .venv/bin/activate
-
-# On Windows
-.venv\Scripts\activate
+uv sync
 ```
 
-Or use UV to run commands directly:
-```bash
-uv run python example_workflow.py
+### Configuration
+
+Paths are resolved from `config/path.yaml`. The default setup expects:
+
+```
+data/raw/data.xlsx     ← source file
+data/cleaned/          ← output directory (auto-created)
 ```
 
 ## Workflow
 
-### 1. Data Cleaning (`data_clean.py`)
+Run the full pipeline:
 
-Load and clean Excel files:
-
-```python
-from data_analysis_project import load_and_clean
-
-df = load_and_clean(
-    file_path="data/raw/your_file.xlsx",
-    output_path="data/processed/cleaned_data.csv",
-    drop_duplicates=True,
-    strip_strings=True
-)
+```bash
+uv run python test.py
 ```
 
-### 2. Data Filtering (`data_filter.py`)
+### What the pipeline does
 
-Create filtered subsets based on criteria:
-
-```python
-from data_analysis_project import filter_by_value, filter_by_numeric_range
-
-# Filter by single value
-high_value = filter_by_value(df, column='price', value=100, operator='>')
-
-# Filter by numeric range
-medium_range = filter_by_numeric_range(df, column='price', min_value=50, max_value=100)
-
-# Create multiple subsets at once
-from data_analysis_project import create_filtered_subsets
-
-subsets = create_filtered_subsets(df, {
-    'high_value': {'column': 'price', 'operator': '>', 'value': 100},
-    'recent': {'date_column': 'date', 'start_date': '2024-01-01'}
-})
-```
-
-### 3. Data Analysis (`data_analysis.py`)
-
-Analyze your data:
-
-```python
-from data_analysis_project import (
-    print_basic_info,
-    describe_numeric_columns,
-    group_and_aggregate,
-    generate_summary_report
-)
-
-# Print overview
-print_basic_info(df)
-
-# Describe numeric columns
-print(describe_numeric_columns(df))
-
-# Group and aggregate
-grouped = group_and_aggregate(
-    df,
-    group_by='category',
-    agg_dict={'price': ['mean', 'sum'], 'quantity': 'count'}
-)
-
-# Generate full report
-generate_summary_report(df, output_path='data/processed/report.txt')
-```
-
-## Quick Start
-
-1. Place your Excel file in `data/raw/` directory:
-   ```bash
-   cp your_file.xlsx data/raw/example_data.xlsx
-   ```
-
-2. Run the example workflow:
-   ```bash
-   uv run python example_workflow.py
-   ```
-
-3. Customize the example workflow or create your own analysis scripts
+1. Load and clean `data/raw/data.xlsx` (dedup, strip whitespace)
+2. Split into three outputs based on missing key columns:
+   - `data_cleaned.csv` — both columns present
+   - `data_out_exemption.csv` — `Granted Exemptions` missing
+   - `data_out_regulation.csv` — `Building regulations and requirements` missing
+3. Print a summary overview for each output
 
 ## Dependencies
 
-- **pandas**: Data manipulation and analysis
-- **openpyxl**: Excel file reading/writing
+| Package | Purpose |
+|---|---|
+| `pandas` | DataFrame manipulation |
+| `openpyxl` | Excel write support |
+| `python-calamine` | Fast Excel reading (5–10× faster than openpyxl) |
+| `python-dotenv` | `.env` file loading |
+| `pyyaml` | `config/path.yaml` parsing |
+| `rich` | Spinner and progress bars in the terminal |
 
-All dependencies are managed through UV and specified in `pyproject.toml`.
-
-## Adding New Dependencies
-
-To add new packages:
+Managed via uv:
 
 ```bash
-uv add package-name
+uv add <package>
+uv sync
 ```
-
-For example, to add matplotlib for visualizations:
-```bash
-uv add matplotlib
-```
-
-## Development Tips
-
-- Keep raw data in `data/raw/` (never modify these files)
-- Save processed data in `data/processed/`
-- Create analysis scripts in the project root
-- Import functions from the package: `from data_analysis_project import ...`
-
-## Example Analysis Flow
-
-```python
-from data_analysis_project import *
-
-# 1. Load and clean
-df = load_and_clean("data/raw/sales.xlsx")
-
-# 2. Create subsets
-high_value_customers = filter_by_value(df, 'total_spend', 1000, '>')
-recent_sales = filter_by_date_range(df, 'date', start_date='2024-01-01')
-
-# 3. Analyze
-print_basic_info(df)
-summary = describe_numeric_columns(df)
-grouped = group_and_aggregate(df, 'region', {'sales': ['sum', 'mean']})
-
-# 4. Compare subsets
-comparison = compare_subsets(
-    {'high_value': high_value_customers, 'recent': recent_sales},
-    'sales',
-    'mean'
-)
-print(comparison)
-```
-
-## License
-
-MIT

@@ -1,9 +1,48 @@
-"""
-Module for filtering DataFrames based on various criteria.
-"""
+# src/data_filter.py
+# DataFrame filtering functions.
+#   filter_by_value               – filter a column by a single value and operator
+#   filter_by_multiple_conditions – AND-logic filter across multiple columns
+#   filter_by_date_range          – filter by start/end date on a datetime column
+#   filter_by_string_pattern      – substring or regex filter on a string column
+#   filter_by_numeric_range       – filter by min/max bounds with inclusive options
+#   filter_by_custom_function     – apply an arbitrary row-level filter function
+#   create_filtered_subsets       – batch-create multiple named filtered DataFrames
 
 import pandas as pd
 from typing import Any, Callable, Optional
+
+
+def split_by_missing_columns(
+    df: pd.DataFrame,
+    col_exemption: str = 'Granted Exemptions',
+    col_regulation: str = 'Building regulations and requirements',
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Split DataFrame into three parts based on missing values in two key columns.
+
+    Returns:
+        (df_clean, df_exemption, df_regulation)
+          df_clean      – rows where both columns are present
+          df_exemption  – rows missing col_exemption
+          df_regulation – rows missing col_regulation
+    """
+    for col in (col_exemption, col_regulation):
+        if col not in df.columns:
+            raise ValueError(f"Column '{col}' not found in DataFrame")
+
+    mask_no_exemption = df[col_exemption].isna()
+    mask_no_regulation = df[col_regulation].isna()
+
+    df_exemption = df[mask_no_exemption].copy()
+    df_regulation = df[mask_no_regulation].copy()
+    # no .copy() needed — this slice is never mutated after the split
+    df_clean = df[~mask_no_exemption & ~mask_no_regulation]
+
+    print(f"Split results — clean: {len(df_clean)} rows | "
+          f"missing exemption: {len(df_exemption)} rows | "
+          f"missing regulation: {len(df_regulation)} rows")
+
+    return df_clean, df_exemption, df_regulation
 
 
 def filter_by_value(

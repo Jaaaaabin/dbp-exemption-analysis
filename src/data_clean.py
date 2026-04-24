@@ -1,10 +1,17 @@
-"""
-Module for reading and cleaning data from Excel files.
-"""
+# src/data_clean.py
+# Excel ingestion and DataFrame cleaning.
+#   read_excel_file   – load an Excel sheet into a DataFrame
+#   get_basic_info    – return shape, dtypes, missing-value counts, and memory usage
+#   print_basic_info  – print a formatted overview of the DataFrame
+#   clean_dataframe   – drop duplicates, drop/fill NAs, strip string whitespace
+#   save_cleaned_data – write DataFrame to CSV, Excel, or Parquet
+#   load_and_clean    – convenience: read + clean in one call
 
 import pandas as pd
 from pathlib import Path
 from typing import Optional, Any
+
+from src.utils.cli_utils import progress_iter, spinner
 
 def get_basic_info(df: pd.DataFrame) -> dict[str, Any]:
     """
@@ -28,17 +35,18 @@ def get_basic_info(df: pd.DataFrame) -> dict[str, Any]:
     
     return info
 
-def print_basic_info(df: pd.DataFrame) -> None:
+def print_basic_info(df: pd.DataFrame, title: str = "DATAFRAME OVERVIEW") -> None:
     """
     Print basic information about the DataFrame in a readable format.
-    
+
     Args:
         df: Input DataFrame
+        title: Header title printed above the overview
     """
     info = get_basic_info(df)
-    
+
     print("=" * 60)
-    print("DATAFRAME OVERVIEW")
+    print(title)
     print("=" * 60)
     print(f"Rows: {info['n_rows']:,}")
     print(f"Columns: {info['n_columns']}")
@@ -78,9 +86,14 @@ def read_excel_file(
     if not file_path.exists():
         raise FileNotFoundError(f"File not found: {file_path}")
     
+    # calamine is significantly faster than openpyxl for xlsx/xlsm
+    suffix = file_path.suffix.lower()
+    engine = 'calamine' if suffix in ('.xlsx', '.xlsm') else None
+
     try:
-        df = pd.read_excel(file_path, sheet_name=sheet_name, **kwargs)
-        print(f"Successfully loaded {len(df)} rows from {file_path.name}")
+        with spinner(f"Reading {file_path.name}..."):
+            df = pd.read_excel(file_path, sheet_name=sheet_name, engine=engine, **kwargs)
+        print(f"Loaded {len(df)} rows from {file_path.name}")
         return df
     except Exception as e:
         raise ValueError(f"Error reading Excel file: {e}")
@@ -109,9 +122,9 @@ def clean_dataframe(
     
     # Strip whitespace from string columns
     if strip_strings:
-        string_columns = df_clean.select_dtypes(include=['object']).columns
-        for col in string_columns:
-            df_clean[col] = df_clean[col].str.strip() if df_clean[col].dtype == 'object' else df_clean[col]
+        string_columns = df_clean.select_dtypes(include=['object']).columns.tolist()
+        for col in progress_iter(string_columns, desc="Stripping whitespace"):
+            df_clean[col] = df_clean[col].str.strip()
     
     # Drop rows with NA in specific columns
     if drop_na_columns:

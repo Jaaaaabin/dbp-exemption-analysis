@@ -1,11 +1,18 @@
 # src/utils/cli_utils.py
-# Simplified CLI helpers with minimal colors and rich progress bars.
+# CLI output helpers.
+#   print_info/success/warning/error/dim  – colored console messages (ANSI)
+#   set_color_enabled                     – globally toggle color output
+#   spinner                               – context manager showing an animated spinner during blocking calls
+#   progress_iter                         – wrap an iterable with a rich progress bar
+#   ProgressContext                       – context manager for manual progress updates
 
 import sys
+from contextlib import contextmanager
 from typing import Optional, Iterable, Iterator, TypeVar, TextIO
 
 try:
     from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn, TimeRemainingColumn
+    from rich.console import Console
     RICH_AVAILABLE = True
 except ImportError:
     RICH_AVAILABLE = False
@@ -71,7 +78,25 @@ def print_dim(msg: str, stream: TextIO = sys.stdout) -> None:
     stream.flush()
 
 
-# ===== Progress Bar using rich =====
+# ===== Spinner and Progress Bar using rich =====
+
+@contextmanager
+def spinner(desc: str = "Working..."):
+    """
+    Context manager that shows an animated spinner during a blocking call.
+    The spinner runs in a background thread so it animates even while Python
+    is blocked (e.g. pd.read_excel, file I/O).
+
+    Example:
+        with spinner("Reading data.xlsx..."):
+            df = pd.read_excel(path)
+    """
+    if RICH_AVAILABLE:
+        with Console().status(f"[bold blue]{desc}"):
+            yield
+    else:
+        yield
+
 
 def progress_iter(
     iterable: Iterable[T],

@@ -1,6 +1,7 @@
-"""
-Simple time measurement decorator with colored output.
-"""
+# src/utils/time_utils.py
+# Time measurement utilities.
+#   measure_runtime  – decorator that times a function and prints elapsed seconds
+#                      alongside the source filename, using colored ANSI output
 
 import time
 import functools

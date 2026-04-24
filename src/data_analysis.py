@@ -1,6 +1,11 @@
-"""
-Module for analyzing DataFrames and generating insights.
-"""
+# src/data_analysis.py
+# DataFrame analysis helpers.
+#   describe_numeric_columns      – descriptive statistics for numeric columns
+#   describe_categorical_columns  – value counts for categorical columns
+#   analyze_correlations          – correlation matrix filtered by a minimum threshold
+#   group_and_aggregate           – groupby with aggregation and flattened column names
+#   compare_subsets               – compare a metric across multiple named DataFrames
+#   detect_outliers               – flag outliers via IQR or z-score method
 
 import pandas as pd
 from typing import Optional, Any
