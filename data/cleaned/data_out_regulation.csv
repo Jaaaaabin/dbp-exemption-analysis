@@ -1,4 +1,4 @@
-Document Information,Contact Information,Permit Information,Property Information,Decision Basis,Included Documents,Granted Exemptions,Building regulations and requirements,Statistics for HmbTG Implementation,URL (link to PDF),Request ID,Residential,Commercial,Other,Time for Decision (months),Number of Full Stories,Exceeded Building Boundary (meters),Exceeded Floor Area Ratio,Number of Exemptions,Permit Type,Issuing Authority,Type of Construction,Number of Documents,building function + requirements,Parcel code 1,Parcel code 2+,District,Building block,Unnamed: 28,Development plan/ implementation plan
+Document Information,Contact Information,Permit Information,Property Information,Decision Basis,Included Documents,Granted Exemptions,Building regulations and requirements,Statistics for HmbTG Implementation,URL (link to PDF),Request ID,Residential,Commercial,Other,Time for Decision (months),Number of Full Stories,Exceeded Building Boundary (meters),Exceeded Floor Area Ratio,Number of Exemptions,Permit Type,Issuing Authority,Type of Construction,Number of Documents,building function + requirements,Parcel code 1,Parcel code 2+,District,Building block,Development plan/ implementation plan
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: December 19, 2018
@@ -54,7 +54,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus8,1,1,0,0,6.0,1,3.83,0.03,2,Simplified,Altona,New Construction,19.0,WR I o,6580.0,,Osdorf,,,"Lurup 13 (established on September 1st, 1964)"
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus8,1,1,0,0,6.0,1,3.83,0.03,2,Simplified,Altona,New Construction,19.0,WR I o,6580.0,,Osdorf,,"Lurup 13 (established on September 1st, 1964)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: July 24, 2020","Contact Information:
@@ -100,7 +100,7 @@ Notice: The approval does not replace the need to obtain other public law decisi
 Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementation:
 Type of Construction: Modification, Change of Use
 Type of Requested Facility: Building, Building Class 3
-Type of Building by Future Use: Pure Residential Building",https://suche.transparenz.hamburg.de/dataset/neubau-mehrfamilienhaeuser-kleiberweg-125,2,1,0,0,6.1,3,,,2,Simplified,Altona,New Construction,28.0,WR I o,5578.0,,Lurup,,,391 B (implementation plan)
+Type of Building by Future Use: Pure Residential Building",https://suche.transparenz.hamburg.de/dataset/neubau-mehrfamilienhaeuser-kleiberweg-125,2,1,0,0,6.1,3,,,2,Simplified,Altona,New Construction,28.0,WR I o,5578.0,,Lurup,,391 B (implementation plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: July 24, 2020","Contact Information:
@@ -146,7 +146,7 @@ Notice: The approval does not replace the need to obtain other public law decisi
 Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementation:
 Type of Construction: Modification, Change of Use
 Type of Requested Facility: Building, Building Class 3
-Type of Building by Future Use: Pure Residential Building",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einfamilienhauses-mit-tiefgarage,3,1,0,0,6.2,2,,,2,Simplified,Altona,New Construction,28.0,WR I o,2632.0,,Blankenese,,,"Blankenese (construction plan), Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ... (Ordinance for the protection of parts of the landscape)"
+Type of Building by Future Use: Pure Residential Building",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einfamilienhauses-mit-tiefgarage,3,1,0,0,6.2,2,,,2,Simplified,Altona,New Construction,28.0,WR I o,2632.0,,Blankenese,,"Blankenese (construction plan), Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ... (Ordinance for the protection of parts of the landscape)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: June 23, 2020","Contact Information:
@@ -199,7 +199,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 4
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-eines-wohngebaeudes-10-we1,4,1,0,0,12.0,2,2.0,,3,Simplified,Eimsbüttel,New Construction,24.0,WA II o,1593.0,,Lokstedt,,,Lokstedt 8 (development plan)
+Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-eines-wohngebaeudes-10-we1,4,1,0,0,12.0,2,2.0,,3,Simplified,Eimsbüttel,New Construction,24.0,WA II o,1593.0,,Lokstedt,,Lokstedt 8 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: March 10, 2020","Contact Information:
@@ -234,7 +234,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-1-we,5,1,0,0,9.0,1,,0.02,1,Simplified,Wandsbek,New Construction,8.0,W I o,1347.0,,Bramfeld,,,Bramfeld (construction plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-1-we,5,1,0,0,9.0,1,,0.02,1,Simplified,Wandsbek,New Construction,8.0,W I o,1347.0,,Bramfeld,,Bramfeld (construction plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: April 26, 2023","Contact Information:
@@ -291,7 +291,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we2,6,1,0,0,5.0,1,,,1,Simplified,Eimsbüttel,New Construction,17.0,WR I o,10713.0,,Niendorf,,,Niendorf 36 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we2,6,1,0,0,5.0,1,,,1,Simplified,Eimsbüttel,New Construction,17.0,WR I o,10713.0,,Niendorf,,Niendorf 36 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: September 14, 2018","Contact Information:
@@ -334,7 +334,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 3
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten,8,1,0,0,3.0,1,,,1,Simplified,Harburg,New Construction,12.0,WR I o,1902.0,,Ojendorf,,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG), Öjendorf-Billstedter Geest (regulation for the protection of parts of the landscape)"
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten,8,1,0,0,3.0,1,,,1,Simplified,Harburg,New Construction,12.0,WR I o,1902.0,,Ojendorf,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG), Öjendorf-Billstedter Geest (regulation for the protection of parts of the landscape)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: July 5, 2020","Contact Information:
@@ -375,7 +375,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 2
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-5-wohneinheiten,9,1,0,0,5.5,1,3.6,,1,Simplified,Hamburg-Mitte,New Construction,,,1083.0,,Kirchsteinbek,,,Billstedt 14 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-5-wohneinheiten,9,1,0,0,5.5,1,3.6,,1,Simplified,Hamburg-Mitte,New Construction,,,1083.0,,Kirchsteinbek,,Billstedt 14 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: July 7, 2014","Contact Information:
@@ -410,7 +410,7 @@ Notice: The approval does not replace the need to obtain other public law decisi
 Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementation:
 Type of Construction: New Construction
 Type of Building by Future Use: Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we,10,1,0,0,5.5,1,,0.03,1,Simplified,Wandsbek,New Construction,10.0,W1 o,1019.0,,Bramfeld,,,Bramfeld (construction plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we,10,1,0,0,5.5,1,,0.03,1,Simplified,Wandsbek,New Construction,10.0,W1 o,1019.0,,Bramfeld,,Bramfeld (construction plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: September 17, 2020","Contact Information:
@@ -461,7 +461,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 2
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-m-2-we,11,1,0,0,10.0,1,,0.03,1,Simplified,Wandsbek,New Construction,11.0,WR I o,7069.0,,Alt-Rahlstedt,,,Rahlstedt 91 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-m-2-we,11,1,0,0,10.0,1,,0.03,1,Simplified,Wandsbek,New Construction,11.0,WR I o,7069.0,,Alt-Rahlstedt,,Rahlstedt 91 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: November 28, 2022","Contact Information:
@@ -496,7 +496,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 2
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-aus-2-gebaeuden-2we,12,1,0,0,4.5,1,,,0,Simplified,Wandsbek,New Construction,9.0,W1 o,259.0,,Sasel,,,Sasel (construction plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-aus-2-gebaeuden-2we,12,1,0,0,4.5,1,,,0,Simplified,Wandsbek,New Construction,9.0,W1 o,259.0,,Sasel,,Sasel (construction plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: September 12, 2022","Contact Information:
@@ -546,7 +546,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-1-offenen-stellplatz,13,1,0,0,3.0,1,,,1,Simplified,Wandsbek,New Construction,12.0,WR I o,8245.0,,Volksdorf,,,Volksdorf 40 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-1-offenen-stellplatz,13,1,0,0,3.0,1,,,1,Simplified,Wandsbek,New Construction,12.0,WR I o,8245.0,,Volksdorf,,Volksdorf 40 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: January 20, 2014","Contact Information:
@@ -595,7 +595,7 @@ Notice: The approval does not replace the need to obtain other public law decisi
 Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementation:
 Type of Construction: New Construction
 Type of Building by Future Use: Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-und-carport,14,1,0,0,2.0,1,,0.07,2,Simplified,Wandsbek,New Construction,12.0,W1 o,,,,,,
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-und-carport,14,1,0,0,2.0,1,,0.07,2,Simplified,Wandsbek,New Construction,12.0,W1 o,,,,,
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: September 23, 2019","Contact Information:
@@ -632,7 +632,7 @@ Fee: To be determined in a separate notice.",,,"Statistics for HmbTG Implementat
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-ohne-terrassen,15,1,0,0,1.5,1,,,0,Simplified,Hamburg-Mitte,New Construction,10.0,WR I o,1899.0,,Öjendorf,,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG)"
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-ohne-terrassen,15,1,0,0,1.5,1,,,0,Simplified,Hamburg-Mitte,New Construction,10.0,WR I o,1899.0,,Öjendorf,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: December 1, 2020","Contact Information:
@@ -684,7 +684,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 2
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-gebaeuden-2-we,16,1,0,0,4.5,2,,,1,Simplified,Wandsbek,New Construction,14.0,WR II o,498.0,,Alt-Rahlstedt,,,Rahlstedt 65 (development plan)
+Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-gebaeuden-2-we,16,1,0,0,4.5,2,,,1,Simplified,Wandsbek,New Construction,14.0,WR II o,498.0,,Alt-Rahlstedt,,Rahlstedt 65 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: October 7, 2020","Contact Information:
@@ -727,7 +727,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-und-2-stellplaetzen,17,1,0,0,11.0,1,,,1,Simplified,Hamburg-Mitte,New Construction,13.0,WR I o,2039.0,,Öjendorf,,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG)"
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-zwei-wohneinheiten-und-2-stellplaetzen,17,1,0,0,11.0,1,,,1,Simplified,Hamburg-Mitte,New Construction,13.0,WR I o,2039.0,,Öjendorf,,"Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: August 4, 2021","Contact Information:
@@ -768,7 +768,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 2
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we-und-2-offenen-stellplaetzen,18,1,0,0,5.0,1,,,1,Simplified,Eimsbüttel,New Construction,7.0,WR I,11436.0,,Niendorf,,,Niendorf 10 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einzelhauses-mit-2-we-und-2-offenen-stellplaetzen,18,1,0,0,5.0,1,,,1,Simplified,Eimsbüttel,New Construction,7.0,WR I,11436.0,,Niendorf,,Niendorf 10 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: October 13, 2022","Contact Information:
@@ -803,7 +803,7 @@ Fee: To be determined in a separate notice.",,,"Statistics for HmbTG Implementat
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-rueckwaertige-bebauung,19,1,0,0,8.0,1,,,0,Simplified,Eimsbüttel,New Construction,9.0,MI III o,7696.0,,Eidelstedt,,,Eidelstedt 72 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-rueckwaertige-bebauung,19,1,0,0,8.0,1,,,0,Simplified,Eimsbüttel,New Construction,9.0,MI III o,7696.0,,Eidelstedt,,Eidelstedt 72 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: July 16, 2018","Contact Information:
@@ -841,7 +841,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-garage,20,1,0,0,3.0,2,3.3,,1,Simplified,Hamburg-Mitte,New Construction,10.0,WA Max II,4919.0,,Wilhelmsburg,,,Wilhelmsburg 9 (development plan)
+Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-garage,20,1,0,0,3.0,2,3.3,,1,Simplified,Hamburg-Mitte,New Construction,10.0,WA Max II,4919.0,,Wilhelmsburg,,Wilhelmsburg 9 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: January 25, 2019","Contact Information:
@@ -882,7 +882,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-1-we1,21,1,0,0,2.0,1,,,1,Simplified,Wandsbek,New Construction,6.0,WR II o,651.0,,Meiendorf,,,Rahlstedt 45 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-1-we1,21,1,0,0,2.0,1,,,1,Simplified,Wandsbek,New Construction,6.0,WR II o,651.0,,Meiendorf,,Rahlstedt 45 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: November 25, 2015","Contact Information:
@@ -914,7 +914,7 @@ Fee: To be determined in a separate notice.",,,"Statistics for HmbTG Implementat
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-carport,22,1,0,0,1.0,1,,0.2,0,Simplified,Wandsbek,New Construction,8.0,WR II o,411.0,,Wohldorf,,,Wohldorf-Ohlstedt 18 (development plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-carport,22,1,0,0,1.0,1,,0.2,0,Simplified,Wandsbek,New Construction,8.0,WR II o,411.0,,Wohldorf,,Wohldorf-Ohlstedt 18 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: March 10, 2021","Contact Information:
@@ -954,7 +954,7 @@ Gardening Design: The front garden must be landscaped, and sealing should not ex
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-einliegerwohnung,23,1,0,0,3.5,2,,,0,Simplified,Eimsbüttel,New Construction,9.0,WR II,2622.0,,Niendorf,,,Niendorf 24 (development plan)
+Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-einliegerwohnung,23,1,0,0,3.5,2,,,0,Simplified,Eimsbüttel,New Construction,9.0,WR II,2622.0,,Niendorf,,Niendorf 24 (development plan)
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: October 12, 2021","Contact Information:
@@ -1004,7 +1004,7 @@ Justifications: Necessary to protect large-crowned trees on the property and to 
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-carport1,24,1,0,0,4.5,2,13.0,,4,Simplified,Altona,New Construction,16.0,W1 o,1208.0,,Othmarschen,,,"Othmarschen 4 (established on July 1, 1963) (development plan)"
+Number of Full Stories: 2 Full Stories",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-mit-carport1,24,1,0,0,4.5,2,13.0,,4,Simplified,Altona,New Construction,16.0,W1 o,1208.0,,Othmarschen,,"Othmarschen 4 (established on July 1, 1963) (development plan)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: November 5, 2020","Contact Information:
@@ -1047,7 +1047,7 @@ Fee: To be determined in a separate notice.",,"Statistics for HmbTG Implementati
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-nach-abbruch-des-bestandsgebaeudes,25,1,0,0,3.0,1,,,1,Simplified,Altona,New Construction,16.0,WR I,1193.0,,Rissen,,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ... (Ordinance for the protection of parts of the landscape)"
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-einfamilienhaus-nach-abbruch-des-bestandsgebaeudes,25,1,0,0,3.0,1,,,1,Simplified,Altona,New Construction,16.0,WR I,1193.0,,Rissen,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ... (Ordinance for the protection of parts of the landscape)"
 "Document Information:
 Title: Genehmigung nach HBauO
 Creation Date: February 14, 2022","Contact Information:
@@ -1096,4 +1096,4 @@ GRZ Calculation",,"Statistics for HmbTG Implementation:
 Type of Construction: New Construction
 Type of Requested Facility: Building, Building Class 1
 Type of Building by Future Use: Pure Residential Building
-Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einfamilienhaus-mit-keller-und-stellplatz,26,1,0,0,3.5,1,,,1,Simplified,Wandsbek,New Construction,12.0,W1 o,5602.0,,Farmsen,,,Farmsen (construction plan)
+Number of Full Stories: 1 Full Story",https://suche.transparenz.hamburg.de/dataset/neubau-eines-einfamilienhaus-mit-keller-und-stellplatz,26,1,0,0,3.5,1,,,1,Simplified,Wandsbek,New Construction,12.0,W1 o,5602.0,,Farmsen,,Farmsen (construction plan)

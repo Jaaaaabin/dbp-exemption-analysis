@@ -8,12 +8,6 @@ from src.data_clean import (
     save_cleaned_data,
 )
 
-from src.data_analysis import (
-    describe_numeric_columns,
-    group_and_aggregate,
-    compare_subsets
-)
-
 from src.data_filter import split_by_missing_columns
 
 from src.configuration import get_dbp_data_management_config
@@ -39,6 +33,10 @@ def main():
     save_cleaned_data(df_clean,      cleaned_dir / "data_cleaned.csv")
     save_cleaned_data(df_exemption,  cleaned_dir / "data_out_exemption.csv")
     save_cleaned_data(df_regulation, cleaned_dir / "data_out_regulation.csv")
+
+    save_cleaned_data(df_clean,      cleaned_dir / "data_cleaned.json",      format='json')
+    save_cleaned_data(df_exemption,  cleaned_dir / "data_out_exemption.json", format='json')
+    save_cleaned_data(df_regulation, cleaned_dir / "data_out_regulation.json", format='json')
 
     print_basic_info(df_clean,      title="CLEANED DATA (both columns present)")
     print_basic_info(df_exemption,  title="MISSING: Granted Exemptions")
