@@ -1,14 +1,15 @@
 # src/text_parser.py
 # Structured parsing of long text fields in building permit JSON records.
-#   classify_exemption_types   – multi-label taxonomy for granted_exemptions
-#   extract_legal_refs         – all § references from any text field
-#   parse_plan_references      – split development_plan field into typed refs
-#   parse_granted_exemptions   – hierarchical items + flat derived fields
-#   parse_decision_basis       – plan type/name, zone code, legal ordinance
-#   parse_included_documents   – document list stripped of drawing-number prefixes
-#   parse_requirements         – requirement items from building regulations field
-#   enrich_record              – apply all parsers to one record dict
-#   enrich_json                – apply enrich_record to all records in a JSON source
+#
+# Public API
+#   enrich_json            – enriched-only (nested) dicts for all records
+#   enrich_and_merge_json  – original + enriched merged; adds flat analytic fields
+#
+# Internal parsers (called by enrich_record)
+#   _parse_kv_section        – generic "Header:\nKey: Value\n..." → dict
+#   parse_granted_exemptions – hierarchical items + taxonomy labels
+#   parse_decision_basis     – plan type/name, zone code, legal ordinance
+#   parse_plan_references    – development_plan field → [{name, type}]
 
 import json
 import re
@@ -28,6 +29,48 @@ def _load(source: JsonSource) -> list[dict]:
 _NO_EXEMPTION = re.compile(
     r'^\s*(none specified\.?|n/a|no exemption)\s*$', re.IGNORECASE | re.MULTILINE
 )
+
+
+def _to_snake_key(text: str) -> str:
+    """'Some Key Name' → 'some_key_name'"""
+    text = text.strip().lower()
+    text = re.sub(r'[^a-z0-9\s]', '', text)
+    return re.sub(r'\s+', '_', text.strip())
+
+
+def _parse_kv_section(text: str) -> dict:
+    """
+    Generic parser for section text of the form:
+        Section Header:\n
+        Key One: value\n
+        Key Two: value with: colons inside\n
+        Freestanding line without colon
+
+    - The first line that ends with ':' is the section title and is skipped.
+    - Each remaining line is split on the FIRST ':' to give key / value.
+    - Lines that contain no ':' are collected in '_notes' (list).
+    - Keys are normalised to snake_case via _to_snake_key.
+    """
+    if not text:
+        return {}
+    lines = text.strip().split('\n')
+    result: dict = {}
+    notes: list[str] = []
+    start = 1 if (lines and lines[0].rstrip().endswith(':')) else 0
+    for line in lines[start:]:
+        line = line.strip()
+        if not line:
+            continue
+        if ':' in line:
+            raw_key, _, value = line.partition(':')
+            key = _to_snake_key(raw_key)
+            if key:
+                result[key] = value.strip()
+        else:
+            notes.append(line)
+    if notes:
+        result['_notes'] = notes
+    return result
 
 
 # ── Exemption taxonomy ────────────────────────────────────────────────────────
@@ -340,71 +383,55 @@ def parse_decision_basis(text: str) -> dict:
     }
 
 
-def parse_included_documents(text: str) -> list[str]:
-    """
-    Parse the included_documents field into a flat list of document names.
-    Drawing-number prefixes ("8/2 ", "3 / 18 ", "4 ") are stripped.
-    """
-    if not text:
-        return []
-    body = re.sub(
-        r'^(?:Documents Included|Included Documents):\s*', '', text, flags=re.IGNORECASE
-    )
-    docs = []
-    for line in body.split('\n'):
-        line = line.strip()
-        if not line:
-            continue
-        line = re.sub(r'^\d+\s*/\s*\d+\s+', '', line)
-        line = re.sub(r'^\d+\s+(?=[A-Za-z])', '', line)
-        if line:
-            docs.append(line.strip())
-    return docs
-
-
-def parse_requirements(text: str) -> list[str]:
-    """Parse building_regulations_and_requirements into a list of items."""
-    if not text:
-        return []
-    body = re.sub(
-        r'^(?:Bauordnungsrechtliche Hinweise und Auflagen'
-        r'|Building regulations and requirements):\s*',
-        '', text, flags=re.IGNORECASE,
-    )
-    return [l.strip() for l in body.split('\n') if l.strip()]
-
-
 # ── Record enrichment ─────────────────────────────────────────────────────────
 
 def enrich_record(record: dict) -> dict:
     """
-    Apply all parsers to one record and merge flat analytic fields.
+    Return a clean enriched record — original fields are NOT included.
 
-    Flat fields added (all prefixed for clarity):
-        exemption_items          – hierarchical item list (with sub_items possible)
-        exemption_types          – multi-label taxonomy list
-        exemption_primary_type   – single label or 'mixed'
-        exemption_is_empty       – bool
-        exemption_legal_refs     – deduplicated § references
-        exemption_subjects       – flattened subjects across all items
-        plan_type / plan_name    – from decision_basis (Bebauungsplan / Baustufenplan)
-        zone_code                – leading zone designation
-        legal_ordinance          – BauNutzungsverordnung or Baupolizeiverordnung
-        plan_references          – list of {name, type} from the plan/impl column
-        plan_primary_type        – first primary planning instrument type, or 'other'
-        documents_list           – cleaned document name list
-        requirements_list        – requirement item list
-        document_count_parsed    – len(documents_list)
-        requirement_count        – len(requirements_list)
+    Structure:
+      Flat copied fields:
+        request_id, time_for_decision_months, permit_type, issuing_authority,
+        type_of_construction, development_plan_implementation_plan
+
+      KV-parsed section dicts (keys normalised to snake_case):
+        document_information, contact_information, permit_information,
+        property_information, statistics_for_hmbtg_implementation,
+        building_regulations_and_requirements
+
+      decision_basis  – KV-parsed + structured sub-fields:
+        development_plan, regulations, _notes (raw),
+        plan_type, plan_name, zone_code, legal_ordinance (structured),
+        plan_references [{name, type}], plan_primary_type
+
+      granted_exemptions  – hierarchical parser output:
+        items, types, primary_type, is_empty, legal_refs, subjects
     """
-    exemption    = parse_granted_exemptions(record.get('granted_exemptions') or '')
-    basis        = parse_decision_basis(record.get('decision_basis') or '')
-    documents    = parse_included_documents(record.get('included_documents') or '')
-    requirements = parse_requirements(record.get('building_regulations_and_requirements') or '')
-    plan_refs    = parse_plan_references(record.get('development_plan_implementation_plan') or '')
+    # ── Flat copied fields ────────────────────────────────────────────────────
+    result: dict = {
+        'request_id':                           record.get('request_id'),
+        'time_for_decision_months':             record.get('time_for_decision_months'),
+        'permit_type':                          record.get('permit_type'),
+        'issuing_authority':                    record.get('issuing_authority'),
+        'type_of_construction':                 record.get('type_of_construction'),
+        'development_plan_implementation_plan': record.get('development_plan_implementation_plan'),
+    }
 
-    # Derive a single flat plan type for easy groupby:
-    # first reference whose type is a primary planning instrument, else first ref type
+    # ── KV-parsed sections ────────────────────────────────────────────────────
+    for field in (
+        'document_information',
+        'contact_information',
+        'permit_information',
+        'property_information',
+        'statistics_for_hmbtg_implementation',
+        'building_regulations_and_requirements',
+    ):
+        result[field] = _parse_kv_section(record.get(field) or '')
+
+    # ── decision_basis: KV + structured parsers + plan references ─────────────
+    basis_text = record.get('decision_basis') or ''
+    plan_refs  = parse_plan_references(record.get('development_plan_implementation_plan') or '')
+
     plan_primary_type = 'other'
     for ref in plan_refs:
         if ref['type'] in _PRIMARY_PLAN_TYPES:
@@ -413,37 +440,57 @@ def enrich_record(record: dict) -> dict:
     if plan_primary_type == 'other' and plan_refs:
         plan_primary_type = plan_refs[0]['type']
 
-    return {
-        **record,
-        'exemption_items':        exemption['items'],
-        'exemption_types':        exemption['types'],
-        'exemption_primary_type': exemption['primary_type'],
-        'exemption_is_empty':     exemption['is_empty'],
-        'exemption_legal_refs':   exemption['legal_refs'],
-        'exemption_subjects':     exemption['subjects'],
-        'plan_type':              basis['plan_type'],
-        'plan_name':              basis['plan_name'],
-        'zone_code':              basis['zone_code'],
-        'legal_ordinance':        basis['legal_ordinance'],
-        'plan_references':        plan_refs,
-        'plan_primary_type':      plan_primary_type,
-        'documents_list':         documents,
-        'requirements_list':      requirements,
-        'document_count_parsed':  len(documents),
-        'requirement_count':      len(requirements),
-    }
+    basis_dict = _parse_kv_section(basis_text)
+    structured = parse_decision_basis(basis_text)
+    basis_dict.update({k: v for k, v in structured.items() if v is not None})
+    basis_dict['plan_references']   = plan_refs
+    basis_dict['plan_primary_type'] = plan_primary_type
+    result['decision_basis'] = basis_dict
+
+    # ── granted_exemptions: hierarchical parser ───────────────────────────────
+    result['granted_exemptions'] = parse_granted_exemptions(record.get('granted_exemptions') or '')
+
+    return result
+
+
+def _flatten_for_analysis(enriched: dict) -> dict:
+    """Extract flat analytic fields from a nested enriched record for groupby use."""
+    flat: dict = {}
+    ge = enriched.get('granted_exemptions', {})
+    if isinstance(ge, dict):
+        flat['exemption_primary_type'] = ge.get('primary_type')
+        flat['exemption_types']        = ge.get('types', [])
+        flat['exemption_is_empty']     = ge.get('is_empty')
+        flat['exemption_legal_refs']   = ge.get('legal_refs', [])
+        flat['exemption_subjects']     = ge.get('subjects', [])
+    db = enriched.get('decision_basis', {})
+    if isinstance(db, dict):
+        flat['plan_type']         = db.get('plan_type')
+        flat['plan_name']         = db.get('plan_name')
+        flat['zone_code']         = db.get('zone_code')
+        flat['legal_ordinance']   = db.get('legal_ordinance')
+        flat['plan_references']   = db.get('plan_references', [])
+        flat['plan_primary_type'] = db.get('plan_primary_type')
+    return flat
 
 
 def enrich_json(source: JsonSource) -> list[dict]:
-    """Load a JSON source and return all records with parsed fields merged in."""
+    """Load source and return enriched-only (nested) fields for every record."""
     return [enrich_record(r) for r in _load(source)]
 
 
-def save_enriched_json(source: JsonSource, output_path: str | Path) -> None:
-    """Enrich all records from source and write them to a JSON file."""
-    output_path = Path(output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    records = enrich_json(source)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(records, f, indent=2, ensure_ascii=False, default=str)
-    print(f"Saved {len(records)} enriched records to {output_path}")
+def enrich_and_merge_json(source: JsonSource) -> list[dict]:
+    """
+    Load source and return every record with enriched fields merged in.
+    Nested enriched dicts overwrite the original raw-text fields of the same name.
+    Flat analytic fields (exemption_primary_type, plan_type, …) are also added
+    so existing groupby calls continue to work unchanged.
+    """
+    result = []
+    for r in _load(source):
+        enriched = enrich_record(r)
+        flat     = _flatten_for_analysis(enriched)
+        result.append({**r, **enriched, **flat})
+    return result
+
+

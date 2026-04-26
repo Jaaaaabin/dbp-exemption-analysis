@@ -201,8 +201,13 @@ def plot_subset_comparison(
 def plot_all(
     source: JsonSource,
     output_dir: str | Path = "res/figures",
+    subsets: dict[str, JsonSource] | None = None,
 ) -> None:
-    """Generate and save all standard plots to output_dir."""
+    """Generate and save all standard plots to output_dir.
+
+    subsets: mapping of label → JsonSource passed to plot_subset_comparison.
+             If None, the subset comparison plot is skipped.
+    """
     out = Path(output_dir)
     records = _to_df(source).to_dict("records")  # normalise to list[dict] once
 
@@ -227,14 +232,8 @@ def plot_all(
     plot_correlation_heatmap(records,
         output_path=out / "correlation_heatmap.png")
 
-    plot_subset_comparison(
-        {
-            "complete":            Path("data/cleaned/data_cleaned.json"),
-            "missing_exemptions":  Path("data/cleaned/data_out_exemption.json"),
-            "missing_regulations": Path("data/cleaned/data_out_regulation.json"),
-        },
-        output_path=out / "subset_comparison.png",
-    )
+    if subsets:
+        plot_subset_comparison(subsets, output_path=out / "subset_comparison.png")
 
     plt.close("all")
     print(f"\nAll plots saved to {out}/")

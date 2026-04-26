@@ -1,103 +1,214 @@
 # src/data_analysis.py
-# DataFrame analysis helpers — all functions accept a JSON source directly.
-#   _load                        – internal: JSON file/list-of-dicts → DataFrame
-#   describe_numeric_columns     – descriptive statistics for numeric columns
-#   describe_categorical_columns – value counts for categorical columns
-#   analyze_correlations         – correlation matrix filtered by a minimum threshold
-#   group_and_aggregate          – groupby with aggregation and flattened column names
+# Data manipulation, filtering, and analysis utilities.
+# All analysis functions accept a JsonSource (path or list[dict]) directly.
+#
+# ETL split (called by extract.py)
+#   split_by_missing_columns     – split DataFrame into clean / missing-exemption / missing-regulation
+#
+# DataFrame filtering
+#   filter_by_value              – filter a column by a single value and operator
+#   filter_by_range              – filter a numeric column by min/max bounds
+#   filter_by_string             – substring or regex filter on a string column
+#   filter_by_date_range         – filter by start/end date on a datetime column
+#   filter_by_custom             – apply an arbitrary row-level predicate
+#
+# Statistics & aggregations
+#   describe_numeric             – descriptive statistics for numeric columns
+#   describe_categorical         – value counts for categorical columns
+#   correlations                 – correlation matrix filtered by a minimum |r|
+#   group_aggregate              – groupby with multi-stat aggregation
 #   compare_subsets              – compare a metric across multiple named JSON sources
-#   detect_outliers              – flag outliers via IQR or z-score method
+#   detect_outliers              – flag outliers via IQR or z-score
 
 import json
 import pandas as pd
 from pathlib import Path
-from typing import Optional
+from typing import Any, Callable
 
-# A JSON source is either a file path or an already-loaded list of records.
 JsonSource = str | Path | list[dict]
 
 
+# ── Internal loader ───────────────────────────────────────────────────────────
+
 def _load(source: JsonSource) -> pd.DataFrame:
-    """Load a JSON source into a DataFrame."""
     if isinstance(source, (str, Path)):
         with open(source, encoding='utf-8') as f:
             return pd.DataFrame(json.load(f))
     return pd.DataFrame(source)
 
 
-def describe_numeric_columns(
+# ── ETL split ─────────────────────────────────────────────────────────────────
+
+def split_by_missing_columns(
+    df: pd.DataFrame,
+    col_exemption: str = 'Granted Exemptions',
+    col_regulation: str = 'Building regulations and requirements',
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Split df into (clean, missing_exemption, missing_regulation)."""
+    for col in (col_exemption, col_regulation):
+        if col not in df.columns:
+            raise ValueError(f"Column '{col}' not found in DataFrame")
+
+    mask_no_exemption  = df[col_exemption].isna()
+    mask_no_regulation = df[col_regulation].isna()
+
+    df_clean      = df[~mask_no_exemption & ~mask_no_regulation]
+    df_exemption  = df[mask_no_exemption].copy()
+    df_regulation = df[mask_no_regulation].copy()
+
+    print(f"Split — clean: {len(df_clean)} | "
+          f"missing exemption: {len(df_exemption)} | "
+          f"missing regulation: {len(df_regulation)}")
+    return df_clean, df_exemption, df_regulation
+
+
+# ── DataFrame filtering ───────────────────────────────────────────────────────
+
+_OPS = {
+    '==': lambda s, v: s == v,
+    '!=': lambda s, v: s != v,
+    '>':  lambda s, v: s > v,
+    '<':  lambda s, v: s < v,
+    '>=': lambda s, v: s >= v,
+    '<=': lambda s, v: s <= v,
+    'in':     lambda s, v: s.isin(v),
+    'not in': lambda s, v: ~s.isin(v),
+}
+
+
+def filter_by_value(
+    df: pd.DataFrame,
+    column: str,
+    value: Any,
+    operator: str = '==',
+) -> pd.DataFrame:
+    if column not in df.columns:
+        raise ValueError(f"Column '{column}' not found")
+    op = _OPS.get(operator)
+    if op is None:
+        raise ValueError(f"Unsupported operator: '{operator}'. Use: {list(_OPS)}")
+    return df[op(df[column], value)]
+
+
+def filter_by_range(
+    df: pd.DataFrame,
+    column: str,
+    min_value: float | None = None,
+    max_value: float | None = None,
+    inclusive: str = 'both',
+) -> pd.DataFrame:
+    if column not in df.columns:
+        raise ValueError(f"Column '{column}' not found")
+    if min_value is not None and max_value is not None:
+        return df[df[column].between(min_value, max_value, inclusive=inclusive)]
+    if min_value is not None:
+        return df[df[column] >= min_value] if inclusive in ('both', 'left') else df[df[column] > min_value]
+    if max_value is not None:
+        return df[df[column] <= max_value] if inclusive in ('both', 'right') else df[df[column] < max_value]
+    return df
+
+
+def filter_by_string(
+    df: pd.DataFrame,
+    column: str,
+    pattern: str,
+    case_sensitive: bool = False,
+    regex: bool = False,
+) -> pd.DataFrame:
+    if column not in df.columns:
+        raise ValueError(f"Column '{column}' not found")
+    return df[df[column].astype(str).str.contains(pattern, case=case_sensitive, regex=regex, na=False)]
+
+
+def filter_by_date_range(
+    df: pd.DataFrame,
+    date_column: str,
+    start_date: str | pd.Timestamp | None = None,
+    end_date: str | pd.Timestamp | None = None,
+) -> pd.DataFrame:
+    if date_column not in df.columns:
+        raise ValueError(f"Column '{date_column}' not found")
+    s = df.copy()
+    s[date_column] = pd.to_datetime(s[date_column])
+    if start_date:
+        s = s[s[date_column] >= pd.to_datetime(start_date)]
+    if end_date:
+        s = s[s[date_column] <= pd.to_datetime(end_date)]
+    return s
+
+
+def filter_by_custom(
+    df: pd.DataFrame,
+    predicate: Callable[[pd.Series], bool],
+) -> pd.DataFrame:
+    return df[df.apply(predicate, axis=1)]
+
+
+# ── Statistics & aggregations ─────────────────────────────────────────────────
+
+def describe_numeric(
     source: JsonSource,
-    percentiles: Optional[list[float]] = None
+    percentiles: list[float] | None = None,
 ) -> pd.DataFrame:
     df = _load(source)
-    if percentiles is None:
-        percentiles = [0.25, 0.5, 0.75]
-    return df.select_dtypes(include='number').describe(percentiles=percentiles)
+    return df.select_dtypes(include='number').describe(
+        percentiles=percentiles or [0.25, 0.5, 0.75]
+    )
 
 
-def describe_categorical_columns(
+def describe_categorical(
     source: JsonSource,
-    top_n: int = 10
+    top_n: int = 10,
 ) -> dict[str, pd.Series]:
     df = _load(source)
-    categorical_cols = df.select_dtypes(include=['object', 'category']).columns
-    return {col: df[col].value_counts().head(top_n) for col in categorical_cols}
+    return {
+        col: df[col].value_counts().head(top_n)
+        for col in df.select_dtypes(include=['object', 'category']).columns
+    }
 
 
-def analyze_correlations(
+def correlations(
     source: JsonSource,
     method: str = 'pearson',
-    min_correlation: float = 0.5
+    min_r: float = 0.5,
 ) -> pd.DataFrame:
     df = _load(source)
-    numeric_df = df.select_dtypes(include='number')
-    if numeric_df.empty:
-        print("No numeric columns found for correlation analysis")
+    numeric = df.select_dtypes(include='number')
+    if numeric.empty:
         return pd.DataFrame()
-    corr_matrix = numeric_df.corr(method=method)
-    mask = (corr_matrix.abs() >= min_correlation) & (corr_matrix != 1.0)
-    return corr_matrix.where(mask)
+    corr = numeric.corr(method=method)
+    return corr.where((corr.abs() >= min_r) & (corr != 1.0))
 
 
-def group_and_aggregate(
+def group_aggregate(
     source: JsonSource,
     group_by: str | list[str],
-    agg_dict: dict[str, str | list[str]]
+    agg_dict: dict[str, str | list[str]],
 ) -> pd.DataFrame:
     df = _load(source)
     result = df.groupby(group_by).agg(agg_dict)
     if isinstance(result.columns, pd.MultiIndex):
-        result.columns = ['_'.join(col).strip() for col in result.columns.values]
+        result.columns = ['_'.join(c).strip() for c in result.columns]
     return result.reset_index()
 
 
 def compare_subsets(
     subsets: dict[str, JsonSource],
     metric_column: str,
-    operation: str = 'mean'
+    operation: str = 'mean',
 ) -> pd.DataFrame:
-    """Compare a metric across multiple named JSON sources.
-
-    operation accepts any pandas Series aggregation method name
-    (e.g. 'mean', 'median', 'sum', 'count', 'std', 'min', 'max').
-    """
-    results = {}
+    """Compare metric across multiple named JSON sources using any pandas aggregation."""
+    rows = {}
     for name, source in subsets.items():
         df = _load(source)
         if metric_column not in df.columns:
-            print(f"Warning: '{metric_column}' not found in subset '{name}'")
             continue
-        series = df[metric_column].dropna()
-        agg_fn = getattr(series, operation, None)
-        if agg_fn is None:
+        fn = getattr(df[metric_column].dropna(), operation, None)
+        if fn is None:
             raise ValueError(f"Unsupported operation: '{operation}'")
-        results[name] = agg_fn()
-
+        rows[name] = fn()
     return (
-        pd.DataFrame({
-            'subset': list(results.keys()),
-            f'{metric_column}_{operation}': list(results.values()),
-        })
+        pd.DataFrame({'subset': list(rows), f'{metric_column}_{operation}': list(rows.values())})
         .sort_values(f'{metric_column}_{operation}', ascending=False)
         .reset_index(drop=True)
     )
@@ -107,23 +218,18 @@ def detect_outliers(
     source: JsonSource,
     column: str,
     method: str = 'iqr',
-    threshold: float = 1.5
+    threshold: float = 1.5,
 ) -> pd.DataFrame:
     df = _load(source)
     if column not in df.columns:
         raise ValueError(f"Column '{column}' not found")
-
     if method == 'iqr':
-        Q1 = df[column].quantile(0.25)
-        Q3 = df[column].quantile(0.75)
-        IQR = Q3 - Q1
-        outliers = df[(df[column] < Q1 - threshold * IQR) | (df[column] > Q3 + threshold * IQR)]
+        q1, q3 = df[column].quantile(0.25), df[column].quantile(0.75)
+        iqr = q3 - q1
+        mask = (df[column] < q1 - threshold * iqr) | (df[column] > q3 + threshold * iqr)
     elif method == 'zscore':
-        mean = df[column].mean()
-        std = df[column].std()
-        outliers = df[abs((df[column] - mean) / std) > threshold]
+        z = (df[column] - df[column].mean()) / df[column].std()
+        mask = z.abs() > threshold
     else:
         raise ValueError(f"Unsupported method: '{method}'")
-
-    print(f"Detected {len(outliers)} outliers in '{column}' using {method} method")
-    return outliers
+    return df[mask]
