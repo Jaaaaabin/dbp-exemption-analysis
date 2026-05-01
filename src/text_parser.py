@@ -48,7 +48,9 @@ def _parse_kv_section(text: str) -> dict:
 
     - The first line that ends with ':' is the section title and is skipped.
     - Each remaining line is split on the FIRST ':' to give key / value.
-    - Lines that contain no ':' are collected in '_notes' (list).
+    - Lines that contain no ':' are collected in '_notes' (list); this includes
+      both standalone annotations AND continuation lines of multi-line values —
+      inspect '_notes' during development to catch truncated values.
     - Keys are normalised to snake_case via _to_snake_key.
     """
     if not text:
@@ -193,8 +195,7 @@ def _build_item(idx: str | None, text: str) -> dict:
     item['legal_ref'] = refs[0] if refs else None
 
     types = classify_exemption_types(text)
-    item['type'] = (types[0] if len(types) == 1
-                    else ('none' if types == ['none'] else 'mixed'))
+    item['type'] = types[0] if len(types) == 1 else 'mixed'
 
     # Sub-items: N.1. N.2. … (only when parent has an index)
     sub_items: list[dict] = []
@@ -235,7 +236,7 @@ def _build_item(idx: str | None, text: str) -> dict:
 
     # Top-level justification / reason
     just_m = re.search(
-        r'(?:Justification|Reason):\s*(.+?)(?=\n(?:Condition|Allowed|$)|\Z)',
+        r'(?:Justification|Reason):\s*(.+?)(?=\n[A-Z][a-z][^:\n]*:|\Z)',
         text, re.IGNORECASE | re.DOTALL,
     )
     if just_m:
@@ -365,7 +366,7 @@ def parse_decision_basis(text: str) -> dict:
     reg_m = re.search(r'Regulations:\s*(.+)', text)
     if reg_m:
         reg_text = reg_m.group(1).strip()
-        zone_m = re.match(r'([A-Z]{1,4}\s*(?:I{1,3}|[0-9])?\s*[oa]?)\b', reg_text, re.IGNORECASE)
+        zone_m = re.match(r'([A-Z]{1,4}\s*(?:I{1,3}|[0-9])?\s*[oa]?)\b', reg_text)
         zone_code = (zone_m.group(1).strip() if zone_m
                      else reg_text.split(',')[0].split(';')[0].strip())
 
@@ -437,6 +438,9 @@ def enrich_record(record: dict) -> dict:
         if ref['type'] in _PRIMARY_PLAN_TYPES:
             plan_primary_type = ref['type']
             break
+    # No primary plan type found; fall back to the first reference's type so
+    # groupby callers always have a non-None key. Inspect plan_references to
+    # see what was actually parsed when this field looks unexpected.
     if plan_primary_type == 'other' and plan_refs:
         plan_primary_type = plan_refs[0]['type']
 
@@ -472,6 +476,108 @@ def _flatten_for_analysis(enriched: dict) -> dict:
         flat['plan_references']   = db.get('plan_references', [])
         flat['plan_primary_type'] = db.get('plan_primary_type')
     return flat
+
+
+def flatten_to_items(source: JsonSource) -> list[dict]:
+    """
+    Explode enriched records to one row per granted exemption item.
+
+    Accepts raw records (enriches on the fly), enriched-only records, or
+    enriched-and-merged records (from enrich_and_merge_json).
+
+    Columns per row:
+      request_id, issuing_authority, time_for_decision_months,
+      plan_primary_type, plan_name, zone_code,
+      exemption_primary_type,
+      item_index, legal_ref,
+      subjects_text, allowed_actions_text, conditions_text,
+      justification_text, combined_text
+    """
+    rows: list[dict] = []
+    for record in _load(source):
+        ge = record.get('granted_exemptions', {})
+        db = record.get('decision_basis', {})
+
+        # If not yet enriched (granted_exemptions is a raw string), enrich now.
+        if not isinstance(ge, dict):
+            enriched = enrich_record(record)
+            ge = enriched.get('granted_exemptions', {})
+            db = enriched.get('decision_basis', {})
+
+        basis = db if isinstance(db, dict) else {}
+
+        ctx: dict = {
+            'request_id':               record.get('request_id'),
+            'issuing_authority':        record.get('issuing_authority'),
+            'time_for_decision_months': record.get('time_for_decision_months'),
+            # prefer flat top-level fields (present in merged records) then nested
+            'plan_primary_type': (record.get('plan_primary_type')
+                                  or basis.get('plan_primary_type')),
+            'plan_name':         (record.get('plan_name')
+                                  or basis.get('plan_name')),
+            'zone_code':         (record.get('zone_code')
+                                  or basis.get('zone_code')),
+            'exemption_primary_type': ge.get('primary_type'),
+        }
+
+        is_empty = ge.get('is_empty', False)
+        items    = ge.get('items', [])
+        if not items:
+            rows.append({
+                **ctx,
+                'is_empty':             is_empty,
+                'item_index':           None,
+                'legal_ref':            None,
+                'n_conditions':         0,
+                'n_allowed_actions':    0,
+                'has_justification':    False,
+                'subjects_text':        '',
+                'allowed_actions_text': '',
+                'conditions_text':      '',
+                'justification_text':   '',
+                'combined_text':        '',
+            })
+            continue
+
+        for item in items:
+            subjects = list(item.get('subjects', []))
+            # sub_items store subjects under 'subject' (singular)
+            for si in item.get('sub_items', []):
+                if si.get('subject'):
+                    subjects.append(si['subject'])
+
+            conditions      = item.get('conditions', [])
+            allowed_actions = item.get('allowed_actions', [])
+            justification   = item.get('justification') or ''
+
+            subjects_text        = ' '.join(subjects)
+            allowed_actions_text = ' '.join(allowed_actions)
+            conditions_text      = ' '.join(conditions)
+
+            combined_text = ' '.join(filter(None, [
+                item.get('legal_ref') or '',
+                subjects_text,
+                allowed_actions_text,
+                conditions_text,
+                justification,
+            ]))
+
+            rows.append({
+                **ctx,
+                'is_empty':             is_empty,
+                'item_index':           item.get('index'),
+                'legal_ref':            item.get('legal_ref'),
+                'n_conditions':         len(conditions),
+                'n_allowed_actions':    len(allowed_actions),
+                'has_justification':    bool(justification),
+                'subjects_text':        subjects_text,
+                'allowed_actions_text': allowed_actions_text,
+                'conditions_text':      conditions_text,
+                'justification_text':   justification,
+                'combined_text':        combined_text,
+            })
+
+    return rows
 
 
 def enrich_json(source: JsonSource) -> list[dict]:

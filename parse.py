@@ -17,10 +17,7 @@ from src.text_parser import enrich_json
 def main():
     print(f"\nParsing: {JSON_FILE}\n")
 
-    with open(JSON_FILE, encoding='utf-8') as f:
-        original = json.load(f)
-
-    enriched = enrich_json(original)
+    enriched = enrich_json(JSON_FILE)
 
     enriched_path = JSON_FILE.parent / (JSON_FILE.stem + "_parsed.json")
     with open(enriched_path, 'w', encoding='utf-8') as f:
