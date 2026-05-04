@@ -30,6 +30,8 @@ _NO_EXEMPTION = re.compile(
     r'^\s*(none specified\.?|n/a|no exemption)\s*$', re.IGNORECASE | re.MULTILINE
 )
 
+_NOT_GRANTED_SPLIT = re.compile(r'Not Granted Exemptions:\s*', re.IGNORECASE)
+
 
 def _to_snake_key(text: str) -> str:
     """'Some Key Name' → 'some_key_name'"""
@@ -189,7 +191,7 @@ def parse_plan_references(text: str) -> list[dict]:
 
 def _build_item(idx: str | None, text: str) -> dict:
     """Build one exemption item dict; recurse into sub-items if found."""
-    item: dict = {'index': idx}
+    item: dict = {'index': idx, 'text': text}
 
     refs = extract_legal_refs(text)
     item['legal_ref'] = refs[0] if refs else None
@@ -206,15 +208,23 @@ def _build_item(idx: str | None, text: str) -> dict:
         for j, sm in enumerate(sub_matches):
             sub_idx = f"{idx}.{sm.group(1)}"
             s_start = sm.end()
-            s_end = (sub_matches[j + 1].start()
-                     if j + 1 < len(sub_matches) else len(text))
+            # Last sub-item ends at the next sub-item boundary, or at the first
+            # blank-line-separated paragraph that isn't another numbered sub-item
+            # (tail text stays in the parent item's 'text', not the sub-item).
+            if j + 1 < len(sub_matches):
+                s_end = sub_matches[j + 1].start()
+            else:
+                # Find where the sub-item's content ends: stop at the first
+                # double-newline that is followed by non-sub-item text.
+                tail_m = re.search(r'\n\n(?!\s*\d+\.\d+\.)', text[sm.end():])
+                s_end = sm.end() + tail_m.start() if tail_m else len(text)
             sub_text = text[s_start:s_end].strip()
 
             lines = sub_text.split('\n')
             subject_raw = lines[0].strip().rstrip(':')
             subject = re.sub(r'^[Ff]or\s+', '', subject_raw).strip()
 
-            sub: dict = {'index': sub_idx, 'subject': subject}
+            sub: dict = {'index': sub_idx, 'text': sub_text, 'subject': subject}
             rest = '\n'.join(lines[1:])
             just_m = re.search(r'(?:Reason|Justification):\s*(.+)', rest, re.IGNORECASE)
             if just_m:
@@ -269,13 +279,20 @@ def _build_item(idx: str | None, text: str) -> dict:
     return item
 
 
-def _parse_exemption_items(body: str) -> list[dict]:
-    """Split exemption body into hierarchical top-level items."""
+def _parse_exemption_items(body: str) -> tuple[list[dict], str]:
+    """
+    Split exemption body into hierarchical top-level items.
+
+    Returns (items, header) where header is any text that precedes the first
+    numbered item (e.g. 'Wegerecht (Road law) - This permit includes:').
+    """
     top_pat = re.compile(r'(?:^|\n)(\d+)\.\s+', re.MULTILINE)
     top_matches = list(top_pat.finditer(body))
 
     if not top_matches:
-        return [_build_item(None, body)]
+        return [_build_item(None, body)], ''
+
+    header = body[:top_matches[0].start()].strip()
 
     items = []
     for i, m in enumerate(top_matches):
@@ -284,7 +301,7 @@ def _parse_exemption_items(body: str) -> list[dict]:
         end = top_matches[i + 1].start() if i + 1 < len(top_matches) else len(body)
         items.append(_build_item(idx, body[start:end].strip()))
 
-    return items
+    return items, header
 
 
 # ── Field parsers ─────────────────────────────────────────────────────────────
@@ -294,45 +311,85 @@ def parse_granted_exemptions(text: str) -> dict:
     Parse the granted_exemptions field into hierarchical items plus flat
     derived fields for analysis.
 
-    Returns:
-        items           – list of item dicts (hierarchical: sub_items possible)
+    Structure of the returned dict:
+        header          – introductory text before the first numbered item, if any
+                          (e.g. 'Wegerecht (Road law) - This permit includes:')
         types           – multi-label taxonomy list (derived from full text)
         primary_type    – single label or 'mixed'
         is_empty        – True when the field states no exemption
         legal_refs      – deduplicated § references (full text)
         subjects        – flattened subjects across all items / sub-items
+        "1", "2", …     – item dicts keyed by their index string; each contains:
+                            text       – full raw body (lossless)
+                            legal_ref  – first § reference
+                            type       – taxonomy label
+                            subjects / justification / conditions / allowed_actions
+                            "1.1", …   – sub-item dicts keyed by sub-index string,
+                                         each with: text, subject, justification
+    Unnumbered single-item exemptions are stored under key "1" with index=None inside.
+    Use iter_granted_items() to iterate items without worrying about the key names.
     """
     if not text:
-        return {'types': ['none'], 'primary_type': 'none', 'is_empty': True,
-                'items': [], 'legal_refs': [], 'subjects': []}
+        return {'header': None, 'types': ['none'], 'primary_type': 'none',
+                'is_empty': True, 'legal_refs': [], 'subjects': []}
 
     is_empty = bool(_NO_EXEMPTION.search(text.strip()))
     if is_empty:
-        return {'types': ['none'], 'primary_type': 'none', 'is_empty': True,
-                'items': [], 'legal_refs': [], 'subjects': []}
+        return {'header': None, 'types': ['none'], 'primary_type': 'none',
+                'is_empty': True, 'legal_refs': [], 'subjects': []}
 
     body = re.sub(r'^Granted Exemptions:\s*', '', text, flags=re.IGNORECASE).strip()
-    items = _parse_exemption_items(body)
+    items, header = _parse_exemption_items(body)
 
     types = classify_exemption_types(text)
     primary_type = types[0] if len(types) == 1 else 'mixed'
 
-    # Flatten subjects from all items and sub-items
-    subjects: list[str] = []
-    for item in items:
-        subjects.extend(item.get('subjects', []))
-        for si in item.get('sub_items', []):
-            if 'subject' in si:
-                subjects.append(si['subject'])
-
-    return {
+    result: dict = {
+        'header':       header or None,
         'types':        types,
         'primary_type': primary_type,
         'is_empty':     is_empty,
-        'items':        items,
         'legal_refs':   extract_legal_refs(text),
-        'subjects':     subjects,
+        'subjects':     [],  # filled below
     }
+
+    subjects: list[str] = []
+    for item in items:
+        key = str(item['index']) if item['index'] is not None else '1'
+        entry: dict = {k: v for k, v in item.items()
+                       if k not in ('index', 'sub_items')}
+        # Sub-items become direct keys within the item entry
+        for si in item.get('sub_items', []):
+            si_key = str(si['index'])
+            entry[si_key] = {k: v for k, v in si.items() if k != 'index'}
+            if si.get('subject'):
+                subjects.append(si['subject'])
+        subjects.extend(item.get('subjects', []))
+        result[key] = entry
+
+    result['subjects'] = subjects
+    return result
+
+
+# Keys that are always metadata in a parse_granted_exemptions dict (never item keys).
+# Item keys are digit strings ('1', '2', …); sub-item keys contain a dot ('1.1', …).
+_GE_META: frozenset[str] = frozenset(
+    {'header', 'types', 'primary_type', 'is_empty', 'legal_refs', 'subjects'}
+)
+
+
+def iter_granted_items(ge: dict):
+    """Yield (key, item_dict) from a parse_granted_exemptions result, in index order."""
+    for k in sorted((k for k in ge if k not in _GE_META),
+                    key=lambda x: (len(x), x)):
+        yield k, ge[k]
+
+
+def iter_sub_items(item: dict):
+    """Yield (key, sub_item_dict) from an item dict, in index order."""
+    # Sub-item keys contain a dot; data fields ('text', 'type', …) do not.
+    for k in sorted((k for k in item if '.' in k), key=lambda x: (len(x), x)):
+        yield k, item[k]
 
 
 def parse_decision_basis(text: str) -> dict:
@@ -405,8 +462,11 @@ def enrich_record(record: dict) -> dict:
         plan_type, plan_name, zone_code, legal_ordinance (structured),
         plan_references [{name, type}], plan_primary_type
 
-      granted_exemptions  – hierarchical parser output:
+      granted_exemptions      – hierarchical parser output (granted only):
         items, types, primary_type, is_empty, legal_refs, subjects
+
+      non_granted_exemptions  – same structure for the "Not Granted" section
+        (empty/is_empty=True when no such section exists)
     """
     # ── Flat copied fields ────────────────────────────────────────────────────
     result: dict = {
@@ -451,8 +511,14 @@ def enrich_record(record: dict) -> dict:
     basis_dict['plan_primary_type'] = plan_primary_type
     result['decision_basis'] = basis_dict
 
-    # ── granted_exemptions: hierarchical parser ───────────────────────────────
-    result['granted_exemptions'] = parse_granted_exemptions(record.get('granted_exemptions') or '')
+    # ── granted_exemptions / non_granted_exemptions ───────────────────────────
+    raw_exemptions = record.get('granted_exemptions') or ''
+    ng_parts = _NOT_GRANTED_SPLIT.split(raw_exemptions, maxsplit=1)
+    granted_text     = ng_parts[0].strip()
+    not_granted_text = ng_parts[1].strip() if len(ng_parts) > 1 else ''
+
+    result['granted_exemptions']     = parse_granted_exemptions(granted_text)
+    result['non_granted_exemptions'] = parse_granted_exemptions(not_granted_text)
 
     return result
 
@@ -520,9 +586,9 @@ def flatten_to_items(source: JsonSource) -> list[dict]:
             'exemption_primary_type': ge.get('primary_type'),
         }
 
-        is_empty = ge.get('is_empty', False)
-        items    = ge.get('items', [])
-        if not items:
+        is_empty    = ge.get('is_empty', False)
+        item_pairs  = list(iter_granted_items(ge)) if isinstance(ge, dict) else []
+        if not item_pairs:
             rows.append({
                 **ctx,
                 'is_empty':             is_empty,
@@ -539,10 +605,9 @@ def flatten_to_items(source: JsonSource) -> list[dict]:
             })
             continue
 
-        for item in items:
+        for item_key, item in item_pairs:
             subjects = list(item.get('subjects', []))
-            # sub_items store subjects under 'subject' (singular)
-            for si in item.get('sub_items', []):
+            for _si_key, si in iter_sub_items(item):
                 if si.get('subject'):
                     subjects.append(si['subject'])
 
@@ -565,7 +630,7 @@ def flatten_to_items(source: JsonSource) -> list[dict]:
             rows.append({
                 **ctx,
                 'is_empty':             is_empty,
-                'item_index':           item.get('index'),
+                'item_index':           item_key,
                 'legal_ref':            item.get('legal_ref'),
                 'n_conditions':         len(conditions),
                 'n_allowed_actions':    len(allowed_actions),

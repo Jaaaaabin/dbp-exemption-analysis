@@ -89,7 +89,34 @@ Steps 2 and 3 are independent and can run in any order.
 | `statistics_for_hmbtg_implementation` | `type_of_construction`, `type_of_requested_facility`, `type_of_building_by_future_use`, `number_of_full_stories` |
 | `building_regulations_and_requirements` | one key per requirement; unparseable lines in `_notes` |
 | `decision_basis` | `development_plan`, `regulations`, `_notes` + `plan_type`, `plan_name`, `zone_code`, `legal_ordinance`, `plan_references`, `plan_primary_type` |
-| `granted_exemptions` | `items`, `types`, `primary_type`, `is_empty`, `legal_refs`, `subjects` |
+| `granted_exemptions` | `header`, `types`, `primary_type`, `is_empty`, `legal_refs`, `subjects`, **`"1"`, `"2"`, …** (item dicts keyed by index) |
+
+#### `granted_exemptions` structure
+
+Numbered items appear as direct keys (`"1"`, `"2"`, …) in the dict. Sub-items (`"1.1"`, `"1.2"`, …) are direct keys within their parent item. Unnumbered single-item exemptions are stored under `"1"`.
+
+```json
+"granted_exemptions": {
+  "header": "Wegerecht – This permit includes:",  // text before item 1, or null
+  "types": ["planning_law", "tree_environmental"],
+  "primary_type": "mixed",
+  "is_empty": false,
+  "legal_refs": ["§ 31 paragraph 2", "§ 4"],
+  "subjects": ["exceeding the building limit by …"],
+  "1": {
+    "text": "<full raw body of item 1>",
+    "legal_ref": "§ 31 paragraph 2",
+    "type": "planning_law",
+    "1.1": {
+      "text": "For exceeding …",
+      "subject": "exceeding …"
+    }
+  },
+  "2": { "text": "…", "legal_ref": "§ 69 HBauO", "type": "building_code" }
+}
+```
+
+Use `iter_granted_items(ge)` and `iter_sub_items(item)` from `text_parser` to iterate items without hardcoding key names. Use `flatten_to_items(source)` to produce one flat row per item for analysis.
 
 ### Step 3 outputs (`res/figures/`)
 
@@ -103,7 +130,7 @@ Steps 2 and 3 are independent and can run in any order.
 |---|---|
 | `data_clean.py` | Excel ingestion, DataFrame cleaning, CSV/JSON export |
 | `data_analysis.py` | ETL split, DataFrame filtering, statistics & aggregations |
-| `text_parser.py` | Long text field parsing, record enrichment (`enrich_json`, `enrich_and_merge_json`) |
+| `text_parser.py` | Long text field parsing, record enrichment (`enrich_json`, `enrich_and_merge_json`), item iteration (`iter_granted_items`, `iter_sub_items`), flat item rows (`flatten_to_items`) |
 | `visualize.py` | All matplotlib/seaborn plots |
 | `configuration.py` | Config loader (`path.yaml`) |
 

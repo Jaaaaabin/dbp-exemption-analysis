@@ -3,7 +3,7 @@
 # All analysis functions accept a JsonSource (path or list[dict]) directly.
 #
 # ETL split (called by extract.py)
-#   split_by_missing_columns     – split DataFrame into clean / missing-exemption / missing-regulation
+#   split_by_missing_columns     – split DataFrame into has-exemption / missing-exemption
 #
 # DataFrame filtering
 #   filter_by_value              – filter a column by a single value and operator
@@ -42,24 +42,18 @@ def _load(source: JsonSource) -> pd.DataFrame:
 def split_by_missing_columns(
     df: pd.DataFrame,
     col_exemption: str = 'Granted Exemptions',
-    col_regulation: str = 'Building regulations and requirements',
-) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Split df into (clean, missing_exemption, missing_regulation)."""
-    for col in (col_exemption, col_regulation):
-        if col not in df.columns:
-            raise ValueError(f"Column '{col}' not found in DataFrame")
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Split df into (has_exemption, missing_exemption)."""
+    if col_exemption not in df.columns:
+        raise ValueError(f"Column '{col_exemption}' not found in DataFrame")
 
-    mask_no_exemption  = df[col_exemption].isna()
-    mask_no_regulation = df[col_regulation].isna()
+    mask_no_exemption = df[col_exemption].isna() | (df[col_exemption].astype(str).str.strip().str.upper() == 'N/A')
+    df_has_exemption  = df[~mask_no_exemption].copy()
+    df_no_exemption   = df[mask_no_exemption].copy()
 
-    df_clean      = df[~mask_no_exemption & ~mask_no_regulation]
-    df_exemption  = df[mask_no_exemption].copy()
-    df_regulation = df[mask_no_regulation].copy()
-
-    print(f"Split — clean: {len(df_clean)} | "
-          f"missing exemption: {len(df_exemption)} | "
-          f"missing regulation: {len(df_regulation)}")
-    return df_clean, df_exemption, df_regulation
+    print(f"Split — has exemption: {len(df_has_exemption)} | "
+          f"missing exemption: {len(df_no_exemption)}")
+    return df_has_exemption, df_no_exemption
 
 
 # ── DataFrame filtering ───────────────────────────────────────────────────────
