@@ -3,3 +3,8 @@
 [] Granted Exemption:
     - if NOT numbered, one exemption. "1" is present but nothing else, or nothing at all: also consider for the related blocks
     - if numbered, multiple exemptions. "1", "1.1" 1.2 ... and 2 .. etc.
+[] Filters applied by Jonas (partially adopted)
+    - Records from a specific year (~2018 onwards)
+    - Single-family residential buildings only
+    - Properties located within Berlin (regional breakdown pending)
+    - Selection criteria: only cases where a building permit was granted (to be verified)
