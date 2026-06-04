@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-06-04T12:47:23.714626+00:00",
+  "input_file": "data/cleaned/data_analyze_parsed_decision_basis.json",
+  "output_dir": "res/figures/decision_basis",
+  "figures": [
+    "planning_context_primary_plan_distribution.png",
+    "planning_context_plan_type_distribution.png",
+    "planning_context_ordinance_distribution.png",
+    "planning_context_zone_prefix_frequency.png",
+    "planning_context_plan_reference_type_frequency.png",
+    "planning_context_field_coverage.png",
+    "planning_context_zone_parse_quality.png",
+    "planning_context_plan_reference_count.png",
+    "decision_basis_residual_key_frequency.png",
+    "planning_context_plan_x_ordinance.png",
+    "planning_context_plan_x_zone_prefix.png"
+  ],
+  "record_count": 83,
+  "plan_reference_count": 100,
+  "planning_context_primary_plan_counts": {
+    "construction_phase_plan": 3,
+    "construction_plan": 18,
+    "development_plan": 54,
+    "implementation_plan": 1,
+    "landscape_protection": 1,
+    "other": 4,
+    "unplanned_area": 2
+  },
+  "planning_context_plan_type_counts": {
+    "Baustufenplan": 21,
+    "Bebauungsplan": 50,
+    "other": 6,
+    "unknown": 6
+  },
+  "planning_context_ordinance_counts": {
+    "BauNutzungsverordnung": 51,
+    "Baupolizeiverordnung": 23,
+    "unknown": 9
+  },
+  "planning_context_zone_prefix_counts": {
+    "S": 2,
+    "W": 11,
+    "WA": 2,
+    "WR": 40,
+    "unknown": 28
+  },
+  "planning_context_zone_quality_counts": {
+    "legal_text": 2,
+    "missing": 1,
+    "parsed_prefix": 55,
+    "source_label": 20,
+    "unparsed_text": 5
+  },
+  "planning_context_plan_reference_type_counts": {
+    "construction_phase_plan": 3,
+    "construction_plan": 18,
+    "development_plan": 56,
+    "green_space_plan": 5,
+    "implementation_plan": 2,
+    "landscape_protection": 9,
+    "maintenance_ordinance": 1,
+    "other": 1,
+    "partial_development_plan": 2,
+    "unplanned_area": 3
+  },
+  "key_counts": {
+    "_notes": 77,
+    "additional_regulations": 1,
+    "back": 1,
+    "bebauungsplan": 6,
+    "building_depth": 1,
+    "building_window": 1,
+    "conservation_ordinance": 1,
+    "development_plan": 77,
+    "gfz": 1,
+    "green_order_plan": 2,
+    "grz": 1,
+    "landscape_protection_ordinance": 1,
+    "legal_ordinance": 74,
+    "plan_name": 77,
+    "plan_primary_type": 83,
+    "plan_references": 83,
+    "plan_type": 77,
+    "preliminary_decision": 7,
+    "preliminary_decision_gz": 3,
+    "regulations": 82,
+    "roof_pitch": 1,
+    "teilbebauungsplan_341": 1,
+    "type": 19,
+    "verordnung": 1,
+    "vorbescheid_gz": 1,
+    "zone_code": 82
+  },
+  "ad_hoc_key_counts": {
+    "additional_regulations": 1,
+    "back": 1,
+    "bebauungsplan": 6,
+    "building_depth": 1,
+    "building_window": 1,
+    "conservation_ordinance": 1,
+    "gfz": 1,
+    "green_order_plan": 2,
+    "grz": 1,
+    "landscape_protection_ordinance": 1,
+    "preliminary_decision": 7,
+    "preliminary_decision_gz": 3,
+    "roof_pitch": 1,
+    "teilbebauungsplan_341": 1,
+    "type": 19,
+    "verordnung": 1,
+    "vorbescheid_gz": 1
+  },
+  "summary": {
+    "records_with_notes": 77,
+    "records_with_multiple_plan_references": 17,
+    "max_plan_references_per_record": 3,
+    "avg_plan_references_per_record": 1.2048192771084338,
+    "max_decision_basis_keys": 11,
+    "avg_decision_basis_keys": 9.168674698795181,
+    "records_with_unparsed_zone_code": 27,
+    "normalized_key_share": 0.9356110381077529
+  },
+  "planning_context_field_coverage_percent": {
+    "has_development_plan": 92.77,
+    "has_regulations": 75.9,
+    "has_plan_type": 92.77,
+    "has_plan_name": 92.77,
+    "has_zone_code": 98.8,
+    "has_legal_ordinance": 89.16,
+    "has_plan_references": 96.39,
+    "has_plan_primary_type": 100.0
+  }
+}

@@ -1,0 +1,1187 @@
+request_id,category,source_field,value,name,type,total_dependencies_for_request
+1,planning_instruments,plan_primary_type,other,,,9
+1,planning_instruments,bebauungsplan,"Lurup 13 (approved on September 1, 1964)",,,9
+1,planning_instruments,plan_references,,Lurup 13,other,9
+1,regulatory_ordinances,additional_regulations,"BauNVO (June 26, 1962)",,,9
+1,regulation_texts,zone_code,Type: WR I o,,,9
+1,regulation_texts,type,WR I o,,,9
+1,regulation_texts,building_depth,15 m,,,9
+1,regulation_texts,grz,0.4,,,9
+1,regulation_texts,gfz,0.4,,,9
+2,planning_instruments,development_plan,Durchführungsplan 391 B,,,14
+2,planning_instruments,plan_name,Durchführungsplan 391 B,,,14
+2,planning_instruments,plan_type,other,,,14
+2,planning_instruments,plan_primary_type,implementation_plan,,,14
+2,planning_instruments,plan_references,,391 B,implementation_plan,14
+2,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,14
+2,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,14
+2,regulation_texts,zone_code,Type: Fläche für besondere Zwecke (Sportplatz),,,14
+2,regulation_texts,type,Fläche für besondere Zwecke (Sportplatz),,,14
+2,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 37,,,14
+2,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 15,,,14
+2,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 37,,,14
+2,granted_exemption_legal_references,granted_exemptions.1.text,§ 37,,,14
+2,granted_exemption_legal_references,granted_exemptions.1.text,§ 15,,,14
+3,planning_instruments,development_plan,Durchführungsplan 391 B,,,16
+3,planning_instruments,plan_name,Durchführungsplan 391 B,,,16
+3,planning_instruments,plan_type,other,,,16
+3,planning_instruments,plan_primary_type,construction_plan,,,16
+3,planning_instruments,plan_references,,Blankenese,construction_plan,16
+3,planning_instruments,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,16
+3,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,16
+3,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,16
+3,regulation_texts,zone_code,Type: Fläche für besondere Zwecke (Sportplatz),,,16
+3,regulation_texts,type,Fläche für besondere Zwecke (Sportplatz),,,16
+3,landscape_conservation_documents,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,16
+3,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 37,,,16
+3,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 15,,,16
+3,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 37,,,16
+3,granted_exemption_legal_references,granted_exemptions.1.text,§ 37,,,16
+3,granted_exemption_legal_references,granted_exemptions.1.text,§ 15,,,16
+4,planning_instruments,plan_primary_type,development_plan,,,20
+4,planning_instruments,bebauungsplan,Lokstedt 8,,,20
+4,planning_instruments,plan_references,,Lokstedt 8,development_plan,20
+4,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,20
+4,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,20
+4,regulation_texts,zone_code,Type: WA II o,,,20
+4,regulation_texts,type,WA II o,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 32 Abs. 1 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 33 Abs. 1 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 29 Abs. 4 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 32 Abs. 4 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 33 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 14,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 32 Abs. 1 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 32 Abs. 1 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 33 Abs. 1 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 29 Abs. 4 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 32 Abs. 4 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 33 HBauO,,,20
+4,granted_exemption_legal_references,granted_exemptions.1.text,§ 14,,,20
+5,planning_instruments,development_plan,Baustufenplan Bramfeld,,,9
+5,planning_instruments,plan_name,Bramfeld,,,9
+5,planning_instruments,plan_type,Baustufenplan,,,9
+5,planning_instruments,plan_primary_type,construction_plan,,,9
+5,planning_instruments,plan_references,,Bramfeld,construction_plan,9
+5,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,9
+5,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,9
+5,regulation_texts,zone_code,Type: W I o,,,9
+5,regulation_texts,type,W I o; 2/10 zul. beb. Fläche,,,9
+6,planning_instruments,plan_primary_type,development_plan,,,14
+6,planning_instruments,bebauungsplan,Niendorf 36,,,14
+6,planning_instruments,plan_references,,Niendorf 36,development_plan,14
+6,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+6,regulatory_ordinances,_notes,"BauNutzungsverordnung from January 23, 1990",,,14
+6,regulation_texts,zone_code,"Type: WR/2W I o /Einzelhaus ""E""",,,14
+6,regulation_texts,type,"WR/2W I o /Einzelhaus ""E""",,,14
+6,regulation_texts,roof_pitch,45 degrees,,,14
+6,regulation_texts,building_window,"12.0 m (rear), 13.5 m (front)",,,14
+6,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6,,,14
+6,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 14,,,14
+6,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 6,,,14
+6,granted_exemption_legal_references,granted_exemptions.1.text,§ 6,,,14
+6,granted_exemption_legal_references,granted_exemptions.1.text,§ 14,,,14
+8,planning_instruments,plan_primary_type,development_plan,,,18
+8,planning_instruments,bebauungsplan,Neugraben-Fischbek 7,,,18
+8,planning_instruments,plan_references,,Billstedt 90,development_plan,18
+8,planning_instruments,plan_references,,green space plan Billstedt 90,green_space_plan,18
+8,planning_instruments,plan_references,,Öjendorf-Billstedter Geest,landscape_protection,18
+8,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,18
+8,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,18
+8,regulation_texts,zone_code,Type: Public Green Spaces,,,18
+8,regulation_texts,type,"Public Green Spaces, Special Construction Area",,,18
+8,landscape_conservation_documents,plan_references,,green space plan Billstedt 90,green_space_plan,18
+8,landscape_conservation_documents,plan_references,,Öjendorf-Billstedter Geest,landscape_protection,18
+8,landscape_conservation_documents,_notes,"Special Area Shops (II; GRZ 0.4; GFZ 0.4); public roads, paths, squares; private green spaces; urban conservation area ""Fischbek""",,,18
+8,landscape_conservation_documents,zone_code,Type: Public Green Spaces,,,18
+8,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 173 Abs. 1,,,18
+8,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,18
+8,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 173 Abs. 1,,,18
+8,granted_exemption_legal_references,granted_exemptions.1.text,§ 173 Abs. 1,,,18
+8,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,18
+9,planning_instruments,plan_primary_type,development_plan,,,12
+9,planning_instruments,bebauungsplan,Billstedt 14,,,12
+9,planning_instruments,plan_references,,Billstedt 14,development_plan,12
+9,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+9,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,12
+9,regulation_texts,zone_code,Type: WR I,,,12
+9,regulation_texts,type,"WR I, building boundaries, non-buildable area",,,12
+9,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 35 HBauO,,,12
+9,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 3 HBauO,,,12
+9,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 35 HBauO,,,12
+9,granted_exemption_legal_references,granted_exemptions.1.text,§ 35 HBauO,,,12
+9,granted_exemption_legal_references,granted_exemptions.1.text,§ 3 HBauO,,,12
+10,planning_instruments,development_plan,Baustufenplan Bramfeld,,,12
+10,planning_instruments,plan_name,Bramfeld,,,12
+10,planning_instruments,plan_type,Baustufenplan,,,12
+10,planning_instruments,plan_primary_type,construction_plan,,,12
+10,planning_instruments,plan_references,,Bramfeld,construction_plan,12
+10,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+10,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+10,regulation_texts,zone_code,Type: W1o,,,12
+10,regulation_texts,type,W1o,,,12
+10,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,12
+10,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 2,,,12
+10,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,12
+11,planning_instruments,plan_primary_type,development_plan,,,12
+11,planning_instruments,bebauungsplan,Rahlstedt 91,,,12
+11,planning_instruments,plan_references,,Rahlstedt 91,development_plan,12
+11,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+11,regulatory_ordinances,_notes,"BauNutzungsverordnung from September 15, 1977, in the version from December 19, 1986",,,12
+11,regulation_texts,zone_code,Type: WR,,,12
+11,regulation_texts,type,WR; I; o; 2W; E; GRZ 0.2; GFZ 0.3,,,12
+11,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+11,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,12
+11,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+11,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+11,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,12
+12,planning_instruments,development_plan,Baustufenplan Sasel,,,12
+12,planning_instruments,plan_name,Sasel,,,12
+12,planning_instruments,plan_type,Baustufenplan,,,12
+12,planning_instruments,plan_primary_type,construction_plan,,,12
+12,planning_instruments,plan_references,,Sasel,construction_plan,12
+12,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+12,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+12,regulation_texts,zone_code,Type: W 1 o,,,12
+12,regulation_texts,type,W 1 o,,,12
+12,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 34,,,12
+12,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 34,,,12
+12,granted_exemption_legal_references,granted_exemptions.1.text,§ 34,,,12
+13,planning_instruments,development_plan,Volksdorf 40,,,18
+13,planning_instruments,plan_name,Volksdorf 40,,,18
+13,planning_instruments,plan_type,other,,,18
+13,planning_instruments,plan_primary_type,development_plan,,,18
+13,planning_instruments,plan_references,,Volksdorf 40,development_plan,18
+13,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,18
+13,regulatory_ordinances,_notes,"BauNutzungsverordnung from January 23, 1990",,,18
+13,regulation_texts,zone_code,Type: WR I o E 1Wo (c)=120m²,,,18
+13,regulation_texts,type,WR I o E 1Wo (c)=120m²,,,18
+13,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,18
+13,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,18
+13,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 67 BNatSchG,,,18
+13,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 44 BNatSchG,,,18
+13,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,18
+13,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,18
+13,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,18
+13,granted_exemption_legal_references,granted_exemptions.1.text,§ 67 BNatSchG,,,18
+13,granted_exemption_legal_references,granted_exemptions.1.text,§ 44 BNatSchG,,,18
+14,planning_instruments,development_plan,Baustufenplan Lemsahl-Mellingstedt,,,12
+14,planning_instruments,plan_name,Lemsahl-Mellingstedt,,,12
+14,planning_instruments,plan_type,Baustufenplan,,,12
+14,planning_instruments,plan_primary_type,other,,,12
+14,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+14,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+14,regulation_texts,zone_code,Type: W 1 o,,,12
+14,regulation_texts,type,W 1 o,,,12
+14,preliminary_decision_documents,vorbescheid_gz,"W/WBZII/00929/2012 from August 16, 2012",,,12
+14,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 11 BPVO,,,12
+14,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 11 BPVO,,,12
+14,granted_exemption_legal_references,granted_exemptions.1.text,§ 11 BPVO,,,12
+16,planning_instruments,development_plan,Bebauungsplan Rahlstedt 65,,,14
+16,planning_instruments,plan_name,Rahlstedt 65,,,14
+16,planning_instruments,plan_type,Bebauungsplan,,,14
+16,planning_instruments,plan_primary_type,development_plan,,,14
+16,planning_instruments,plan_references,,Rahlstedt 65,development_plan,14
+16,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+16,regulatory_ordinances,_notes,"BauNutzungsverordnung from November 26, 1968",,,14
+16,regulation_texts,zone_code,Type: WR II o,,,14
+16,regulation_texts,type,WR II o,,,14
+16,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+16,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,14
+16,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+16,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+16,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,14
+17,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,26
+17,planning_instruments,plan_name,Billstedt 90,,,26
+17,planning_instruments,plan_type,Bebauungsplan,,,26
+17,planning_instruments,plan_primary_type,development_plan,,,26
+17,planning_instruments,plan_references,,Billstedt 90,development_plan,26
+17,planning_instruments,plan_references,,green space plan Billstedt 90,green_space_plan,26
+17,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,26
+17,regulatory_ordinances,_notes,"BauNutzungsverordnung from January 23, 1990",,,26
+17,regulation_texts,zone_code,Type: WR I o,,,26
+17,regulation_texts,type,"WR I o, 2 Wo; E zwingend; GRZ: 0,3",,,26
+17,landscape_conservation_documents,plan_references,,green space plan Billstedt 90,green_space_plan,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6 Abs. 5 HBauO,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,26
+17,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 2,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 9,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 2,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 6 Abs. 5 HBauO,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,26
+17,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,26
+18,planning_instruments,development_plan,Bebauungsplan Niendorf 10,,,14
+18,planning_instruments,plan_name,Niendorf 10,,,14
+18,planning_instruments,plan_type,Bebauungsplan,,,14
+18,planning_instruments,plan_primary_type,development_plan,,,14
+18,planning_instruments,plan_references,,Niendorf 10,development_plan,14
+18,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+18,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,14
+18,regulation_texts,zone_code,Type: WR-I,,,14
+18,regulation_texts,type,WR-I,,,14
+18,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+18,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,14
+18,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+18,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+18,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,14
+20,planning_instruments,development_plan,Bebauungsplan Wilhelmsburg 9,,,14
+20,planning_instruments,plan_name,Wilhelmsburg 9,,,14
+20,planning_instruments,plan_type,Bebauungsplan,,,14
+20,planning_instruments,plan_primary_type,development_plan,,,14
+20,planning_instruments,plan_references,,Wilhelmsburg 9,development_plan,14
+20,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+20,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,14
+20,regulation_texts,zone_code,Type: WA Max II,,,14
+20,regulation_texts,type,"WA Max II, offen, ED, GRZ 0,4",,,14
+20,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,14
+20,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2,,,14
+20,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 2,,,14
+20,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,14
+20,granted_exemption_legal_references,granted_exemptions.1.text,§ 2,,,14
+21,planning_instruments,development_plan,Bebauungsplan Rahlstedt 45,,,14
+21,planning_instruments,plan_name,Rahlstedt 45,,,14
+21,planning_instruments,plan_type,Bebauungsplan,,,14
+21,planning_instruments,plan_primary_type,development_plan,,,14
+21,planning_instruments,plan_references,,Rahlstedt 45,development_plan,14
+21,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+21,regulatory_ordinances,_notes,"BauNutzungsverordnung from June 26, 1962",,,14
+21,regulation_texts,zone_code,Type: WR II o,,,14
+21,regulation_texts,type,WR II o; Baufeld mit 25 m Tiefe,,,14
+21,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+21,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,14
+21,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+21,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+21,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,14
+24,planning_instruments,development_plan,Bebauungsplan Othmarschen 4 (festgestellt am 01.07.1963),,,12
+24,planning_instruments,plan_name,Othmarschen 4 (festgestellt am 01.07.1963),,,12
+24,planning_instruments,plan_type,Bebauungsplan,,,12
+24,planning_instruments,plan_primary_type,development_plan,,,12
+24,planning_instruments,plan_references,,"Othmarschen 4 (established on July 1, 1963)",development_plan,12
+24,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+24,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+24,regulation_texts,zone_code,Type: W 1 o,,,12
+24,regulation_texts,type,W 1 o,,,12
+24,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+24,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+24,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+25,planning_instruments,development_plan,Verordnung zum Schutz von Landschaftsteilen,,,13
+25,planning_instruments,plan_name,Verordnung zum Schutz von Landschaftsteilen,,,13
+25,planning_instruments,plan_type,other,,,13
+25,planning_instruments,plan_primary_type,landscape_protection,,,13
+25,planning_instruments,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,13
+25,regulatory_ordinances,development_plan,Verordnung zum Schutz von Landschaftsteilen,,,13
+25,regulatory_ordinances,plan_name,Verordnung zum Schutz von Landschaftsteilen,,,13
+25,regulation_texts,regulations,"WR I; GRZ 0,2; Baufenster e=12m;",,,13
+25,regulation_texts,zone_code,WR I,,,13
+25,landscape_conservation_documents,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,13
+25,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23,,,13
+25,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 23,,,13
+25,granted_exemption_legal_references,granted_exemptions.1.text,§ 23,,,13
+26,planning_instruments,development_plan,Baustufenplan Farmsen,,,14
+26,planning_instruments,plan_name,Farmsen,,,14
+26,planning_instruments,plan_type,Baustufenplan,,,14
+26,planning_instruments,plan_primary_type,construction_plan,,,14
+26,planning_instruments,plan_references,,Farmsen,construction_plan,14
+26,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,14
+26,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,14
+26,regulation_texts,regulations,W 1 o,,,14
+26,regulation_texts,zone_code,W 1 o,,,14
+26,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+26,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5 BNatSchG,,,14
+26,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+26,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+26,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5 BNatSchG,,,14
+30,planning_instruments,development_plan,Bebauungsplan Wellingsbüttel 16,,,14
+30,planning_instruments,plan_name,Wellingsbüttel 16,,,14
+30,planning_instruments,plan_type,Bebauungsplan,,,14
+30,planning_instruments,plan_primary_type,development_plan,,,14
+30,planning_instruments,plan_references,,Wellingsbüttel 16,development_plan,14
+30,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+30,regulatory_ordinances,_notes,"BauNutzungsverordnung from January 23, 1990",,,14
+30,regulation_texts,regulations,"WR o, Eingeschossig, 40° Dachneigung, 1m Drempelhöhe; vorne: (B) 150m² Grundfläche, 3 WE; hinten: (A) 120m² Grundfläche, 1 WE",,,14
+30,regulation_texts,zone_code,WR o,,,14
+30,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 1,,,14
+30,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2 Absatz 15,,,14
+30,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 1,,,14
+30,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 1,,,14
+30,granted_exemption_legal_references,granted_exemptions.1.text,§ 2 Absatz 15,,,14
+32,planning_instruments,development_plan,Baustufenplan Poppenbüttel,,,12
+32,planning_instruments,plan_name,Poppenbüttel,,,12
+32,planning_instruments,plan_type,Baustufenplan,,,12
+32,planning_instruments,plan_primary_type,construction_plan,,,12
+32,planning_instruments,plan_references,,Poppenbüttel,construction_plan,12
+32,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+32,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+32,regulation_texts,regulations,W1o,,,12
+32,regulation_texts,zone_code,W1o,,,12
+32,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,12
+32,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 2,,,12
+32,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,12
+38,planning_instruments,development_plan,Bebauungsplan Niendorf 13,,,12
+38,planning_instruments,plan_name,Niendorf 13,,,12
+38,planning_instruments,plan_type,Bebauungsplan,,,12
+38,planning_instruments,plan_primary_type,development_plan,,,12
+38,planning_instruments,plan_references,,Niendorf 13,development_plan,12
+38,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+38,regulatory_ordinances,_notes,"Baunutzungsverordnung from June 26, 1962",,,12
+38,regulation_texts,regulations,"WR I, Baugrenzen (15,0 m), private Grünfläche",,,12
+38,regulation_texts,zone_code,WR I,,,12
+38,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+38,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+38,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+39,planning_instruments,development_plan,Baustufenplan Tonndorf-Jenfeld,,,12
+39,planning_instruments,plan_name,Tonndorf-Jenfeld,,,12
+39,planning_instruments,plan_type,Baustufenplan,,,12
+39,planning_instruments,plan_primary_type,construction_plan,,,12
+39,planning_instruments,plan_references,,Tonndorf-Jenfeld,construction_plan,12
+39,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+39,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+39,regulation_texts,regulations,W 1 o,,,12
+39,regulation_texts,zone_code,W 1 o,,,12
+39,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+39,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+39,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+40,planning_instruments,development_plan,Bebauungsplan Schnelsen 22,,,12
+40,planning_instruments,plan_name,Schnelsen 22,,,12
+40,planning_instruments,plan_type,Bebauungsplan,,,12
+40,planning_instruments,plan_primary_type,development_plan,,,12
+40,planning_instruments,plan_references,,Schnelsen 22,development_plan,12
+40,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+40,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977",,,12
+40,regulation_texts,regulations,"WR; zwingend eingeschossig; offene Bauweise; max. 2 Wohneinheiten; GRZ 0,4; GFZ 0,5; Baufeld",,,12
+40,regulation_texts,zone_code,WR,,,12
+40,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+40,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+40,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+41,planning_instruments,development_plan,Bebauungsplan Volksdorf 42,,,16
+41,planning_instruments,plan_name,Volksdorf 42,,,16
+41,planning_instruments,plan_type,Bebauungsplan,,,16
+41,planning_instruments,plan_primary_type,development_plan,,,16
+41,planning_instruments,plan_references,,Volksdorf 42,development_plan,16
+41,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,16
+41,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,16
+41,regulation_texts,regulations,"WR 1 o 2 Wo E (B) =150 m², Baugrenzen",,,16
+41,regulation_texts,zone_code,WR 1 o,,,16
+41,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,16
+41,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,16
+41,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 Abs. 2 HBauO,,,16
+41,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,16
+41,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,16
+41,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,16
+41,granted_exemption_legal_references,granted_exemptions.1.text,§ 9 Abs. 2 HBauO,,,16
+44,planning_instruments,development_plan,Baustufenplan Tonndorf-Jenfeld,,,13
+44,planning_instruments,plan_name,Tonndorf-Jenfeld,,,13
+44,planning_instruments,plan_type,Baustufenplan,,,13
+44,planning_instruments,plan_primary_type,construction_plan,,,13
+44,planning_instruments,plan_references,,Tonndorf-Jenfeld,construction_plan,13
+44,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,13
+44,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,13
+44,regulatory_ordinances,_notes,Verordnung über die Bestimmung der Freien und Hansestadt Hamburg als Gebiet mit einem angespannten Wohnungsmarkt nach § 201a des Baugesetzbuchs,,,13
+44,regulation_texts,regulations,S 1 o (obsolet),,,13
+44,regulation_texts,zone_code,S 1 o,,,13
+44,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,13
+44,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,13
+44,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,13
+45,planning_instruments,development_plan,Baustufenplan Hummelsbüttel,,,14
+45,planning_instruments,plan_name,Hummelsbüttel,,,14
+45,planning_instruments,plan_type,Baustufenplan,,,14
+45,planning_instruments,plan_primary_type,construction_plan,,,14
+45,planning_instruments,plan_references,,Hummelsbüttel,construction_plan,14
+45,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,14
+45,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,14
+45,regulation_texts,regulations,W 1 o,,,14
+45,regulation_texts,zone_code,W 1 o,,,14
+45,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+45,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,14
+45,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+45,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+45,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 2,,,14
+46,planning_instruments,development_plan,Baustufenplan Langenhorn,,,14
+46,planning_instruments,plan_name,Langenhorn,,,14
+46,planning_instruments,plan_type,Baustufenplan,,,14
+46,planning_instruments,plan_primary_type,construction_plan,,,14
+46,planning_instruments,plan_references,,Langenhorn,construction_plan,14
+46,planning_instruments,plan_references,,341,partial_development_plan,14
+46,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,14
+46,regulatory_ordinances,verordnung,Verordnung über die Bestimmung der Freien und Hansestadt Hamburg als Gebiet mit einem angespannten Wohnungsmarkt nach § 201a des Baugesetzbuchs,,,14
+46,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,14
+46,regulation_texts,regulations,"Straßenlinie; 15,0 m von jeglicher Bebauung freizuhaltende Fläche; Baulinie",,,14
+46,regulation_texts,zone_code,W 2 o,,,14
+46,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Absatz 3,,,14
+46,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Absatz 3,,,14
+46,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Absatz 3,,,14
+48,planning_instruments,development_plan,Baustufenplan Lemsahl-Mellingstedt,,,14
+48,planning_instruments,plan_name,Lemsahl-Mellingstedt,,,14
+48,planning_instruments,plan_type,Baustufenplan,,,14
+48,planning_instruments,plan_primary_type,construction_phase_plan,,,14
+48,planning_instruments,plan_references,,Lemsahl-Mellingstedt,construction_phase_plan,14
+48,planning_instruments,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,14
+48,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,14
+48,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,14
+48,regulation_texts,regulations,W2o,,,14
+48,regulation_texts,zone_code,W2o,,,14
+48,landscape_conservation_documents,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,14
+48,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6,,,14
+48,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 6,,,14
+48,granted_exemption_legal_references,granted_exemptions.1.text,§ 6,,,14
+49,planning_instruments,development_plan,Baustufenplan Hummelsbüttel,,,12
+49,planning_instruments,plan_name,Hummelsbüttel,,,12
+49,planning_instruments,plan_type,Baustufenplan,,,12
+49,planning_instruments,plan_primary_type,construction_plan,,,12
+49,planning_instruments,plan_references,,Hummelsbüttel,construction_plan,12
+49,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+49,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938, in the applicable version",,,12
+49,regulation_texts,regulations,"Außengebiet, LSG",,,12
+49,regulation_texts,zone_code,Außengebiet,,,12
+49,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+49,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+49,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+50,planning_instruments,development_plan,Bebauungsplan Lurup 6 (festgestellt am 28.02.1989),,,12
+50,planning_instruments,plan_name,Lurup 6 (festgestellt am 28.02.1989),,,12
+50,planning_instruments,plan_type,Bebauungsplan,,,12
+50,planning_instruments,plan_primary_type,development_plan,,,12
+50,planning_instruments,plan_references,,"Lurup 6 (established on February 28, 1989)",development_plan,12
+50,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+50,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977, in the version from December 19, 1986",,,12
+50,regulation_texts,regulations,"Vorn: WR I o, E+D, 2 W, GRZ 0,3, GFZ 0,5 // hinten WR I o, E+D, 2 W, GR 150 m², GFZ 0,3, (B) = Dachneigung 45°-60°, Pfannendeckung",,,12
+50,regulation_texts,zone_code,Vorn: WR I o,,,12
+50,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+50,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+50,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+51,planning_instruments,development_plan,Bebauungsplan Schnelsen 37,,,12
+51,planning_instruments,plan_name,Schnelsen 37,,,12
+51,planning_instruments,plan_type,Bebauungsplan,,,12
+51,planning_instruments,plan_primary_type,development_plan,,,12
+51,planning_instruments,plan_references,,Schnelsen 37,development_plan,12
+51,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+51,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977",,,12
+51,regulation_texts,regulations,WR 1o; single house only; 2 residential units; GRZ 0.3; GFZ 0.4,,,12
+51,regulation_texts,zone_code,WR 1o,,,12
+51,granted_exemption_legal_references,granted_exemptions.legal_refs,§4,,,12
+51,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§4,,,12
+51,granted_exemption_legal_references,granted_exemptions.1.text,§4,,,12
+52,planning_instruments,development_plan,Bebauungsplan Wellingsbüttel 16,,,9
+52,planning_instruments,plan_name,Wellingsbüttel 16,,,9
+52,planning_instruments,plan_type,Bebauungsplan,,,9
+52,planning_instruments,plan_primary_type,development_plan,,,9
+52,planning_instruments,plan_references,,Wellingsbüttel 16,development_plan,9
+52,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+52,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,9
+52,regulation_texts,regulations,"WR I o; 2 residential units; (B) 150 sqm / 225 sqm; single houses; roof pitch at least 40 degrees, knee wall max. 1m",,,9
+52,regulation_texts,zone_code,WR I o,,,9
+53,planning_instruments,development_plan,Bebauungsplan Lemsahl-Mellingstedt 20,,,9
+53,planning_instruments,plan_name,Lemsahl-Mellingstedt 20,,,9
+53,planning_instruments,plan_type,Bebauungsplan,,,9
+53,planning_instruments,plan_primary_type,development_plan,,,9
+53,planning_instruments,plan_references,,Lemsahl-Mellingstedt 20,development_plan,9
+53,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+53,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,9
+53,regulation_texts,regulations,WR II o; only single houses; GRZ 0.3; building limits (10.00 m x 14.00 m); (c) eaves height max 6.50 m; roof pitch 20° to max 40°,,,9
+53,regulation_texts,zone_code,WR II o,,,9
+54,planning_instruments,development_plan,Bebauungsplan Bergstedt 13,,,13
+54,planning_instruments,plan_name,Bergstedt 13,,,13
+54,planning_instruments,plan_type,Bebauungsplan,,,13
+54,planning_instruments,plan_primary_type,development_plan,,,13
+54,planning_instruments,plan_references,,Bergstedt 13,development_plan,13
+54,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,13
+54,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977",,,13
+54,regulation_texts,regulations,WR I o; 2 residential units; ED; GRZ 0.3; GFZ 0.4,,,13
+54,regulation_texts,zone_code,WR I o,,,13
+54,preliminary_decision_documents,preliminary_decision_gz,"W/WBZ/00928/2013 from November 12, 2013",,,13
+54,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,13
+54,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,13
+54,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,13
+55,planning_instruments,development_plan,Bebauungsplan Hummelsbüttel 23,,,12
+55,planning_instruments,plan_name,Hummelsbüttel 23,,,12
+55,planning_instruments,plan_type,Bebauungsplan,,,12
+55,planning_instruments,plan_primary_type,development_plan,,,12
+55,planning_instruments,plan_references,,Hummelsbüttel 23,development_plan,12
+55,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+55,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,12
+55,regulation_texts,regulations,"WR II o, E, 2W, building window",,,12
+55,regulation_texts,zone_code,WR II o,,,12
+55,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+55,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+55,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+56,planning_instruments,development_plan,Bebauungsplan Wohldorf-Ohlstedt 17,,,13
+56,planning_instruments,plan_name,Wohldorf-Ohlstedt 17,,,13
+56,planning_instruments,plan_type,Bebauungsplan,,,13
+56,planning_instruments,plan_primary_type,development_plan,,,13
+56,planning_instruments,plan_references,,Wohldorf-Ohlstedt 17,development_plan,13
+56,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,13
+56,regulatory_ordinances,_notes,Baunutzungsverordnung,,,13
+56,regulation_texts,regulations,"WA IIo 6 residential units per 2500 sqm property, only single houses, GRZ 0.3",,,13
+56,regulation_texts,zone_code,WA IIo,,,13
+56,preliminary_decision_documents,preliminary_decision_gz,"08291/2019 from December 10, 2019",,,13
+56,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,13
+56,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,13
+56,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,13
+57,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,36
+57,planning_instruments,plan_name,Billstedt 90,,,36
+57,planning_instruments,plan_type,Bebauungsplan,,,36
+57,planning_instruments,plan_primary_type,development_plan,,,36
+57,planning_instruments,plan_references,,Billstedt 90,development_plan,36
+57,planning_instruments,plan_references,,green space plan Billstedt 90,green_space_plan,36
+57,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,36
+57,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,36
+57,regulatory_ordinances,_notes,Green ordinance plan Billstedt 90,,,36
+57,regulation_texts,regulations,WR I o; 2 residential units; GRZ 0.3; only single houses allowed,,,36
+57,regulation_texts,zone_code,WR I o,,,36
+57,landscape_conservation_documents,plan_references,,green space plan Billstedt 90,green_space_plan,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 1,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6 paragraph 5 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 paragraph 2 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.1.text,§ 23,,,36
+57,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 23,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 31 paragraph 1,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.text,§ 31 paragraph 1,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.text,§ 9,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.text,§ 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.2.1.text,§ 9,,,36
+57,granted_exemption_legal_references,granted_exemptions.2.2.1.text,§ 2,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 69 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.text,§ 69 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.text,§ 6 paragraph 5 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.text,§ 9 paragraph 2 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.3.1.text,§ 6 paragraph 5 HBauO,,,36
+57,granted_exemption_legal_references,granted_exemptions.3.3.2.text,§ 9 paragraph 2 HBauO,,,36
+58,planning_instruments,development_plan,"Bebauungsplan Lurup 13 (established on September 1, 1964)",,,12
+58,planning_instruments,plan_name,"Lurup 13 (established on September 1, 1964)",,,12
+58,planning_instruments,plan_type,Bebauungsplan,,,12
+58,planning_instruments,plan_primary_type,development_plan,,,12
+58,planning_instruments,plan_references,,"Lurup 13 (established on September 1st, 1964)",development_plan,12
+58,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+58,regulatory_ordinances,_notes,"Baunutzungsverordnung from June 26, 1962",,,12
+58,regulation_texts,regulations,"WR I o, building boundaries, depth 15 m, GRZ and GFZ 0.4",,,12
+58,regulation_texts,zone_code,WR I o,,,12
+58,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,12
+58,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,12
+58,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,12
+59,planning_instruments,development_plan,Bebauungsplan Wilhelmsburg 71,,,15
+59,planning_instruments,plan_name,Wilhelmsburg 71,,,15
+59,planning_instruments,plan_type,Bebauungsplan,,,15
+59,planning_instruments,plan_primary_type,development_plan,,,15
+59,planning_instruments,plan_references,,Wilhelmsburg 71,development_plan,15
+59,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,15
+59,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,15
+59,regulation_texts,regulations,"WR I o, GRZ 0.3, ED",,,15
+59,regulation_texts,zone_code,WR I o,,,15
+59,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,15
+59,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 3,,,15
+59,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,15
+59,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,15
+59,granted_exemption_legal_references,granted_exemptions.1.text,§ 3,,,15
+59,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 3,,,15
+60,planning_instruments,development_plan,Baustufenplan Sasel,,,13
+60,planning_instruments,plan_name,Sasel,,,13
+60,planning_instruments,plan_type,Baustufenplan,,,13
+60,planning_instruments,plan_primary_type,construction_plan,,,13
+60,planning_instruments,plan_references,,Sasel,construction_plan,13
+60,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,13
+60,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938",,,13
+60,regulation_texts,regulations,W I o,,,13
+60,regulation_texts,zone_code,W I o,,,13
+60,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,13
+60,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,13
+60,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,13
+60,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 4,,,13
+61,planning_instruments,development_plan,Baustufenplan Eidelstedt,,,8
+61,planning_instruments,plan_name,Eidelstedt,,,8
+61,planning_instruments,plan_type,Baustufenplan,,,8
+61,planning_instruments,plan_primary_type,other,,,8
+61,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,8
+61,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938",,,8
+61,regulation_texts,regulations,S 1 o > Obsolete assessment according to § 34 BauGB,,,8
+61,regulation_texts,zone_code,S 1 o,,,8
+62,planning_instruments,development_plan,Bebauungsplan Billstedt 14,,,21
+62,planning_instruments,plan_name,Billstedt 14,,,21
+62,planning_instruments,plan_type,Bebauungsplan,,,21
+62,planning_instruments,plan_primary_type,development_plan,,,21
+62,planning_instruments,plan_references,,Billstedt 14,development_plan,21
+62,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,21
+62,regulatory_ordinances,_notes,"Baunutzungsverordnung from June 26, 1962",,,21
+62,regulation_texts,regulations,"WR I, building boundaries, non-buildable area",,,21
+62,regulation_texts,zone_code,WR I,,,21
+62,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 35 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 35 paragraph 4 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 paragraph 1 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 3 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.text,§ 35 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.text,§ 35 paragraph 4 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 paragraph 1 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.text,§ 3 HBauO,,,21
+62,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 35 HBauO,,,21
+63,planning_instruments,development_plan,Bebauungsplan Schnelsen 33,,,15
+63,planning_instruments,plan_name,Schnelsen 33,,,15
+63,planning_instruments,plan_type,Bebauungsplan,,,15
+63,planning_instruments,plan_primary_type,development_plan,,,15
+63,planning_instruments,plan_references,,Schnelsen 33,development_plan,15
+63,planning_instruments,plan_references,,"Schnelsen, Niendorf, Lokstedt, Eidelstedt and Stellingen",landscape_protection,15
+63,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,15
+63,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,15
+63,regulation_texts,regulations,"WR I o, 2 residential units, only single houses, GRZ 0.2, GFZ 0.3",,,15
+63,regulation_texts,zone_code,WR I o,,,15
+63,landscape_conservation_documents,plan_references,,"Schnelsen, Niendorf, Lokstedt, Eidelstedt and Stellingen",landscape_protection,15
+63,landscape_conservation_documents,_notes,"Protection of landscape areas in Schnelsen, Niendorf, Lokstedt, Eidelstedt, and Stellingen",,,15
+63,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,15
+63,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,15
+63,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,15
+64,planning_instruments,development_plan,Baustufenplan Rahlstedt with the determinations: W 2 o (not particularly protected) - E / D - buildable area 3/10 - back: 10.0 m outer area,,,16
+64,planning_instruments,plan_name,Rahlstedt with the determinations: W 2 o (not particularly protected) - E / D - buildable area 3/10 - back: 10.0 m outer area,,,16
+64,planning_instruments,plan_type,Baustufenplan,,,16
+64,planning_instruments,plan_primary_type,construction_plan,,,16
+64,planning_instruments,plan_references,,Rahlstedt,construction_plan,16
+64,planning_instruments,plan_references,,Rahlstedt 65,development_plan,16
+64,planning_instruments,plan_references,,92,partial_development_plan,16
+64,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,16
+64,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938 in the current version",,,16
+64,preliminary_decision_documents,preliminary_decision_gz,"W / WBZ I / 01711 / 2012 / 01 from May 24, 2013",,,16
+64,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,16
+64,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 10 paragraph 1 HBauO,,,16
+64,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,16
+64,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,16
+64,granted_exemption_legal_references,granted_exemptions.1.text,§ 10 paragraph 1 HBauO,,,16
+64,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 10 paragraph 1 HBauO,,,16
+65,planning_instruments,development_plan,Bebauungsplan Marienthal 26,,,9
+65,planning_instruments,plan_name,Marienthal 26,,,9
+65,planning_instruments,plan_type,Bebauungsplan,,,9
+65,planning_instruments,plan_primary_type,development_plan,,,9
+65,planning_instruments,plan_references,,Marienthal 26,development_plan,9
+65,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+65,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,9
+65,regulation_texts,regulations,"WR I o, 2 residential units, (D) 120 sqm max. built-up area, E",,,9
+65,regulation_texts,zone_code,WR I o,,,9
+66,planning_instruments,development_plan,Bebauungsplan Lemsahl-Mellingstedt 20,,,25
+66,planning_instruments,plan_name,Lemsahl-Mellingstedt 20,,,25
+66,planning_instruments,plan_type,Bebauungsplan,,,25
+66,planning_instruments,plan_primary_type,development_plan,,,25
+66,planning_instruments,plan_references,,Lemsahl-Mellingstedt 20,development_plan,25
+66,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,25
+66,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,25
+66,regulation_texts,regulations,"WR II o (C), GRZ 0.4, Building limits 12.0 x 15.0 m, (d), § 2 Determinations",,,25
+66,regulation_texts,zone_code,WR II o,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 18 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 19 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 25,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 61 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 60 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 26 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 18 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.1.text,§ 18 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 19 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.2.text,§ 19 paragraph 1,,,25
+66,granted_exemption_legal_references,granted_exemptions.2.text,§ 25,,,25
+66,granted_exemption_legal_references,granted_exemptions.4.legal_ref,§ 61 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.4.text,§ 61 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.4.text,§ 60 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.5.legal_ref,§ 26 HWG,,,25
+66,granted_exemption_legal_references,granted_exemptions.5.text,§ 26 HWG,,,25
+67,planning_instruments,development_plan,Bebauungsplan Wohldorf-Ohlstedt 17,,,10
+67,planning_instruments,plan_name,Wohldorf-Ohlstedt 17,,,10
+67,planning_instruments,plan_type,Bebauungsplan,,,10
+67,planning_instruments,plan_primary_type,development_plan,,,10
+67,planning_instruments,plan_references,,Wohldorf-Ohlstedt 17,development_plan,10
+67,regulation_texts,regulations,"WR IIo, GRZ 0.2, 2 residential units, only single houses, text determinations",,,10
+67,regulation_texts,zone_code,WR IIo,,,10
+67,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,10
+67,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,10
+67,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,10
+68,planning_instruments,development_plan,Baustufenplan Lemsahl-Mellingstedt,,,15
+68,planning_instruments,plan_name,Lemsahl-Mellingstedt,,,15
+68,planning_instruments,plan_type,Baustufenplan,,,15
+68,planning_instruments,plan_primary_type,construction_phase_plan,,,15
+68,planning_instruments,plan_references,,Lemsahl-Mellingstedt,construction_phase_plan,15
+68,planning_instruments,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,15
+68,regulation_texts,regulations,"W 1 o, buildable area 2/10 (in the construction area), Building Code from June 8, 1938",,,15
+68,regulation_texts,zone_code,W 1 o,,,15
+68,landscape_conservation_documents,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,15
+68,landscape_conservation_documents,_notes,"Protection of landscape parts in Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf, and Rahlstedt",,,15
+68,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,15
+68,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,15
+68,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,15
+68,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,15
+68,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,15
+69,planning_instruments,development_plan,Bebauungsplan Rahlstedt 89,,,12
+69,planning_instruments,plan_name,Rahlstedt 89,,,12
+69,planning_instruments,plan_type,Bebauungsplan,,,12
+69,planning_instruments,plan_primary_type,development_plan,,,12
+69,planning_instruments,plan_references,,Rahlstedt 89,development_plan,12
+69,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+69,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977",,,12
+69,regulation_texts,regulations,"WR I o, 2 WE; GRZ 0.2; GFZ 0.3; Straßenparallelität; keine Staffelgeschosse; keine Flachdächer; Drempelhöhe max. 50 cm; max. Firsthöhe bei 1-gesch. WH = 8 m und bei 2-gesch. WH = 11 m",,,12
+69,regulation_texts,zone_code,WR I o,,,12
+69,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6,,,12
+69,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 6,,,12
+69,granted_exemption_legal_references,granted_exemptions.1.text,§ 6,,,12
+70,planning_instruments,development_plan,Bebauungsplan Billstedt 76,,,9
+70,planning_instruments,plan_name,Billstedt 76,,,9
+70,planning_instruments,plan_type,Bebauungsplan,,,9
+70,planning_instruments,plan_primary_type,development_plan,,,9
+70,planning_instruments,plan_references,,Billstedt 76,development_plan,9
+70,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+70,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,9
+70,regulation_texts,regulations,"WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",,,9
+70,regulation_texts,zone_code,WR II o,,,9
+71,planning_instruments,development_plan,"Bebauungsplan Rissen 8 (established on February 17, 1970)",,,14
+71,planning_instruments,plan_name,"Rissen 8 (established on February 17, 1970)",,,14
+71,planning_instruments,plan_type,Bebauungsplan,,,14
+71,planning_instruments,plan_primary_type,development_plan,,,14
+71,planning_instruments,plan_references,,"Rissen 8 (approved on February 17, 1970)",development_plan,14
+71,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,14
+71,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,14
+71,regulation_texts,regulations,"WR, number of full stories mandatory 1, o; building boundaries",,,14
+71,regulation_texts,zone_code,WR,,,14
+71,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,14
+71,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39,,,14
+71,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,14
+71,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,14
+71,granted_exemption_legal_references,granted_exemptions.1.text,§ 39,,,14
+72,planning_instruments,development_plan,Bebauungsplan Wellingsbüttel 16,,,22
+72,planning_instruments,plan_name,Wellingsbüttel 16,,,22
+72,planning_instruments,plan_type,Bebauungsplan,,,22
+72,planning_instruments,plan_primary_type,construction_plan,,,22
+72,planning_instruments,plan_references,,Sasel,construction_plan,22
+72,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,22
+72,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,22
+72,regulation_texts,regulations,Front: MI III g; GRZ: 0.3; (10): Noise protection.,,,22
+72,regulation_texts,zone_code,Front: MI III g,,,22
+72,regulation_texts,back,"WR I o; 1 residential unit; (A) 120 sqm/180 sqm; single houses; roof pitch >= 40 degrees, maximum knee wall height 1m",,,22
+72,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 1,,,22
+72,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2,,,22
+72,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,22
+72,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 52 paragraph 4 HBauO,,,22
+72,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 1,,,22
+72,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 1,,,22
+72,granted_exemption_legal_references,granted_exemptions.1.text,§ 2,,,22
+72,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 2,,,22
+72,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 69 HBauO,,,22
+72,granted_exemption_legal_references,granted_exemptions.2.text,§ 69 HBauO,,,22
+72,granted_exemption_legal_references,granted_exemptions.2.text,§ 52 paragraph 4 HBauO,,,22
+72,granted_exemption_legal_references,granted_exemptions.2.2.1.text,§ 52 paragraph 4 HBauO,,,22
+73,planning_instruments,development_plan,"Bebauungsplan Othmarschen 2 (established on April 8, 1963)",,,18
+73,planning_instruments,plan_name,"Othmarschen 2 (established on April 8, 1963)",,,18
+73,planning_instruments,plan_type,Bebauungsplan,,,18
+73,planning_instruments,plan_primary_type,development_plan,,,18
+73,planning_instruments,plan_references,,"Othmarschen 2 (approved on April 8, 1963)",development_plan,18
+73,planning_instruments,plan_references,,202,implementation_plan,18
+73,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,18
+73,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938",,,18
+73,regulation_texts,regulations,W 2 o,,,18
+73,regulation_texts,zone_code,W 2 o,,,18
+73,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,18
+73,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 18 Absatz 1 HWG,,,18
+73,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,18
+73,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,18
+73,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 4,,,18
+73,granted_exemption_legal_references,granted_exemptions.2.text,§ 4,,,18
+73,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 18 Absatz 1 HWG,,,18
+73,granted_exemption_legal_references,granted_exemptions.3.text,§ 18 Absatz 1 HWG,,,18
+74,planning_instruments,development_plan,Bebauungsplan Hummelsbüttel 23,,,12
+74,planning_instruments,plan_name,Hummelsbüttel 23,,,12
+74,planning_instruments,plan_type,Bebauungsplan,,,12
+74,planning_instruments,plan_primary_type,development_plan,,,12
+74,planning_instruments,plan_references,,Hummelsbüttel 23,development_plan,12
+74,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+74,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,12
+74,regulation_texts,regulations,"WR II o, E, 2W, building boundaries",,,12
+74,regulation_texts,zone_code,WR II o,,,12
+74,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+74,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+74,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+75,planning_instruments,development_plan,Bebauungsplan Lemsahl-Mellingstedt 20,,,15
+75,planning_instruments,plan_name,Lemsahl-Mellingstedt 20,,,15
+75,planning_instruments,plan_type,Bebauungsplan,,,15
+75,planning_instruments,plan_primary_type,development_plan,,,15
+75,planning_instruments,plan_references,,Lemsahl-Mellingstedt 20,development_plan,15
+75,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,15
+75,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,15
+75,regulation_texts,regulations,WR I o; only single houses; GRZ 0.3; building boundaries (14.00 m x 11.00 m); (C) eaves height max 6.50 m; roof pitch 20° to max 40°; § 2 regulations,,,15
+75,regulation_texts,zone_code,WR I o,,,15
+75,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,15
+75,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 Abs. 2 HBauO,,,15
+75,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,15
+75,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,15
+75,granted_exemption_legal_references,granted_exemptions.1.text,§ 9 Abs. 2 HBauO,,,15
+75,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 9 Abs. 2 HBauO,,,15
+76,planning_instruments,development_plan,Baustufenplan Bramfeld,,,13
+76,planning_instruments,plan_name,Bramfeld,,,13
+76,planning_instruments,plan_type,Baustufenplan,,,13
+76,planning_instruments,plan_primary_type,construction_plan,,,13
+76,planning_instruments,plan_references,,Bramfeld,construction_plan,13
+76,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,13
+76,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938",,,13
+76,regulation_texts,regulations,W 2 o,,,13
+76,regulation_texts,zone_code,W 2 o,,,13
+76,preliminary_decision_documents,preliminary_decision,"Gz.: W/WBZ/00022/2014 from May 14, 2014",,,13
+76,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 paragraph 2,,,13
+76,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 paragraph 2,,,13
+76,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 paragraph 2,,,13
+77,planning_instruments,development_plan,Bebauungsplan Wohldorf-Ohlstedt 17,,,11
+77,planning_instruments,plan_name,Wohldorf-Ohlstedt 17,,,11
+77,planning_instruments,plan_type,Bebauungsplan,,,11
+77,planning_instruments,plan_primary_type,development_plan,,,11
+77,planning_instruments,plan_references,,Wohldorf-Ohlstedt 17,development_plan,11
+77,regulation_texts,regulations,"WA IIo, 6 residential units per 2500 sqm plot, single houses only, GRZ 0.3",,,11
+77,regulation_texts,zone_code,WA IIo,,,11
+77,preliminary_decision_documents,preliminary_decision,"Gz.: 08291/2019 from December 10, 2019",,,11
+77,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,11
+77,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,11
+77,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,11
+78,planning_instruments,development_plan,Baustufenplan Blankenese,,,27
+78,planning_instruments,plan_name,Blankenese,,,27
+78,planning_instruments,plan_type,Baustufenplan,,,27
+78,planning_instruments,plan_primary_type,construction_plan,,,27
+78,planning_instruments,plan_references,,Blankenese,construction_plan,27
+78,planning_instruments,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,27
+78,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,27
+78,regulatory_ordinances,regulations,"Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version",,,27
+78,regulation_texts,regulations,"Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version",,,27
+78,regulation_texts,zone_code,Außengebiet (assessment according to §34 BauGB) under landscape protection,,,27
+78,landscape_conservation_documents,plan_references,,"Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",landscape_protection,27
+78,landscape_conservation_documents,regulations,"Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version",,,27
+78,landscape_conservation_documents,zone_code,Außengebiet (assessment according to §34 BauGB) under landscape protection,,,27
+78,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 18 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 19 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 22 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 3 Abs. 1,,,27
+78,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 18 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.1.text,§ 18 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 19 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.2.text,§ 19 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 19 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.3.text,§ 19 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.4.legal_ref,§ 22 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.4.text,§ 22 Absatz 1 HWG,,,27
+78,granted_exemption_legal_references,granted_exemptions.5.legal_ref,§ 3 Abs. 1,,,27
+78,granted_exemption_legal_references,granted_exemptions.5.text,§ 3 Abs. 1,,,27
+79,planning_instruments,development_plan,Baustufenplan Winterhude,,,20
+79,planning_instruments,plan_name,Winterhude,,,20
+79,planning_instruments,plan_type,Baustufenplan,,,20
+79,planning_instruments,plan_primary_type,construction_phase_plan,,,20
+79,planning_instruments,plan_references,,Winterhude,construction_phase_plan,20
+79,planning_instruments,plan_references,,"ordinance on the preservation of buildings in Winterhude, Braamkamp - Baumkamp - Himmelstraße",maintenance_ordinance,20
+79,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,20
+79,regulatory_ordinances,regulations,"W 4g, Baupolizeiverordnung from June 8, 1938 in the current version",,,20
+79,regulation_texts,regulations,"W 4g, Baupolizeiverordnung from June 8, 1938 in the current version",,,20
+79,regulation_texts,zone_code,W,,,20
+79,landscape_conservation_documents,conservation_ordinance,"Verordnung über die Erhaltung baulicher Anlagen in Winterhude, Braamkamp - Baumkamp - Himmelstraße",,,20
+79,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6 Abs. 3 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 10 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.text,§ 6 Abs. 3 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.text,§ 10 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 6 Abs. 3 HBauO,,,20
+79,granted_exemption_legal_references,granted_exemptions.1.1.2.text,§ 10 HBauO,,,20
+80,planning_instruments,development_plan,"Bebauungsplan Othmarschen 10 (established on February 6, 1990)",,,21
+80,planning_instruments,plan_name,"Othmarschen 10 (established on February 6, 1990)",,,21
+80,planning_instruments,plan_type,Bebauungsplan,,,21
+80,planning_instruments,plan_primary_type,development_plan,,,21
+80,planning_instruments,plan_references,,"Othmarschen 10 (established on February 6, 1990)",development_plan,21
+80,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,21
+80,regulatory_ordinances,_notes,"Baunutzungsverordnung from September 15, 1977",,,21
+80,regulation_texts,regulations,WR II+S,,,21
+80,regulation_texts,zone_code,WR II,,,21
+80,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,21
+80,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 39 Abs. 5,,,21
+80,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 33 Abs. 1 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 2 Abs. 3 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,21
+80,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,21
+80,granted_exemption_legal_references,granted_exemptions.1.text,§ 39 Abs. 5,,,21
+80,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 69 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.2.text,§ 69 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.2.text,§ 33 Abs. 1 HBauO,,,21
+80,granted_exemption_legal_references,granted_exemptions.2.text,§ 2 Abs. 3 HBauO,,,21
+81,planning_instruments,development_plan,Baustufenplan Rahlstedt,,,12
+81,planning_instruments,plan_name,Rahlstedt,,,12
+81,planning_instruments,plan_type,Baustufenplan,,,12
+81,planning_instruments,plan_primary_type,construction_plan,,,12
+81,planning_instruments,plan_references,,Rahlstedt,construction_plan,12
+81,planning_instruments,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,12
+81,regulatory_ordinances,legal_ordinance,Baupolizeiverordnung,,,12
+81,regulatory_ordinances,_notes,"Baupolizeiverordnung from June 8, 1938 in the current version",,,12
+81,regulation_texts,regulations,"W 1 o, minimum plot size 1000 sqm",,,12
+81,regulation_texts,zone_code,W 1 o,,,12
+81,landscape_conservation_documents,plan_references,,"Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",landscape_protection,12
+81,preliminary_decision_documents,preliminary_decision,"Gz.: W/WBZ/04395/2013 from May 24, 2013",,,12
+82,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,16
+82,planning_instruments,plan_name,Billstedt 90,,,16
+82,planning_instruments,plan_type,Bebauungsplan,,,16
+82,planning_instruments,plan_primary_type,development_plan,,,16
+82,planning_instruments,green_order_plan,Green Order Plan Billstedt 90,,,16
+82,planning_instruments,plan_references,,Billstedt 90,development_plan,16
+82,planning_instruments,plan_references,,green space plan Billstedt 90,green_space_plan,16
+82,planning_instruments,plan_references,,Öjendorf-Billstedter Geest,landscape_protection,16
+82,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,16
+82,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,16
+82,regulation_texts,regulations,WR I o; 2 Wo; E mandatory; GRZ: 0.3,,,16
+82,regulation_texts,zone_code,WR I o,,,16
+82,landscape_conservation_documents,landscape_protection_ordinance,Öjendorf-Billstedter Geest,,,16
+82,landscape_conservation_documents,green_order_plan,Green Order Plan Billstedt 90,,,16
+82,landscape_conservation_documents,plan_references,,green space plan Billstedt 90,green_space_plan,16
+82,landscape_conservation_documents,plan_references,,Öjendorf-Billstedter Geest,landscape_protection,16
+83,planning_instruments,development_plan,Bebauungsplan Stellingen 14,,,15
+83,planning_instruments,plan_name,Stellingen 14,,,15
+83,planning_instruments,plan_type,Bebauungsplan,,,15
+83,planning_instruments,plan_primary_type,development_plan,,,15
+83,planning_instruments,plan_references,,Stellingen 14,development_plan,15
+83,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,15
+83,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,15
+83,regulation_texts,regulations,"WR II, 2 VG, only single or semi-detached houses",,,15
+83,regulation_texts,zone_code,WR II,,,15
+83,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,15
+83,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 67 BNatSchG,,,15
+83,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,15
+83,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,15
+83,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 67 BNatSchG,,,15
+83,granted_exemption_legal_references,granted_exemptions.3.text,§ 67 BNatSchG,,,15
+84,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,13
+84,planning_instruments,plan_name,Billstedt 90,,,13
+84,planning_instruments,plan_type,Bebauungsplan,,,13
+84,planning_instruments,plan_primary_type,development_plan,,,13
+84,planning_instruments,green_order_plan,Green Order Plan Billstedt 90,,,13
+84,planning_instruments,plan_references,,Billstedt 90,development_plan,13
+84,planning_instruments,plan_references,,green space plan Billstedt 90,green_space_plan,13
+84,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,13
+84,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,13
+84,regulation_texts,regulations,"WR I o; 2 Wo; E mandatory; GRZ: 0.3, building boundaries, intended infiltration area",,,13
+84,regulation_texts,zone_code,WR I o,,,13
+84,landscape_conservation_documents,green_order_plan,Green Order Plan Billstedt 90,,,13
+84,landscape_conservation_documents,plan_references,,green space plan Billstedt 90,green_space_plan,13
+85,planning_instruments,development_plan,Bebauungsplan Wohldorf-Ohlstedt 17,,,13
+85,planning_instruments,plan_name,Wohldorf-Ohlstedt 17,,,13
+85,planning_instruments,plan_type,Bebauungsplan,,,13
+85,planning_instruments,plan_primary_type,development_plan,,,13
+85,planning_instruments,plan_references,,Wohldorf-Ohlstedt 17,development_plan,13
+85,regulation_texts,regulations,"WR Io, 2WE, GRZ 0,2 E",,,13
+85,regulation_texts,zone_code,WR Io,,,13
+85,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 1,,,13
+85,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23 Abs. 3,,,13
+85,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Abs. 1,,,13
+85,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Abs. 1,,,13
+85,granted_exemption_legal_references,granted_exemptions.1.text,§ 23 Abs. 3,,,13
+85,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 23 Abs. 3,,,13
+86,planning_instruments,development_plan,Bebauungsplan Billstedt 101,,,26
+86,planning_instruments,plan_name,Billstedt 58,,,26
+86,planning_instruments,plan_type,Bebauungsplan,,,26
+86,planning_instruments,plan_primary_type,development_plan,,,26
+86,planning_instruments,plan_references,,Billstedt 58,development_plan,26
+86,planning_instruments,plan_references,,Billstedt 101,development_plan,26
+86,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,26
+86,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,26
+86,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,26
+86,regulation_texts,regulations,"WR II o, building boundaries, only single and semi-detached houses allowed",,,26
+86,regulation_texts,zone_code,WR II o,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Abs. 2,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 Abs. 2 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,26
+86,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,26
+86,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 31 Abs. 2,,,26
+86,granted_exemption_legal_references,granted_exemptions.2.text,§ 31 Abs. 2,,,26
+86,granted_exemption_legal_references,granted_exemptions.2.text,§ 23,,,26
+86,granted_exemption_legal_references,granted_exemptions.2.text,§ 9 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 69 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.3.text,§ 69 HBauO,,,26
+86,granted_exemption_legal_references,granted_exemptions.3.text,§ 9 Abs. 2 HBauO,,,26
+87,planning_instruments,development_plan,Unplanned area in a coherently built-up district according to § 34 BauGB,,,14
+87,planning_instruments,plan_name,Unplanned area in a coherently built-up district according to § 34 BauGB,,,14
+87,planning_instruments,plan_type,other,,,14
+87,planning_instruments,plan_primary_type,unplanned_area,,,14
+87,planning_instruments,plan_references,,built-up district in accordance with § 34 BauGB,unplanned_area,14
+87,planning_instruments,plan_references,,outdoor area in accordance with § 35 BauGB,unplanned_area,14
+87,regulation_texts,regulations,Baugesetzbuch,,,14
+87,regulation_texts,zone_code,Baugesetzbuch,,,14
+87,preliminary_decision_documents,preliminary_decision,"Gz.: B/WBZ/05907/2018 from April 7, 2020 (partially)",,,14
+87,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,14
+87,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 6 HBauO,,,14
+87,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,14
+87,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,14
+87,granted_exemption_legal_references,granted_exemptions.1.text,§ 6 HBauO,,,14
+88,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,15
+88,planning_instruments,plan_name,Billstedt 90,,,15
+88,planning_instruments,plan_type,Bebauungsplan,,,15
+88,planning_instruments,plan_primary_type,development_plan,,,15
+88,planning_instruments,plan_references,,Billstedt 90,development_plan,15
+88,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,15
+88,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,15
+88,regulation_texts,regulations,"WR I o, 2 WO, mandatory single houses, GRZ 0.3",,,15
+88,regulation_texts,zone_code,WR I o,,,15
+88,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Absatz 2,,,15
+88,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23,,,15
+88,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Absatz 2,,,15
+88,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Absatz 2,,,15
+88,granted_exemption_legal_references,granted_exemptions.1.text,§ 23,,,15
+88,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 23,,,15
+89,planning_instruments,development_plan,Bebauungsplan Billstedt 14,,,9
+89,planning_instruments,plan_name,Billstedt 14,,,9
+89,planning_instruments,plan_type,Bebauungsplan,,,9
+89,planning_instruments,plan_primary_type,development_plan,,,9
+89,planning_instruments,plan_references,,Billstedt 14,development_plan,9
+89,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+89,regulatory_ordinances,_notes,"Baunutzungsverordnung from June 26, 1962",,,9
+89,regulation_texts,regulations,"WR I (mandatory), building boundary, street line",,,9
+89,regulation_texts,zone_code,WR I,,,9
+90,planning_instruments,development_plan,Baustufenplan Niendorf / Lokstedt / Schnelsen,,,17
+90,planning_instruments,plan_name,Niendorf / Lokstedt / Schnelsen,,,17
+90,planning_instruments,plan_type,Baustufenplan,,,17
+90,planning_instruments,plan_primary_type,construction_plan,,,17
+90,planning_instruments,plan_references,,Niendorf / Lokstedt / Schnelsen,construction_plan,17
+90,regulation_texts,regulations,"W I o, building protection area, Baugesetzbuch",,,17
+90,regulation_texts,zone_code,W I o,,,17
+90,preliminary_decision_documents,preliminary_decision,"Gz.: E/WBZ2/00452/2015 from May 19, 2015",,,17
+90,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Absatz 2,,,17
+90,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 11 Abs. 1,,,17
+90,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 30,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Absatz 2,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Absatz 2,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.text,§ 11 Abs. 1,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.text,§ 30,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 11 Abs. 1,,,17
+90,granted_exemption_legal_references,granted_exemptions.1.1.1.text,§ 30,,,17
+91,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,9
+91,planning_instruments,plan_name,Billstedt 90,,,9
+91,planning_instruments,plan_type,Bebauungsplan,,,9
+91,planning_instruments,plan_primary_type,development_plan,,,9
+91,planning_instruments,plan_references,,Billstedt 90,development_plan,9
+91,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+91,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,9
+91,regulation_texts,regulations,"WR 1o max 2 apartments, single houses, GRZ 0.3",,,9
+91,regulation_texts,zone_code,WR 1o,,,9
+92,planning_instruments,development_plan,Bebauungsplan Volksdorf 43,,,20
+92,planning_instruments,plan_name,Volksdorf 43,,,20
+92,planning_instruments,plan_type,Bebauungsplan,,,20
+92,planning_instruments,plan_primary_type,development_plan,,,20
+92,planning_instruments,plan_references,,Volksdorf 43,development_plan,20
+92,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,20
+92,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,20
+92,regulation_texts,regulations,"WR II o, max. 2 apartments, single house, allowable buildable area 200 m²",,,20
+92,regulation_texts,zone_code,WR II o,,,20
+92,preliminary_decision_documents,preliminary_decision,"Gz.: W/WBZII/00506/2012 from June 14, 2012, extended until June 13, 2015",,,20
+92,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31,,,20
+92,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 23 Abs. 3,,,20
+92,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,20
+92,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 Abs. 2 HBauO,,,20
+92,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31,,,20
+92,granted_exemption_legal_references,granted_exemptions.1.text,§ 31,,,20
+92,granted_exemption_legal_references,granted_exemptions.1.text,§ 23 Abs. 3,,,20
+92,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 69 HBauO,,,20
+92,granted_exemption_legal_references,granted_exemptions.2.text,§ 69 HBauO,,,20
+92,granted_exemption_legal_references,granted_exemptions.2.text,§ 9 Abs. 2 HBauO,,,20
+93,planning_instruments,development_plan,Bebauungsplan Wohldorf-Ohlstedt 19 - Draft,,,12
+93,planning_instruments,plan_name,Wohldorf-Ohlstedt 19 - Draft,,,12
+93,planning_instruments,plan_type,Bebauungsplan,,,12
+93,planning_instruments,plan_primary_type,development_plan,,,12
+93,planning_instruments,plan_references,,Wohldorf-Ohlstedt 19,development_plan,12
+93,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+93,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,12
+93,regulation_texts,regulations,WR I only single houses GRZ 0.3,,,12
+93,regulation_texts,zone_code,WR I,,,12
+93,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+93,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+93,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12
+94,planning_instruments,development_plan,Unplanned area in a coherently built-up district according to § 34 BauGB,,,7
+94,planning_instruments,plan_name,Unplanned area in a coherently built-up district according to § 34 BauGB,,,7
+94,planning_instruments,plan_type,other,,,7
+94,planning_instruments,plan_primary_type,unplanned_area,,,7
+94,planning_instruments,plan_references,,district developed in accordance with Section 34 of the BauGB,unplanned_area,7
+94,regulation_texts,regulations,Baugesetzbuch,,,7
+94,regulation_texts,zone_code,Baugesetzbuch,,,7
+95,planning_instruments,development_plan,Bebauungsplan Lurup 57,,,11
+95,planning_instruments,plan_name,Lurup 57,,,11
+95,planning_instruments,plan_type,Bebauungsplan,,,11
+95,planning_instruments,plan_primary_type,other,,,11
+95,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,11
+95,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,11
+95,regulation_texts,regulations,"WR I o, 1 Wo, single houses, GFZ 0.3, GR 120 m², roof pitch between 33° and 45°, only roof tiles, walls in red brick, building window",,,11
+95,regulation_texts,zone_code,WR I o,,,11
+95,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,11
+95,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 69 HBauO,,,11
+95,granted_exemption_legal_references,granted_exemptions.1.text,§ 69 HBauO,,,11
+96,planning_instruments,development_plan,Bebauungsplan Billstedt 90,,,9
+96,planning_instruments,plan_name,Billstedt 90,,,9
+96,planning_instruments,plan_type,Bebauungsplan,,,9
+96,planning_instruments,plan_primary_type,development_plan,,,9
+96,planning_instruments,plan_references,,Billstedt 90,development_plan,9
+96,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+96,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,9
+96,regulation_texts,regulations,WR I o; 2 Wo; GRZ 0.3; only single houses,,,9
+96,regulation_texts,zone_code,WR I o,,,9
+97,planning_instruments,development_plan,Bebauungsplan Billstedt 76,,,9
+97,planning_instruments,plan_name,Billstedt 76,,,9
+97,planning_instruments,plan_type,Bebauungsplan,,,9
+97,planning_instruments,plan_primary_type,development_plan,,,9
+97,planning_instruments,plan_references,,Billstedt 76,development_plan,9
+97,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,9
+97,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,9
+97,regulation_texts,regulations,"WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",,,9
+97,regulation_texts,zone_code,WR II o,,,9
+98,planning_instruments,development_plan,Bebauungsplan Volksdorf 40,,,21
+98,planning_instruments,plan_name,Volksdorf 40,,,21
+98,planning_instruments,plan_type,Bebauungsplan,,,21
+98,planning_instruments,plan_primary_type,development_plan,,,21
+98,planning_instruments,plan_references,,Volksdorf 40,development_plan,21
+98,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,21
+98,regulatory_ordinances,_notes,"Baunutzungsverordnung from January 23, 1990",,,21
+98,regulation_texts,regulations,"WR II o, 3 Wo, max. 200 m², single house",,,21
+98,regulation_texts,zone_code,WR II o,,,21
+98,preliminary_decision_documents,preliminary_decision,"Gz.: W/WBZ/13399/2017 from December 19, 2017",,,21
+98,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Absatz 2,,,21
+98,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 31 Absatz 1,,,21
+98,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 69 HBauO,,,21
+98,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 9 Abs. 2 HBauO,,,21
+98,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 31 Absatz 2,,,21
+98,granted_exemption_legal_references,granted_exemptions.1.text,§ 31 Absatz 2,,,21
+98,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 31 Absatz 1,,,21
+98,granted_exemption_legal_references,granted_exemptions.2.text,§ 31 Absatz 1,,,21
+98,granted_exemption_legal_references,granted_exemptions.3.legal_ref,§ 69 HBauO,,,21
+98,granted_exemption_legal_references,granted_exemptions.3.text,§ 69 HBauO,,,21
+98,granted_exemption_legal_references,granted_exemptions.3.text,§ 9 Abs. 2 HBauO,,,21
+99,planning_instruments,development_plan,Bebauungsplan Rahlstedt 24,,,13
+99,planning_instruments,plan_name,Rahlstedt 24,,,13
+99,planning_instruments,plan_type,Bebauungsplan,,,13
+99,planning_instruments,plan_primary_type,development_plan,,,13
+99,planning_instruments,plan_references,,Rahlstedt 24,development_plan,13
+99,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,13
+99,regulatory_ordinances,_notes,"Baunutzungsverordnung from June 26, 1962",,,13
+99,regulation_texts,regulations,"WR, max. II, building boundary",,,13
+99,regulation_texts,zone_code,WR,,,13
+99,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,13
+99,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 44 BNatSchG,,,13
+99,granted_exemption_legal_references,granted_exemptions.2.legal_ref,§ 44 BNatSchG,,,13
+99,granted_exemption_legal_references,granted_exemptions.2.text,§ 44 BNatSchG,,,13
+100,planning_instruments,development_plan,Bebauungsplan Hummelsbüttel 23,,,12
+100,planning_instruments,plan_name,Hummelsbüttel 23,,,12
+100,planning_instruments,plan_type,Bebauungsplan,,,12
+100,planning_instruments,plan_primary_type,development_plan,,,12
+100,planning_instruments,plan_references,,Hummelsbüttel 23,development_plan,12
+100,regulatory_ordinances,legal_ordinance,BauNutzungsverordnung,,,12
+100,regulatory_ordinances,_notes,"Baunutzungsverordnung from November 26, 1968",,,12
+100,regulation_texts,regulations,"WR II o, E, 2W, building boundary",,,12
+100,regulation_texts,zone_code,WR II o,,,12
+100,granted_exemption_legal_references,granted_exemptions.legal_refs,§ 4,,,12
+100,granted_exemption_legal_references,granted_exemptions.1.legal_ref,§ 4,,,12
+100,granted_exemption_legal_references,granted_exemptions.1.text,§ 4,,,12

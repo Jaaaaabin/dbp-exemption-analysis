@@ -1,0 +1,6770 @@
+{
+  "1": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "other"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Lurup 13 (approved on September 1, 1964)"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lurup 13",
+        "type": "other"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "additional_regulations",
+        "value": "BauNVO (June 26, 1962)"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR I o"
+      },
+      {
+        "source_field": "type",
+        "value": "WR I o"
+      },
+      {
+        "source_field": "building_depth",
+        "value": "15 m"
+      },
+      {
+        "source_field": "grz",
+        "value": "0.4"
+      },
+      {
+        "source_field": "gfz",
+        "value": "0.4"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 3,
+        "regulatory_ordinances": 1,
+        "regulation_texts": 5,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "2": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Durchführungsplan 391 B"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Durchführungsplan 391 B"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "implementation_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "391 B",
+        "type": "implementation_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: Fläche für besondere Zwecke (Sportplatz)"
+      },
+      {
+        "source_field": "type",
+        "value": "Fläche für besondere Zwecke (Sportplatz)"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 15"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 15"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "3": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Durchführungsplan 391 B"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Durchführungsplan 391 B"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Blankenese",
+        "type": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: Fläche für besondere Zwecke (Sportplatz)"
+      },
+      {
+        "source_field": "type",
+        "value": "Fläche für besondere Zwecke (Sportplatz)"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 15"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 37"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 15"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 16
+    }
+  },
+  "4": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Lokstedt 8"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lokstedt 8",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WA II o"
+      },
+      {
+        "source_field": "type",
+        "value": "WA II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 32 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 33 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 29 Abs. 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 32 Abs. 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 33 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 14"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 32 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 32 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 33 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 29 Abs. 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 32 Abs. 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 33 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 14"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 3,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 13
+      },
+      "total_dependencies": 20
+    }
+  },
+  "5": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Bramfeld"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Bramfeld"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Bramfeld",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: W I o"
+      },
+      {
+        "source_field": "type",
+        "value": "W I o; 2/10 zul. beb. Fläche"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "6": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Niendorf 36"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Niendorf 36",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR/2W I o /Einzelhaus \"E\""
+      },
+      {
+        "source_field": "type",
+        "value": "WR/2W I o /Einzelhaus \"E\""
+      },
+      {
+        "source_field": "roof_pitch",
+        "value": "45 degrees"
+      },
+      {
+        "source_field": "building_window",
+        "value": "12.0 m (rear), 13.5 m (front)"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 14"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 14"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 3,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 4,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "8": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Neugraben-Fischbek 7"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Öjendorf-Billstedter Geest",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: Public Green Spaces"
+      },
+      {
+        "source_field": "type",
+        "value": "Public Green Spaces, Special Construction Area"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Öjendorf-Billstedter Geest",
+        "type": "landscape_protection"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Special Area Shops (II; GRZ 0.4; GFZ 0.4); public roads, paths, squares; private green spaces; urban conservation area \"Fischbek\""
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Type: Public Green Spaces"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 173 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 173 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 173 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 4,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 18
+    }
+  },
+  "9": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Billstedt 14"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 14",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR I"
+      },
+      {
+        "source_field": "type",
+        "value": "WR I, building boundaries, non-buildable area"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 35 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 35 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 35 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 3 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 3,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 12
+    }
+  },
+  "10": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Bramfeld"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Bramfeld"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Bramfeld",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: W1o"
+      },
+      {
+        "source_field": "type",
+        "value": "W1o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "11": {
+    "planning_instruments": [
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "bebauungsplan",
+        "value": "Rahlstedt 91"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 91",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from September 15, 1977, in the version from December 19, 1986"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR"
+      },
+      {
+        "source_field": "type",
+        "value": "WR; I; o; 2W; E; GRZ 0.2; GFZ 0.3"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 3,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 12
+    }
+  },
+  "12": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Sasel"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Sasel"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Sasel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: W 1 o"
+      },
+      {
+        "source_field": "type",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 34"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 34"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 34"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "13": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Volksdorf 40"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Volksdorf 40"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Volksdorf 40",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR I o E 1Wo (c)=120m²"
+      },
+      {
+        "source_field": "type",
+        "value": "WR I o E 1Wo (c)=120m²"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 67 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 44 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 67 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 44 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 9
+      },
+      "total_dependencies": 18
+    }
+  },
+  "14": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "other"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: W 1 o"
+      },
+      {
+        "source_field": "type",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "vorbescheid_gz",
+        "value": "W/WBZII/00929/2012 from August 16, 2012"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 11 BPVO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 11 BPVO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 11 BPVO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 4,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "16": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Rahlstedt 65"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt 65"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 65",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR II o"
+      },
+      {
+        "source_field": "type",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "17": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR I o"
+      },
+      {
+        "source_field": "type",
+        "value": "WR I o, 2 Wo; E zwingend; GRZ: 0,3"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6 Abs. 5 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 9"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6 Abs. 5 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 15
+      },
+      "total_dependencies": 26
+    }
+  },
+  "18": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Niendorf 10"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Niendorf 10"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Niendorf 10",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR-I"
+      },
+      {
+        "source_field": "type",
+        "value": "WR-I"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "20": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wilhelmsburg 9"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wilhelmsburg 9"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wilhelmsburg 9",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WA Max II"
+      },
+      {
+        "source_field": "type",
+        "value": "WA Max II, offen, ED, GRZ 0,4"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "21": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Rahlstedt 45"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt 45"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 45",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: WR II o"
+      },
+      {
+        "source_field": "type",
+        "value": "WR II o; Baufeld mit 25 m Tiefe"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "24": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Othmarschen 4 (festgestellt am 01.07.1963)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Othmarschen 4 (festgestellt am 01.07.1963)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Othmarschen 4 (established on July 1, 1963)",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "zone_code",
+        "value": "Type: W 1 o"
+      },
+      {
+        "source_field": "type",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "25": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Verordnung zum Schutz von Landschaftsteilen"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Verordnung zum Schutz von Landschaftsteilen"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "landscape_protection"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "development_plan",
+        "value": "Verordnung zum Schutz von Landschaftsteilen"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Verordnung zum Schutz von Landschaftsteilen"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I; GRZ 0,2; Baufenster e=12m;"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 23"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 13
+    }
+  },
+  "26": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Farmsen"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Farmsen"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Farmsen",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 1 o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "30": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wellingsbüttel 16",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "BauNutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR o, Eingeschossig, 40° Dachneigung, 1m Drempelhöhe; vorne: (B) 150m² Grundfläche, 3 WE; hinten: (A) 120m² Grundfläche, 1 WE"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2 Absatz 15"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 2 Absatz 15"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "32": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Poppenbüttel"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Poppenbüttel"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Poppenbüttel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W1o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W1o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "38": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Niendorf 13"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Niendorf 13"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Niendorf 13",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I, Baugrenzen (15,0 m), private Grünfläche"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "39": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Tonndorf-Jenfeld"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Tonndorf-Jenfeld"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Tonndorf-Jenfeld",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 1 o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "40": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Schnelsen 22"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Schnelsen 22"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Schnelsen 22",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR; zwingend eingeschossig; offene Bauweise; max. 2 Wohneinheiten; GRZ 0,4; GFZ 0,5; Baufeld"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "41": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Volksdorf 42"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Volksdorf 42"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Volksdorf 42",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR 1 o 2 Wo E (B) =150 m², Baugrenzen"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 7
+      },
+      "total_dependencies": 16
+    }
+  },
+  "44": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Tonndorf-Jenfeld"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Tonndorf-Jenfeld"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Tonndorf-Jenfeld",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Verordnung über die Bestimmung der Freien und Hansestadt Hamburg als Gebiet mit einem angespannten Wohnungsmarkt nach § 201a des Baugesetzbuchs"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "S 1 o (obsolet)"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "S 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 3,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 13
+    }
+  },
+  "45": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Hummelsbüttel"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Hummelsbüttel"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Hummelsbüttel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 1 o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "46": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Langenhorn"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Langenhorn"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Langenhorn",
+        "type": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "341",
+        "type": "partial_development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "verordnung",
+        "value": "Verordnung über die Bestimmung der Freien und Hansestadt Hamburg als Gebiet mit einem angespannten Wohnungsmarkt nach § 201a des Baugesetzbuchs"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Straßenlinie; 15,0 m von jeglicher Bebauung freizuhaltende Fläche; Baulinie"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 2 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Absatz 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Absatz 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Absatz 3"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 3,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 14
+    }
+  },
+  "48": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lemsahl-Mellingstedt",
+        "type": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W2o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W2o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 14
+    }
+  },
+  "49": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Hummelsbüttel"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Hummelsbüttel"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Hummelsbüttel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Außengebiet, LSG"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Außengebiet"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "50": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lurup 6 (festgestellt am 28.02.1989)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lurup 6 (festgestellt am 28.02.1989)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lurup 6 (established on February 28, 1989)",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977, in the version from December 19, 1986"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Vorn: WR I o, E+D, 2 W, GRZ 0,3, GFZ 0,5 // hinten WR I o, E+D, 2 W, GR 150 m², GFZ 0,3, (B) = Dachneigung 45°-60°, Pfannendeckung"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Vorn: WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "51": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Schnelsen 37"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Schnelsen 37"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Schnelsen 37",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR 1o; single house only; 2 residential units; GRZ 0.3; GFZ 0.4"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR 1o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "52": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wellingsbüttel 16",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 residential units; (B) 150 sqm / 225 sqm; single houses; roof pitch at least 40 degrees, knee wall max. 1m"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "53": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lemsahl-Mellingstedt 20",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o; only single houses; GRZ 0.3; building limits (10.00 m x 14.00 m); (c) eaves height max 6.50 m; roof pitch 20° to max 40°"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "54": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Bergstedt 13"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Bergstedt 13"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Bergstedt 13",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 residential units; ED; GRZ 0.3; GFZ 0.4"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision_gz",
+        "value": "W/WBZ/00928/2013 from November 12, 2013"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 13
+    }
+  },
+  "55": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Hummelsbüttel 23",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, E, 2W, building window"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "56": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wohldorf-Ohlstedt 17",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WA IIo 6 residential units per 2500 sqm property, only single houses, GRZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WA IIo"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision_gz",
+        "value": "08291/2019 from December 10, 2019"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 13
+    }
+  },
+  "57": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Green ordinance plan Billstedt 90"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 residential units; GRZ 0.3; only single houses allowed"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6 paragraph 5 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 paragraph 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 9"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.2.2.1.text",
+        "value": "§ 9"
+      },
+      {
+        "source_field": "granted_exemptions.2.2.1.text",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 6 paragraph 5 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 9 paragraph 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.3.1.text",
+        "value": "§ 6 paragraph 5 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.3.2.text",
+        "value": "§ 9 paragraph 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 3,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 24
+      },
+      "total_dependencies": 36
+    }
+  },
+  "58": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lurup 13 (established on September 1, 1964)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lurup 13 (established on September 1, 1964)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lurup 13 (established on September 1st, 1964)",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, building boundaries, depth 15 m, GRZ and GFZ 0.4"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "59": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wilhelmsburg 71"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wilhelmsburg 71"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wilhelmsburg 71",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, GRZ 0.3, ED"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 3"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 15
+    }
+  },
+  "60": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Sasel"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Sasel"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Sasel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W I o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 4
+      },
+      "total_dependencies": 13
+    }
+  },
+  "61": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Eidelstedt"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Eidelstedt"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "other"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "S 1 o > Obsolete assessment according to § 34 BauGB"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "S 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 4,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 8
+    }
+  },
+  "62": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 14"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 14"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 14",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I, building boundaries, non-buildable area"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 35 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 35 paragraph 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 paragraph 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 35 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 35 paragraph 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 paragraph 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 35 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 12
+      },
+      "total_dependencies": 21
+    }
+  },
+  "63": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Schnelsen 33"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Schnelsen 33"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Schnelsen 33",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Schnelsen, Niendorf, Lokstedt, Eidelstedt and Stellingen",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, 2 residential units, only single houses, GRZ 0.2, GFZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Schnelsen, Niendorf, Lokstedt, Eidelstedt and Stellingen",
+        "type": "landscape_protection"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Protection of landscape areas in Schnelsen, Niendorf, Lokstedt, Eidelstedt, and Stellingen"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 2,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 15
+    }
+  },
+  "64": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Rahlstedt with the determinations: W 2 o (not particularly protected) - E / D - buildable area 3/10 - back: 10.0 m outer area"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt with the determinations: W 2 o (not particularly protected) - E / D - buildable area 3/10 - back: 10.0 m outer area"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt",
+        "type": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 65",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "92",
+        "type": "partial_development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938 in the current version"
+      }
+    ],
+    "regulation_texts": [],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision_gz",
+        "value": "W / WBZ I / 01711 / 2012 / 01 from May 24, 2013"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 10 paragraph 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 10 paragraph 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 10 paragraph 1 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 7,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 0,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 16
+    }
+  },
+  "65": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Marienthal 26"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Marienthal 26"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Marienthal 26",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, 2 residential units, (D) 120 sqm max. built-up area, E"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "66": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lemsahl-Mellingstedt 20",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o (C), GRZ 0.4, Building limits 12.0 x 15.0 m, (d), § 2 Determinations"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 18 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 19 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 25"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 61 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 60 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 26 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 18 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 18 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 19 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 19 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 25"
+      },
+      {
+        "source_field": "granted_exemptions.4.legal_ref",
+        "value": "§ 61 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.4.text",
+        "value": "§ 61 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.4.text",
+        "value": "§ 60 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.5.legal_ref",
+        "value": "§ 26 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.5.text",
+        "value": "§ 26 HWG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 16
+      },
+      "total_dependencies": 25
+    }
+  },
+  "67": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wohldorf-Ohlstedt 17",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR IIo, GRZ 0.2, 2 residential units, only single houses, text determinations"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR IIo"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 10
+    }
+  },
+  "68": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lemsahl-Mellingstedt",
+        "type": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 1 o, buildable area 2/10 (in the construction area), Building Code from June 8, 1938"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Protection of landscape parts in Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf, and Rahlstedt"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 2,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 15
+    }
+  },
+  "69": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Rahlstedt 89"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt 89"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 89",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, 2 WE; GRZ 0.2; GFZ 0.3; Straßenparallelität; keine Staffelgeschosse; keine Flachdächer; Drempelhöhe max. 50 cm; max. Firsthöhe bei 1-gesch. WH = 8 m und bei 2-gesch. WH = 11 m"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 6"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "70": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 76"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 76"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 76",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "71": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Rissen 8 (established on February 17, 1970)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rissen 8 (established on February 17, 1970)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rissen 8 (approved on February 17, 1970)",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR, number of full stories mandatory 1, o; building boundaries"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "72": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wellingsbüttel 16"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Sasel",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Front: MI III g; GRZ: 0.3; (10): Noise protection."
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Front: MI III g"
+      },
+      {
+        "source_field": "back",
+        "value": "WR I o; 1 residential unit; (A) 120 sqm/180 sqm; single houses; roof pitch >= 40 degrees, maximum knee wall height 1m"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 52 paragraph 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 2"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 52 paragraph 4 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.2.1.text",
+        "value": "§ 52 paragraph 4 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 3,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 12
+      },
+      "total_dependencies": 22
+    }
+  },
+  "73": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Othmarschen 2 (established on April 8, 1963)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Othmarschen 2 (established on April 8, 1963)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Othmarschen 2 (approved on April 8, 1963)",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "202",
+        "type": "implementation_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 2 o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 2 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 18 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 18 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 18 Absatz 1 HWG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 8
+      },
+      "total_dependencies": 18
+    }
+  },
+  "74": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Hummelsbüttel 23",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, E, 2W, building boundaries"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "75": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lemsahl-Mellingstedt 20"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Lemsahl-Mellingstedt 20",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; only single houses; GRZ 0.3; building boundaries (14.00 m x 11.00 m); (C) eaves height max 6.50 m; roof pitch 20° to max 40°; § 2 regulations"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 15
+    }
+  },
+  "76": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Bramfeld"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Bramfeld"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Bramfeld",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 2 o"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 2 o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: W/WBZ/00022/2014 from May 14, 2014"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 paragraph 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 paragraph 2"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 13
+    }
+  },
+  "77": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wohldorf-Ohlstedt 17",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WA IIo, 6 residential units per 2500 sqm plot, single houses only, GRZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WA IIo"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: 08291/2019 from December 10, 2019"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 11
+    }
+  },
+  "78": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Blankenese"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Blankenese"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Blankenese",
+        "type": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "regulations",
+        "value": "Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Außengebiet (assessment according to §34 BauGB) under landscape protection"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Altona-Südwest, Ottensen, Othmarschen, Klein Flottbek, Nienstedten ...",
+        "type": "landscape_protection"
+      },
+      {
+        "source_field": "regulations",
+        "value": "Außengebiet (assessment according to §34 BauGB) under landscape protection, Baupolizeiverordnung from June 8, 1938 in the current version"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Außengebiet (assessment according to §34 BauGB) under landscape protection"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 18 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 19 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 22 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 3 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 18 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 18 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 19 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 19 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 19 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 19 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.4.legal_ref",
+        "value": "§ 22 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.4.text",
+        "value": "§ 22 Absatz 1 HWG"
+      },
+      {
+        "source_field": "granted_exemptions.5.legal_ref",
+        "value": "§ 3 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.5.text",
+        "value": "§ 3 Abs. 1"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 3,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 14
+      },
+      "total_dependencies": 27
+    }
+  },
+  "79": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Winterhude"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Winterhude"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Winterhude",
+        "type": "construction_phase_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "ordinance on the preservation of buildings in Winterhude, Braamkamp - Baumkamp - Himmelstraße",
+        "type": "maintenance_ordinance"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "regulations",
+        "value": "W 4g, Baupolizeiverordnung from June 8, 1938 in the current version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 4g, Baupolizeiverordnung from June 8, 1938 in the current version"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "conservation_ordinance",
+        "value": "Verordnung über die Erhaltung baulicher Anlagen in Winterhude, Braamkamp - Baumkamp - Himmelstraße"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6 Abs. 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 10 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6 Abs. 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 10 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 6 Abs. 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.2.text",
+        "value": "§ 10 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 9
+      },
+      "total_dependencies": 20
+    }
+  },
+  "80": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Othmarschen 10 (established on February 6, 1990)"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Othmarschen 10 (established on February 6, 1990)"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Othmarschen 10 (established on February 6, 1990)",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from September 15, 1977"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II+S"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 39 Abs. 5"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 33 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 2 Abs. 3 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 39 Abs. 5"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 33 Abs. 1 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 2 Abs. 3 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 12
+      },
+      "total_dependencies": 21
+    }
+  },
+  "81": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Rahlstedt"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt",
+        "type": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baupolizeiverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baupolizeiverordnung from June 8, 1938 in the current version"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W 1 o, minimum plot size 1000 sqm"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W 1 o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "plan_references",
+        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
+        "type": "landscape_protection"
+      }
+    ],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: W/WBZ/04395/2013 from May 24, 2013"
+      }
+    ],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 1,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 12
+    }
+  },
+  "82": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "green_order_plan",
+        "value": "Green Order Plan Billstedt 90"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Öjendorf-Billstedter Geest",
+        "type": "landscape_protection"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 Wo; E mandatory; GRZ: 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "landscape_protection_ordinance",
+        "value": "Öjendorf-Billstedter Geest"
+      },
+      {
+        "source_field": "green_order_plan",
+        "value": "Green Order Plan Billstedt 90"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Öjendorf-Billstedter Geest",
+        "type": "landscape_protection"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 8,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 4,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 16
+    }
+  },
+  "83": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Stellingen 14"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Stellingen 14"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Stellingen 14",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II, 2 VG, only single or semi-detached houses"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 67 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 67 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 67 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 15
+    }
+  },
+  "84": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "green_order_plan",
+        "value": "Green Order Plan Billstedt 90"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 Wo; E mandatory; GRZ: 0.3, building boundaries, intended infiltration area"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [
+      {
+        "source_field": "green_order_plan",
+        "value": "Green Order Plan Billstedt 90"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "green space plan Billstedt 90",
+        "type": "green_space_plan"
+      }
+    ],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 7,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 2,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 13
+    }
+  },
+  "85": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wohldorf-Ohlstedt 17"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wohldorf-Ohlstedt 17",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR Io, 2WE, GRZ 0,2 E"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR Io"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23 Abs. 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 23 Abs. 3"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 23 Abs. 3"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 13
+    }
+  },
+  "86": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 101"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 58"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 58",
+        "type": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 101",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, building boundaries, only single and semi-detached houses allowed"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 31 Abs. 2"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 9 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 3,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 15
+      },
+      "total_dependencies": 26
+    }
+  },
+  "87": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "unplanned_area"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "built-up district in accordance with § 34 BauGB",
+        "type": "unplanned_area"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "outdoor area in accordance with § 35 BauGB",
+        "type": "unplanned_area"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Baugesetzbuch"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Baugesetzbuch"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: B/WBZ/05907/2018 from April 7, 2020 (partially)"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 6 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 6 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 6,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 5
+      },
+      "total_dependencies": 14
+    }
+  },
+  "88": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, 2 WO, mandatory single houses, GRZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 23"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 23"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 6
+      },
+      "total_dependencies": 15
+    }
+  },
+  "89": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 14"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 14"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 14",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I (mandatory), building boundary, street line"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "90": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Baustufenplan Niendorf / Lokstedt / Schnelsen"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Niendorf / Lokstedt / Schnelsen"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Baustufenplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "construction_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Niendorf / Lokstedt / Schnelsen",
+        "type": "construction_plan"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "W I o, building protection area, Baugesetzbuch"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "W I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: E/WBZ2/00452/2015 from May 19, 2015"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 11 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 30"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 11 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 30"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 11 Abs. 1"
+      },
+      {
+        "source_field": "granted_exemptions.1.1.1.text",
+        "value": "§ 30"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 9
+      },
+      "total_dependencies": 17
+    }
+  },
+  "91": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR 1o max 2 apartments, single houses, GRZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR 1o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "92": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Volksdorf 43"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Volksdorf 43"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Volksdorf 43",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, max. 2 apartments, single house, allowable buildable area 200 m²"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: W/WBZII/00506/2012 from June 14, 2012, extended until June 13, 2015"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 23 Abs. 3"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 23 Abs. 3"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 10
+      },
+      "total_dependencies": 20
+    }
+  },
+  "93": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Wohldorf-Ohlstedt 19 - Draft"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Wohldorf-Ohlstedt 19 - Draft"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Wohldorf-Ohlstedt 19",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I only single houses GRZ 0.3"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  },
+  "94": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "other"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "unplanned_area"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "district developed in accordance with Section 34 of the BauGB",
+        "type": "unplanned_area"
+      }
+    ],
+    "regulatory_ordinances": [],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "Baugesetzbuch"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "Baugesetzbuch"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 0,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 7
+    }
+  },
+  "95": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Lurup 57"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Lurup 57"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "other"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o, 1 Wo, single houses, GFZ 0.3, GR 120 m², roof pitch between 33° and 45°, only roof tiles, walls in red brick, building window"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 69 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 4,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 11
+    }
+  },
+  "96": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 90"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 90"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 90",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR I o; 2 Wo; GRZ 0.3; only single houses"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR I o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "97": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Billstedt 76"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Billstedt 76"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Billstedt 76",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 0
+      },
+      "total_dependencies": 9
+    }
+  },
+  "98": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Volksdorf 40"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Volksdorf 40"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Volksdorf 40",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from January 23, 1990"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, 3 Wo, max. 200 m², single house"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [
+      {
+        "source_field": "preliminary_decision",
+        "value": "Gz.: W/WBZ/13399/2017 from December 19, 2017"
+      }
+    ],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 31 Absatz 1"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 9 Abs. 2 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 31 Absatz 2"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 31 Absatz 1"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 31 Absatz 1"
+      },
+      {
+        "source_field": "granted_exemptions.3.legal_ref",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 69 HBauO"
+      },
+      {
+        "source_field": "granted_exemptions.3.text",
+        "value": "§ 9 Abs. 2 HBauO"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 1,
+        "granted_exemption_legal_references": 11
+      },
+      "total_dependencies": 21
+    }
+  },
+  "99": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Rahlstedt 24"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Rahlstedt 24"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Rahlstedt 24",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from June 26, 1962"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR, max. II, building boundary"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 44 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.2.legal_ref",
+        "value": "§ 44 BNatSchG"
+      },
+      {
+        "source_field": "granted_exemptions.2.text",
+        "value": "§ 44 BNatSchG"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 4
+      },
+      "total_dependencies": 13
+    }
+  },
+  "100": {
+    "planning_instruments": [
+      {
+        "source_field": "development_plan",
+        "value": "Bebauungsplan Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_name",
+        "value": "Hummelsbüttel 23"
+      },
+      {
+        "source_field": "plan_type",
+        "value": "Bebauungsplan"
+      },
+      {
+        "source_field": "plan_primary_type",
+        "value": "development_plan"
+      },
+      {
+        "source_field": "plan_references",
+        "name": "Hummelsbüttel 23",
+        "type": "development_plan"
+      }
+    ],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "BauNutzungsverordnung"
+      },
+      {
+        "source_field": "_notes",
+        "value": "Baunutzungsverordnung from November 26, 1968"
+      }
+    ],
+    "regulation_texts": [
+      {
+        "source_field": "regulations",
+        "value": "WR II o, E, 2W, building boundary"
+      },
+      {
+        "source_field": "zone_code",
+        "value": "WR II o"
+      }
+    ],
+    "landscape_conservation_documents": [],
+    "preliminary_decision_documents": [],
+    "granted_exemption_legal_references": [
+      {
+        "source_field": "granted_exemptions.legal_refs",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.legal_ref",
+        "value": "§ 4"
+      },
+      {
+        "source_field": "granted_exemptions.1.text",
+        "value": "§ 4"
+      }
+    ],
+    "summary": {
+      "category_counts": {
+        "planning_instruments": 5,
+        "regulatory_ordinances": 2,
+        "regulation_texts": 2,
+        "landscape_conservation_documents": 0,
+        "preliminary_decision_documents": 0,
+        "granted_exemption_legal_references": 3
+      },
+      "total_dependencies": 12
+    }
+  }
+}
