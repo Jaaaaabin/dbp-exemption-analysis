@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T13:31:59.997614+00:00",
+  "generated_at": "2026-06-12T08:52:17.218289+00:00",
   "input_files": {
     "granted_exemptions": "data/cleaned/data_analyze_parsed_granted_exemptions.json",
     "decision_basis": "data/cleaned/data_analyze_parsed_decision_basis.json"
@@ -74,7 +74,7 @@
     "access_road": {
       "construction_phase_plan": 0,
       "construction_plan": 1,
-      "development_plan": 1,
+      "development_plan": 2,
       "implementation_plan": 0,
       "landscape_protection": 0,
       "other": 0,
@@ -82,17 +82,17 @@
     },
     "building_code": {
       "construction_phase_plan": 1,
-      "construction_plan": 1,
-      "development_plan": 2,
+      "construction_plan": 2,
+      "development_plan": 9,
       "implementation_plan": 0,
       "landscape_protection": 0,
       "other": 1,
       "unplanned_area": 1
     },
-    "mixed": {
-      "construction_phase_plan": 1,
-      "construction_plan": 3,
-      "development_plan": 16,
+    "nature_protection": {
+      "construction_phase_plan": 0,
+      "construction_plan": 1,
+      "development_plan": 10,
       "implementation_plan": 0,
       "landscape_protection": 0,
       "other": 0,
@@ -117,18 +117,18 @@
       "unplanned_area": 0
     },
     "planning_law": {
-      "construction_phase_plan": 0,
-      "construction_plan": 5,
-      "development_plan": 8,
+      "construction_phase_plan": 1,
+      "construction_plan": 7,
+      "development_plan": 13,
       "implementation_plan": 0,
       "landscape_protection": 0,
       "other": 0,
       "unplanned_area": 0
     },
     "tree_environmental": {
-      "construction_phase_plan": 1,
-      "construction_plan": 4,
-      "development_plan": 15,
+      "construction_phase_plan": 2,
+      "construction_plan": 6,
+      "development_plan": 28,
       "implementation_plan": 0,
       "landscape_protection": 0,
       "other": 1,
@@ -143,18 +143,18 @@
     },
     "access_road": {
       "BauNutzungsverordnung": 1,
-      "Baupolizeiverordnung": 1,
+      "Baupolizeiverordnung": 2,
       "unknown": 0
     },
     "building_code": {
-      "BauNutzungsverordnung": 3,
+      "BauNutzungsverordnung": 11,
       "Baupolizeiverordnung": 2,
       "unknown": 1
     },
-    "mixed": {
-      "BauNutzungsverordnung": 16,
-      "Baupolizeiverordnung": 3,
-      "unknown": 1
+    "nature_protection": {
+      "BauNutzungsverordnung": 10,
+      "Baupolizeiverordnung": 1,
+      "unknown": 0
     },
     "none": {
       "BauNutzungsverordnung": 8,
@@ -167,14 +167,14 @@
       "unknown": 2
     },
     "planning_law": {
-      "BauNutzungsverordnung": 7,
-      "Baupolizeiverordnung": 4,
-      "unknown": 2
+      "BauNutzungsverordnung": 13,
+      "Baupolizeiverordnung": 5,
+      "unknown": 3
     },
     "tree_environmental": {
-      "BauNutzungsverordnung": 12,
-      "Baupolizeiverordnung": 7,
-      "unknown": 2
+      "BauNutzungsverordnung": 24,
+      "Baupolizeiverordnung": 10,
+      "unknown": 3
     }
   },
   "legal_domain_by_ordinance_context": {
@@ -286,11 +286,11 @@
   },
   "findings": [
     {
-      "finding": "Development-plan contexts dominate the joined decision patterns, and within that context mixed and tree/environmental exemptions form the largest combined block.",
+      "finding": "Development-plan contexts dominate the joined decision patterns, and within that context tree/environmental exemptions form the largest block.",
       "evidence": {
         "development_plan_records": 54,
         "total_records": 83,
-        "mixed_or_tree_environmental_in_development_plan": 31,
+        "tree_environmental_in_development_plan": 28,
         "top_exemption_domain_by_plan_pairs": {
           "('mixed', 'development_plan')": 16,
           "('tree_environmental', 'development_plan')": 15,
@@ -385,22 +385,22 @@
           "access_road": {
             "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 1,
+            "parsed_prefix": 2,
             "source_label": 0,
             "unparsed_text": 1
           },
           "building_code": {
             "legal_text": 1,
             "missing": 1,
-            "parsed_prefix": 4,
-            "source_label": 0,
+            "parsed_prefix": 10,
+            "source_label": 2,
             "unparsed_text": 0
           },
-          "mixed": {
+          "nature_protection": {
             "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 13,
-            "source_label": 7,
+            "parsed_prefix": 5,
+            "source_label": 6,
             "unparsed_text": 0
           },
           "none": {
@@ -420,15 +420,15 @@
           "planning_law": {
             "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 9,
-            "source_label": 3,
+            "parsed_prefix": 15,
+            "source_label": 5,
             "unparsed_text": 1
           },
           "tree_environmental": {
             "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 15,
-            "source_label": 3,
+            "parsed_prefix": 25,
+            "source_label": 9,
             "unparsed_text": 3
           }
         }

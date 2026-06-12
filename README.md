@@ -7,31 +7,36 @@ A Python project for extracting, cleaning, parsing, and visualising Digital Buil
 ```
 dbp/
 ├── config/
-│   └── path.yaml              # raw/cleaned folder paths
+│   └── path.yaml                    # raw/cleaned folder paths
 ├── data/
-│   ├── raw/                   # source Excel files
-│   └── cleaned/               # pipeline outputs
-│       ├── data_analyze.csv / .json
-│       ├── data_analyze_parsed.json
-│       ├── data_none_exemption.csv / .json
-│       └── data_none_regulation.csv / .json
+│   ├── raw/                         # source Excel files
+│   ├── cleaned/                     # pipeline outputs (CSV + JSON)
+│   └── ext_docs/                    # external document dependencies (find_docs.py)
 ├── res/
-│   └── figures/               # generated plot PNGs
+│   └── figures/
+│       ├── exemption/               # analyze_exemption.py plots
+│       ├── decision_basis/          # analyze_decision_basis.py plots
+│       ├── both/                    # analyze_both.py cross-branch plots
+│       └── items/                   # plot.py item-level plots
 ├── src/
-│   ├── configuration.py       # config loader (path.yaml)
-│   ├── data_clean.py          # Excel ingestion, DataFrame cleaning, JSON export
-│   ├── data_analysis.py       # ETL split, filtering utilities, statistics & aggregations
-│   ├── text_parser.py         # long text field parsing and record enrichment
-│   ├── visualize.py           # matplotlib/seaborn plots from enriched records
+│   ├── configuration.py             # config loader (path.yaml)
+│   ├── data_clean.py                # Excel ingestion, DataFrame cleaning, JSON export
+│   ├── data_analysis.py             # ETL split, filtering utilities, statistics & aggregations
+│   ├── text_parser.py               # long text field parsing and record enrichment
+│   ├── visualize.py                 # matplotlib/seaborn plots from enriched records
 │   └── utils/
-│       ├── cli_utils.py       # spinner, progress bars, coloured output
-│       ├── env_utils.py       # system info, directory tree printer
-│       └── time_utils.py      # @measure_runtime decorator
-├── settings.py                # all output file paths + active dataset switch
-├── extract.py                 # Step 1 — Excel → cleaned CSV + JSON
-├── parse.py                   # Step 2 — parse text fields → _parsed.json
-├── plot.py                    # Step 3 — visualise → res/figures/
-├── sys.py                     # environment summary
+│       ├── cli_utils.py             # spinner, progress bars, coloured output
+│       ├── env_utils.py             # system info, directory tree printer
+│       └── time_utils.py            # @measure_runtime decorator
+├── settings.py                      # all output file paths + active dataset switch
+├── extract.py                       # Step 1 — Excel → cleaned CSV + JSON
+├── parse.py                         # Step 2 — parse text fields → _parsed.json
+├── analyze_exemption.py             # Step 3a — exemption figures → res/figures/exemption/
+├── analyze_decision_basis.py        # Step 3b — decision basis figures → res/figures/decision_basis/
+├── analyze_both.py                  # Step 3c — combined cross-branch figures → res/figures/both/
+├── plot.py                          # Step 3d — record + item-level plots → res/figures/
+├── find_docs.py                     # Step 4 — external document dependencies → data/ext_docs/
+├── sys.py                           # environment summary
 ├── pyproject.toml
 └── uv.lock
 ```
@@ -48,7 +53,7 @@ Source file expected at `data/raw/data.xlsx` (path configurable in `config/path.
 
 ## Dataset switch
 
-All three pipeline scripts read from the same file. To change it, edit one line in [settings.py](settings.py):
+All pipeline scripts read from the same file. To change it, edit one line in [settings.py](settings.py):
 
 ```python
 JSON_ANALYZE_READY_FILE = FILE_ANALYZE_JSON          # default
@@ -59,12 +64,16 @@ JSON_ANALYZE_READY_FILE = FILE_ANALYZE_JSON          # default
 ## Workflow
 
 ```bash
-uv run python extract.py   # Step 1 — Excel → data/cleaned/*.csv + *.json
-uv run python parse.py     # Step 2 — parse text fields → data_analyze_parsed.json
-uv run python plot.py      # Step 3 — plots → res/figures/
+uv run python extract.py               # Step 1 — Excel → data/cleaned/*.csv + *.json
+uv run python parse.py                 # Step 2 — parse text fields → *_parsed*.json
+uv run python analyze_exemption.py     # Step 3a — exemption analysis → res/figures/exemption/
+uv run python analyze_decision_basis.py # Step 3b — decision basis → res/figures/decision_basis/
+uv run python analyze_both.py          # Step 3c — combined analysis → res/figures/both/
+uv run python plot.py                  # Step 3d — record + item plots → res/figures/
+uv run python find_docs.py             # Step 4 — external doc deps → data/ext_docs/
 ```
 
-Steps 2 and 3 are independent and can run in any order.
+Steps 3a–3d and Step 4 are all independent and can run in any order after Step 2.
 
 ### Step 1 outputs (`data/cleaned/`)
 
@@ -97,9 +106,9 @@ Numbered items appear as direct keys (`"1"`, `"2"`, …) in the dict. Sub-items 
 
 ```json
 "granted_exemptions": {
-  "header": "Wegerecht – This permit includes:",  // text before item 1, or null
+  "header": "Wegerecht – This permit includes:",
   "types": ["planning_law", "tree_environmental"],
-  "primary_type": "mixed",
+  "primary_type": "planning_law",
   "is_empty": false,
   "legal_refs": ["§ 31 paragraph 2", "§ 4"],
   "subjects": ["exceeding the building limit by …"],
@@ -116,11 +125,34 @@ Numbered items appear as direct keys (`"1"`, `"2"`, …) in the dict. Sub-items 
 }
 ```
 
-Use `iter_granted_items(ge)` and `iter_sub_items(item)` from `text_parser` to iterate items without hardcoding key names. Use `flatten_to_items(source)` to produce one flat row per item for analysis.
+**`primary_type`** is always the first matched taxonomy label from `types`. When a record matches multiple categories, `types` contains all of them and plots count each separately — there is no `"mixed"` label.
 
-### Step 3 outputs (`res/figures/`)
+#### Exemption taxonomy
 
-`exemption_overview`, `decision_time_by_authority`, `decision_time_by_exemption_type`, `decision_time_by_plan_type`, `decision_time_by_plan_primary_type`, `decision_time_distribution`, `correlation_heatmap`
+| Label | Trigger |
+|---|---|
+| `planning_law` | `§ 31 BauGB` |
+| `tree_environmental` | `Baumschutz` / tree protection |
+| `building_code` | `§ 69 HBauO` |
+| `access_road` | `§ 18/19/22/26 HWG` / Wegerecht / curb crossing |
+| `access_restriction` | construction burden / Baulasten |
+| `nature_protection` | `BNatSchG` |
+| `none` | no exemption present |
+| `other` | text present but no recognised pattern |
+
+Multi-label records (matching two or more categories) are distributed across all matched categories in the plots. Use `classify_exemption_types(text)` to inspect the full label list for a given text.
+
+Use `iter_granted_items(ge)` and `iter_sub_items(item)` from `text_parser` to iterate items without hardcoding key names. Use `flatten_to_items(source)` to produce one flat row per item for analysis; each row includes both `exemption_primary_type` (first label) and `exemption_types` (full list).
+
+### Step 3 figure outputs
+
+| Script | Output dir | Key figures |
+|---|---|---|
+| `analyze_exemption.py` | `res/figures/exemption/` | type distribution, legal ref frequency, item-level breakdowns |
+| `analyze_decision_basis.py` | `res/figures/decision_basis/` | plan type composition, ordinance context, zone quality |
+| `analyze_both.py` | `res/figures/both/` | exemption domain × planning context, zone quality by domain, rationale signals |
+| `plot.py` | `res/figures/` | `exemption_overview`, `ordinance_x_exemption`, `exemption_composition_by_authority`, `legal_ref_frequency`, `zone_code_x_exemption` |
+| `plot.py` | `res/figures/items/` | `item_type_distribution`, `item_authority_x_type`, `item_legal_ref_bar`, `exemption_treemap`, `keywords_*` |
 
 ---
 
@@ -146,6 +178,7 @@ Use `iter_granted_items(ge)` and `iter_sub_items(item)` from `text_parser` to it
 | `rich` | Terminal spinner and progress bars |
 | `matplotlib` | Plot rendering |
 | `seaborn` | Statistical plot styling |
+| `squarify` | Treemap plots (optional — `uv add squarify`) |
 
 ```bash
 uv add <package>

@@ -61,7 +61,6 @@ _EXEMPTION_PALETTE: dict[str, str] = {
     'access_road':        '#9467bd',
     'access_restriction': '#8c564b',
     'nature_protection':  '#e377c2',
-    'mixed':              '#ff7f0e',
     'none':               '#aec7e8',
     'other':              '#7f7f7f',
 }
@@ -75,21 +74,34 @@ def _zone_prefix(code) -> str | None:
     return m.group(1) if m else None
 
 
+def _expand_types(df: pd.DataFrame) -> pd.DataFrame:
+    """One row per (record, type) by exploding the multi-label exemption_types list.
+    The result column is named 'exemption_type'.
+    Falls back to exemption_primary_type when exemption_types is absent."""
+    if 'exemption_types' in df.columns:
+        return (df.explode('exemption_types')
+                  .dropna(subset=['exemption_types'])
+                  .rename(columns={'exemption_types': 'exemption_type'}))
+    return (df.copy()
+              .assign(exemption_type=df.get('exemption_primary_type'))
+              .dropna(subset=['exemption_type']))
+
+
 # ── Plots ─────────────────────────────────────────────────────────────────────
 
 def plot_exemption_overview(
     source: JsonSource,
     output_path: str | Path | None = None,
 ) -> plt.Figure:
-    """Horizontal bar: count of permits per exemption type."""
-    df = _to_df(source)
-    counts = df["exemption_primary_type"].value_counts().sort_values()
+    """Horizontal bar: type occurrences (multi-type permits counted once per type)."""
+    df = _expand_types(_to_df(source))
+    counts = df['exemption_type'].value_counts().sort_values()
     colors = [_EXEMPTION_PALETTE.get(t, '#7f7f7f') for t in counts.index]
 
     fig, ax = plt.subplots(figsize=(8, max(3, len(counts) * 0.5)))
     fig.suptitle("Exemption Type Overview", fontweight="bold")
     bars = ax.barh(counts.index, counts.values, color=colors)
-    ax.set_xlabel("Number of permits")
+    ax.set_xlabel("Type occurrences (multi-type permits counted per type)")
     ax.bar_label(bars, padding=3)
     fig.tight_layout()
     return _save(fig, Path(output_path) if output_path else None)
@@ -99,18 +111,18 @@ def plot_ordinance_x_exemption(
     source: JsonSource,
     output_path: str | Path | None = None,
 ) -> plt.Figure:
-    """Heatmap: count of permits per legal ordinance × exemption type."""
-    df = _to_df(source)
-    sub = df[['legal_ordinance', 'exemption_primary_type']].dropna()
+    """Heatmap: type occurrences per legal ordinance × exemption type."""
+    df = _expand_types(_to_df(source))
+    sub = df[['legal_ordinance', 'exemption_type']].dropna()
     if sub.empty:
         return plt.figure()
 
-    count_piv = pd.crosstab(sub['legal_ordinance'], sub['exemption_primary_type'])
+    count_piv = pd.crosstab(sub['legal_ordinance'], sub['exemption_type'])
 
     fig, ax = plt.subplots(figsize=(max(8, len(count_piv.columns) * 1.2), max(3, len(count_piv) * 0.9)))
     sns.heatmap(count_piv, annot=True, fmt='d', cmap='Blues', linewidths=0.5,
                 ax=ax, cbar_kws={'shrink': 0.8})
-    ax.set_title('Legal ordinance × exemption type (count of permits)', fontweight='bold')
+    ax.set_title('Legal ordinance × exemption type (occurrences)', fontweight='bold')
     ax.set_xlabel('Exemption type')
     ax.set_ylabel('Legal ordinance')
     ax.tick_params(axis='x', rotation=30)
@@ -123,13 +135,13 @@ def plot_exemption_composition_by_authority(
     output_path: str | Path | None = None,
 ) -> plt.Figure:
     """Stacked horizontal bar: proportion of each exemption type per issuing authority."""
-    df = _to_df(source)
-    sub = df[['issuing_authority', 'exemption_primary_type']].dropna()
+    df = _expand_types(_to_df(source))
+    sub = df[['issuing_authority', 'exemption_type']].dropna()
     if sub.empty:
         return plt.figure()
 
-    ct_norm  = pd.crosstab(sub['issuing_authority'], sub['exemption_primary_type'], normalize='index')
-    ct_count = pd.crosstab(sub['issuing_authority'], sub['exemption_primary_type'])
+    ct_norm  = pd.crosstab(sub['issuing_authority'], sub['exemption_type'], normalize='index')
+    ct_count = pd.crosstab(sub['issuing_authority'], sub['exemption_type'])
     totals   = ct_count.sum(axis=1)
 
     fig, ax = plt.subplots(figsize=(11, max(4, len(ct_norm) * 0.7)))
@@ -198,14 +210,14 @@ def plot_zone_code_x_exemption(
     output_path: str | Path | None = None,
 ) -> plt.Figure:
     """Bubble chart: zone code prefix × exemption type. Bubble size = count; label = count."""
-    df = _to_df(source).copy()
+    df = _expand_types(_to_df(source).copy())
     df['zone_prefix'] = df['zone_code'].apply(_zone_prefix)
 
-    sub = df[['zone_prefix', 'exemption_primary_type']].dropna()
+    sub = df[['zone_prefix', 'exemption_type']].dropna()
     if sub.empty:
         return plt.figure()
 
-    count_piv = pd.crosstab(sub['zone_prefix'], sub['exemption_primary_type'])
+    count_piv = pd.crosstab(sub['zone_prefix'], sub['exemption_type'])
     zones = count_piv.index.tolist()
     types = count_piv.columns.tolist()
 
@@ -293,15 +305,15 @@ def plot_item_type_distribution(
     items: list[dict],
     output_path: str | Path | None = None,
 ) -> plt.Figure:
-    """Horizontal bar: count of exemption items per exemption type."""
-    df = pd.DataFrame(items)
-    counts = df['exemption_primary_type'].value_counts().sort_values()
+    """Horizontal bar: type occurrences across exemption items (multi-type counted per type)."""
+    df = _expand_types(pd.DataFrame(items))
+    counts = df['exemption_type'].value_counts().sort_values()
     colors = [_EXEMPTION_PALETTE.get(t, '#7f7f7f') for t in counts.index]
 
     fig, ax = plt.subplots(figsize=(8, max(3, len(counts) * 0.5)))
     bars = ax.barh(counts.index, counts.values, color=colors)
     ax.bar_label(bars, padding=3)
-    ax.set_xlabel('Number of exemption items')
+    ax.set_xlabel('Type occurrences (multi-type items counted per type)')
     ax.set_title('Exemption item count by type', fontweight='bold')
     fig.tight_layout()
     return _save(fig, Path(output_path) if output_path else None)
@@ -312,13 +324,13 @@ def plot_item_authority_x_type(
     output_path: str | Path | None = None,
 ) -> plt.Figure:
     """Two-panel heatmap: authority × exemption type — raw item count (left) and row-normalised % (right)."""
-    df = pd.DataFrame(items)
-    sub = df[['issuing_authority', 'exemption_primary_type']].dropna()
+    df = _expand_types(pd.DataFrame(items))
+    sub = df[['issuing_authority', 'exemption_type']].dropna()
     if sub.empty:
         return plt.figure()
 
-    ct_raw  = pd.crosstab(sub['issuing_authority'], sub['exemption_primary_type'])
-    ct_norm = pd.crosstab(sub['issuing_authority'], sub['exemption_primary_type'],
+    ct_raw  = pd.crosstab(sub['issuing_authority'], sub['exemption_type'])
+    ct_norm = pd.crosstab(sub['issuing_authority'], sub['exemption_type'],
                           normalize='index').mul(100).round(1)
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, max(3, len(ct_raw) * 0.8)))
@@ -431,12 +443,14 @@ def plot_keyword_frequency(
     One subplot per exemption type. Useful for subjects_text, allowed_actions_text,
     conditions_text, justification_text, or combined_text.
     """
-    df = pd.DataFrame(items)
-    if text_col not in df.columns:
+    raw = pd.DataFrame(items)
+    if text_col not in raw.columns:
         return plt.figure()
 
-    types = sorted(t for t in df['exemption_primary_type'].dropna().unique()
-                   if isinstance(t, str))
+    # Expand multi-label types; keep text column alongside
+    df = _expand_types(raw[[c for c in raw.columns if c in
+                             ('exemption_types', 'exemption_primary_type', text_col)]])
+    types = sorted(t for t in df['exemption_type'].dropna().unique() if isinstance(t, str))
     if not types:
         return plt.figure()
 
@@ -457,7 +471,7 @@ def plot_keyword_frequency(
     )
 
     for ax, etype in zip(axes_flat, types):
-        mask  = df['exemption_primary_type'] == etype
+        mask  = df['exemption_type'] == etype
         texts = df.loc[mask, text_col].fillna('').tolist()
         words = [w for t in texts for w in _tokenize(t)]
 

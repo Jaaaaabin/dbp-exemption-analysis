@@ -120,6 +120,17 @@ def legal_domain(ref: str | None, text: str | None = None) -> str:
     return UNKNOWN
 
 
+def _expand_domain(df: pd.DataFrame) -> pd.DataFrame:
+    """One row per (record, type) by exploding exemption_types; replaces exemption_domain."""
+    if "exemption_types" not in df.columns:
+        return df
+    expanded = df.copy()
+    expanded["exemption_domain"] = expanded["exemption_types"]
+    return (expanded.explode("exemption_domain")
+                    .dropna(subset=["exemption_domain"])
+                    .drop(columns=["exemption_types"], errors="ignore"))
+
+
 def build_record_rows(
     exemptions: dict[str, dict],
     decision_basis: dict[str, dict],
@@ -155,6 +166,7 @@ def build_record_rows(
         rows.append({
             "request_id": request_id,
             "exemption_domain": ge.get("primary_type") or UNKNOWN,
+            "exemption_types":   ge.get("types") or [],
             "is_empty": bool(ge.get("is_empty")),
             "n_exemption_domains": len(ge.get("types") or []),
             "n_legal_refs": len(ge.get("legal_refs") or []),
@@ -291,12 +303,13 @@ def association_metrics(records: pd.DataFrame, items: pd.DataFrame) -> dict:
 
 
 def plot_exemption_domain_x_plan(records: pd.DataFrame, output_dir: Path) -> None:
+    exp = _expand_domain(records)
     table = pd.crosstab(
-        records["plan_primary_type"],
-        records["exemption_domain"],
+        exp["plan_primary_type"],
+        exp["exemption_domain"],
         normalize="index",
     ).mul(100)
-    counts = pd.crosstab(records["plan_primary_type"], records["exemption_domain"])
+    counts = pd.crosstab(exp["plan_primary_type"], exp["exemption_domain"])
     totals = counts.sum(axis=1)
 
     order = totals.sort_values().index
@@ -319,12 +332,13 @@ def plot_exemption_domain_x_plan(records: pd.DataFrame, output_dir: Path) -> Non
 
 
 def plot_exemption_domain_x_ordinance(records: pd.DataFrame, output_dir: Path) -> None:
+    exp = _expand_domain(records)
     table = pd.crosstab(
-        records["legal_ordinance"],
-        records["exemption_domain"],
+        exp["legal_ordinance"],
+        exp["exemption_domain"],
         normalize="index",
     ).mul(100)
-    counts = pd.crosstab(records["legal_ordinance"], records["exemption_domain"])
+    counts = pd.crosstab(exp["legal_ordinance"], exp["exemption_domain"])
     totals = counts.sum(axis=1)
     order = totals.sort_values().index
     table = table.loc[order]
@@ -457,12 +471,13 @@ def plot_complexity_by_plan(records: pd.DataFrame, output_dir: Path) -> None:
 
 
 def plot_zone_quality_by_domain(records: pd.DataFrame, output_dir: Path) -> None:
+    exp = _expand_domain(records)
     table = pd.crosstab(
-        records["exemption_domain"],
-        records["zone_quality"],
+        exp["exemption_domain"],
+        exp["zone_quality"],
         normalize="index",
     ).mul(100)
-    counts = pd.crosstab(records["exemption_domain"], records["zone_quality"])
+    counts = pd.crosstab(exp["exemption_domain"], exp["zone_quality"])
     totals = counts.sum(axis=1)
     order = totals.sort_values().index
     table = table.loc[order]
@@ -491,19 +506,17 @@ def finding_development_plan_concentration(records: pd.DataFrame) -> dict:
         .sort_values(ascending=False)
     )
     dominant_pairs = to_plain_dict(top_pairs.head(5))
-    mixed_tree_count = int(
-        len(
-            development[
-                development["exemption_domain"].isin(["mixed", "tree_environmental"])
-            ]
-        )
+    tree_count = int(
+        development["exemption_types"].apply(
+            lambda types: "tree_environmental" in (types or [])
+        ).sum()
     )
     return {
-        "finding": "Development-plan contexts dominate the joined decision patterns, and within that context mixed and tree/environmental exemptions form the largest combined block.",
+        "finding": "Development-plan contexts dominate the joined decision patterns, and within that context tree/environmental exemptions form the largest block.",
         "evidence": {
             "development_plan_records": int(len(development)),
             "total_records": int(len(records)),
-            "mixed_or_tree_environmental_in_development_plan": mixed_tree_count,
+            "tree_environmental_in_development_plan": tree_count,
             "top_exemption_domain_by_plan_pairs": dominant_pairs,
         },
     }
@@ -558,7 +571,8 @@ def finding_zone_quality_caveat(records: pd.DataFrame) -> dict:
     noisy = records[
         records["zone_quality"].isin(["source_label", "legal_text", "unparsed_text"])
     ]
-    by_domain = pd.crosstab(records["exemption_domain"], records["zone_quality"])
+    exp = _expand_domain(records)
+    by_domain = pd.crosstab(exp["exemption_domain"], exp["zone_quality"])
     return {
         "finding": "Zone-code context is useful but unevenly parsed, so zone-based exemption patterns should be interpreted as provisional until zone parsing is hardened.",
         "evidence": {
@@ -591,6 +605,7 @@ def save_metadata(
 ) -> None:
     exemption_metadata = load_json_if_present(EXEMPTION_METADATA_FILE)
     decision_basis_metadata = load_json_if_present(DECISION_BASIS_METADATA_FILE)
+    exp = _expand_domain(records)
 
     metadata = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -622,13 +637,13 @@ def save_metadata(
         "exemption_domain_by_planning_context": {
             str(index): to_plain_dict(row)
             for index, row in pd.crosstab(
-                records["exemption_domain"], records["plan_primary_type"]
+                exp["exemption_domain"], exp["plan_primary_type"]
             ).iterrows()
         },
         "exemption_domain_by_ordinance_context": {
             str(index): to_plain_dict(row)
             for index, row in pd.crosstab(
-                records["exemption_domain"], records["legal_ordinance"]
+                exp["exemption_domain"], exp["legal_ordinance"]
             ).iterrows()
         },
         "legal_domain_by_ordinance_context": {

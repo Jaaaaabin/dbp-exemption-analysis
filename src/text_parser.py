@@ -197,7 +197,7 @@ def _build_item(idx: str | None, text: str) -> dict:
     item['legal_ref'] = refs[0] if refs else None
 
     types = classify_exemption_types(text)
-    item['type'] = types[0] if len(types) == 1 else 'mixed'
+    item['type'] = types[0]
 
     # Sub-items: N.1. N.2. … (only when parent has an index)
     sub_items: list[dict] = []
@@ -315,7 +315,7 @@ def parse_granted_exemptions(text: str) -> dict:
         header          – introductory text before the first numbered item, if any
                           (e.g. 'Wegerecht (Road law) - This permit includes:')
         types           – multi-label taxonomy list (derived from full text)
-        primary_type    – single label or 'mixed'
+        primary_type    – first matched taxonomy label (multi-type records use types[0])
         is_empty        – True when the field states no exemption
         legal_refs      – deduplicated § references (full text)
         subjects        – flattened subjects across all items / sub-items
@@ -342,7 +342,7 @@ def parse_granted_exemptions(text: str) -> dict:
     items, header = _parse_exemption_items(body)
 
     types = classify_exemption_types(text)
-    primary_type = types[0] if len(types) == 1 else 'mixed'
+    primary_type = types[0]
 
     result: dict = {
         'header':       header or None,
@@ -584,6 +584,7 @@ def flatten_to_items(source: JsonSource) -> list[dict]:
             'zone_code':         (record.get('zone_code')
                                   or basis.get('zone_code')),
             'exemption_primary_type': ge.get('primary_type'),
+            'exemption_types':        ge.get('types', []),
         }
 
         is_empty    = ge.get('is_empty', False)
