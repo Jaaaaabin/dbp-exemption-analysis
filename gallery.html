@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DBP Exemption Analysis — Figure Gallery</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card-bg: #ffffff;
+    --border: #d8dbe0;
+    --text: #1f2430;
+    --muted: #6b7280;
+    --accent: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+  header h1 {
+    font-size: 16px;
+    margin: 0;
+    margin-right: auto;
+  }
+  header label {
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  header select, header button {
+    font-size: 13px;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+  }
+  #status {
+    font-size: 12px;
+    color: var(--muted);
+    min-width: 110px;
+  }
+  main {
+    padding: 20px;
+  }
+  section {
+    margin-bottom: 32px;
+  }
+  section h2 {
+    font-size: 18px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+  figure {
+    margin: 0;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  figure a {
+    display: block;
+    line-height: 0;
+  }
+  figure img {
+    width: 100%;
+    display: block;
+    background: #fff;
+  }
+  figcaption {
+    padding: 8px 10px;
+    font-size: 13px;
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+  figcaption .path {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+    word-break: break-all;
+  }
+  figure.missing img {
+    display: none;
+  }
+  figure.missing::after {
+    content: "not generated yet";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    color: var(--muted);
+    font-size: 13px;
+    background: repeating-linear-gradient(45deg, #f0f1f3, #f0f1f3 10px, #e6e8eb 10px, #e6e8eb 20px);
+  }
+  .error {
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  .error code {
+    background: #fff;
+    border: 1px solid #fecaca;
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>DBP Exemption Analysis — Figure Gallery</h1>
+  <label>Refresh
+    <select id="interval">
+      <option value="0">Off</option>
+      <option value="5000" selected>5s</option>
+      <option value="10000">10s</option>
+      <option value="30000">30s</option>
+      <option value="60000">60s</option>
+    </select>
+  </label>
+  <button id="refreshNow">Refresh now</button>
+  <span id="manifestStatus"></span>
+  <span id="status"></span>
+</header>
+<main id="main"></main>
+
+<script>
+const MANIFEST_URL = "res/figures/manifest.json";
+
+function titleFromPath(path) {
+  const base = path.split("/").pop().replace(/\.png$/i, "");
+  return base
+    .split("_")
+    .map(w => (w === "x" ? "×" : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(" ");
+}
+
+const main = document.getElementById("main");
+const statusEl = document.getElementById("status");
+const manifestStatusEl = document.getElementById("manifestStatus");
+const intervalSelect = document.getElementById("interval");
+let timer = null;
+let lastSectionsJSON = null;
+
+function buildGallery(sections) {
+  main.innerHTML = "";
+  sections.forEach(section => {
+    const sec = document.createElement("section");
+    const h2 = document.createElement("h2");
+    h2.textContent = section.title;
+    sec.appendChild(h2);
+
+    const grid = document.createElement("div");
+    grid.className = "grid";
+
+    section.files.forEach(path => {
+      const fig = document.createElement("figure");
+
+      const a = document.createElement("a");
+      a.target = "_blank";
+      a.rel = "noopener";
+
+      const img = document.createElement("img");
+      img.dataset.src = path;
+      img.alt = titleFromPath(path);
+      img.loading = "lazy";
+      img.onerror = () => { fig.classList.add("missing"); };
+      img.onload = () => { fig.classList.remove("missing"); };
+
+      a.appendChild(img);
+      fig.appendChild(a);
+
+      const caption = document.createElement("figcaption");
+      caption.textContent = titleFromPath(path);
+      const pathSpan = document.createElement("span");
+      pathSpan.className = "path";
+      pathSpan.textContent = path;
+      caption.appendChild(pathSpan);
+      fig.appendChild(caption);
+
+      grid.appendChild(fig);
+    });
+
+    sec.appendChild(grid);
+    main.appendChild(sec);
+  });
+}
+
+// Re-fetches manifest.json each tick so newly generated figures (after
+// re-running gallery_manifest.py) appear without a full page reload.
+async function loadManifest() {
+  try {
+    const res = await fetch(MANIFEST_URL + "?t=" + Date.now());
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+
+    const sectionsJSON = JSON.stringify(data.sections);
+    if (sectionsJSON !== lastSectionsJSON) {
+      lastSectionsJSON = sectionsJSON;
+      buildGallery(data.sections);
+    }
+    manifestStatusEl.textContent = "Manifest: " + new Date(data.generated_at).toLocaleString();
+    return true;
+  } catch (err) {
+    main.innerHTML = '<p class="error">Could not load <code>' + MANIFEST_URL
+      + '</code> — run <code>uv run python gallery.py</code> first, then reload. ('
+      + err + ')</p>';
+    lastSectionsJSON = null;
+    return false;
+  }
+}
+
+async function refreshAll() {
+  const ok = await loadManifest();
+  if (!ok) return;
+  const stamp = Date.now();
+  document.querySelectorAll("img[data-src]").forEach(img => {
+    const a = img.parentElement;
+    a.href = img.dataset.src + "?t=" + stamp; // open the latest version in a new tab too
+    img.src = img.dataset.src + "?t=" + stamp;
+  });
+  statusEl.textContent = "Updated " + new Date(stamp).toLocaleTimeString();
+}
+
+function setInterval_() {
+  if (timer) clearInterval(timer);
+  const ms = Number(intervalSelect.value);
+  if (ms > 0) {
+    timer = setInterval(refreshAll, ms);
+  }
+}
+
+document.getElementById("refreshNow").addEventListener("click", refreshAll);
+intervalSelect.addEventListener("change", setInterval_);
+
+refreshAll();
+setInterval_();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-06-12T17:03:18.498404+00:00",
+  "sections": [
+    {
+      "title": "Overview (plot.py)",
+      "files": [
+        "res/figures/exemption_composition_by_authority.png",
+        "res/figures/exemption_overview.png",
+        "res/figures/legal_ref_frequency.png",
+        "res/figures/ordinance_x_exemption.png",
+        "res/figures/zone_code_x_exemption.png"
+      ]
+    },
+    {
+      "title": "Exemption (analyze_exemption.py)",
+      "files": [
+        "res/figures/exemption/decision_pattern_complexity_by_domain.png",
+        "res/figures/exemption/decision_pattern_item_count.png",
+        "res/figures/exemption/exemption_domain_cooccurrence.png",
+        "res/figures/exemption/exemption_domain_distribution.png",
+        "res/figures/exemption/exemption_domain_label_frequency.png",
+        "res/figures/exemption/legal_basis_reference_frequency.png",
+        "res/figures/exemption/legal_domain_frequency.png",
+        "res/figures/exemption/rationale_signal_by_exemption_domain.png",
+        "res/figures/exemption/rationale_signal_by_item_domain.png",
+        "res/figures/exemption/rationale_signal_coverage.png",
+        "res/figures/exemption/rationale_text_length_by_item_domain.png"
+      ]
+    },
+    {
+      "title": "Decision Basis (analyze_decision_basis.py)",
+      "files": [
+        "res/figures/decision_basis/decision_basis_residual_key_frequency.png",
+        "res/figures/decision_basis/planning_context_field_coverage.png",
+        "res/figures/decision_basis/planning_context_ordinance_distribution.png",
+        "res/figures/decision_basis/planning_context_plan_reference_count.png",
+        "res/figures/decision_basis/planning_context_plan_reference_type_frequency.png",
+        "res/figures/decision_basis/planning_context_plan_type_distribution.png",
+        "res/figures/decision_basis/planning_context_plan_x_ordinance.png",
+        "res/figures/decision_basis/planning_context_plan_x_zone_prefix.png",
+        "res/figures/decision_basis/planning_context_primary_plan_distribution.png",
+        "res/figures/decision_basis/planning_context_zone_parse_quality.png",
+        "res/figures/decision_basis/planning_context_zone_prefix_frequency.png"
+      ]
+    },
+    {
+      "title": "Both — Combined (analyze_both.py)",
+      "files": [
+        "res/figures/both/decision_pattern_complexity_by_planning_context.png",
+        "res/figures/both/exemption_domain_x_ordinance_context.png",
+        "res/figures/both/exemption_domain_x_planning_context.png",
+        "res/figures/both/legal_domain_x_ordinance_context.png",
+        "res/figures/both/rationale_signals_by_planning_context.png",
+        "res/figures/both/zone_quality_by_exemption_domain.png"
+      ]
+    },
+    {
+      "title": "Items (plot.py)",
+      "files": [
+        "res/figures/items/exemption_treemap.png",
+        "res/figures/items/item_authority_x_type.png",
+        "res/figures/items/item_legal_ref_bar.png",
+        "res/figures/items/item_type_distribution.png",
+        "res/figures/items/keywords_allowed_actions_text.png",
+        "res/figures/items/keywords_combined_text.png",
+        "res/figures/items/keywords_conditions_text.png",
+        "res/figures/items/keywords_justification_text.png",
+        "res/figures/items/keywords_subjects_text.png"
+      ]
+    },
+    {
+      "title": "Patterns (analyze_patterns.py)",
+      "files": [
+        "res/figures/patterns/pattern_gap_breakdown.png",
+        "res/figures/patterns/pattern_other_bigrams.png",
+        "res/figures/patterns/pattern_other_keywords_by_gap.png"
+      ]
+    }
+  ]
+}

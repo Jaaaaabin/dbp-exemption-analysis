@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-12T16:47:07.282909+00:00",
+  "input_file": "data\\cleaned\\data_analyze_parsed_granted_exemptions.json",
+  "output_dir": "res\\figures\\patterns",
+  "figures": [
+    "pattern_gap_breakdown.png",
+    "pattern_other_bigrams.png",
+    "pattern_other_keywords_by_gap.png"
+  ],
+  "item_count": 111,
+  "item_type_counts": {
+    "access_restriction": 2,
+    "access_road": 6,
+    "building_code": 11,
+    "nature_protection": 1,
+    "other": 27,
+    "planning_law": 23,
+    "tree_environmental": 41
+  },
+  "other_item_count": 27,
+  "gap_category_counts": {
+    "inherits_access_road": 2,
+    "inherits_tree_environmental": 12,
+    "novel": 2,
+    "taxonomy_gap_BauGB": 1,
+    "taxonomy_gap_BauNVO": 1,
+    "taxonomy_gap_HBauO": 4,
+    "taxonomy_gap_HWG": 3,
+    "taxonomy_gap_TreeProtection": 1,
+    "taxonomy_gap_UnqualifiedSection": 1
+  },
+  "taxonomy_gap_legal_refs": {
+    "BauGB": [
+      "§ 34 BauGB"
+    ],
+    "BauNVO": [
+      "§ 23 Abs. 5 BauNVO"
+    ],
+    "HBauO": [
+      "§ 32 Abs. 1 HBauO",
+      "§ 35 HBauO",
+      "§ 37 Abs. 3 HBauO"
+    ],
+    "HWG": [
+      "§ 18 Abs. 1 HWG",
+      "§ 19 Abs. 1 HWG",
+      "§ 61 HWG"
+    ],
+    "TreeProtection": [
+      "§ 4 BaumschutzVO"
+    ],
+    "UnqualifiedSection": [
+      "§ 3 Abs. 1"
+    ]
+  },
+  "novel_items": [
+    {
+      "request_id": "1",
+      "item_index": "1",
+      "record_primary_type": "other",
+      "text_snippet": "Exceeding the Building Boundary:\nExceeded by: 3.83 m (2.50 m building plus 1.33 m balcony)\nJustification: The exemption is urbanistically justifiable."
+    },
+    {
+      "request_id": "5",
+      "item_index": "1",
+      "record_primary_type": "other",
+      "text_snippet": "For Exceeding the Permissible Built Area (GRZ I) from 0.2 to 0.22:\nJustification: The exemption is granted.\nAdditional Information:\nNotice: The approv"
+    }
+  ]
+}
