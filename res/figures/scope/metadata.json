@@ -1,0 +1,372 @@
+{
+  "generated_at": "2026-06-14T15:56:04.539148+00:00",
+  "input_files": [
+    "data\\cleaned\\data_analyze.json",
+    "data\\cleaned\\data_none_exemption.json"
+  ],
+  "output_dir": "res\\figures\\scope",
+  "record_count": 99,
+  "cohort_counts": {
+    "exemption": 83,
+    "no_exemption": 16
+  },
+  "figures": [
+    "input_stats_cohort_distribution.png",
+    "input_stats_year_issue_date.png",
+    "input_stats_district_distribution.png",
+    "input_stats_hmbtg_type_of_construction.png",
+    "input_stats_hmbtg_type_of_requested_facility.png",
+    "input_stats_hmbtg_type_of_building_by_future_use.png",
+    "input_stats_both_year_buildinguse.png"
+  ],
+  "years": {
+    "issue_date": {
+      "label": "Issue Date",
+      "coverage": 99,
+      "missing": 0,
+      "min": 2014,
+      "max": 2024,
+      "counts": {
+        "2014": 8,
+        "2015": 3,
+        "2016": 5,
+        "2018": 8,
+        "2019": 6,
+        "2020": 17,
+        "2021": 22,
+        "2022": 22,
+        "2023": 7,
+        "2024": 1
+      },
+      "counts_by_cohort": {
+        "exemption": {
+          "2014": 7,
+          "2015": 2,
+          "2016": 5,
+          "2018": 8,
+          "2019": 5,
+          "2020": 17,
+          "2021": 17,
+          "2022": 15,
+          "2023": 6,
+          "2024": 1
+        },
+        "no_exemption": {
+          "2014": 1,
+          "2015": 1,
+          "2019": 1,
+          "2021": 5,
+          "2022": 7,
+          "2023": 1
+        }
+      }
+    }
+  },
+  "districts": {
+    "unique": 37,
+    "missing": 3,
+    "counts": {
+      "Öjendorf": 9,
+      "Hummelsbüttel": 5,
+      "Lemsahl-Mellingstedt": 5,
+      "Niendorf": 5,
+      "Bramfeld": 5,
+      "Ohlstedt": 5,
+      "Meiendorf": 4,
+      "Kirchsteinbek": 4,
+      "Sasel": 4,
+      "Schnelsen": 4,
+      "Volksdorf": 4,
+      "Othmarschen": 3,
+      "Lurup": 3,
+      "unknown": 3,
+      "Alt-Rahlstedt": 3,
+      "Osdorf": 2,
+      "Blankenese": 2,
+      "Lokstedt": 2,
+      "Farmsen": 2,
+      "Wilhelmsburg": 2,
+      "Rissen": 2,
+      "Boberg": 2,
+      "Jenfeld": 2,
+      "Wellingsbüttel": 2,
+      "Schiffbek": 2,
+      "Kirchwerder": 2,
+      "Poppenbüttel": 1,
+      "Bergstedt": 1,
+      "Langenhorn": 1,
+      "Winterhude": 1,
+      "Marienthal": 1,
+      "Curslack": 1,
+      "Stellingen": 1,
+      "Eidelstedt": 1,
+      "Wohldorf": 1,
+      "Tonndorf": 1,
+      "Finkenwerder Süd": 1
+    },
+    "counts_by_cohort": {
+      "Alt-Rahlstedt": {
+        "exemption": 3,
+        "no_exemption": 0
+      },
+      "Bergstedt": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Blankenese": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Boberg": {
+        "exemption": 0,
+        "no_exemption": 2
+      },
+      "Bramfeld": {
+        "exemption": 3,
+        "no_exemption": 2
+      },
+      "Curslack": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Eidelstedt": {
+        "exemption": 0,
+        "no_exemption": 1
+      },
+      "Farmsen": {
+        "exemption": 1,
+        "no_exemption": 1
+      },
+      "Finkenwerder Süd": {
+        "exemption": 0,
+        "no_exemption": 1
+      },
+      "Hummelsbüttel": {
+        "exemption": 5,
+        "no_exemption": 0
+      },
+      "Jenfeld": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Kirchsteinbek": {
+        "exemption": 4,
+        "no_exemption": 0
+      },
+      "Kirchwerder": {
+        "exemption": 1,
+        "no_exemption": 1
+      },
+      "Langenhorn": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Lemsahl-Mellingstedt": {
+        "exemption": 5,
+        "no_exemption": 0
+      },
+      "Lokstedt": {
+        "exemption": 1,
+        "no_exemption": 1
+      },
+      "Lurup": {
+        "exemption": 2,
+        "no_exemption": 1
+      },
+      "Marienthal": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Meiendorf": {
+        "exemption": 4,
+        "no_exemption": 0
+      },
+      "Niendorf": {
+        "exemption": 4,
+        "no_exemption": 1
+      },
+      "Ohlstedt": {
+        "exemption": 5,
+        "no_exemption": 0
+      },
+      "Osdorf": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Othmarschen": {
+        "exemption": 3,
+        "no_exemption": 0
+      },
+      "Poppenbüttel": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Rissen": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Sasel": {
+        "exemption": 3,
+        "no_exemption": 1
+      },
+      "Schiffbek": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Schnelsen": {
+        "exemption": 3,
+        "no_exemption": 1
+      },
+      "Stellingen": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Tonndorf": {
+        "exemption": 0,
+        "no_exemption": 1
+      },
+      "Volksdorf": {
+        "exemption": 4,
+        "no_exemption": 0
+      },
+      "Wellingsbüttel": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Wilhelmsburg": {
+        "exemption": 2,
+        "no_exemption": 0
+      },
+      "Winterhude": {
+        "exemption": 1,
+        "no_exemption": 0
+      },
+      "Wohldorf": {
+        "exemption": 0,
+        "no_exemption": 1
+      },
+      "unknown": {
+        "exemption": 3,
+        "no_exemption": 0
+      },
+      "Öjendorf": {
+        "exemption": 8,
+        "no_exemption": 1
+      }
+    }
+  },
+  "hmbtg_statistics": {
+    "type_of_construction": {
+      "label": "Type of construction",
+      "missing": 0,
+      "counts": {
+        "New Construction": 96,
+        "Modification, Change of Use": 2,
+        "Alteration": 1
+      },
+      "counts_by_cohort": {
+        "Alteration": {
+          "exemption": 1,
+          "no_exemption": 0
+        },
+        "Modification, Change of Use": {
+          "exemption": 2,
+          "no_exemption": 0
+        },
+        "New Construction": {
+          "exemption": 80,
+          "no_exemption": 16
+        }
+      }
+    },
+    "type_of_requested_facility": {
+      "label": "Type of requested facility (building class)",
+      "missing": 10,
+      "counts": {
+        "Building, Building Class 1": 54,
+        "Building, Building Class 2": 19,
+        "Building, Building Class 3": 12,
+        "unknown": 10,
+        "Building, Building Class 4": 3,
+        "Building, Building Class 2; Underground garage, Building Class 5": 1
+      },
+      "counts_by_cohort": {
+        "Building, Building Class 1": {
+          "exemption": 41,
+          "no_exemption": 13
+        },
+        "Building, Building Class 2": {
+          "exemption": 19,
+          "no_exemption": 0
+        },
+        "Building, Building Class 2; Underground garage, Building Class 5": {
+          "exemption": 1,
+          "no_exemption": 0
+        },
+        "Building, Building Class 3": {
+          "exemption": 12,
+          "no_exemption": 0
+        },
+        "Building, Building Class 4": {
+          "exemption": 3,
+          "no_exemption": 0
+        },
+        "unknown": {
+          "exemption": 7,
+          "no_exemption": 3
+        }
+      }
+    },
+    "type_of_building_by_future_use": {
+      "label": "Type of building by future use",
+      "missing": 0,
+      "counts": {
+        "Pure Residential": 87,
+        "Residential": 10,
+        "Mixed-use": 2
+      },
+      "counts_by_cohort": {
+        "Mixed-use": {
+          "exemption": 2,
+          "no_exemption": 0
+        },
+        "Pure Residential": {
+          "exemption": 72,
+          "no_exemption": 15
+        },
+        "Residential": {
+          "exemption": 9,
+          "no_exemption": 1
+        }
+      }
+    },
+    "number_of_full_stories": {
+      "label": "Number of full stories",
+      "missing": 4,
+      "counts": {
+        "1 Full Story": 64,
+        "2 Full Stories": 30,
+        "unknown": 4,
+        "3 Full Stories": 1
+      },
+      "counts_by_cohort": {
+        "1 Full Story": {
+          "exemption": 51,
+          "no_exemption": 13
+        },
+        "2 Full Stories": {
+          "exemption": 27,
+          "no_exemption": 3
+        },
+        "3 Full Stories": {
+          "exemption": 1,
+          "no_exemption": 0
+        },
+        "unknown": {
+          "exemption": 4,
+          "no_exemption": 0
+        }
+      }
+    }
+  }
+}

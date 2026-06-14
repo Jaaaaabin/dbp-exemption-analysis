@@ -1,0 +1,30 @@
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   BUILDING PERMIT INFORMATION MODEL                              │
+│                                           [REFERENCE ID]                                         │
+└────────────────────────────────┬───────────────────────────────────────┬─────────────────────────┘
+                                 │                                       │
+┌────────────────────────────────▼────────────────┐    ┌─────────────────▼─────────────────┐
+│          ADMINISTRATIVE & LEGAL METADATA        │    │    PROJECT & SITE CHARACTERISTICS │
+├─────────────────────────────────────────────────┤    ├───────────────────────────────────┤
+│ • Issuing Authority                             │    │ • Address / Plot Identifier       │
+│ • Date of Issue                                 │    │ • Project Description             │
+│ • Legal / Procedural Context                    │    │ • Building Classification         │
+│ • Validity Period                               │    │ • Dimensions                      │
+│ • Legal Successors                              │    │ • Zoning Compliance               │
+│ • Legal Remedy                                  │    └───────────────────────────────────┘
+└─────────────────────────────────────────────────┘                      │
+                                 │                                       │
+                                 ├───────────────────────────────────────┤
+                                 │                                       │
+┌────────────────────────────────▼────────────────┐    ┌─────────────────▼─────────────────┐
+│     TECHNICAL EXECUTION DOCUMENTS (IFC LINKS)   │    │   ENVIRONMENTAL & SITE CONSTRAINTS│
+├─────────────────────────────────────────────────┤    ├───────────────────────────────────┤
+│ • Site Plans                                    │    │ • Base Regulation                 │
+│ • Clearance Area Calculations                   │    │ • Protected Vegetation ID         │
+│ • Architectural Plans                           │    │ • Execution Window                │
+│   - Basement Floor Layout                       │    │ • Exclusion / Separation          │
+│   - Ground Floor Layout                         │    │ • Protection Standards            │
+│   - Attic Floor Layout                          │    │ • Ancillary Provisions            │
+│ • Cross Sections & Elevations                   │    └───────────────────────────────────┘
+└─────────────────────────────────────────────────┘
