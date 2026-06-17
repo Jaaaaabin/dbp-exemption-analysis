@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-04T12:47:25.671110+00:00",
-  "input_file": "data/cleaned/data_analyze_parsed_granted_exemptions.json",
-  "output_dir": "res/figures/exemption",
+  "generated_at": "2026-06-15T16:16:19.040441+00:00",
+  "input_file": "data\\cleaned\\data_analyze_parsed_granted_exemptions.json",
+  "output_dir": "res\\figures\\exemption",
   "figures": [
     "exemption_domain_distribution.png",
     "exemption_domain_label_frequency.png",
@@ -15,89 +15,85 @@
     "decision_pattern_complexity_by_domain.png",
     "rationale_text_length_by_item_domain.png"
   ],
-  "record_count": 83,
-  "item_count": 111,
+  "record_count": 71,
+  "item_count": 110,
   "primary_type_counts": {
-    "access_restriction": 2,
+    "access_restriction": 1,
     "access_road": 2,
-    "building_code": 6,
-    "mixed": 20,
-    "none": 11,
-    "other": 8,
-    "planning_law": 13,
-    "tree_environmental": 21
+    "building_code": 11,
+    "other": 1,
+    "planning_law": 24,
+    "tree_environmental": 32
   },
   "type_label_counts": {
     "access_restriction": 2,
     "access_road": 3,
-    "building_code": 14,
+    "building_code": 19,
     "nature_protection": 11,
-    "none": 11,
-    "other": 8,
-    "planning_law": 21,
+    "other": 1,
+    "planning_law": 24,
     "tree_environmental": 37
   },
   "item_type_counts": {
-    "access_restriction": 2,
+    "access_restriction": 1,
     "access_road": 6,
-    "building_code": 11,
-    "mixed": 14,
+    "building_code": 16,
     "nature_protection": 1,
-    "other": 27,
-    "planning_law": 20,
-    "tree_environmental": 30
+    "other": 20,
+    "planning_law": 26,
+    "tree_environmental": 40
   },
   "legal_domain_counts": {
     "BNatSchG": 10,
-    "BauGB": 22,
+    "BauGB": 21,
     "HBauO": 20,
     "HWG": 9,
-    "TreeProtection": 30,
-    "UnqualifiedSection": 3,
+    "TreeProtection": 31,
+    "UnqualifiedSection": 2,
     "unknown": 17
   },
   "top_legal_refs": {
-    "§ 4": 30,
+    "§ 4 BaumschutzVO": 30,
+    "§ 31 Abs. 2 BauGB": 14,
     "§ 69 HBauO": 12,
-    "§ 31 paragraph 2": 6,
-    "§ 31 Abs. 2": 5,
-    "§ 6": 3,
-    "§ 31 Absatz 2": 3,
-    "§ 37": 2,
-    "§ 31 Abs. 1": 2,
-    "§ 19 Absatz 1 HWG": 2,
-    "§ 18 Absatz 1 HWG": 2,
-    "§ 31 paragraph 1": 2,
-    "§ 31 Absatz 3": 1,
-    "§4": 1,
-    "§ 31 Absatz 1": 1,
-    "§ 31": 1,
-    "§ 173 Abs. 1": 1,
-    "§ 67 BNatSchG": 1,
+    "§ 31 Abs. 1 BauGB": 6,
+    "§ 6 BaumschutzVO": 3,
+    "§ 19 Abs. 1 HWG": 3,
+    "§ 18 Abs. 1 HWG": 3,
+    "§ 37 Abs. 3 HBauO": 2,
+    "§ 32 Abs. 1 HBauO": 1,
+    "§ 35 HBauO": 1,
+    "§ 173 Abs. 1 BauGB": 1,
+    "§ 23 Abs. 5 BauNVO": 1,
+    "§ 11 BPVO": 1,
+    "§ 4": 1,
+    "§ 31 Abs. 3 BauGB": 1,
+    "§ 61 HWG": 1,
+    "§ 26 HWG": 1,
+    "§ 22 Abs. 1 HWG": 1,
     "§ 3 Abs. 1": 1,
-    "§ 22 Absatz 1 HWG": 1,
-    "§ 35 HBauO": 1
+    "§ 67 BNatSchG": 1
   },
   "summary": {
-    "empty_record_count": 11,
+    "empty_record_count": 0,
     "records_with_header": 1,
     "records_with_subjects": 36,
     "records_with_subitems": 15,
     "max_items_per_record": 6,
-    "avg_items_per_record": 1.3373493975903614,
+    "avg_items_per_record": 1.5492957746478873,
     "max_complexity_score": 18,
-    "avg_complexity_score": 5.710843373493976
+    "avg_complexity_score": 6.507042253521127
   },
   "rationale_signal_coverage_percent": {
-    "has_legal_ref": 78.38,
-    "has_subjects": 22.52,
-    "has_conditions": 32.43,
-    "has_allowed_actions": 15.32,
-    "has_justification": 28.83
+    "has_legal_ref": 78.18,
+    "has_subjects": 22.73,
+    "has_conditions": 32.73,
+    "has_allowed_actions": 15.45,
+    "has_justification": 29.09
   },
   "rationale_signal_by_exemption_domain_percent": {
     "access_restriction": {
-      "has_legal_ref": 50.0,
+      "has_legal_ref": 0.0,
       "has_subjects": 0.0,
       "has_conditions": 0.0,
       "has_allowed_actions": 0.0,
@@ -112,38 +108,31 @@
     },
     "building_code": {
       "has_legal_ref": 100.0,
-      "has_subjects": 16.67,
-      "has_conditions": 33.33,
+      "has_subjects": 27.27,
+      "has_conditions": 36.36,
       "has_allowed_actions": 0.0,
-      "has_justification": 66.67
-    },
-    "mixed": {
-      "has_legal_ref": 94.12,
-      "has_subjects": 32.35,
-      "has_conditions": 47.06,
-      "has_allowed_actions": 26.47,
-      "has_justification": 20.59
+      "has_justification": 63.64
     },
     "other": {
-      "has_legal_ref": 75.0,
-      "has_subjects": 50.0,
-      "has_conditions": 25.0,
+      "has_legal_ref": 0.0,
+      "has_subjects": 0.0,
+      "has_conditions": 0.0,
       "has_allowed_actions": 0.0,
-      "has_justification": 75.0
+      "has_justification": 100.0
     },
     "planning_law": {
-      "has_legal_ref": 100.0,
-      "has_subjects": 46.15,
-      "has_conditions": 15.38,
-      "has_allowed_actions": 0.0,
-      "has_justification": 84.62
+      "has_legal_ref": 96.88,
+      "has_subjects": 50.0,
+      "has_conditions": 31.25,
+      "has_allowed_actions": 9.38,
+      "has_justification": 53.12
     },
     "tree_environmental": {
-      "has_legal_ref": 54.05,
-      "has_subjects": 8.11,
-      "has_conditions": 27.03,
-      "has_allowed_actions": 21.62,
-      "has_justification": 10.81
+      "has_legal_ref": 64.81,
+      "has_subjects": 11.11,
+      "has_conditions": 33.33,
+      "has_allowed_actions": 25.93,
+      "has_justification": 12.96
     }
   }
 }

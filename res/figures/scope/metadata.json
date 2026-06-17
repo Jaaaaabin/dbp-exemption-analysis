@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T15:56:04.539148+00:00",
+  "generated_at": "2026-06-15T16:15:26.223912+00:00",
   "input_files": [
     "data\\cleaned\\data_analyze.json",
     "data\\cleaned\\data_none_exemption.json"
@@ -7,8 +7,8 @@
   "output_dir": "res\\figures\\scope",
   "record_count": 99,
   "cohort_counts": {
-    "exemption": 83,
-    "no_exemption": 16
+    "exemption": 71,
+    "no_exemption": 28
   },
   "figures": [
     "input_stats_cohort_distribution.png",
@@ -17,7 +17,8 @@
     "input_stats_hmbtg_type_of_construction.png",
     "input_stats_hmbtg_type_of_requested_facility.png",
     "input_stats_hmbtg_type_of_building_by_future_use.png",
-    "input_stats_both_year_buildinguse.png"
+    "input_stats_both_year_buildinguse.png",
+    "input_stats_year_buildinguse_district.png"
   ],
   "years": {
     "issue_date": {
@@ -40,24 +41,27 @@
       },
       "counts_by_cohort": {
         "exemption": {
-          "2014": 7,
+          "2014": 6,
           "2015": 2,
-          "2016": 5,
-          "2018": 8,
-          "2019": 5,
-          "2020": 17,
-          "2021": 17,
-          "2022": 15,
-          "2023": 6,
+          "2016": 4,
+          "2018": 6,
+          "2019": 4,
+          "2020": 15,
+          "2021": 14,
+          "2022": 14,
+          "2023": 5,
           "2024": 1
         },
         "no_exemption": {
-          "2014": 1,
+          "2014": 2,
           "2015": 1,
-          "2019": 1,
-          "2021": 5,
-          "2022": 7,
-          "2023": 1
+          "2016": 1,
+          "2018": 2,
+          "2019": 2,
+          "2020": 2,
+          "2021": 8,
+          "2022": 8,
+          "2023": 2
         }
       }
     }
@@ -67,14 +71,14 @@
     "missing": 3,
     "counts": {
       "Öjendorf": 9,
-      "Hummelsbüttel": 5,
       "Lemsahl-Mellingstedt": 5,
+      "Hummelsbüttel": 5,
       "Niendorf": 5,
       "Bramfeld": 5,
       "Ohlstedt": 5,
+      "Sasel": 4,
       "Meiendorf": 4,
       "Kirchsteinbek": 4,
-      "Sasel": 4,
       "Schnelsen": 4,
       "Volksdorf": 4,
       "Othmarschen": 3,
@@ -84,23 +88,23 @@
       "Osdorf": 2,
       "Blankenese": 2,
       "Lokstedt": 2,
-      "Farmsen": 2,
+      "Wellingsbüttel": 2,
       "Wilhelmsburg": 2,
       "Rissen": 2,
       "Boberg": 2,
       "Jenfeld": 2,
-      "Wellingsbüttel": 2,
-      "Schiffbek": 2,
+      "Farmsen": 2,
       "Kirchwerder": 2,
+      "Schiffbek": 2,
       "Poppenbüttel": 1,
       "Bergstedt": 1,
       "Langenhorn": 1,
+      "Stellingen": 1,
       "Winterhude": 1,
       "Marienthal": 1,
       "Curslack": 1,
-      "Stellingen": 1,
-      "Eidelstedt": 1,
       "Wohldorf": 1,
+      "Eidelstedt": 1,
       "Tonndorf": 1,
       "Finkenwerder Süd": 1
     },
@@ -150,20 +154,20 @@
         "no_exemption": 0
       },
       "Kirchsteinbek": {
-        "exemption": 4,
-        "no_exemption": 0
+        "exemption": 3,
+        "no_exemption": 1
       },
       "Kirchwerder": {
-        "exemption": 1,
-        "no_exemption": 1
+        "exemption": 0,
+        "no_exemption": 2
       },
       "Langenhorn": {
         "exemption": 1,
         "no_exemption": 0
       },
       "Lemsahl-Mellingstedt": {
-        "exemption": 5,
-        "no_exemption": 0
+        "exemption": 4,
+        "no_exemption": 1
       },
       "Lokstedt": {
         "exemption": 1,
@@ -178,8 +182,8 @@
         "no_exemption": 0
       },
       "Meiendorf": {
-        "exemption": 4,
-        "no_exemption": 0
+        "exemption": 3,
+        "no_exemption": 1
       },
       "Niendorf": {
         "exemption": 4,
@@ -206,12 +210,12 @@
         "no_exemption": 0
       },
       "Sasel": {
-        "exemption": 3,
-        "no_exemption": 1
+        "exemption": 2,
+        "no_exemption": 2
       },
       "Schiffbek": {
-        "exemption": 2,
-        "no_exemption": 0
+        "exemption": 0,
+        "no_exemption": 2
       },
       "Schnelsen": {
         "exemption": 3,
@@ -246,12 +250,12 @@
         "no_exemption": 1
       },
       "unknown": {
-        "exemption": 3,
-        "no_exemption": 0
+        "exemption": 2,
+        "no_exemption": 1
       },
       "Öjendorf": {
-        "exemption": 8,
-        "no_exemption": 1
+        "exemption": 4,
+        "no_exemption": 5
       }
     }
   },
@@ -274,8 +278,8 @@
           "no_exemption": 0
         },
         "New Construction": {
-          "exemption": 80,
-          "no_exemption": 16
+          "exemption": 68,
+          "no_exemption": 28
         }
       }
     },
@@ -292,12 +296,12 @@
       },
       "counts_by_cohort": {
         "Building, Building Class 1": {
-          "exemption": 41,
-          "no_exemption": 13
+          "exemption": 34,
+          "no_exemption": 20
         },
         "Building, Building Class 2": {
-          "exemption": 19,
-          "no_exemption": 0
+          "exemption": 14,
+          "no_exemption": 5
         },
         "Building, Building Class 2; Underground garage, Building Class 5": {
           "exemption": 1,
@@ -331,8 +335,8 @@
           "no_exemption": 0
         },
         "Pure Residential": {
-          "exemption": 72,
-          "no_exemption": 15
+          "exemption": 60,
+          "no_exemption": 27
         },
         "Residential": {
           "exemption": 9,
@@ -351,20 +355,20 @@
       },
       "counts_by_cohort": {
         "1 Full Story": {
-          "exemption": 51,
-          "no_exemption": 13
+          "exemption": 44,
+          "no_exemption": 20
         },
         "2 Full Stories": {
-          "exemption": 27,
-          "no_exemption": 3
+          "exemption": 23,
+          "no_exemption": 7
         },
         "3 Full Stories": {
           "exemption": 1,
           "no_exemption": 0
         },
         "unknown": {
-          "exemption": 4,
-          "no_exemption": 0
+          "exemption": 3,
+          "no_exemption": 1
         }
       }
     }

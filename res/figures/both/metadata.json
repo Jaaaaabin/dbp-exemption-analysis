@@ -1,56 +1,54 @@
 {
-  "generated_at": "2026-06-12T08:52:17.218289+00:00",
+  "generated_at": "2026-06-15T16:17:48.274885+00:00",
   "input_files": {
-    "granted_exemptions": "data/cleaned/data_analyze_parsed_granted_exemptions.json",
-    "decision_basis": "data/cleaned/data_analyze_parsed_decision_basis.json"
+    "granted_exemptions": "data\\cleaned\\data_analyze_parsed_granted_exemptions.json",
+    "decision_basis": "data\\cleaned\\data_analyze_parsed_decision_basis.json"
   },
   "metadata_inputs": {
-    "granted_exemptions": "res/figures/exemption/metadata.json",
-    "decision_basis": "res/figures/decision_basis/metadata.json"
+    "granted_exemptions": "res\\figures\\exemption\\metadata.json",
+    "decision_basis": "res\\figures\\decision_basis\\metadata.json"
   },
   "source_metadata_hints": {
     "exemption_domain_counts": {
-      "access_restriction": 2,
+      "access_restriction": 1,
       "access_road": 2,
-      "building_code": 6,
-      "mixed": 20,
-      "none": 11,
-      "other": 8,
-      "planning_law": 13,
-      "tree_environmental": 21
+      "building_code": 11,
+      "other": 1,
+      "planning_law": 24,
+      "tree_environmental": 32
     },
     "legal_domain_counts": {
       "BNatSchG": 10,
-      "BauGB": 22,
+      "BauGB": 21,
       "HBauO": 20,
       "HWG": 9,
-      "TreeProtection": 30,
-      "UnqualifiedSection": 3,
+      "TreeProtection": 31,
+      "UnqualifiedSection": 2,
       "unknown": 17
     },
     "planning_context_primary_plan_counts": {
       "construction_phase_plan": 3,
-      "construction_plan": 18,
-      "development_plan": 54,
+      "construction_plan": 16,
+      "development_plan": 46,
       "implementation_plan": 1,
       "landscape_protection": 1,
-      "other": 4,
-      "unplanned_area": 2
+      "other": 3,
+      "unplanned_area": 1
     },
     "planning_context_ordinance_counts": {
-      "BauNutzungsverordnung": 51,
-      "Baupolizeiverordnung": 23,
-      "unknown": 9
+      "BauNutzungsverordnung": 43,
+      "Baugesetzbuch": 5,
+      "Baupolizeiverordnung": 20,
+      "unknown": 3
     },
     "planning_context_zone_quality_counts": {
-      "legal_text": 2,
-      "missing": 1,
-      "parsed_prefix": 55,
-      "source_label": 20,
-      "unparsed_text": 5
+      "missing": 2,
+      "parsed_prefix": 59,
+      "source_label": 1,
+      "unparsed_text": 9
     }
   },
-  "output_dir": "res/figures/both",
+  "output_dir": "res\\figures\\both",
   "figures": [
     "exemption_domain_x_planning_context.png",
     "exemption_domain_x_ordinance_context.png",
@@ -59,8 +57,8 @@
     "decision_pattern_complexity_by_planning_context.png",
     "zone_quality_by_exemption_domain.png"
   ],
-  "record_count": 83,
-  "item_count": 111,
+  "record_count": 71,
+  "item_count": 110,
   "exemption_domain_by_planning_context": {
     "access_restriction": {
       "construction_phase_plan": 0,
@@ -82,9 +80,9 @@
     },
     "building_code": {
       "construction_phase_plan": 1,
-      "construction_plan": 2,
-      "development_plan": 9,
-      "implementation_plan": 0,
+      "construction_plan": 3,
+      "development_plan": 12,
+      "implementation_plan": 1,
       "landscape_protection": 0,
       "other": 1,
       "unplanned_area": 1
@@ -98,30 +96,21 @@
       "other": 0,
       "unplanned_area": 0
     },
-    "none": {
-      "construction_phase_plan": 0,
-      "construction_plan": 1,
-      "development_plan": 8,
-      "implementation_plan": 0,
-      "landscape_protection": 0,
-      "other": 1,
-      "unplanned_area": 1
-    },
     "other": {
       "construction_phase_plan": 0,
-      "construction_plan": 3,
-      "development_plan": 2,
-      "implementation_plan": 1,
-      "landscape_protection": 1,
+      "construction_plan": 0,
+      "development_plan": 0,
+      "implementation_plan": 0,
+      "landscape_protection": 0,
       "other": 1,
       "unplanned_area": 0
     },
     "planning_law": {
       "construction_phase_plan": 1,
-      "construction_plan": 7,
+      "construction_plan": 9,
       "development_plan": 13,
       "implementation_plan": 0,
-      "landscape_protection": 0,
+      "landscape_protection": 1,
       "other": 0,
       "unplanned_area": 0
     },
@@ -138,80 +127,89 @@
   "exemption_domain_by_ordinance_context": {
     "access_restriction": {
       "BauNutzungsverordnung": 2,
+      "Baugesetzbuch": 0,
       "Baupolizeiverordnung": 0,
       "unknown": 0
     },
     "access_road": {
       "BauNutzungsverordnung": 1,
+      "Baugesetzbuch": 0,
       "Baupolizeiverordnung": 2,
       "unknown": 0
     },
     "building_code": {
-      "BauNutzungsverordnung": 11,
-      "Baupolizeiverordnung": 2,
-      "unknown": 1
+      "BauNutzungsverordnung": 14,
+      "Baugesetzbuch": 1,
+      "Baupolizeiverordnung": 4,
+      "unknown": 0
     },
     "nature_protection": {
       "BauNutzungsverordnung": 10,
+      "Baugesetzbuch": 0,
       "Baupolizeiverordnung": 1,
       "unknown": 0
     },
-    "none": {
-      "BauNutzungsverordnung": 8,
-      "Baupolizeiverordnung": 2,
-      "unknown": 1
-    },
     "other": {
-      "BauNutzungsverordnung": 2,
-      "Baupolizeiverordnung": 4,
-      "unknown": 2
+      "BauNutzungsverordnung": 0,
+      "Baugesetzbuch": 0,
+      "Baupolizeiverordnung": 0,
+      "unknown": 1
     },
     "planning_law": {
       "BauNutzungsverordnung": 13,
-      "Baupolizeiverordnung": 5,
-      "unknown": 3
+      "Baugesetzbuch": 2,
+      "Baupolizeiverordnung": 7,
+      "unknown": 2
     },
     "tree_environmental": {
       "BauNutzungsverordnung": 24,
+      "Baugesetzbuch": 2,
       "Baupolizeiverordnung": 10,
-      "unknown": 3
+      "unknown": 1
     }
   },
   "legal_domain_by_ordinance_context": {
     "BNatSchG": {
       "BauNutzungsverordnung": 9,
+      "Baugesetzbuch": 0,
       "Baupolizeiverordnung": 1,
       "unknown": 0
     },
     "BauGB": {
       "BauNutzungsverordnung": 13,
-      "Baupolizeiverordnung": 6,
-      "unknown": 3
+      "Baugesetzbuch": 2,
+      "Baupolizeiverordnung": 5,
+      "unknown": 1
     },
     "HBauO": {
       "BauNutzungsverordnung": 15,
+      "Baugesetzbuch": 1,
       "Baupolizeiverordnung": 4,
-      "unknown": 1
+      "unknown": 0
     },
     "HWG": {
       "BauNutzungsverordnung": 4,
+      "Baugesetzbuch": 0,
       "Baupolizeiverordnung": 5,
       "unknown": 0
     },
     "TreeProtection": {
       "BauNutzungsverordnung": 18,
-      "Baupolizeiverordnung": 10,
-      "unknown": 2
+      "Baugesetzbuch": 2,
+      "Baupolizeiverordnung": 11,
+      "unknown": 0
     },
     "UnqualifiedSection": {
       "BauNutzungsverordnung": 0,
-      "Baupolizeiverordnung": 2,
+      "Baugesetzbuch": 0,
+      "Baupolizeiverordnung": 1,
       "unknown": 1
     },
     "unknown": {
       "BauNutzungsverordnung": 13,
+      "Baugesetzbuch": 1,
       "Baupolizeiverordnung": 2,
-      "unknown": 2
+      "unknown": 1
     }
   },
   "rationale_signals_by_planning_context_percent": {
@@ -222,16 +220,16 @@
       "has_subjects": 66.67
     },
     "construction_plan": {
-      "has_conditions": 44.44,
-      "has_allowed_actions": 27.78,
-      "has_justification": 50.0,
-      "has_subjects": 50.0
+      "has_conditions": 50.0,
+      "has_allowed_actions": 31.25,
+      "has_justification": 56.25,
+      "has_subjects": 56.25
     },
     "development_plan": {
-      "has_conditions": 38.89,
-      "has_allowed_actions": 20.37,
-      "has_justification": 24.07,
-      "has_subjects": 40.74
+      "has_conditions": 45.65,
+      "has_allowed_actions": 23.91,
+      "has_justification": 28.26,
+      "has_subjects": 47.83
     },
     "implementation_plan": {
       "has_conditions": 0.0,
@@ -246,57 +244,57 @@
       "has_subjects": 100.0
     },
     "other": {
-      "has_conditions": 25.0,
+      "has_conditions": 33.33,
       "has_allowed_actions": 0.0,
-      "has_justification": 75.0,
-      "has_subjects": 25.0
+      "has_justification": 100.0,
+      "has_subjects": 33.33
     },
     "unplanned_area": {
       "has_conditions": 0.0,
       "has_allowed_actions": 0.0,
-      "has_justification": 50.0,
-      "has_subjects": 50.0
+      "has_justification": 100.0,
+      "has_subjects": 100.0
     }
   },
   "association_metrics": {
     "exemption_domain_x_planning_context": {
-      "cramers_v": 0.3043,
-      "n": 83,
-      "rows": 8,
+      "cramers_v": 0.3585,
+      "n": 71,
+      "rows": 6,
       "columns": 7
     },
     "exemption_domain_x_ordinance_context": {
-      "cramers_v": 0.2596,
-      "n": 83,
-      "rows": 8,
-      "columns": 3
+      "cramers_v": 0.3613,
+      "n": 71,
+      "rows": 6,
+      "columns": 4
     },
     "exemption_domain_x_zone_quality": {
-      "cramers_v": 0.4197,
-      "n": 83,
-      "rows": 8,
-      "columns": 5
+      "cramers_v": 0.2818,
+      "n": 71,
+      "rows": 6,
+      "columns": 4
     },
     "legal_domain_x_ordinance_context": {
-      "cramers_v": 0.2808,
-      "n": 111,
+      "cramers_v": 0.3108,
+      "n": 110,
       "rows": 7,
-      "columns": 3
+      "columns": 4
     }
   },
   "findings": [
     {
       "finding": "Development-plan contexts dominate the joined decision patterns, and within that context tree/environmental exemptions form the largest block.",
       "evidence": {
-        "development_plan_records": 54,
-        "total_records": 83,
+        "development_plan_records": 46,
+        "total_records": 71,
         "tree_environmental_in_development_plan": 28,
         "top_exemption_domain_by_plan_pairs": {
-          "('mixed', 'development_plan')": 16,
-          "('tree_environmental', 'development_plan')": 15,
-          "('planning_law', 'development_plan')": 8,
-          "('none', 'development_plan')": 8,
-          "('planning_law', 'construction_plan')": 5
+          "('tree_environmental', 'development_plan')": 26,
+          "('planning_law', 'development_plan')": 13,
+          "('planning_law', 'construction_plan')": 9,
+          "('building_code', 'development_plan')": 5,
+          "('tree_environmental', 'construction_plan')": 4
         }
       }
     },
@@ -304,16 +302,16 @@
       "finding": "Rationale-bearing signals vary by planning context; construction-plan records show stronger justification and condition presence than development-plan records in this dataset.",
       "evidence": {
         "construction_plan_signal_rates_percent": {
-          "has_conditions": 44.44,
-          "has_allowed_actions": 27.78,
-          "has_justification": 50.0,
-          "has_subjects": 50.0
+          "has_conditions": 50.0,
+          "has_allowed_actions": 31.25,
+          "has_justification": 56.25,
+          "has_subjects": 56.25
         },
         "development_plan_signal_rates_percent": {
-          "has_conditions": 38.89,
-          "has_allowed_actions": 20.37,
-          "has_justification": 24.07,
-          "has_subjects": 40.74
+          "has_conditions": 45.65,
+          "has_allowed_actions": 23.91,
+          "has_justification": 28.26,
+          "has_subjects": 47.83
         }
       }
     },
@@ -325,46 +323,53 @@
           "('HBauO', 'BauNutzungsverordnung')": 15,
           "('BauGB', 'BauNutzungsverordnung')": 13,
           "('unknown', 'BauNutzungsverordnung')": 13,
-          "('TreeProtection', 'Baupolizeiverordnung')": 10,
+          "('TreeProtection', 'Baupolizeiverordnung')": 11,
           "('BNatSchG', 'BauNutzungsverordnung')": 9,
-          "('BauGB', 'Baupolizeiverordnung')": 6,
-          "('HWG', 'Baupolizeiverordnung')": 5
+          "('HWG', 'Baupolizeiverordnung')": 5,
+          "('BauGB', 'Baupolizeiverordnung')": 5
         },
         "legal_domain_x_ordinance_table": {
           "BNatSchG": {
             "BauNutzungsverordnung": 9,
+            "Baugesetzbuch": 0,
             "Baupolizeiverordnung": 1,
             "unknown": 0
           },
           "BauGB": {
             "BauNutzungsverordnung": 13,
-            "Baupolizeiverordnung": 6,
-            "unknown": 3
+            "Baugesetzbuch": 2,
+            "Baupolizeiverordnung": 5,
+            "unknown": 1
           },
           "HBauO": {
             "BauNutzungsverordnung": 15,
+            "Baugesetzbuch": 1,
             "Baupolizeiverordnung": 4,
-            "unknown": 1
+            "unknown": 0
           },
           "HWG": {
             "BauNutzungsverordnung": 4,
+            "Baugesetzbuch": 0,
             "Baupolizeiverordnung": 5,
             "unknown": 0
           },
           "TreeProtection": {
             "BauNutzungsverordnung": 18,
-            "Baupolizeiverordnung": 10,
-            "unknown": 2
+            "Baugesetzbuch": 2,
+            "Baupolizeiverordnung": 11,
+            "unknown": 0
           },
           "UnqualifiedSection": {
             "BauNutzungsverordnung": 0,
-            "Baupolizeiverordnung": 2,
+            "Baugesetzbuch": 0,
+            "Baupolizeiverordnung": 1,
             "unknown": 1
           },
           "unknown": {
             "BauNutzungsverordnung": 13,
+            "Baugesetzbuch": 1,
             "Baupolizeiverordnung": 2,
-            "unknown": 2
+            "unknown": 1
           }
         }
       }
@@ -372,63 +377,49 @@
     {
       "finding": "Zone-code context is useful but unevenly parsed, so zone-based exemption patterns should be interpreted as provisional until zone parsing is hardened.",
       "evidence": {
-        "records_with_noisy_zone_context": 27,
-        "total_records": 83,
+        "records_with_noisy_zone_context": 10,
+        "total_records": 71,
         "zone_quality_by_exemption_domain": {
           "access_restriction": {
-            "legal_text": 0,
             "missing": 0,
             "parsed_prefix": 2,
             "source_label": 0,
             "unparsed_text": 0
           },
           "access_road": {
-            "legal_text": 0,
             "missing": 0,
             "parsed_prefix": 2,
             "source_label": 0,
             "unparsed_text": 1
           },
           "building_code": {
-            "legal_text": 1,
-            "missing": 1,
-            "parsed_prefix": 10,
-            "source_label": 2,
-            "unparsed_text": 0
+            "missing": 2,
+            "parsed_prefix": 14,
+            "source_label": 1,
+            "unparsed_text": 2
           },
           "nature_protection": {
-            "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 5,
-            "source_label": 6,
-            "unparsed_text": 0
-          },
-          "none": {
-            "legal_text": 1,
-            "missing": 0,
-            "parsed_prefix": 10,
+            "parsed_prefix": 11,
             "source_label": 0,
             "unparsed_text": 0
           },
           "other": {
-            "legal_text": 0,
             "missing": 0,
             "parsed_prefix": 1,
-            "source_label": 7,
+            "source_label": 0,
             "unparsed_text": 0
           },
           "planning_law": {
-            "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 15,
-            "source_label": 5,
-            "unparsed_text": 1
+            "parsed_prefix": 20,
+            "source_label": 1,
+            "unparsed_text": 3
           },
           "tree_environmental": {
-            "legal_text": 0,
             "missing": 0,
-            "parsed_prefix": 25,
-            "source_label": 9,
+            "parsed_prefix": 34,
+            "source_label": 0,
             "unparsed_text": 3
           }
         }

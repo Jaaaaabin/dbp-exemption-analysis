@@ -57,11 +57,11 @@ def _save(fig: plt.Figure, path: Path | None) -> plt.Figure:
 _EXEMPTION_PALETTE: dict[str, str] = {
     'planning_law':       '#1f77b4',
     'tree_environmental': '#2ca02c',
-    'building_code':      '#d62728',
+    'building_code':      '#8b0000',
     'access_road':        '#9467bd',
     'access_restriction': '#8c564b',
     'nature_protection':  '#e377c2',
-    'none':               '#aec7e8',
+    'no_exemption':       '#aec7e8',
     'other':              '#7f7f7f',
 }
 
@@ -93,15 +93,19 @@ def plot_exemption_overview(
     source: JsonSource,
     output_path: str | Path | None = None,
 ) -> plt.Figure:
-    """Horizontal bar: type occurrences (multi-type permits counted once per type)."""
+    """Horizontal bar: type occurrences (multi-type permits counted once per type).
+
+    Excludes 'no_exemption' (permits with no exemption granted) — this chart is
+    about which exemption types occur, not the absence of one."""
     df = _expand_types(_to_df(source))
-    counts = df['exemption_type'].value_counts().sort_values()
+    counts = (df.loc[df['exemption_type'] != 'no_exemption', 'exemption_type']
+                .value_counts().sort_values())
     colors = [_EXEMPTION_PALETTE.get(t, '#7f7f7f') for t in counts.index]
 
     fig, ax = plt.subplots(figsize=(8, max(3, len(counts) * 0.5)))
     fig.suptitle("Exemption Type Overview", fontweight="bold")
     bars = ax.barh(counts.index, counts.values, color=colors)
-    ax.set_xlabel("Type occurrences (multi-type permits counted per type)")
+    ax.set_xlabel("Type occurrences")
     ax.bar_label(bars, padding=3)
     fig.tight_layout()
     return _save(fig, Path(output_path) if output_path else None)
@@ -189,18 +193,18 @@ def plot_legal_ref_frequency(
     refs_ordered = top_refs.index.tolist()
     colors = [_EXEMPTION_PALETTE.get(dominant.get(r, 'other'), '#7f7f7f') for r in refs_ordered]
 
-    fig, ax = plt.subplots(figsize=(9, max(4, top_n * 0.45)))
+    fig, ax = plt.subplots(figsize=(16, 6))
     bars = ax.barh(refs_ordered[::-1], top_refs.values[::-1], color=colors[::-1])
     ax.bar_label(bars, padding=3)
-    ax.set_xlabel('Occurrences across all records')
-    ax.set_title(f'Top {top_n} most cited legal references\n(bar color = dominant exemption type)')
+    ax.set_xlabel('Occurrences across all permit records', fontsize=15)
+    ax.set_title(f'Top {top_n} most cited legal references', fontsize=17)
 
     used_types = list(dict.fromkeys(dominant.get(r, 'other') for r in refs_ordered))
     legend_handles = [
         Patch(color=_EXEMPTION_PALETTE.get(t, '#7f7f7f'), label=t) for t in used_types
     ]
     ax.legend(handles=legend_handles, title='Dominant exemption type',
-              bbox_to_anchor=(1.02, 1), loc='upper left', fontsize=8)
+              loc='lower right', fontsize=13, title_fontsize=14)
     fig.tight_layout()
     return _save(fig, Path(output_path) if output_path else None)
 
@@ -246,6 +250,47 @@ def plot_zone_code_x_exemption(
     return _save(fig, Path(output_path) if output_path else None)
 
 
+_BUILDING_CODE_SUBTYPE_LABELS: dict[str, str] = {
+    'distance_area':          'Distance areas (§ 6)',
+    'front_garden_structure': 'Front-garden structures (§ 9)',
+    'roof':                   'Roofs / dormers (§ 35)',
+    'fire_escape_safety':     'Fire & escape safety (§ 29/32/33/37)',
+    'play_area':              "Children's play areas (§ 10)",
+    'accessibility':          'Barrier-free access (§ 52)',
+    'unspecified':            'Unspecified (generic § 69 only)',
+}
+
+
+def plot_building_code_subtypes(
+    source: JsonSource,
+    output_path: str | Path | None = None,
+) -> plt.Figure:
+    """Horizontal bar: building_code deviations broken down by substantive HBauO subject.
+
+    Counts records that carry each subtype (multi-subject permits counted per subtype).
+    """
+    df = _to_df(source)
+    if 'building_code_subtypes' not in df.columns:
+        return plt.figure()
+
+    sub = (df['building_code_subtypes']
+           .explode()
+           .dropna())
+    if sub.empty:
+        return plt.figure()
+
+    counts = sub.value_counts().sort_values()
+    labels = [_BUILDING_CODE_SUBTYPE_LABELS.get(k, k) for k in counts.index]
+
+    fig, ax = plt.subplots(figsize=(9, max(3, len(counts) * 0.55)))
+    bars = ax.barh(labels, counts.values, color=_EXEMPTION_PALETTE['building_code'])
+    ax.bar_label(bars, padding=3)
+    ax.set_xlabel('Permits with this building-code subject (counted per subject)')
+    ax.set_title('Building-code deviations by HBauO subject', fontsize=14)
+    fig.tight_layout()
+    return _save(fig, Path(output_path) if output_path else None)
+
+
 # ── Convenience: generate all standard plots ──────────────────────────────────
 
 def plot_all(
@@ -265,11 +310,14 @@ def plot_all(
     plot_exemption_composition_by_authority(records,
         output_path=out / "exemption_composition_by_authority.png")
 
-    plot_legal_ref_frequency(records,
+    plot_legal_ref_frequency(records, top_n=20,
         output_path=out / "legal_ref_frequency.png")
 
     plot_zone_code_x_exemption(records,
         output_path=out / "zone_code_x_exemption.png")
+
+    plot_building_code_subtypes(records,
+        output_path=out / "building_code_subtypes.png")
 
     plt.close("all")
     print(f"\nAll plots saved to {out}/")
@@ -437,19 +485,27 @@ def plot_keyword_frequency(
     text_col: str = 'combined_text',
     top_n: int = 20,
     output_path: str | Path | None = None,
+    facet_col: str | None = None,
 ) -> plt.Figure:
-    """Faceted bar chart: top-N keywords per exemption type for a given text column.
+    """Faceted bar chart: top-N keywords per facet for a given text column.
 
-    One subplot per exemption type. Useful for subjects_text, allowed_actions_text,
-    conditions_text, justification_text, or combined_text.
+    One subplot per facet value. By default facets by exemption_types
+    (multi-label, exploded). Pass facet_col to facet by a single column
+    instead (e.g. 'item_type' or 'gap_category').
     """
     raw = pd.DataFrame(items)
     if text_col not in raw.columns:
         return plt.figure()
 
-    # Expand multi-label types; keep text column alongside
-    df = _expand_types(raw[[c for c in raw.columns if c in
-                             ('exemption_types', 'exemption_primary_type', text_col)]])
+    if facet_col:
+        if facet_col not in raw.columns:
+            return plt.figure()
+        df = raw[[facet_col, text_col]].dropna(subset=[facet_col]).rename(
+            columns={facet_col: 'exemption_type'})
+    else:
+        # Expand multi-label types; keep text column alongside
+        df = _expand_types(raw[[c for c in raw.columns if c in
+                                 ('exemption_types', 'exemption_primary_type', text_col)]])
     types = sorted(t for t in df['exemption_type'].dropna().unique() if isinstance(t, str))
     if not types:
         return plt.figure()

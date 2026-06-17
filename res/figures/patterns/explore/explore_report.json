@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-06-15T16:18:29.187948+00:00",
+  "method_notes": {
+    "tfidf": "distinctive terms per type (tf * log(G/df))",
+    "lift": "type co-occurrence; lift>1 = above-chance pairing",
+    "section_coverage": "cited § numbers per family (matched vs 'other')",
+    "justification": "templated rationale frequency + keywords",
+    "similarity": "bag-of-words cosine among 'other' items"
+  },
+  "tfidf_distinctive_terms": {
+    "access_restriction": [
+      "restrictions",
+      "certain",
+      "once",
+      "sufficient",
+      "related",
+      "connections",
+      "securing",
+      "begin",
+      "specific",
+      "includes"
+    ],
+    "access_road": [
+      "hwg",
+      "use",
+      "absatz",
+      "permits",
+      "coordinated",
+      "falkenstein",
+      "triangles",
+      "curb",
+      "january",
+      "sight"
+    ],
+    "building_code": [
+      "hbauo",
+      "staircase",
+      "deviation",
+      "code",
+      "fire",
+      "children",
+      "building",
+      "dormer",
+      "there",
+      "roof"
+    ],
+    "nature_protection": [
+      "extend",
+      "ornithological",
+      "days",
+      "felling",
+      "beyond",
+      "requested",
+      "office",
+      "begins",
+      "period",
+      "bnatschg"
+    ],
+    "other": [
+      "tree",
+      "care",
+      "root",
+      "certified",
+      "nos",
+      "european",
+      "subject",
+      "remove",
+      "according",
+      "crown"
+    ],
+    "planning_law": [
+      "baugb",
+      "planning",
+      "buildable",
+      "towards",
+      "granted",
+      "exceeding",
+      "baunvo",
+      "house",
+      "grz",
+      "urbanistically"
+    ],
+    "tree_environmental": [
+      "tree",
+      "trees",
+      "protection",
+      "planting",
+      "protected",
+      "replacement",
+      "measures",
+      "felling",
+      "std",
+      "exception"
+    ]
+  },
+  "type_cooccurrence_top_lift": [
+    {
+      "antecedent": "tree_environmental",
+      "consequent": "nature_protection",
+      "lift": 1.919,
+      "support_ab": 0.155
+    },
+    {
+      "antecedent": "building_code",
+      "consequent": "access_restriction",
+      "lift": 1.868,
+      "support_ab": 0.014
+    }
+  ],
+  "section_number_counts": {
+    "TreeProtection §4": 20,
+    "BauGB §31": 15,
+    "HBauO §69": 12,
+    "BNatSchG §4": 8,
+    "BauNVO §31": 4,
+    "HWG §18": 3,
+    "TreeProtection §6": 3,
+    "HWG §19": 3,
+    "HBauO §31": 2,
+    "HBauO §4": 2,
+    "HBauO §37": 2,
+    "BauGB §173": 1,
+    "HBauO §35": 1,
+    "HBauO §32": 1,
+    "TreeProtection §11": 1,
+    "BauGB §4": 1,
+    "BauNVO §23": 1,
+    "HWG §61": 1,
+    "HWG §26": 1,
+    "HWG §22": 1,
+    "UnqualifiedSection §3": 1,
+    "BNatSchG §67": 1,
+    "BNatSchG §44": 1
+  },
+  "justification_top_phrases": {
+    "the deviation is granted; it is fire protection technically justifiable and described as permissible in the building inspection service.": 2,
+    "the exemption is granted.": 2,
+    "the specified vegetation is located within the construction site and cannot be preserved during the project implementation.": 1,
+    "the overall design concept, including requirements for roof pitch, exterior wall color, and roofing material, as well as small window designs, remains intact, ensuring the preservation of the village image as intended by the preservation order.": 1,
+    "the exemption is urbanistically justifiable and was already granted with the preliminary decision.": 1,
+    "the exemption is urbanistically justifiable.": 1,
+    "the requirements according to § 31 abs. 2 baugb are met. the project is urbanistically justifiable.": 1,
+    "the driveway, parking space, and walkway to the house in the north are approved.": 1,
+    "the deviation for the construction of the garage in the front yard is granted. the garage is urbanistically justifiable as it does not significantly affect the front yard and is aesthetically integrated with the single-family house.": 1,
+    "the additional full story is urbanistically justifiable.": 1,
+    "the felling is necessary due to the new construction and the proximity of the trees to the building site (edge of the excavation).": 1,
+    "the planned mansard roof maintains the desired appearance with the typical steep roof slope, despite the deviation.": 1,
+    "the distance of the heat pump to the street (approx. 9.50m) ensures no significant acoustic impact on people in the street area. the device's small size does not affect the garden's appearance.": 1,
+    "this is an atypical individual case due to the corner plot. the orientation and access are towards heerwisch, which is unique in the area. a special hardship exists as the unbuildable areas affect both streets, reducing the buildable area significantly.": 1,
+    "the exemption is granted as it is urbanistically justifiable after re-planning.": 1
+  },
+  "other_item_mean_similarity": 0.10308020822141001
+}

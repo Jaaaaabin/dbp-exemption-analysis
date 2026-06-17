@@ -237,7 +237,10 @@ def save_category_barh(df: pd.DataFrame, column: str, xlabel: str, path: Path,
 
 
 def _draw_category_barv(ax, df: pd.DataFrame, column: str, xlabel: str,
-                        seg_fontsize: int = 12, rotation: int = 0) -> bool:
+                        seg_fontsize: int = 12, rotation: int = 0,
+                        title_fontsize: int = 14,
+                        legend_fontsize: int = 11,
+                        xlabel_pad: float | None = None) -> bool:
     """Draw a vertical stacked categorical chart onto a given axis."""
     if df.empty or column not in df:
         return False
@@ -263,22 +266,25 @@ def _draw_category_barv(ax, df: pd.DataFrame, column: str, xlabel: str,
                  padding=3, fontsize=seg_fontsize + 1)
     # Extra headroom so the tallest bar's total clears the legend.
     ax.set_ylim(0, totals.max() * 1.35)
-    ax.set_xlabel(xlabel, fontsize=14)
-    ax.set_ylabel("Count", fontsize=14)
+    ax.set_xlabel(xlabel, fontsize=title_fontsize, labelpad=xlabel_pad)
+    ax.set_ylabel("Count", fontsize=title_fontsize)
     ax.tick_params(axis="y", labelsize=12)
     ax.tick_params(axis="x", labelsize=13)
     ha = "right" if rotation not in (0, 90) else "center"
     plt.setp(ax.get_xticklabels(), rotation=rotation, ha=ha)
-    ax.legend(title="", fontsize=11, loc="upper right")
+    ax.legend(title="", fontsize=legend_fontsize, loc="upper right")
     return True
 
 
 def save_category_barv(df: pd.DataFrame, column: str, xlabel: str, path: Path,
                        figsize=(4, 8), seg_fontsize: int = 12,
-                       rotation: int = 0) -> bool:
+                       rotation: int = 0, title_fontsize: int = 14,
+                       legend_fontsize: int = 11,
+                       xlabel_pad: float | None = None) -> bool:
     """Vertical stacked bar of a categorical column, split by cohort."""
     fig, ax = plt.subplots(figsize=figsize)
-    if not _draw_category_barv(ax, df, column, xlabel, seg_fontsize, rotation):
+    if not _draw_category_barv(ax, df, column, xlabel, seg_fontsize, rotation,
+                               title_fontsize, legend_fontsize, xlabel_pad):
         plt.close(fig)
         print(f"Skipped empty figure: {path}")
         return False
@@ -316,6 +322,53 @@ def save_year_and_category(df: pd.DataFrame, year_sub_key: str,
                      handletextpad=0.6, borderpad=0.5, borderaxespad=0.5)
     ax_left.legend(title="", loc="upper left", **legend_kw)
     ax_right.legend(title="", loc="upper right", **legend_kw)
+    fig.tight_layout()
+    fig.savefig(path, dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Saved: {path}")
+    return True
+
+
+def save_year_use_and_district(df: pd.DataFrame, year_sub_key: str,
+                               use_column: str, use_xlabel: str,
+                               district_column: str, district_xlabel: str,
+                               path: Path) -> bool:
+    """Stack two rows into one figure: the issue-year (left) + future-use
+    (right) combo on the upper half, the district distribution on the lower."""
+    # Upper row matches the (20, 8) year+use combo; lower row is a (16, 6)-style
+    # district strip, so height_ratios mirror those 8 : 6 panel heights.
+    fig = plt.figure(figsize=(20, 14))
+    gs = fig.add_gridspec(2, 2, height_ratios=[8, 6], width_ratios=[75, 25])
+    ax_year = fig.add_subplot(gs[0, 0])
+    ax_use = fig.add_subplot(gs[0, 1])
+    ax_dist = fig.add_subplot(gs[1, :])
+
+    ok_year = _draw_year_bar(ax_year, df, year_sub_key)
+    ok_use = _draw_category_barv(ax_use, df, use_column, use_xlabel)
+    ok_dist = _draw_category_barv(ax_dist, df, district_column, district_xlabel,
+                                  seg_fontsize=12, rotation=45,
+                                  title_fontsize=18, legend_fontsize=14,
+                                  xlabel_pad=0)
+    if not (ok_year or ok_use or ok_dist):
+        plt.close(fig)
+        print(f"Skipped empty figure: {path}")
+        return False
+
+    # Unify axis-title sizes across the upper-row panels.
+    for ax in (ax_year, ax_use):
+        ax.xaxis.label.set_size(18)
+        ax.yaxis.label.set_size(18)
+
+    # Put the use panel's y-axis (ticks + "Count" label) on its right side.
+    ax_use.yaxis.set_label_position("right")
+    ax_use.yaxis.tick_right()
+
+    # Re-create the upper-row legends from scratch with identical size/spacing
+    # (only the corner differs), so they match exactly.
+    legend_kw = dict(fontsize=14, labelspacing=0.4, handlelength=1.8,
+                     handletextpad=0.6, borderpad=0.5, borderaxespad=0.5)
+    ax_year.legend(title="", loc="upper left", **legend_kw)
+    ax_use.legend(title="", loc="upper right", **legend_kw)
     fig.tight_layout()
     fig.savefig(path, dpi=200, bbox_inches="tight")
     plt.close(fig)
@@ -435,7 +488,8 @@ def main() -> None:
             generated.append(path.name)
     if save_category_barv(df, "district", "District",
                           OUTPUT_DIR / f"{prefix}district_distribution.png",
-                          figsize=(16, 6), seg_fontsize=8, rotation=45):
+                          figsize=(16, 6), seg_fontsize=12, rotation=45,
+                          title_fontsize=18, legend_fontsize=14, xlabel_pad=0):
         generated.append(f"{prefix}district_distribution.png")
     for sub_key, label, kind in HMBTG_FIELDS:
         if kind is None:
@@ -455,6 +509,15 @@ def main() -> None:
                               "hmbtg_type_of_building_by_future_use",
                               "Type of building by future use", combined_path):
         generated.append(combined_path.name)
+
+    # Stacked: year + future-use combo (upper half) over the district
+    # distribution (lower half) in a single figure.
+    stacked_path = OUTPUT_DIR / f"{prefix}year_buildinguse_district.png"
+    if save_year_use_and_district(df, "issue_date",
+                                  "hmbtg_type_of_building_by_future_use",
+                                  "Type of building by future use",
+                                  "district", "District", stacked_path):
+        generated.append(stacked_path.name)
 
     save_metadata(df, generated)
 

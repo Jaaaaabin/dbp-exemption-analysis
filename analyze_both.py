@@ -378,7 +378,7 @@ def plot_legal_domain_x_ordinance(items: pd.DataFrame, output_dir: Path) -> None
     x_map = {value: i for i, value in enumerate(ordinance_order)}
     y_map = {value: i for i, value in enumerate(legal_order)}
 
-    fig, ax = plt.subplots(figsize=(9, max(4, len(legal_order) * 0.55)))
+    fig, ax = plt.subplots(figsize=(9, max(4, len(legal_order) * 0.8)))
     for _, row in counts.iterrows():
         x = x_map[row["legal_ordinance"]]
         y = y_map[row["legal_domain"]]
@@ -414,9 +414,8 @@ def plot_rationale_signals_by_plan(records: pd.DataFrame, output_dir: Path) -> N
         var_name="rationale_signal",
         value_name="share_percent",
     )
-    order = (
-        records["plan_primary_type"].value_counts().sort_values(ascending=False).index
-    )
+    counts = records["plan_primary_type"].value_counts()
+    order = counts.sort_values(ascending=False).index
 
     fig, ax = plt.subplots(figsize=(12, 5.5))
     sns.barplot(
@@ -427,6 +426,9 @@ def plot_rationale_signals_by_plan(records: pd.DataFrame, output_dir: Path) -> N
         order=order,
         ax=ax,
     )
+    # Annotate small-sample groups so 0%/100% bars aren't read as confident
+    # rates when they're based on just one or two records.
+    ax.set_yticklabels([f"{label} (n={counts[label]})" for label in order])
     ax.set_title("Administrative Rationale Signals by Planning Context", fontweight="bold")
     ax.set_xlabel("Share of requests (%)")
     ax.set_ylabel("")

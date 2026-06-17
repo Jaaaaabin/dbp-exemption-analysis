@@ -47,9 +47,9 @@ def main():
     _write_json(granted_path, granted_only)
     _write_json(decision_basis_path, decision_basis_only)
 
-    print(f"Saved {len(enriched)} enriched records → {enriched_path}")
-    print(f"Saved {len(granted_only)} request-keyed granted exemptions → {granted_path}")
-    print(f"Saved {len(decision_basis_only)} request-keyed decision bases → {decision_basis_path}")
+    print(f"Saved {len(enriched)} enriched records -> {enriched_path}")
+    print(f"Saved {len(granted_only)} request-keyed granted exemptions -> {granted_path}")
+    print(f"Saved {len(decision_basis_only)} request-keyed decision bases -> {decision_basis_path}")
 
 
 if __name__ == "__main__":

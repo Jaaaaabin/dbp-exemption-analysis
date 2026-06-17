@@ -46,7 +46,7 @@
       "grz": "0.4",
       "gfz": "0.4",
       "additional_regulations": "BauNVO (June 26, 1962)",
-      "zone_code": "Type: WR I o",
+      "zone_code": "WR I o",
       "plan_references": [
         {
           "name": "Lurup 13",
@@ -61,6 +61,7 @@
         "other"
       ],
       "primary_type": "other",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [],
       "subjects": [],
@@ -74,9 +75,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -126,9 +128,9 @@
       "_notes": [
         "Baupolizeiverordnung from June 8, 1938, in the applicable version"
       ],
-      "plan_type": "other",
-      "plan_name": "Durchführungsplan 391 B",
-      "zone_code": "Type: Fläche für besondere Zwecke (Sportplatz)",
+      "plan_type": "Durchführungsplan",
+      "plan_name": "391 B",
+      "zone_code": "Fläche für besondere Zwecke (Sportplatz)",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [
         {
@@ -141,28 +143,34 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "fire_escape_safety"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 37",
-        "§ 15"
+        "§ 37 Abs. 3 HBauO",
+        "§ 15 Abs. 2 GarVo"
       ],
       "subjects": [],
       "1": {
         "text": "Deviation from § 37 (3) HBauO (Smoke Ventilation for Elevator through Necessary Staircase):\nJustification: The deviation is granted; it is fire protection technically justifiable and described as permissible in the building inspection service.\nDeviation from § 15 (2) GarVo (Distance to Necessary Staircase/Exit):\nJustification: The deviation is granted; there are no fire protection technical concerns as the garage is clear and has additional exits.",
-        "legal_ref": "§ 37",
-        "type": "other",
+        "legal_ref": "§ 37 Abs. 3 HBauO",
+        "type": "building_code",
         "justification": "The deviation is granted; it is fire protection technically justifiable and described as permissible in the building inspection service."
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "play_area"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 10 HBauO"
@@ -171,7 +179,7 @@
       "1": {
         "text": "Deviation from § 10 HBauO (Children's Play Area Size):\nJustification: The deviation is not granted; it is not justifiable as families with children could move in at any time.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
         "legal_ref": "§ 10 HBauO",
-        "type": "other",
+        "type": "building_code",
         "justification": "The deviation is not granted; it is not justifiable as families with children could move in at any time."
       }
     }
@@ -220,9 +228,9 @@
       "_notes": [
         "Baupolizeiverordnung from June 8, 1938, in the applicable version"
       ],
-      "plan_type": "other",
-      "plan_name": "Durchführungsplan 391 B",
-      "zone_code": "Type: Fläche für besondere Zwecke (Sportplatz)",
+      "plan_type": "Durchführungsplan",
+      "plan_name": "391 B",
+      "zone_code": "Fläche für besondere Zwecke (Sportplatz)",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [
         {
@@ -239,28 +247,34 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "fire_escape_safety"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 37",
-        "§ 15"
+        "§ 37 Abs. 3 HBauO",
+        "§ 15 Abs. 2 GarVo"
       ],
       "subjects": [],
       "1": {
         "text": "Deviation from § 37 (3) HBauO (Smoke Ventilation for Elevator through Necessary Staircase):\nJustification: The deviation is granted; it is fire protection technically justifiable and described as permissible in the building inspection service.\nDeviation from § 15 (2) GarVo (Distance to Necessary Staircase/Exit):\nJustification: The deviation is granted; there are no fire protection technical concerns as the garage is clear and has additional exits.",
-        "legal_ref": "§ 37",
-        "type": "other",
+        "legal_ref": "§ 37 Abs. 3 HBauO",
+        "type": "building_code",
         "justification": "The deviation is granted; it is fire protection technically justifiable and described as permissible in the building inspection service."
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "play_area"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 10 HBauO"
@@ -269,7 +283,7 @@
       "1": {
         "text": "Deviation from § 10 HBauO (Children's Play Area Size):\nJustification: The deviation is not granted; it is not justifiable as families with children could move in at any time.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
         "legal_ref": "§ 10 HBauO",
-        "type": "other",
+        "type": "building_code",
         "justification": "The deviation is not granted; it is not justifiable as families with children could move in at any time."
       }
     }
@@ -319,7 +333,7 @@
       "_notes": [
         "BauNutzungsverordnung from June 26, 1962"
       ],
-      "zone_code": "Type: WA II o",
+      "zone_code": "WA II o",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -332,9 +346,12 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "fire_escape_safety"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 32 Abs. 1 HBauO",
@@ -342,7 +359,7 @@
         "§ 29 Abs. 4 HBauO",
         "§ 32 Abs. 4 HBauO",
         "§ 33 HBauO",
-        "§ 14"
+        "§ 14 BauVorlVO"
       ],
       "subjects": [
         "Waiving the Requirement for a Continuous Necessary Staircase to the Top Attic Floor (§ 32 Abs. 1 HBauO)",
@@ -352,7 +369,7 @@
       "1": {
         "text": "From the Provisions of the Lokstedt 8 Development Plan for Exceeding the Rear Building Boundary by 2 m through Balconies on the 1st Floor:\nJustification: The exemption is granted.\nFrom the Provisions of the Lokstedt 8 Development Plan for Exceeding the Southern Building Boundary by 1 m through the Dormer on a Width of 4.97 m:\nJustification: The exemption is granted.\nGranted Building Regulation Deviations:\nFor Waiving the Requirement for a Continuous Necessary Staircase to the Top Attic Floor (§ 32 Abs. 1 HBauO):\nCondition: Suitable signage for the escape route in the attic (staircase offset) in both directions by signs according to BGV A8/DIN 4844.\nFor Waiving the Requirement for a Necessary Staircase for Apartment 4 (§ 33 Abs. 1 HBauO in conjunction with § 29 Abs. 4 HBauO):\nCondition:\nThe building must be occupied by only one family.\nThe basement must be separated with fire-resistant walls and a connecting door as a fire-retardant, smoke-tight, and self-closing closure (T30-RS door).\nThe internal staircase must be constructed as a necessary staircase according to § 32 Abs. 4 HBauO.\nFor Waiving the Requirement for a Necessary Staircase for Apartments 8, 9, and 10 (§ 33 Abs. 1 HBauO in conjunction with § 29 Abs. 4 HBauO):\nCondition:\nThe main staircase as the 1st escape route must also be constructed as a necessary staircase in the top floor according to § 33 HBauO. The staircase DIN 18065 must also be observed for this upper part.\nThe internal staircases must be constructed as necessary staircases according to § 32 Abs. 4 HBauO.\nAdditional Conditions:\nConstruction must not begin until the following inspection items have been approved in a supplementary notice:\nStructural stability: The required proof according to § 14 of the BauVorlagenVerordnung (BauVorlVO) must be submitted for inspection.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
         "legal_ref": "§ 32 Abs. 1 HBauO",
-        "type": "other",
+        "type": "building_code",
         "subjects": [
           "Waiving the Requirement for a Continuous Necessary Staircase to the Top Attic Floor (§ 32 Abs. 1 HBauO)",
           "Waiving the Requirement for a Necessary Staircase for Apartment 4 (§ 33 Abs. 1 HBauO in conjunction with § 29 Abs. 4 HBauO)",
@@ -367,9 +384,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -422,7 +440,7 @@
       ],
       "plan_type": "Baustufenplan",
       "plan_name": "Bramfeld",
-      "zone_code": "Type: W I o",
+      "zone_code": "W I o",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [
         {
@@ -435,9 +453,10 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "planning_law"
       ],
-      "primary_type": "other",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [],
       "subjects": [
@@ -446,7 +465,7 @@
       "1": {
         "text": "For Exceeding the Permissible Built Area (GRZ I) from 0.2 to 0.22:\nJustification: The exemption is granted.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
         "legal_ref": null,
-        "type": "other",
+        "type": "planning_law",
         "subjects": [
           "Exceeding the Permissible Built Area (GRZ I) from 0.2 to 0.22"
         ],
@@ -456,9 +475,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -511,7 +531,7 @@
       "_notes": [
         "BauNutzungsverordnung from January 23, 1990"
       ],
-      "zone_code": "Type: WR/2W I o /Einzelhaus \"E\"",
+      "zone_code": "WR",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -527,15 +547,16 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 6",
-        "§ 14"
+        "§ 6 BaumschutzVO",
+        "§ 14 BauVorlVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exemptions under § 6 Hamburg Tree Protection Ordinance for Felling and Pruning:\nFelling:\nNr. 2: Juniper, StD 25 cm\nNr. 7: Walnut, StD 15 cm (tree group)\nNr. 8: Juniper, StD 25 cm (tree group)\nNr. 9: Juniper, StD 20 cm (tree group)\nNr. 10: Juniper, StD 20 cm (tree group)\nClearance:\nNr. 3: Privet, length 26.00 m\nNr. 5: Privet, length 18.00 m\nNr. 6: Privet, length 16.00 m\nNr. 7: Arborvitae, length 16.00 m\nHedge Cutting:\nNr. 1: Privet, length 30.00 m\nJustification: The specified vegetation is located within the construction site and cannot be preserved during the project implementation.\nAdditional Conditions:\nStructural Stability: Required proof according to § 14 of the BauVorlagenVerordnung (BauVorlVO) must be submitted for inspection.\nNatural Conservation Requirements:\nReplanting: 7 trees as replacements for the removed vegetation, with specified standards for planting and maintenance.\nProtection of existing vegetation during construction according to specified guidelines (e.g., DIN 18920).\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 6",
+        "legal_ref": "§ 6 BaumschutzVO",
         "type": "tree_environmental",
         "justification": "The specified vegetation is located within the construction site and cannot be preserved during the project implementation.",
         "conditions": [
@@ -546,9 +567,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -600,7 +622,7 @@
         "Special Area Shops (II; GRZ 0.4; GFZ 0.4); public roads, paths, squares; private green spaces; urban conservation area \"Fischbek\"",
         "BauNutzungsverordnung from June 26, 1962"
       ],
-      "zone_code": "Type: Public Green Spaces",
+      "zone_code": "Public Green Spaces",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -624,17 +646,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 173 Abs. 1",
-        "§ 31 Abs. 2"
+        "§ 173 Abs. 1 BauGB",
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "the construction of a multi-family house on an area designated as \"public green space\" in the development plan NF 7."
       ],
       "1": {
         "text": "From § 173 Abs. 1 BauGB:\nJustification: The overall design concept, including requirements for roof pitch, exterior wall color, and roofing material, as well as small window designs, remains intact, ensuring the preservation of the village image as intended by the preservation order.\nCondition: Light red to reddish-brown bricks must be used for the exterior wall.\nAlready Granted Exemptions in Preliminary Decision (GZ: H/WBZ/06846/2015 on 08.02.2016):\nPlanungrechtliche Befreiung nach § 31 Abs. 2 BauGB:\nJustification: For the construction of a multi-family house on an area designated as \"public green space\" in the development plan NF 7.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 173 Abs. 1",
+        "legal_ref": "§ 173 Abs. 1 BauGB",
         "type": "planning_law",
         "subjects": [
           "the construction of a multi-family house on an area designated as \"public green space\" in the development plan NF 7."
@@ -648,9 +671,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -701,7 +725,7 @@
       "_notes": [
         "BauNutzungsverordnung from June 26, 1962"
       ],
-      "zone_code": "Type: WR I",
+      "zone_code": "WR I",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -714,9 +738,12 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "building_code"
       ],
-      "primary_type": "other",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "roof"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 35 HBauO",
@@ -728,7 +755,7 @@
       "1": {
         "text": "For Exceeding the Maximum Distance of 1 m to 4.60 m between Exit and Eaves in the Attic (§ 35 HBauO):\nCondition:\nThe roof of the dormers in building class 2 must be constructed as fire-resistant (F 30) load-bearing and room-sealing component. This must be implemented in all five dormers.\nA continuous fall protection must be arranged on the dormer as a maintenance platform according to DIN 18065.\nA metal grating must be installed on the flat roof of the dormer to prevent slipping in wet and icy conditions (§ 3 HBauO).\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
         "legal_ref": "§ 35 HBauO",
-        "type": "other",
+        "type": "building_code",
         "subjects": [
           "Exceeding the Maximum Distance of 1 m to 4.60 m between Exit and Eaves in the Attic (§ 35 HBauO)"
         ],
@@ -742,9 +769,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -796,7 +824,7 @@
       ],
       "plan_type": "Baustufenplan",
       "plan_name": "Bramfeld",
-      "zone_code": "Type: W1o",
+      "zone_code": "W1o",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [
         {
@@ -812,16 +840,17 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 2"
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "Exceeding the Permissible Built Area by 0.03 to 0.23"
       ],
       "1": {
         "text": "For Exceeding the Permissible Built Area by 0.03 to 0.23:\nJustification: The requirements according to § 31 Abs. 2 BauGB are met. The project is urbanistically justifiable.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 31 Abs. 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "subjects": [
           "Exceeding the Permissible Built Area by 0.03 to 0.23"
@@ -832,9 +861,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -885,7 +915,7 @@
       "_notes": [
         "BauNutzungsverordnung from September 15, 1977, in the version from December 19, 1986"
       ],
-      "zone_code": "Type: WR",
+      "zone_code": "WR",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -901,17 +931,18 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exemption under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nFelling of 3 Sandbirken (Nr. 5, 6, 7)\nFelling of Red Beech (Nr. 1, 2), Norway Maple (Nr. 3), and Red Spruce (Nr. 4)\nFelling of Red Beech (Nr. 11, 12), Columnar Poplar (Nr. 13), and Cherry Plum (Nr. 14)\nCrown reduction and root cutting for Walnut (Nr. 9) and other specified trees\nAdditional Conditions:\nTree Preservation: Other protected trees must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process.\nReplacement Planting:\nPlanting of 7 medium to large native deciduous trees (species specified)\nDense planting of native shrubs along property borders\nCompensation Payment: An amount of €9,000 for nature conservation measures\nTree Protection Plan: Compliance with tree protection guidelines and appointment of a certified arborist to oversee tree protection measures\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "conditions": [
           "Tree Preservation: Other protected trees must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process."
         ],
@@ -926,94 +957,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 12,
-    "time_for_decision_months": 4.5,
-    "permit_type": "Simplified",
-    "issuing_authority": "Wandsbek",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Sasel (construction plan)",
-    "document_information": {
-      "title": "Genehmigung nach HBauO",
-      "creation_date": "November 28, 2022"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Wandsbek",
-      "department": "Zentrum für Wirtschaftsförderung, Bauen und Umwelt, Bauprüfabteilung, WBZ 2",
-      "address": "Schloßgarten 9, 22041 Hamburg",
-      "telephone": "040 - 4 28 81 - 0",
-      "telefax": "040 - 427 905 487",
-      "email": "wbz2@wandsbek.hamburg.de",
-      "contact_person": "Not specified (placeholders marked as ###)"
-    },
-    "permit_information": {
-      "reference_number": "W/WBZ/09848/2022",
-      "permit_type": "Vereinfachtes Genehmigungsverfahren (Simplified Approval Procedure)",
-      "date_of_receipt": "July 8, 2022",
-      "issue_date": "November 28, 2022",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 518-010, Flurstücke 259 in the Gemarkung Sasel",
-      "project_description": "Neubau eines Einzelhauses aus 2 Gebäuden (2WE)"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_requested_facility": "Building, Building Class 2",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {},
-    "decision_basis": {
-      "development_plan": "Baustufenplan Sasel",
-      "regulations": "",
-      "type": "W 1 o",
-      "_notes": [
-        "Baupolizeiverordnung from June 8, 1938, in the applicable version"
-      ],
-      "plan_type": "Baustufenplan",
-      "plan_name": "Sasel",
-      "zone_code": "Type: W 1 o",
-      "legal_ordinance": "Baupolizeiverordnung",
-      "plan_references": [
-        {
-          "name": "Sasel",
-          "type": "construction_plan"
-        }
-      ],
-      "plan_primary_type": "construction_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "other"
-      ],
-      "primary_type": "other",
-      "is_empty": false,
-      "legal_refs": [
-        "§ 34"
-      ],
-      "subjects": [],
-      "1": {
-        "text": "Ausübung des Ermessens:\nThe project integrates within the existing building lines of the surrounding area as per § 34 BauGB.\nThe project aligns with the front building lines of neighboring buildings.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 34",
-        "type": "other"
-      }
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1066,7 +1013,7 @@
       ],
       "plan_type": "other",
       "plan_name": "Volksdorf 40",
-      "zone_code": "Type: WR I o E 1Wo (c)=120m²",
+      "zone_code": "WR I o",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1082,10 +1029,11 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG",
         "§ 67 BNatSchG",
         "§ 44 BNatSchG"
@@ -1093,8 +1041,8 @@
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nFelling of two construction-impeding trees (Nr. 1 Larix kaempferi and Nr. 2 Quercus robur)\nTree Preservation:\nOther protected trees must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process.\nAdditional Conditions:\nReplacement Planting / Greening Measures:\nPlanting of 6 small to medium-sized trees as specified in the attachments, with a minimum planting quality of 3 x v STU 16-18 cm, using native species unless otherwise specified.\nEnsuring a rootable vegetation area of at least 12 sqm for each tree.\nAll planting works, including necessary structural measures, must be carried out by a qualified gardening company under the supervision of a landscape architect.\nReplacement planting and greening measures must be completed by the end of the planting season following construction completion. The planting season ends on April 30.\nContinuous care for the replacement measures for at least 2 years by a qualified gardening company.\nArt Protection / Protection Period:\nDuring the vegetation period (March 1 to September 30):\nNo cutting or felling of vegetation.\nIf cutting or felling must occur outside this period, a waiver according to § 67 BNatSchG must be applied for with justification.\nCompliance with § 44 BNatSchG regarding the protection of wild animals and their habitats.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "conditions": [
           "Replacement Planting / Greening Measures:",
           "Planting of 6 small to medium-sized trees as specified in the attachments, with a minimum planting quality of 3 x v STU 16-18 cm, using native species unless otherwise specified.",
@@ -1111,9 +1059,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1166,7 +1115,7 @@
       ],
       "plan_type": "Baustufenplan",
       "plan_name": "Lemsahl-Mellingstedt",
-      "zone_code": "Type: W 1 o",
+      "zone_code": "W 1 o",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [],
       "plan_primary_type": "other"
@@ -1177,6 +1126,7 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
         "§ 11 BPVO"
@@ -1202,9 +1152,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1257,7 +1208,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Rahlstedt 65",
-      "zone_code": "Type: WR II o",
+      "zone_code": "WR II o",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1273,17 +1224,18 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nFelling of the construction-impeding maple (Tree Nr. 1) between October 1 and February 28.\nCarrying out the requested works in the protected crown and root area of the beech (Tree Nr. 2) under the supervision of a certified tree expert.\nTree Preservation:\nOther protected trees must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process.\nAdditional Conditions:\nReplacement Planting:\nThe felling permission is expressly conditioned on fulfilling the replacement planting.\nReplacement planting must be maintained permanently; in case of loss, equivalent replacements must be planted.\nSpecial Tree Protection:\nCompliance with tree protection guidelines and supervision by a certified tree expert must be proven to the designated authority before starting work.\nCompensation Payment:\nA compensation amount of €5,000 must be paid for nature conservation and landscape maintenance measures.\nThe compensation for the felled maple is calculated based on the required value calculation model, resulting in a need for 7 replacement trees or €7,000. Two replacement trees are to be planted on-site, and the remaining value is settled with a €5,000 compensation payment.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "conditions": [
           "Replacement Planting:",
           "The felling permission is expressly conditioned on fulfilling the replacement planting.",
@@ -1298,9 +1250,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1355,7 +1308,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Billstedt 90",
-      "zone_code": "Type: WR I o",
+      "zone_code": "WR I o",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1377,15 +1330,18 @@
         "building_code",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "distance_area"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 2",
-        "§ 9",
-        "§ 2",
+        "§ 31 Abs. 2 BauGB",
+        "§ 9 Abs. 13 BauGB",
+        "§ 2 BPlanVO",
         "§ 69 HBauO",
         "§ 6 Abs. 5 HBauO",
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [
@@ -1394,8 +1350,8 @@
       ],
       "1": {
         "text": "Planning Law Exemption under § 31 Abs. 2 BauGB:\nFor Waiving the Connection to the District Heating Network (§ 9 (13) BauGB i.V.m. § 2, Ziff.1 of the Law on the Development Plan)\nBuilding Regulation Deviation under § 69 HBauO:\nFor Undershooting the Minimum Depth of the Setback Area for the Internal Exterior Wall (§ 6 Abs. 5 HBauO)\nApproval under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nFelling of a blood beech with a trunk diameter of 60 cm between October 1 and February 28 of each year within the validity of the building permit.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 31 Abs. 2",
-        "type": "mixed",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
+        "type": "planning_law",
         "subjects": [
           "Waiving the Connection to the District Heating Network (§ 9 (13) BauGB i.V.m. § 2, Ziff.1 of the Law on the Development Plan)",
           "Undershooting the Minimum Depth of the Setback Area for the Internal Exterior Wall (§ 6 Abs. 5 HBauO)"
@@ -1408,9 +1364,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1463,7 +1420,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Niendorf 10",
-      "zone_code": "Type: WR-I",
+      "zone_code": "WR",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1479,17 +1436,18 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nRemoval of two hornbeam hedges, length approx. 3.00m, for the construction of a new driveway.\nAdditional Conditions:\nTree Preservation and Replacement Planting:\nThe felling permission is expressly conditioned on fulfilling the replacement planting.\nReplacement planting must be maintained permanently; in case of loss, equivalent replacements must be planted.\nAll protected trees and shrubs must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "conditions": [
           "Tree Preservation and Replacement Planting:",
           "The felling permission is expressly conditioned on fulfilling the replacement planting.",
@@ -1504,9 +1462,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1559,7 +1518,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Wilhelmsburg 9",
-      "zone_code": "Type: WA Max II",
+      "zone_code": "WA",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1575,17 +1534,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 2",
-        "§ 2"
+        "§ 31 Abs. 2 BauGB",
+        "§ 2 BPlanVO"
       ],
       "subjects": [
         "the construction of a single-story garage in the front yard (exceeding the front building line by 3.30 m) on the non-buildable property area (§ 2 Nr. 4 VO zum Bebauungsplan \"Wilhelmsburg 9\")"
       ],
       "1": {
         "text": "Planning Law Exemption under § 31 Abs. 2 BauGB:\nFor the construction of a single-story garage in the front yard (exceeding the front building line by 3.30 m) on the non-buildable property area (§ 2 Nr. 4 VO zum Bebauungsplan \"Wilhelmsburg 9\"):\nJustification: The deviation for the construction of the garage in the front yard is granted. The garage is urbanistically justifiable as it does not significantly affect the front yard and is aesthetically integrated with the single-family house.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 31 Abs. 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "subjects": [
           "the construction of a single-story garage in the front yard (exceeding the front building line by 3.30 m) on the non-buildable property area (§ 2 Nr. 4 VO zum Bebauungsplan \"Wilhelmsburg 9\")"
@@ -1596,9 +1556,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1651,7 +1612,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Rahlstedt 45",
-      "zone_code": "Type: WR II o",
+      "zone_code": "WR II o",
       "legal_ordinance": "BauNutzungsverordnung",
       "plan_references": [
         {
@@ -1667,17 +1628,18 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nRemoval of construction-impeding trees (Nr. 1-4) and hedges (Nr. H1-H3, approx. 16 linear meters) from October 1 to February 28.\nAdditional Conditions:\nTree Preservation and Replacement Planting:\nThe felling permission is expressly conditioned on fulfilling the replacement planting.\nOther protected trees must be preserved and protected according to DIN 18920 and environmental regulations throughout the construction process.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "conditions": [
           "Tree Preservation and Replacement Planting:",
           "The felling permission is expressly conditioned on fulfilling the replacement planting.",
@@ -1691,9 +1653,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1746,7 +1709,7 @@
       ],
       "plan_type": "Bebauungsplan",
       "plan_name": "Othmarschen 4 (festgestellt am 01.07.1963)",
-      "zone_code": "Type: W 1 o",
+      "zone_code": "W 1 o",
       "legal_ordinance": "Baupolizeiverordnung",
       "plan_references": [
         {
@@ -1762,14 +1725,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling and removing of specified trees and hedges, pruning of oak and yew trees, and root cutting for oak.\nConditions:\nAll tree work must be conducted between October 1 and February 28.\nMeasures must be overseen by a qualified tree protection supervisor.\nBauordnungsrechtliche Auflagen und Hinweise:\nConstruction Start Notification: Must be communicated to the building authority at least one week before commencement.\nTree Protection Measures: Must be implemented according to the specified tree protection regulations and supervised by a qualified tree expert.\nReplacement Planting: A detailed planting plan must be submitted and approved before construction begins.\nSetback Areas: Compliance with setback area regulations and tree protection guidelines is required.\nPlanungsrechtliche Befreiungen:\nExceeding the Number of Full Stories:\nJustification: The additional full story is urbanistically justifiable.\nExceeding the Building Boundary in Various Directions:\nJustifications: Necessary to protect large-crowned trees on the property and to accommodate the carport and terrace.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "justification": "The additional full story is urbanistically justifiable.",
         "conditions": [
@@ -1784,9 +1748,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1850,20 +1815,21 @@
     "granted_exemptions": {
       "header": null,
       "types": [
-        "other"
+        "planning_law"
       ],
-      "primary_type": "other",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 23"
+        "§ 23 Abs. 5 BauNVO"
       ],
       "subjects": [
         "the construction of a 3 m wide driveway (made of grass pavers) and a parking space (with paving stones, sealing degree = 0.67) as well as a 1.50 m wide walkway outside the buildable area"
       ],
       "1": {
         "text": "Planning Law Exemption under § 23 (5) BauNVO:\nFor the construction of a 3 m wide driveway (made of grass pavers) and a parking space (with paving stones, sealing degree = 0.67) as well as a 1.50 m wide walkway outside the buildable area:\nJustification: The driveway, parking space, and walkway to the house in the north are approved.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.",
-        "legal_ref": "§ 23",
-        "type": "other",
+        "legal_ref": "§ 23 Abs. 5 BauNVO",
+        "type": "planning_law",
         "subjects": [
           "the construction of a 3 m wide driveway (made of grass pavers) and a parking space (with paving stones, sealing degree = 0.67) as well as a 1.50 m wide walkway outside the buildable area"
         ],
@@ -1873,9 +1839,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -1940,20 +1907,22 @@
     "granted_exemptions": {
       "header": null,
       "types": [
+        "planning_law",
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 39 Abs. 5 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Tree Protection Ordinance and § 39 Abs. 5 BNatSchG:\nAllowed Actions:\nFelling of construction-impeding trees (Baum Nr. 4 Kirsche, Nr. 8 Blut-Buche, Nr. 9 Berg-Ahorn) and Thuja-Hecken I and III (ca. 35 linear meters).\nCrown maintenance pruning for Kirsche (Baum Nr. 2) and Magnolie (Baum Nr. 3) according to ZTV-Baumpflege, including removal of deadwood.\nConditions:\nTree works must be conducted between October 1 and February 28.\nReplacement planting of 3 native small to medium-crowned trees (high-stem, 3-times transplanted nursery stock, trunk circumference 18-20 cm).\nAdditional Conditions:\nTree Preservation and Replacement Planting:\nReplacement planting and greening measures must be implemented according to specified plant species, scope, and locations.\nReplacement planting must be completed by the end of the planting season following construction completion and maintained permanently.\nA qualified gardening company must carry out planting and associated measures, with supervision by a landscape architect.\nAdditional Information:\nNotice: The approval does not replace the need to obtain other public law decisions and does not authorize the commencement of work.\nFee: To be determined in a separate notice.\nRequired Documentation:\nLageplan\nLageplan with setback areas\nFloor Plans (Ground Floor, Attic Floor, Basement)\nSections (A-A)\nElevation Views (North, South, East, West)\nBuilding Description\nCalculation of Setback Areas\nFull Story Calculation\nGRZ Calculation",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "planning_law",
         "conditions": [
           "Tree works must be conducted between October 1 and February 28.",
           "Replacement planting of 3 native small to medium-crowned trees (high-stem, 3-times transplanted nursery stock, trunk circumference 18-20 cm)."
@@ -1967,9 +1936,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2040,17 +2010,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 1",
-        "§ 2 Absatz 15"
+        "§ 31 Abs. 1 BauGB",
+        "§ 2 Abs. 15 BPlanVO"
       ],
       "subjects": [
         "Unterschreiten der festgesetzten Dachneigung von mindestens 40 Grad (§ 2 Absatz 15 der Verordnung zum Bebauungsplan)"
       ],
       "1": {
         "text": "Planning Law Exception under § 31 Abs. 1 BauGB:\nFor Unterschreiten der festgesetzten Dachneigung von mindestens 40 Grad (§ 2 Absatz 15 der Verordnung zum Bebauungsplan):\nJustification: The planned mansard roof maintains the desired appearance with the typical steep roof slope, despite the deviation.",
-        "legal_ref": "§ 31 Abs. 1",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "subjects": [
           "Unterschreiten der festgesetzten Dachneigung von mindestens 40 Grad (§ 2 Absatz 15 der Verordnung zum Bebauungsplan)"
@@ -2061,9 +2032,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2136,16 +2108,17 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 2"
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "exceeding the allowable buildable area from 2/10 to 2.19/10"
       ],
       "1": {
         "text": "Planning Law Exemption under § 31 Abs. 2 BauGB:\nFor exceeding the allowable buildable area from 2/10 to 2.19/10:\nJustification: The exemption is granted as it is urbanistically justifiable after re-planning.",
-        "legal_ref": "§ 31 Abs. 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "subjects": [
           "exceeding the allowable buildable area from 2/10 to 2.19/10"
@@ -2156,9 +2129,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2232,14 +2206,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling of trees: Fichte Nr. 5 StD. 29 cm, Tanne Nr. 7 StD 36 cm, Scheinzypressen Nr. 12, 14, 15, 16 , StD 24-28 cm, Hecke Nr. 17, Hainbuche 8 m Länge im Vorgarten\nConditions:\nFelling is only allowed from October 1 to February 28 each year.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Felling is only allowed from October 1 to February 28 each year."
@@ -2252,9 +2227,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2333,14 +2309,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling of trees Nrn. 1-12 (see Baumbestandsplan) between October 1 and February 28.\nOther protected shrubs must be preserved and protected according to DIN 18920 and conservation requirements.\nConditions:\nReplacement planting of three medium to large-crowned trees (e.g., Summer Linden, Norway Maple, Hornbeam) with a minimum quality of 3 x v STU 18/20 cm.\nEach tree must have a rootable vegetation area of at least 12 sqm.\nThe planting must be carried out by a qualified gardening company at suitable locations on the property.\nProtective measures for trees must be in place throughout the construction period.\nThe completion and development care of replacement measures must be ensured by a qualified gardening company for at least 3 years.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Replacement planting of three medium to large-crowned trees (e.g., Summer Linden, Norway Maple, Hornbeam) with a minimum quality of 3 x v STU 18/20 cm.",
@@ -2358,9 +2335,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2443,14 +2421,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling of trees: Baumgruppe Nr. 1 Fichten StD 34, 34, 44 cm; Baum Nr. 3 Kiefer StD 73 cm; Baum Nr. 5 Kiefer StD 66 cm; Baum Nr. 6 Lärche StD 49 cm, Baum Nr. 12 Eibe StD 17/36 cm.\nJustification: The felling is necessary due to the new construction and the proximity of the trees to the building site (edge of the excavation).",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "justification": "The felling is necessary due to the new construction and the proximity of the trees to the building site (edge of the excavation).",
         "allowed_actions": [
@@ -2461,9 +2440,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2539,18 +2519,21 @@
         "tree_environmental",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 69 HBauO",
         "§ 9 Abs. 2 HBauO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling and removing the free-growing hedge Nr. 1 as per Lageplan (Anlage 1/2) between October 1 and February 28.\nConditions:\nReplacement planting of a hedge in a 1:1 ratio on the property with a minimum height of 125-150 cm, 3.5 plants per linear meter.\nThe planting and associated measures must be carried out by a qualified gardening company.\nThe replacement planting must be completed by April 30, 2024, and maintained for at least 2 years.\nBuilding Regulation Deviation under § 69 HBauO:\nAllowed Actions:\nInstallation of a heat pump in the front garden in a residential area (§ 9 Abs. 2 HBauO).\nJustification:\nThe distance of the heat pump to the street (approx. 9.50m) ensures no significant acoustic impact on people in the street area. The device's small size does not affect the garden's appearance.",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "justification": "The distance of the heat pump to the street (approx. 9.50m) ensures no significant acoustic impact on people in the street area. The device's small size does not affect the garden's appearance.",
         "conditions": [
           "Replacement planting of a hedge in a 1:1 ratio on the property with a minimum height of 125-150 cm, 3.5 plants per linear meter.",
@@ -2565,9 +2548,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2646,14 +2630,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling and removing trees Nrn. 2, 3, 4 (Scheinzypressen), and 5 (Lebensbaum) between October 1 and February 28.\nConditions:\nReplacement planting of three native medium-large-crowned trees (e.g., Hornbeam, Norway Maple, Birch) on the property. The planting must be completed by April 30, 2023, and maintained for at least 2 years.\nAn appropriate and detailed planting plan, specifying locations, species, quantity, and quality, must be submitted by September 30, 2023.\nProtective measures for trees must be in place throughout the construction period.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Replacement planting of three native medium-large-crowned trees (e.g., Hornbeam, Norway Maple, Birch) on the property. The planting must be completed by April 30, 2023, and maintained for at least 2 years.",
@@ -2668,9 +2653,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2746,17 +2732,18 @@
         "planning_law",
         "tree_environmental"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
-        "§ 31 Abs. 2"
+        "§ 4 BaumschutzVO",
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 of the Hamburg Tree Protection Ordinance:\nAllowed Actions:\nFelling the tree group Nr. 12 (Fichten) and the multi-stemmed large shrub Nr. 10 (Strauchhasel) with trunk diameters of approximately 15 cm to 52 cm, as per Baumbestandsplan (Anlage 11/27) and Baumbestandsliste (Anlage 11/29).\nConditions:\nReplacement planting of 3 native small to medium-crowned trees (high-stem, 3-times transplanted nursery stock, trunk circumference 18-20 cm). The planting and associated measures must be carried out by a qualified gardening company.\nReplacement planting must be completed by April 30, 2024, and maintained for at least 2 years.\nBuilding Regulation Deviation under § 31 Abs. 2 BauGB:\nAllowed Actions:\nExceeding the allowable buildable area from 2/10 to 2.2/10 through the terrace (GRZ I).\nExceeding the allowable buildable area from 3/10 to 3.2/10 through the main structures, carport with storage room, and driveway (GRZ II).",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "planning_law",
         "conditions": [
           "Replacement planting of 3 native small to medium-crowned trees (high-stem, 3-times transplanted nursery stock, trunk circumference 18-20 cm). The planting and associated measures must be carried out by a qualified gardening company.",
           "Replacement planting must be completed by April 30, 2024, and maintained for at least 2 years."
@@ -2769,9 +2756,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2855,9 +2843,10 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Absatz 3"
+        "§ 31 Abs. 3 BauGB"
       ],
       "subjects": [
         "exceeding the allowable buildable area from 3/10 to 4.9/10.",
@@ -2865,7 +2854,7 @@
       ],
       "1": {
         "text": "Planning Law Exemption under § 31 Absatz 3 BauGB:\nFor exceeding the allowable buildable area from 3/10 to 4.9/10.\nFor constructing the residential building at a distance of 8.10 m from the designated eastern building line.\nJustification: This is an atypical individual case due to the corner plot. The orientation and access are towards Heerwisch, which is unique in the area. A special hardship exists as the unbuildable areas affect both streets, reducing the buildable area significantly.",
-        "legal_ref": "§ 31 Absatz 3",
+        "legal_ref": "§ 31 Abs. 3 BauGB",
         "type": "planning_law",
         "subjects": [
           "exceeding the allowable buildable area from 3/10 to 4.9/10.",
@@ -2877,9 +2866,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -2972,14 +2962,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 6"
+        "§ 6 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 6 Hamburgische Baumschutzverordnung (BaumschutzVO):\nAllowed Actions:\nFelling of the oak trees Nr. 1, 2, and 4 between October 1 and February 28 as per Lageplan/Baumbestandsplan (Anlage Nr. 1/23) and Baumgutachterliche Bestandsaufnahme (Anlage 1/24).\nBaubedingte und unvermeidbare Aufgrabungen im Kronen- und Wurzelbereich der Eiche Baum Nr. 3 within specified guidelines and supervision.\nConditions:\nReplacement planting of 3 medium to large-crowned native trees.\nThe execution of tree care measures, including pruning and removal of deadwood, by a qualified tree care company.",
-        "legal_ref": "§ 6",
+        "legal_ref": "§ 6 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Replacement planting of 3 medium to large-crowned native trees.",
@@ -2994,9 +2985,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3079,14 +3071,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 der Verordnung zum Schutz des Baumbestandes und der Hecken in der Freien- und Hansestadt Hamburg (Baumschutzverordnung):\nAllowed Actions:\nKronenpflegeschnitt an Stiel-Eiche Nr. G3 und Entfernung von Totholz nach ZTV-Baumpflege Punkt 3.2.2 und 3.2.4, Ausgabe 2017.\nConditions:\nSchnittmaßnahmen sind durch eine Baumpflege-Fachfirma unter Einhaltung der ZTV-Baumpflege (aktuelle Ausgabe) durchzuführen.\nBaumkronenpflege muss die natürliche Wuchsform erhalten.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Schnittmaßnahmen sind durch eine Baumpflege-Fachfirma unter Einhaltung der ZTV-Baumpflege (aktuelle Ausgabe) durchzuführen.",
@@ -3100,9 +3093,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3178,14 +3172,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception under § 4 der Verordnung zum Schutz des Baumbestandes und der Hecken in der Freien und Hansestadt Hamburg (Baumschutzverordnung):\nAllowed Actions:\nFelling of three trees (Baum Nr. 1, 2, and 3) between October 1 and February 28 as per the Lageplan (Vorlage 23).\nConditions:\nThe existing hedge on the eastern property boundary must be preserved and protected.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "The existing hedge on the eastern property boundary must be preserved and protected."
@@ -3198,9 +3193,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3271,26 +3267,31 @@
     "granted_exemptions": {
       "header": null,
       "types": [
+        "building_code",
         "access_restriction"
       ],
-      "primary_type": "access_restriction",
+      "primary_type": "building_code",
+      "building_code_subtypes": [
+        "unspecified"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§4"
+        "§ 4"
       ],
       "subjects": [],
       "1": {
         "text": "Restrictions: Building work can only begin once a construction burden for securing sufficient width of access and service connections for the project-related property with properties 9088 or 9091 has been established (§4 paragraphs 1 and 3 HBauO).",
-        "legal_ref": "§4",
-        "type": "access_restriction"
+        "legal_ref": "§ 4",
+        "type": "building_code"
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3364,6 +3365,7 @@
         "access_restriction"
       ],
       "primary_type": "access_restriction",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [],
       "subjects": [],
@@ -3376,95 +3378,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 53,
-    "time_for_decision_months": 1.0,
-    "permit_type": "Simplified",
-    "issuing_authority": "Wandsbek",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Lemsahl-Mellingstedt 20 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "October 1, 2020"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Wandsbek",
-      "department": "Zentrum für Wirtschaftsförderung, Bauen und Umwelt, WBZ 24",
-      "address": "Schloßgarten 9, 22041 Hamburg",
-      "telephone": "###",
-      "telefax": "040 - 4 27 90 52 24",
-      "email": "wbz24@wandsbek.hamburg.de",
-      "contact_person": "###",
-      "room": "###"
-    },
-    "permit_information": {
-      "reference_number": "W/WBZ/12365/2020",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "September 14, 2020",
-      "issue_date": "October 1, 2020",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 521-005, Flurstück 4029 in der Gemarkung: Lemsahl-Mellingstedt",
-      "project_description": "New construction of a single-family house (1 residential unit) + double carport with storage room"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "Not specified"
-    },
-    "building_regulations_and_requirements": {
-      "5_further_information_leaflets_and_brochures_for_your_construction_can_be_found_at_the_link": "\"http://www.hamburg.de/baugenehmigung/583468/start-merkblaetter.html\".",
-      "_notes": [
-        "1. The ground surface is set at +28.79 m above sea level (NN) in front of house 73 (reference point according to the development plan). This results in the building zero level of +28.97 m above sea level (NN) = upper edge of the finished floor of the ground floor (§ 2 paragraph 3 HBauO).",
-        "2. The start of construction must be notified to the building supervisory authority at least one week in advance (§ 72a paragraph 4 HBauO). Please use the form available on the online service \"Notice of start, demolition and resumption of construction\" on the website gateway.hamburg.de.",
-        "3. The builder must notify the building supervisory authority of the intended occupancy at least two weeks in advance. This does not apply to the demolition of facilities and the construction of non-structural advertising facilities (§ 77 paragraph 2 HBauO).",
-        "4. The outdoor areas must be created in accordance with § 2 of the development plan LM 20 and § 9 paragraph 1 HBauO until the final completion of the building. In case of failure, equivalent replacements must be planted. (see also points 6 to 10 in the decision)"
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Lemsahl-Mellingstedt 20",
-      "regulations": "WR II o; only single houses; GRZ 0.3; building limits (10.00 m x 14.00 m); (c) eaves height max 6.50 m; roof pitch 20° to max 40°",
-      "_notes": [
-        "Baunutzungsverordnung from January 23, 1990"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Lemsahl-Mellingstedt 20",
-      "zone_code": "WR II o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Lemsahl-Mellingstedt 20",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3538,9 +3455,10 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2"
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "the construction outside the designated building limits with the buildings No. 6 b-c and 6 n as per site plan.",
@@ -3548,7 +3466,7 @@
       ],
       "1": {
         "text": "Following planning exemptions are granted according to § 31 paragraph 2 BauGB:\n1.1. For the construction outside the designated building limits with the buildings No. 6 b-c and 6 n as per site plan.\nReason: The exemption is urbanistically justifiable and was already granted with the preliminary decision (W/WBZ/00928/2013) from November 12, 2013.\n1.2. For exceeding the building limits by the buildings No. 6 a (southeast by 3.10 m) and 6 f+g (south by 0.50 m and west by 1.0 m) and 6 l+m (north by 2.80 m and west by 1.0 m) as per site plan.\nReason: The exemption is urbanistically justifiable and was already granted with the preliminary decision (W/WBZ/00928/2013) from November 12, 2013.",
-        "legal_ref": "§ 31 paragraph 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemption is urbanistically justifiable and was already granted with the preliminary decision (W/WBZ/00928/2013) from November 12, 2013.\n1.2. For exceeding the building limits by the buildings No. 6 a (southeast by 3.10 m) and 6 f+g (south by 0.50 m and west by 1.0 m) and 6 l+m (north by 2.80 m and west by 1.0 m) as per site plan.",
         "1.1": {
@@ -3566,9 +3484,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3653,23 +3572,25 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948 in the current version.\nPermission is granted, without prejudice to the rights of third parties, to fell the trees: Tree No. 6 (hornbeam) and Nos. 7/8 (hawthorn) according to the tree report (Appendix 4/8) and tree inventory plan (Appendix 4/4) between October 1 and February 28.\nPermission is also granted to conduct unavoidable excavations in the root area of oak trees No. 4 and 5 according to the tree expert and to trim individual roots professionally.\nPermission is granted to trim the entire crown of oak trees No. 4 and 5 by 1.50-2.00 m according to the tree care standards (ZTV - tree care point 3.3.1, edition 2017) to ensure construction clearance and avoid uncontrolled branch breakage.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3752,14 +3673,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948 in the current version.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
@@ -3776,9 +3698,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3859,17 +3782,21 @@
         "planning_law",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "distance_area",
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2",
-        "§ 23",
-        "§ 31 paragraph 1",
-        "§ 9",
-        "§ 2",
+        "§ 31 Abs. 2 BauGB",
+        "§ 23 BauNVO",
+        "§ 31 Abs. 1 BauGB",
+        "§ 9 Abs. 13 BauGB",
+        "§ 2 BPlanVO",
         "§ 69 HBauO",
-        "§ 6 paragraph 5 HBauO",
-        "§ 9 paragraph 2 HBauO"
+        "§ 6 Abs. 5 HBauO",
+        "§ 9 Abs. 2 HBauO"
       ],
       "subjects": [
         "exceeding the building limit by 2.50 m to the south into the front garden towards Fuchsbergweg street through a terrace (§ 23 BauNVO)",
@@ -3879,7 +3806,7 @@
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 paragraph 2 BauGB:\n1.1. For exceeding the building limit by 2.50 m to the south into the front garden towards Fuchsbergweg street through a terrace (§ 23 BauNVO)",
-        "legal_ref": "§ 31 paragraph 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "1.1": {
           "text": "For exceeding the building limit by 2.50 m to the south into the front garden towards Fuchsbergweg street through a terrace (§ 23 BauNVO)",
@@ -3888,7 +3815,7 @@
       },
       "2": {
         "text": "The following planning exception is granted according to § 31 paragraph 1 BauGB:\n2.1. For waiving the connection to the district heating network (§ 9 (13) BauGB in conjunction with § 2, item 1 of the law on the development plan)",
-        "legal_ref": "§ 31 paragraph 1",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "2.1": {
           "text": "For waiving the connection to the district heating network (§ 9 (13) BauGB in conjunction with § 2, item 1 of the law on the development plan)",
@@ -3915,9 +3842,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -3992,9 +3920,10 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2"
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "exceeding the building boundary by 3.83 m (2.50 building plus 1.33 m balcony)",
@@ -4002,7 +3931,7 @@
       ],
       "1": {
         "text": "The following planning exemptions are granted according to § 31 paragraph 2 BauGB:\n1.1. For exceeding the building boundary by 3.83 m (2.50 building plus 1.33 m balcony)\nReason: The exemption is urbanistically justifiable.\n1.2. For exceeding the permissible floor area ratio by 0.03 to 0.43\nReason: The exemption is urbanistically justifiable.",
-        "legal_ref": "§ 31 paragraph 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemption is urbanistically justifiable.\n1.2. For exceeding the permissible floor area ratio by 0.03 to 0.43",
         "1.1": {
@@ -4020,9 +3949,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4096,17 +4026,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2",
-        "§ 3"
+        "§ 31 Abs. 2 BauGB",
+        "§ 3 Abs. 3 BPlanVO"
       ],
       "subjects": [
         "the installation of large-scale windows instead of small-scale windows according to § 3 (3) of the law on the development plan."
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 paragraph 2 BauGB:\n1.1. For the installation of large-scale windows instead of small-scale windows according to § 3 (3) of the law on the development plan.\nReason: The exemption is urbanistically justifiable. The set small-scale window structure serves primarily to create or maintain a homogeneous urban appearance of the neighborhood. The larger window formats were placed only on the southwest and southeast facades, so the street-side appearance of the building remains consistent with the requirements.",
-        "legal_ref": "§ 31 paragraph 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemption is urbanistically justifiable. The set small-scale window structure serves primarily to create or maintain a homogeneous urban appearance of the neighborhood. The larger window formats were placed only on the southwest and southeast facades, so the street-side appearance of the building remains consistent with the requirements.",
         "1.1": {
@@ -4119,9 +4050,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4198,16 +4130,17 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [
         "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948, in the current version."
       ],
       "1": {
         "text": "The following approval, permit, or authorization is granted:\n1.1. Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948, in the current version.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "1.1": {
           "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948, in the current version.",
@@ -4233,88 +4166,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 61,
-    "time_for_decision_months": 3.0,
-    "permit_type": "Simplified",
-    "issuing_authority": "Eimsbüttel",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": null,
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "August 7, 2020"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Eimsbüttel",
-      "department": "Zentrum für Wirtschaftsförderung, Bauen und Umwelt, Bauprüfung, Bauprüfabteilung Region West -WBZ 23-",
-      "address": "Grindelberg 62 - 66, 20144 Hamburg",
-      "telephone": "###",
-      "telefax": "###",
-      "email": "###",
-      "contact_person": "###",
-      "room": "###"
-    },
-    "permit_information": {
-      "reference_number": "E/WBZ2/01120/2020",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "May 11, 2020",
-      "issue_date": "August 7, 2020",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 320-050, Flurstück 7546 in der Gemarkung: Eidelstedt",
-      "project_description": "New construction of a single house with 2 residential units"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions.",
-        "3. The green entries in the templates must be observed."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Baustufenplan Eidelstedt",
-      "regulations": "S 1 o > Obsolete assessment according to § 34 BauGB",
-      "_notes": [
-        "Baupolizeiverordnung from June 8, 1938"
-      ],
-      "plan_type": "Baustufenplan",
-      "plan_name": "Eidelstedt",
-      "zone_code": "S 1 o",
-      "legal_ordinance": "Baupolizeiverordnung",
-      "plan_references": [],
-      "plan_primary_type": "other"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4388,12 +4243,15 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "roof"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO",
         "§ 35 HBauO",
-        "§ 35 paragraph 4 HBauO",
-        "§ 69 paragraph 1 HBauO",
+        "§ 35 Abs. 4 HBauO",
+        "§ 69 Abs. 1 HBauO",
         "§ 3 HBauO"
       ],
       "subjects": [
@@ -4417,9 +4275,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4499,14 +4358,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) in the current version for clearing the thuja hedge over 27 m length (plants 1-19) and the dead hedge elements, as well as removing a cherry laurel hedge of 8 m length.\n\nCondition:\nClearing is allowed in connection with the building permit and is permissible from October to February 28 for the duration of the building permit.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "conditions": [
           "Clearing is allowed in connection with the building permit and is permissible from October to February 28 for the duration of the building permit."
@@ -4516,9 +4376,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4601,10 +4462,13 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "play_area"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO",
-        "§ 10 paragraph 1 HBauO"
+        "§ 10 Abs. 1 HBauO"
       ],
       "subjects": [
         "the waiver of creating a children's play area of 10 m² per residential unit, but at least 100 m², with the simultaneous establishment of a children's play area of at least 30 m² (§ 10 paragraph 1 HBauO)."
@@ -4623,9 +4487,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4704,6 +4569,7 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [],
       "subjects": [],
@@ -4741,9 +4607,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4818,11 +4685,12 @@
         "access_road"
       ],
       "primary_type": "access_road",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 18 paragraph 1",
-        "§ 19 paragraph 1",
-        "§ 25",
+        "§ 18 Abs. 1 HWG",
+        "§ 19 Abs. 1 HWG",
+        "§ 25 HWG",
         "§ 61 HWG",
         "§ 60 HWG",
         "§ 26 HWG"
@@ -4830,12 +4698,12 @@
       "subjects": [],
       "1": {
         "text": "Permission according to § 18 paragraph 1 of the Hamburg Road Law (HWG) for creating a paved driveway to the property.",
-        "legal_ref": "§ 18 paragraph 1",
+        "legal_ref": "§ 18 Abs. 1 HWG",
         "type": "other"
       },
       "2": {
         "text": "Special use permit according to § 19 paragraph 1 and § 25 of the Hamburg Road Law (HWG) for the use of public roads.",
-        "legal_ref": "§ 19 paragraph 1",
+        "legal_ref": "§ 19 Abs. 1 HWG",
         "type": "other"
       },
       "3": {
@@ -4862,9 +4730,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -4924,6 +4793,7 @@
       "plan_type": "Bebauungsplan",
       "plan_name": "Wohldorf-Ohlstedt 17",
       "zone_code": "WR IIo",
+      "legal_ordinance": "Baugesetzbuch",
       "plan_references": [
         {
           "name": "Wohldorf-Ohlstedt 17",
@@ -4938,23 +4808,25 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) in the current version:\n   - From October 1 to February 28, valid until February 28, 2022\n   - Permission to fell or clear the following trees/shrubs:\n     - No. 1 (Weeping beech), No. 3 (Golden elm), No. 4 (Corkscrew hazel), each with a trunk diameter of approx. 20-25 cm\n     - Beech hedge No. 7 (approx. 10 linear meters)\n     - Thuja hedge No. 5 (approx. 43 linear meters) according to tree inventory (Appendix 20/7) and open space plan (Appendix 20/6)\n\n   - Replacement planting requirements:\n     - Three small-crowned trees according to the tree balance plan/planting plan (Appendix 20/7), quality: high trunk, 3 times transplanted nursery stock, trunk circumference at least 16-18 cm\n     - Replacement for removed hedges: approx. 54 m of hedges to be newly planted on the property, quality: shrubs (Heister), 3 times transplanted nursery stock, minimum height 100-125 cm, 3 plants per linear meter\n     - Execution by a qualified gardening company, including necessary construction measures (e.g., preparation of planting pits 12 m²)\n     - Replacement planting must be maintained permanently and equivalent replacement planted in case of failure, to be carried out in the planting season after construction completion (by April 30, 2022)\n     - Qualified completion and development care for at least 2 years by a qualified gardening company to ensure plant growth\n     - Replacement planting must be reported to the aforementioned office after completion of the outdoor facilities",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5041,19 +4913,20 @@
         "planning_law",
         "tree_environmental"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2",
-        "§ 4"
+        "§ 31 Abs. 2 BauGB",
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [
         "exceeding the permissible buildable area for main facilities from 2/10 by 0.4/10 to 2.4/10, and for exceeding the permissible buildable area for main and ancillary facilities from 3/10 by 0.7/10 to 3.7/10."
       ],
       "1": {
         "text": "Following planning exemption is granted according to § 31 paragraph 2 BauGB:\n1.1. For exceeding the permissible buildable area for main facilities from 2/10 by 0.4/10 to 2.4/10, and for exceeding the permissible buildable area for main and ancillary facilities from 3/10 by 0.7/10 to 3.7/10.\n\nThis decision includes:\nException permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948 in the current version.\n\nIt is permitted, without prejudice to the rights of third parties, to fell the trees: No. 4 (birch), No. 8 (fir), No. 11 (elm), No. 12 (fir), and No. 20 (sycamore maple) as per the tree report (Appendix 20/30) and tree inventory plan, between October 1 and February 28.",
-        "legal_ref": "§ 31 paragraph 2",
-        "type": "mixed",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
+        "type": "planning_law",
         "1.1": {
           "text": "For exceeding the permissible buildable area for main facilities from 2/10 by 0.4/10 to 2.4/10, and for exceeding the permissible buildable area for main and ancillary facilities from 3/10 by 0.7/10 to 3.7/10.",
           "subject": "exceeding the permissible buildable area for main facilities from 2/10 by 0.4/10 to 2.4/10, and for exceeding the permissible buildable area for main and ancillary facilities from 3/10 by 0.7/10 to 3.7/10."
@@ -5063,9 +4936,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5143,14 +5017,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 6"
+        "§ 6 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 6 Hamburgische Baumschutzverordnung (BaumschutzVO) in the current versions is granted, allowing the following between October 1 and February 28:\n   - The removal of trees No. 3 (Blue Atlas Cedar), 4 (Sand Birch), 4a (False Cypress), 5 (Lilac), 6 (False Cypress), 9 (False Cypress), 11 (False Cypress), 12 (Bird Cherry), 13 (Sand Birch), 14 (Sand Birch), 16 (Sand Birch), 17 (Goat Willow), 18 (Goat Willow), 19 (Sand Birch), 20 (Sand Birch), 22 (False Cypress), 28 (Silver Fir), and 43 (Norway Spruce) as per the attachment 9/19.\n   - The professional shortening of overhanging branches for trees No. 62, 67, and 68 to create light space profiles according to ZTV Tree Care standards (Attachment 9/19).\n   - Execution of approved works in the protected crown and root areas following tree protection regulations under the supervision of a certified tree expert.",
-        "legal_ref": "§ 6",
+        "legal_ref": "§ 6 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
@@ -5172,92 +5047,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 70,
-    "time_for_decision_months": 1.9,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 76 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "August 27, 2021"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 428 54 - ###",
-      "telefax": "###",
-      "email": "###",
-      "contact_person": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/01128/2021",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "July 2, 2021",
-      "issue_date": "August 27, 2021",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-050, Flurstück 3334 in der Gemarkung: Schiffbek",
-      "project_description": "New construction of 2 single houses with 2 residential units each, 2 stories"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 2",
-      "number_of_full_stories": "2 Full Stories"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions.",
-        "3. Compliance with species protection regulations must be ensured. An independent biologist must verify the absence of wild animals within 1 to 10 days before work begins."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 76",
-      "regulations": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",
-      "_notes": [
-        "Baunutzungsverordnung from November 26, 1968"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 76",
-      "zone_code": "WR II o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 76",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5349,25 +5142,27 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
-        "§ 39"
+        "§ 4 BaumschutzVO",
+        "§ 39 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) in the current version for the felling and clearing of a birch (7, Ø approx. 63 cm).\n   - The measure is carried out due to construction or condition requirements to clear the construction environment.\n   - According to § 39 Federal Nature Conservation Act (BNatSchG) Abs. 5 Satz 2, the felling of the tree must be carried out between October 1 and February 28.\n   - Interventions in the root area of protected trees for creating access roads and parking spaces on non-buildable areas in the front yard are not permissible.",
-        "legal_ref": "§ 4",
-        "type": "mixed"
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental"
       }
     },
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5447,13 +5242,16 @@
         "planning_law",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "accessibility"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 1",
-        "§ 2",
+        "§ 31 Abs. 1 BauGB",
+        "§ 2 BPlanVO",
         "§ 69 HBauO",
-        "§ 52 paragraph 4 HBauO"
+        "§ 52 Abs. 4 HBauO"
       ],
       "subjects": [
         "exceeding the GRZ 2 by 0.05 from permissible 0.45 to 0.50 (§ 2 No. 8 of the ordinance to the development plan)",
@@ -5461,7 +5259,7 @@
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 paragraph 1 BauGB:\n1.1. For exceeding the GRZ 2 by 0.05 from permissible 0.45 to 0.50 (§ 2 No. 8 of the ordinance to the development plan)\nReason:\nThe exemption is minor and arises from the necessary access to the rear properties and the required ancillary facilities for storing bicycles.\n\nCondition:\nThe planned bicycle house must have an extensive green roof to compensate for the surface sealing.",
-        "legal_ref": "§ 31 paragraph 1",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "justification": "The exemption is minor and arises from the necessary access to the rear properties and the required ancillary facilities for storing bicycles.",
         "conditions": [
@@ -5488,9 +5286,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5573,28 +5372,29 @@
         "tree_environmental",
         "access_road"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
-        "§ 18 Absatz 1 HWG"
+        "§ 4 BaumschutzVO",
+        "§ 18 Abs. 1 HWG"
       ],
       "subjects": [
         "cars up to 3.5 tons permissible total weight"
       ],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) for felling trees and clearing hedges:\n   - Crataegus monogyna, trunk diameter 30 cm (Tree No. 16)\n   - Quercus rubra, trunk diameter 68 cm (Tree No. 06)\n   - Fagus sylvatica, trunk diameter 62 cm (Tree No. 07)\n   - Picea omorika, trunk diameter 25 cm (Tree No. 17)\n   - Betula pendula, trunk diameter 49 cm (Tree No. 05)\n   - Fagus sylvatica, trunk diameter 61 cm (Tree No. 04)\n   - Abies concolor, trunk diameter 58 cm (Tree No. 02)\n   - Approx. 35 m Taxus hedge\n   - Approx. 93 m beech hedge",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges for crown pruning:\n   - Tilia cordata, trunk diameter 54 cm (Tree No. 03)\n   - Oaks (Tree No. 08, 09, 10)",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "other"
       },
       "3": {
         "text": "Property access permit according to § 18 Absatz 1 HWG for the creation of a property access (sidewalk crossing):\n   - Maximum width of 4.0 m at the property boundary\n   - For cars up to 3.5 tons permissible total weight\n   - Clear sight triangles with 3 m side lengths on private land\n   - No objects taller than 0.80 m in sight triangles\n   - No surface water runoff onto the road\n   - Valid indefinitely",
-        "legal_ref": "§ 18 Absatz 1 HWG",
+        "legal_ref": "§ 18 Abs. 1 HWG",
         "type": "access_road",
         "subjects": [
           "cars up to 3.5 tons permissible total weight"
@@ -5604,9 +5404,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5692,14 +5493,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) for the felling of trees:\n   - Tree No. 6 (Hornbeam) and Nos. 7/8 (Hawthorn) as per tree report (Attachment 4/8) and tree inventory plan (Attachment 4/4).",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
@@ -5711,9 +5513,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5802,6 +5605,9 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO",
@@ -5826,9 +5632,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -5906,16 +5713,17 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 paragraph 2"
+        "§ 31 Abs. 2 BauGB"
       ],
       "subjects": [
         "exceeding the permissible buildable area of 0.3 with the residential buildings including terraces by 0.021 to 0.321 or including parking spaces with their driveways to 0.486."
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 paragraph 2 BauGB:\n1.1. For exceeding the permissible buildable area of 0.3 with the residential buildings including terraces by 0.021 to 0.321 or including parking spaces with their driveways to 0.486.\n\nReason:\nThe exemption is urbanistically justifiable and was already granted with the preliminary decision from May 14, 2014 (Gz.: W/WBZ/00022/2014; at that time to 0.333 with the residential buildings including terraces).\n\nCondition:\nThe residential buildings must be effectively screened at the northern and the parking spaces at the eastern property boundary.",
-        "legal_ref": "§ 31 paragraph 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemption is urbanistically justifiable and was already granted with the preliminary decision from May 14, 2014 (Gz.: W/WBZ/00022/2014; at that time to 0.333 with the residential buildings including terraces).",
         "conditions": [
@@ -5930,9 +5738,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6006,6 +5815,7 @@
       "plan_type": "Bebauungsplan",
       "plan_name": "Wohldorf-Ohlstedt 17",
       "zone_code": "WA IIo",
+      "legal_ordinance": "Baugesetzbuch",
       "plan_references": [
         {
           "name": "Wohldorf-Ohlstedt 17",
@@ -6020,14 +5830,15 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948 in the current version:\n   - From October 1 to February 28, permission is granted to fell trees No. 2 (Magnolia), 3 and 4 (Hornbeam), 5 (Golden Rain), 6, 7, and 8 (Red Beech), 9-12, 14, 15, and 21-26 (Spruce), 13 (Goat Willow), 16 and 20 (Norway Maple), 19 (Walnut), 27 (Norway Maple) and hedges No. 1 (Hornbeam, 39 m) and 35 (Privet, 3 m) as per location plan (Attachment 33/55) and tree survey (Attachment 33/13).",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
@@ -6039,9 +5850,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6121,17 +5933,18 @@
         "access_road"
       ],
       "primary_type": "access_road",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 18 Absatz 1 HWG",
-        "§ 19 Absatz 1 HWG",
-        "§ 22 Absatz 1 HWG",
+        "§ 18 Abs. 1 HWG",
+        "§ 19 Abs. 1 HWG",
+        "§ 22 Abs. 1 HWG",
         "§ 3 Abs. 1"
       ],
       "subjects": [],
       "1": {
         "text": "Permit for curb crossing according to § 18 Absatz 1 HWG from January 22, 1974, in the current version for the construction of two curb crossings according to template 10, in the area of Falkenstein 11.\n\nCondition:\n- The curb crossings for vehicles up to 3.5 tons permissible total weight are allowed with a maximum width of 3.50 m each, measured at the property boundary.\n- Sight triangles with 3 m side lengths must be kept clear on private property, with no objects higher than 0.80 m within them.\n- Surface water must not drain onto the roadway from the property.\n- The property must only be accessed and exited in forward gear.",
-        "legal_ref": "§ 18 Absatz 1 HWG",
+        "legal_ref": "§ 18 Abs. 1 HWG",
         "type": "access_road",
         "conditions": [
           "The curb crossings for vehicles up to 3.5 tons permissible total weight are allowed with a maximum width of 3.50 m each, measured at the property boundary.",
@@ -6142,7 +5955,7 @@
       },
       "2": {
         "text": "Permit for construction site setup according to § 19 Absatz 1 HWG from January 22, 1974, in the current version for the use of public land for a construction site setup in the area of Falkenstein 11.\n\nCondition:\n- The construction site setup must be coordinated with the street maintenance/supervision on-site.\n- Special use fees are charged according to the \"Fee Ordinance for the Administration and Use of Public Roads, Green and Recreational Areas\" from December 6, 1994, in the current version.\n- The final and decisive use area of the construction site setup will be measured on-site by the supervising authority, and a separate cost determination notice will be sent to the builder.",
-        "legal_ref": "§ 19 Absatz 1 HWG",
+        "legal_ref": "§ 19 Abs. 1 HWG",
         "type": "access_road",
         "conditions": [
           "The construction site setup must be coordinated with the street maintenance/supervision on-site.",
@@ -6152,7 +5965,7 @@
       },
       "3": {
         "text": "Permit for construction site access according to § 19 Absatz 1 HWG from January 22, 1974, in the current version for the use of public land for a construction site access in the area of Falkenstein 11.\n\nCondition:\n- The construction site access must be coordinated with the street maintenance/supervision on-site.",
-        "legal_ref": "§ 19 Absatz 1 HWG",
+        "legal_ref": "§ 19 Abs. 1 HWG",
         "type": "access_road",
         "conditions": [
           "The construction site access must be coordinated with the street maintenance/supervision on-site."
@@ -6160,7 +5973,7 @@
       },
       "4": {
         "text": "Permits according to § 22 Absatz 1 HWG for altering or digging up public roads (excavation permits).\n\nCondition:\n- These permits are valid until the completion of the construction measure.\n- Each excavation must be coordinated with the supervising authority.",
-        "legal_ref": "§ 22 Absatz 1 HWG",
+        "legal_ref": "§ 22 Abs. 1 HWG",
         "type": "access_road",
         "conditions": [
           "These permits are valid until the completion of the construction measure.",
@@ -6176,9 +5989,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6255,6 +6069,10 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "distance_area",
+        "play_area"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO",
@@ -6285,9 +6103,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6365,11 +6184,14 @@
         "building_code",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [
+        "fire_escape_safety"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
-        "§ 39 Abs. 5",
+        "§ 4 BaumschutzVO",
+        "§ 39 Abs. 5 BNatSchG",
         "§ 69 HBauO",
         "§ 33 Abs. 1 HBauO",
         "§ 2 Abs. 3 HBauO"
@@ -6379,8 +6201,8 @@
       ],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) in the current version is granted to clear a beech hedge approximately 9 m long on the eastern property boundary from October 1 to February 28 for the duration of the building permit.\n\nReason:\nThe hedge is cleared due to construction requirements for the new garage and will be replaced. The environmental impact is acceptable under compliance with nature conservation regulations.\n\nCondition:\nThe measures must be carried out from October 1 to February 28 as per § 39 Abs. 5 Satz 1 Nr. 2 Bundesnaturschutzgesetz (BNatSchG).",
-        "legal_ref": "§ 4",
-        "type": "mixed",
+        "legal_ref": "§ 4 BaumschutzVO",
+        "type": "tree_environmental",
         "justification": "The hedge is cleared due to construction requirements for the new garage and will be replaced. The environmental impact is acceptable under compliance with nature conservation regulations.",
         "conditions": [
           "The measures must be carried out from October 1 to February 28 as per § 39 Abs. 5 Satz 1 Nr. 2 Bundesnaturschutzgesetz (BNatSchG)."
@@ -6389,7 +6211,7 @@
       "2": {
         "text": "The following building code deviation is permitted according to § 69 HBauO:\n   - Deviation from § 33 Abs. 1 HBauO to waive the requirement for a necessary stairwell for the residential building of building class 3 according to § 2 Abs. 3 HBauO.\n\nReason:\nThe waiver is granted because the following conditions from the Building Inspection Service (BPD) 05/2012, Fire Protection Technical Interpretations (BTA) page 37, are met:\n   - The building is occupied by a single family and stands free.\n   - The building has no more than four stories (ground floor, two upper floors, and attic).\n   - The basement is fire-separated.\n   - The hallway in the stairwell is equipped with a smoke and heat exhaust opening in the ceiling in the attic floor.\n\nSuspensive Condition:\nThe permit may only be used after the remaining protected trees and hedges on the property and adjacent properties are secured according to the applicable regulations (DIN 18 920 with RAS-LP 4, Hamburg Tree Protection Ordinance, ZTV Tree Care 2017) before demolition and construction begin. The root areas of protected trees must be secured with a fixed fence at least 2 m high, encompassing the crown area plus 1.5 m. If this is not possible, the trunks must be protected with cushioned planks. For hedges, the protection must include the hedge and at least 1 m distance. Completion of protection measures must be reported to the responsible office before constru",
         "legal_ref": "§ 69 HBauO",
-        "type": "mixed",
+        "type": "tree_environmental",
         "subjects": [
           "hedges, the protection must include the hedge and at least 1 m distance. Completion of protection measures must be reported to the responsible office before constru"
         ],
@@ -6402,190 +6224,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 81,
-    "time_for_decision_months": 2.8,
-    "permit_type": "Simplified",
-    "issuing_authority": "Wandsbek",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Rahlstedt (construction plan), Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt (regulation for the protection of parts of the landscape)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "April 9, 2014"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Wandsbek",
-      "department": "Zentrum für Wirtschaftsförderung, Bauen und Umwelt, WBZ 23 Bauprüfung Rahlstedt",
-      "address": "Schloßgarten 9, 22041 Hamburg",
-      "telephone": "040 - 4 28 81 - 2390",
-      "telefax": "040 - 4 28 81 - 28 05",
-      "email": "Baupruefung-Rahlstedt@wandsbek.hamburg.de",
-      "contact_person": "###",
-      "room": "408"
-    },
-    "permit_information": {
-      "reference_number": "W/WBZ/01310/2014",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "January 23, 2014",
-      "issue_date": "April 9, 2014",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 526-049, Flurstück 3486 in der Gemarkung: Meiendorf",
-      "project_description": "New construction of a single house with two buildings each with one residential unit"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "2 Full Stories"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Baustufenplan Rahlstedt",
-      "regulations": "W 1 o, minimum plot size 1000 sqm",
-      "preliminary_decision": "Gz.: W/WBZ/04395/2013 from May 24, 2013",
-      "_notes": [
-        "Baupolizeiverordnung from June 8, 1938 in the current version"
-      ],
-      "plan_type": "Baustufenplan",
-      "plan_name": "Rahlstedt",
-      "zone_code": "W 1 o",
-      "legal_ordinance": "Baupolizeiverordnung",
-      "plan_references": [
-        {
-          "name": "Rahlstedt",
-          "type": "construction_plan"
-        },
-        {
-          "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
-          "type": "landscape_protection"
-        }
-      ],
-      "plan_primary_type": "construction_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 82,
-    "time_for_decision_months": 3.0,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG), Öjendorf-Billstedter Geest (regulation for the protection of parts of the landscape)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "September 20, 2018"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 4 28 54 - ###",
-      "telefax": "###",
-      "email": "baupruefung@hamburg-mitte.hamburg.de",
-      "contact_person": "###",
-      "room": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/00896/2018",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "June 14, 2018",
-      "issue_date": "September 20, 2018",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-050, 130-266, Flurstück 01902 in der Gemarkung: Öjendorf",
-      "project_description": "New construction of a single house with two residential units"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 90",
-      "regulations": "WR I o; 2 Wo; E mandatory; GRZ: 0.3",
-      "green_order_plan": "Green Order Plan Billstedt 90",
-      "landscape_protection_ordinance": "Öjendorf-Billstedter Geest",
-      "_notes": [
-        "Baunutzungsverordnung from January 23, 1990"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 90",
-      "zone_code": "WR I o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 90",
-          "type": "development_plan"
-        },
-        {
-          "name": "green space plan Billstedt 90",
-          "type": "green_space_plan"
-        },
-        {
-          "name": "Öjendorf-Billstedter Geest",
-          "type": "landscape_protection"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6662,16 +6304,17 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 67 BNatSchG"
       ],
       "subjects": [],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) in the current version for the felling of trees No. 3 - 19 is granted.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
@@ -6688,96 +6331,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 84,
-    "time_for_decision_months": 1.5,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 90 (development plan), green space plan Billstedt 90 (green space plan according to HmbNatSchG)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "September 23, 2019"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 4 28 54 - ###",
-      "telefax": "###",
-      "email": "baupruefung@hamburg-mitte.hamburg.de",
-      "contact_person": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/01510/2019",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "August 5, 2019",
-      "issue_date": "September 23, 2019",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-266, Flurstück 01899 in der Gemarkung: Öjendorf",
-      "project_description": "New construction of a single house with two residential units without terraces"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 90",
-      "regulations": "WR I o; 2 Wo; E mandatory; GRZ: 0.3, building boundaries, intended infiltration area",
-      "green_order_plan": "Green Order Plan Billstedt 90",
-      "_notes": [
-        "Baunutzungsverordnung from January 23, 1990"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 90",
-      "zone_code": "WR I o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 90",
-          "type": "development_plan"
-        },
-        {
-          "name": "green space plan Billstedt 90",
-          "type": "green_space_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6836,6 +6393,7 @@
       "plan_type": "Bebauungsplan",
       "plan_name": "Wohldorf-Ohlstedt 17",
       "zone_code": "WR Io",
+      "legal_ordinance": "Baugesetzbuch",
       "plan_references": [
         {
           "name": "Wohldorf-Ohlstedt 17",
@@ -6850,17 +6408,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Abs. 1",
-        "§ 23 Abs. 3"
+        "§ 31 Abs. 1 BauGB",
+        "§ 23 Abs. 3 BauNVO"
       ],
       "subjects": [
         "protruding beyond the building line by 2 m (§ 23 Abs. 3 BauNVO) with the bay window/balcony towards the street Kortenwisch and by up to 2.5 m towards the street Kortenredder."
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 Abs. 1 BauGB:\n1.1. For protruding beyond the building line by 2 m (§ 23 Abs. 3 BauNVO) with the bay window/balcony towards the street Kortenwisch and by up to 2.5 m towards the street Kortenredder.",
-        "legal_ref": "§ 31 Abs. 1",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "1.1": {
           "text": "For protruding beyond the building line by 2 m (§ 23 Abs. 3 BauNVO) with the bay window/balcony towards the street Kortenwisch and by up to 2.5 m towards the street Kortenredder.",
@@ -6871,9 +6430,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -6953,12 +6513,15 @@
         "tree_environmental",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
-        "§ 31 Abs. 2",
-        "§ 23",
+        "§ 4 BaumschutzVO",
+        "§ 31 Abs. 2 BauGB",
+        "§ 23 BauNVO",
         "§ 9 HBauO",
         "§ 69 HBauO",
         "§ 9 Abs. 2 HBauO"
@@ -6969,12 +6532,12 @@
       ],
       "1": {
         "text": "Permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) for the felling of one tree with a trunk diameter of 30 cm in the southern property corner and 11 m of hedge (Blue Cypress) at the southeastern property boundary.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental"
       },
       "2": {
         "text": "Planning exemption according to § 31 Abs. 2 BauGB:\n   - For constructing a 5.34 m long and 1.95 m wide stairway outside the building boundary in the front garden area (§ 23 BauNVO).\n\nCondition:\n- The requirements according to § 9 HBauO must be met. The garden design of the front garden must not be significantly impaired.",
-        "legal_ref": "§ 31 Abs. 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "subjects": [
           "constructing a 5.34 m long and 1.95 m wide stairway outside the building boundary in the front garden area (§ 23 BauNVO)."
@@ -6995,9 +6558,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -7051,9 +6615,9 @@
       "development_plan": "Unplanned area in a coherently built-up district according to § 34 BauGB",
       "regulations": "Baugesetzbuch",
       "preliminary_decision": "Gz.: B/WBZ/05907/2018 from April 7, 2020 (partially)",
-      "plan_type": "other",
+      "plan_type": "Unplanned area",
       "plan_name": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-      "zone_code": "Baugesetzbuch",
+      "legal_ordinance": "Baugesetzbuch",
       "plan_references": [
         {
           "name": "built-up district in accordance with § 34 BauGB",
@@ -7072,6 +6636,9 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "distance_area"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO",
@@ -7093,9 +6660,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -7168,17 +6736,18 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Absatz 2",
-        "§ 23"
+        "§ 31 Abs. 2 BauGB",
+        "§ 23 BauNVO"
       ],
       "subjects": [
         "exceeding the building boundary by 3.00 m on a length of 14.98 m by constructing a terrace (§ 23 BauNVO)."
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 Absatz 2 BauGB:\n1.1. For exceeding the building boundary by 3.00 m on a length of 14.98 m by constructing a terrace (§ 23 BauNVO).",
-        "legal_ref": "§ 31 Absatz 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "1.1": {
           "text": "For exceeding the building boundary by 3.00 m on a length of 14.98 m by constructing a terrace (§ 23 BauNVO).",
@@ -7192,11 +6761,11 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Absatz 2",
-        "§ 22",
-        "§ 31 Abs. 2"
+        "§ 31 Abs. 2 BauGB",
+        "§ 22 BauNVO"
       ],
       "subjects": [
         "waiving the open construction method as set in the planning (§ 22 BauNVO).",
@@ -7204,7 +6773,7 @@
       ],
       "1": {
         "text": "The following planning exemptions are not granted according to § 31 Absatz 2 BauGB:\n1.1. For waiving the open construction method as set in the planning (§ 22 BauNVO).\n1.2. For constructing a semi-detached house in an area designated for single houses (§ 22 BauNVO).\n\nReason:\nThe exemptions are not acceptable as the conditions of § 31 Abs. 2 BauGB are not met. Granting these exemptions would lead to the creation of \"four-family houses,\" altering the character of the area, which is not intended for multi-family houses. The single administrative error that allowed one semi-detached house does not set a precedent.",
-        "legal_ref": "§ 31 Absatz 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemptions are not acceptable as the conditions of § 31 Abs. 2 BauGB are not met. Granting these exemptions would lead to the creation of \"four-family houses,\" altering the character of the area, which is not intended for multi-family houses. The single administrative error that allowed one semi-detached house does not set a precedent.",
         "1.1": {
@@ -7216,88 +6785,6 @@
           "subject": "constructing a semi-detached house in an area designated for single houses (§ 22 BauNVO)."
         }
       }
-    }
-  },
-  {
-    "request_id": 89,
-    "time_for_decision_months": 0.9,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 14 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "January 9, 2023"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 428 54 - ###",
-      "telefax": "040 - 4279 - 01541",
-      "email": "BP@hamburg-mitte.hamburg.de",
-      "contact_person": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/02006/2022",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "December 12, 2022",
-      "issue_date": "January 9, 2023",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-152, Flurstück 1092 in der Gemarkung: Kirchsteinbek",
-      "project_description": "New construction of a single house with 4 residential units"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 2",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 14",
-      "regulations": "WR I (mandatory), building boundary, street line",
-      "_notes": [
-        "Baunutzungsverordnung from June 26, 1962"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 14",
-      "zone_code": "WR I",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 14",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
     }
   },
   {
@@ -7351,6 +6838,7 @@
       "plan_type": "Baustufenplan",
       "plan_name": "Niendorf / Lokstedt / Schnelsen",
       "zone_code": "W I o",
+      "legal_ordinance": "Baugesetzbuch",
       "plan_references": [
         {
           "name": "Niendorf / Lokstedt / Schnelsen",
@@ -7365,18 +6853,19 @@
         "planning_law"
       ],
       "primary_type": "planning_law",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Absatz 2",
+        "§ 31 Abs. 2 BauGB",
         "§ 11 Abs. 1",
-        "§ 30"
+        "§ 30 BauGB"
       ],
       "subjects": [
         "exceeding the permissible buildable area by 0.04 to 0.24 for the construction of a single house (§ 11 Abs. 1 Sp. 8 BPVO i.V.m. § 30 BauGB)."
       ],
       "1": {
         "text": "The following planning exemption is granted according to § 31 Absatz 2 BauGB:\n1.1. For exceeding the permissible buildable area by 0.04 to 0.24 for the construction of a single house (§ 11 Abs. 1 Sp. 8 BPVO i.V.m. § 30 BauGB).\n\nReason:\nThe exemption for exceeding the permissible buildable area by 0.04 to 0.24 for the construction of a single house is granted. The exceedance is urbanistically justifiable and was already anticipated in the preliminary decision E/WBZ2/00452/2015.",
-        "legal_ref": "§ 31 Absatz 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "justification": "The exemption for exceeding the permissible buildable area by 0.04 to 0.24 for the construction of a single house is granted. The exceedance is urbanistically justifiable and was already anticipated in the preliminary decision E/WBZ2/00452/2015.",
         "1.1": {
@@ -7388,91 +6877,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 91,
-    "time_for_decision_months": 1.2,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 90 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "May 18, 2016"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Klosterwall 6 (City-Hof, Block C), 20095 Hamburg",
-      "telephone": "040 - 428 54 - ###",
-      "telefax": "###",
-      "email": "Baupruefabteilung@hamburg-mitte.hamburg.de",
-      "contact_person": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/01438/2016",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "May 10, 2016",
-      "issue_date": "May 18, 2016",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-267, Flurstück 1754 in der Gemarkung: Öjendorf",
-      "project_description": "New construction of a single-family house"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 90",
-      "regulations": "WR 1o max 2 apartments, single houses, GRZ 0.3",
-      "_notes": [
-        "Baunutzungsverordnung from January 23, 1990"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 90",
-      "zone_code": "WR 1o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 90",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -7547,11 +6955,14 @@
         "planning_law",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 31",
-        "§ 23 Abs. 3",
+        "§ 31 Abs. 1 BauGB",
+        "§ 23 Abs. 3 BauNVO",
         "§ 69 HBauO",
         "§ 9 Abs. 2 HBauO"
       ],
@@ -7561,7 +6972,7 @@
       ],
       "1": {
         "text": "Following planning exemption is granted according to § 31 (1) BauGB in the preliminary decision:\n   - For a minor protrusion beyond the building boundary by 3.25 m (§ 23 Abs. 3 BauNVO).",
-        "legal_ref": "§ 31",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "subjects": [
           "a minor protrusion beyond the building boundary by 3.25 m (§ 23 Abs. 3 BauNVO)."
@@ -7582,9 +6993,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -7663,16 +7075,17 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [
         "felling the trees as per the application for exception permit dated March 3, 2019, due to construction hindrance and lack of development possibilities, as well as carrying out the requested pruning and maintenance measures on the tree stock."
       ],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948, in the current version.\n   - For felling the trees as per the application for exception permit dated March 3, 2019, due to construction hindrance and lack of development possibilities, as well as carrying out the requested pruning and maintenance measures on the tree stock.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "subjects": [
           "felling the trees as per the application for exception permit dated March 3, 2019, due to construction hindrance and lack of development possibilities, as well as carrying out the requested pruning and maintenance measures on the tree stock."
@@ -7682,95 +7095,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 94,
-    "time_for_decision_months": 3.5,
-    "permit_type": "Simplified",
-    "issuing_authority": "Bergedorf",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "district developed in accordance with Section 34 of the BauGB (not overplanned area)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "May 21, 2021"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Bergedorf",
-      "department": "Zentrum für Wirtschaftsförderung, Bauen und Umwelt, Bauprüfung - B/WBZ 2",
-      "address": "Wentorfer Straße 38 a, 21029 Hamburg",
-      "telephone": "040 - 42891 - ###",
-      "telefax": "040 - 427 906 - 047",
-      "email": "Baupruefung@bergedorf.hamburg.de",
-      "contact_person": "###",
-      "room": "###"
-    },
-    "permit_information": {
-      "reference_number": "B/WBZ/01072/2021",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "February 26, 2021",
-      "issue_date": "May 21, 2021",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 607-045, Flurstück 9840 in der Gemarkung: Kirchwerder",
-      "project_description": "New construction of three single-family houses with a total of 6 residential units"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 2",
-      "number_of_full_stories": "2 Full Stories"
-    },
-    "building_regulations_and_requirements": {
-      "conditions": "",
-      "4_if_irregularities_in_the_subsoil_discoloration_odor_gas_emissions_are_detected_during_soil_investigations_or_construction_measures_the_district_office_bergedorf_technical_environmental_protection_verbraucherschutzbergedorfhamburgde_must_be_notified_outside_office_hours_the_damage_management_of_the_authority_for_environment_and_energy_tel": "040/428 40-2300, must be informed (§ 1 Abs. 1 Hamburgisches Bodenschutzgesetz).",
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions.",
-        "1. On the mentioned property, there is an area no. 7620-101/00 (former gas station) classified as \"completed (was not AvF)\" registered in the soil condition register of the Authority for Environment and Energy (BUE). During construction measures and earthworks, additional costs for the disposal of excavated soil or construction pit water may arise.",
-        "2. The property is located in a project area of the Authority for Environment and Energy (BUE) (GasBW-000), which includes an area of the Elbmarsch, where organic soft layers (clay, mud, and peat) are present in the subsoil. Due to decomposition processes in these soils, soil gases (methane [CH4] and carbon dioxide [CO2]) can naturally form. These gases can rise to near-surface soil layers, accumulate especially under sealed/built-up areas, and potentially penetrate buildings. However, according to current knowledge, these soft layers are not present in relevant thicknesses (> 2m) for the formation of soil gases in the area of the property. If soft layers with a thickness > 2m are encountered or known in the area of the construction project, structural safety measures to prevent gas accumulations and gas entries into the building must be provided, such as a gravel filter layer, gas-tight pipe penetrations, no enclosed spaces below the floor (§ 16 HBauO).",
-        "3. Topsoil must be preserved in a usable condition and protected from destruction or waste (§ 202 Baugesetzbuch). Excavated material, including topsoil, must be reused or recycled according to the applicable waste and soil protection regulations of the Federal Republic and the Free and Hanseatic City of Hamburg in accordance with § 6 Kreislaufwirtschaftsgesetz (KrWG). If reuse or recycling is not feasible according to legal requirements, the excavated material must be disposed of. For the reuse of excavated material suitable for creating a rootable soil layer or for placing in rootable soil layers due to its properties (humus content, absence of contaminants, structure), the requirements of § 12 Bundes-Bodenschutz- und Altlastenverordnung (BBodSchV) must be observed.",
-        "5. The start of construction must be reported to the building supervisory authority at least one week in advance (§ 72a Abs. 4 HBauO).",
-        "6. The intended use of the building must be reported to the building supervisory authority at least two weeks in advance (§ 77 Abs. 2 HBauO)."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-      "regulations": "Baugesetzbuch",
-      "plan_type": "other",
-      "plan_name": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-      "zone_code": "Baugesetzbuch",
-      "plan_references": [
-        {
-          "name": "district developed in accordance with Section 34 of the BauGB",
-          "type": "unplanned_area"
-        }
-      ],
-      "plan_primary_type": "unplanned_area"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -7842,6 +7170,9 @@
         "building_code"
       ],
       "primary_type": "building_code",
+      "building_code_subtypes": [
+        "unspecified"
+      ],
       "is_empty": false,
       "legal_refs": [
         "§ 69 HBauO"
@@ -7857,176 +7188,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 96,
-    "time_for_decision_months": 1.8,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 90 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "June 6, 2018"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 428 54 - ###",
-      "telefax": "###",
-      "email": "baupruefung@hamburg-mitte.hamburg.de",
-      "contact_person": "###",
-      "room": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/00615/2018",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "April 19, 2018",
-      "issue_date": "June 6, 2018",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-267, Flurstück 2626 in der Gemarkung: Öjendorf",
-      "project_description": "New construction of a residential house with 2 residential units"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 1",
-      "number_of_full_stories": "1 Full Story"
-    },
-    "building_regulations_and_requirements": {
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 90",
-      "regulations": "WR I o; 2 Wo; GRZ 0.3; only single houses",
-      "_notes": [
-        "Baunutzungsverordnung from January 23, 1990"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 90",
-      "zone_code": "WR I o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 90",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    }
-  },
-  {
-    "request_id": 97,
-    "time_for_decision_months": 2.0,
-    "permit_type": "Simplified",
-    "issuing_authority": "Hamburg-Mitte",
-    "type_of_construction": "New Construction",
-    "development_plan_implementation_plan": "Billstedt 76 (development plan)",
-    "document_information": {
-      "title": "Permit according to HBauO",
-      "creation_date": "August 27, 2021"
-    },
-    "contact_information": {
-      "issuing_authority": "Freie und Hansestadt Hamburg, Bezirksamt Hamburg-Mitte",
-      "department": "Dezernat Wirtschaft, Bauen und Umwelt, Fachamt Bauprüfung",
-      "address": "Caffamacherreihe 1-3, 20355 Hamburg",
-      "telephone": "040 - 428 54 - ###",
-      "telefax": "###",
-      "email": "bp@hamburg-mitte.hamburg.de",
-      "contact_person": "###"
-    },
-    "permit_information": {
-      "reference_number": "M/BP/01128/2021",
-      "permit_type": "Simplified permit procedure according to § 61 HBauO",
-      "date_of_receipt": "July 2, 2021",
-      "issue_date": "August 27, 2021",
-      "validity": "3 years (can be extended up to 1 year each upon request)"
-    },
-    "property_information": {
-      "location": "Baublock 130-050, Flurstück 3334 in der Gemarkung: Schiffbek",
-      "project_description": "New construction of 2 single-family houses with 2 residential units each, 2-story"
-    },
-    "statistics_for_hmbtg_implementation": {
-      "type_of_construction": "New Construction",
-      "type_of_building_by_future_use": "Pure Residential Building",
-      "type_of_requested_facility": "Building, Building Class 2",
-      "number_of_full_stories": "2 Full Stories"
-    },
-    "building_regulations_and_requirements": {
-      "condition": "",
-      "_notes": [
-        "1. The building permit expires if construction has not begun within three years of issuance or if construction is interrupted for more than one year. It can be extended on written application for up to one year each time.",
-        "2. The approval does not replace the need to obtain other public law decisions.",
-        "1. The approval may only be used when the given structures (existing buildings, trees, etc.) are shown to be non-relevant to species protection regulations. The absence of impact on wild animals must be proven in advance through a species ecological expert opinion in temporal context with the measure (1 day to max. 10 days before the start of work). It must be demonstrated that the prohibition conditions according to § 39 and § 44 BNatSchG are not affected."
-      ]
-    },
-    "decision_basis": {
-      "development_plan": "Bebauungsplan Billstedt 76",
-      "regulations": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",
-      "_notes": [
-        "Baunutzungsverordnung from November 26, 1968"
-      ],
-      "plan_type": "Bebauungsplan",
-      "plan_name": "Billstedt 76",
-      "zone_code": "WR II o",
-      "legal_ordinance": "BauNutzungsverordnung",
-      "plan_references": [
-        {
-          "name": "Billstedt 76",
-          "type": "development_plan"
-        }
-      ],
-      "plan_primary_type": "development_plan"
-    },
-    "granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
-      "is_empty": true,
-      "legal_refs": [],
-      "subjects": []
-    },
-    "non_granted_exemptions": {
-      "header": null,
-      "types": [
-        "none"
-      ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -8106,11 +7271,14 @@
         "planning_law",
         "building_code"
       ],
-      "primary_type": "mixed",
+      "primary_type": "planning_law",
+      "building_code_subtypes": [
+        "front_garden_structure"
+      ],
       "is_empty": false,
       "legal_refs": [
-        "§ 31 Absatz 2",
-        "§ 31 Absatz 1",
+        "§ 31 Abs. 2 BauGB",
+        "§ 31 Abs. 1 BauGB",
         "§ 69 HBauO",
         "§ 9 Abs. 2 HBauO"
       ],
@@ -8123,7 +7291,7 @@
       ],
       "1": {
         "text": "Planning exemption granted according to § 31 Absatz 2 BauGB:\n   - For exceeding the allowable ground area of 300 m² by 25.32 m² to 325.32 m² for the left building (Immenschuur 16).\n\nReason:\nThe main areas comply with the allowable 200 m² according to the development plan. The exceedance of the ground area on one of the two properties by 25 m² due to ancillary facilities (underground garage and car lift) is urbanistically acceptable as it avoids ground-level parking spaces.\n\nCondition:\nThe underground garage must be covered with at least 80 cm high substrate without creating a height jump in the terrain.",
-        "legal_ref": "§ 31 Absatz 2",
+        "legal_ref": "§ 31 Abs. 2 BauGB",
         "type": "planning_law",
         "subjects": [
           "exceeding the allowable ground area of 300 m² by 25.32 m² to 325.32 m² for the left building (Immenschuur 16)."
@@ -8135,7 +7303,7 @@
       },
       "2": {
         "text": "Planning exemption granted according to § 31 Absatz 1 BauGB:\n   - For exceeding the building boundary by 4.00 m with the right building (Immenschuur 16a) towards the north.\n   - For exceeding the building boundary by 3.00 m with the left building (Immenschuur 16) towards the north.\n   - For exceeding the building boundary by 3.19 m with the left building (Immenschuur 16) towards the west.",
-        "legal_ref": "§ 31 Absatz 1",
+        "legal_ref": "§ 31 Abs. 1 BauGB",
         "type": "planning_law",
         "subjects": [
           "exceeding the building boundary by 4.00 m with the right building (Immenschuur 16a) towards the north.",
@@ -8159,9 +7327,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -8235,10 +7404,11 @@
         "tree_environmental",
         "nature_protection"
       ],
-      "primary_type": "mixed",
+      "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4",
+        "§ 4 BaumschutzVO",
         "§ 44 BNatSchG"
       ],
       "subjects": [
@@ -8253,7 +7423,7 @@
       "2": {
         "text": "Before starting construction, the root area of the trees and hedges to be preserved must be protected according to the specifications of a tree expert (e.g., with a fixed tree protection fence). The protection must be carried out by a certified tree care company. If this is not possible, a trunk protection according to DIN 18920, section 4.6, must be installed, and the root area protected with steel plates on a gravel bed with a fleece underlay according to DIN 18920, section 4.12. The tree protection fence installation must be reported to the responsible office.\n\nTree Protection Site Management:\n- All planning and construction processes in the tree environment must be checked, approved, and supervised by a tree expert. This applies to sealing and unsealing work, building construction, and outdoor facilities construction. Tree-friendly planning adjustments must be developed as needed.\n- The tree protection site management must be named to the district office in advance. The tree expert must certify the proper implementation of measures monthly and after all work is completed, with the reports sent directly to the mentioned office.\n\nSpecies Protection:\n- Compliance with species protection regulations must be ensured. It is forbidden to catch, injure, kill, or destroy the habitats of protected species according to § 44 BNatSchG. Before starting work, the entire area must be thoroughly inspected for relevant structures, and the absence of prohibited conditions must be documented. For exceptions, the Authority for Environment, Climate, Energy, and Agriculture, N3 Species and Biotope Protection, must be contacted.",
         "legal_ref": "§ 44 BNatSchG",
-        "type": "mixed",
+        "type": "tree_environmental",
         "subjects": [
           "exceptions, the Authority for Environment, Climate, Energy, and Agriculture, N3 Species and Biotope Protection, must be contacted."
         ]
@@ -8262,9 +7432,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []
@@ -8345,16 +7516,17 @@
         "tree_environmental"
       ],
       "primary_type": "tree_environmental",
+      "building_code_subtypes": [],
       "is_empty": false,
       "legal_refs": [
-        "§ 4"
+        "§ 4 BaumschutzVO"
       ],
       "subjects": [
         "felling the trees: Baum Nr. 6 (Hainbuche) and Nr. 7/8 (Weißdorn) as per the tree expert opinion (attachment 4/8) and tree stock plan (attachment 4/4) during the period from October 1 to February 28."
       ],
       "1": {
         "text": "Exception permit according to § 4 of the ordinance on the protection of tree stands and hedges in the Free and Hanseatic City of Hamburg (Tree Protection Ordinance) from September 17, 1948, in the current version.\n   - For felling the trees: Baum Nr. 6 (Hainbuche) and Nr. 7/8 (Weißdorn) as per the tree expert opinion (attachment 4/8) and tree stock plan (attachment 4/4) during the period from October 1 to February 28.",
-        "legal_ref": "§ 4",
+        "legal_ref": "§ 4 BaumschutzVO",
         "type": "tree_environmental",
         "subjects": [
           "felling the trees: Baum Nr. 6 (Hainbuche) and Nr. 7/8 (Weißdorn) as per the tree expert opinion (attachment 4/8) and tree stock plan (attachment 4/4) during the period from October 1 to February 28."
@@ -8369,9 +7541,10 @@
     "non_granted_exemptions": {
       "header": null,
       "types": [
-        "none"
+        "no_exemption"
       ],
-      "primary_type": "none",
+      "primary_type": "no_exemption",
+      "building_code_subtypes": [],
       "is_empty": true,
       "legal_refs": [],
       "subjects": []

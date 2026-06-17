@@ -7,7 +7,7 @@
     "grz": "0.4",
     "gfz": "0.4",
     "additional_regulations": "BauNVO (June 26, 1962)",
-    "zone_code": "Type: WR I o",
+    "zone_code": "WR I o",
     "plan_references": [
       {
         "name": "Lurup 13",
@@ -23,9 +23,9 @@
     "_notes": [
       "Baupolizeiverordnung from June 8, 1938, in the applicable version"
     ],
-    "plan_type": "other",
-    "plan_name": "Durchführungsplan 391 B",
-    "zone_code": "Type: Fläche für besondere Zwecke (Sportplatz)",
+    "plan_type": "Durchführungsplan",
+    "plan_name": "391 B",
+    "zone_code": "Fläche für besondere Zwecke (Sportplatz)",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [
       {
@@ -42,9 +42,9 @@
     "_notes": [
       "Baupolizeiverordnung from June 8, 1938, in the applicable version"
     ],
-    "plan_type": "other",
-    "plan_name": "Durchführungsplan 391 B",
-    "zone_code": "Type: Fläche für besondere Zwecke (Sportplatz)",
+    "plan_type": "Durchführungsplan",
+    "plan_name": "391 B",
+    "zone_code": "Fläche für besondere Zwecke (Sportplatz)",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [
       {
@@ -65,7 +65,7 @@
     "_notes": [
       "BauNutzungsverordnung from June 26, 1962"
     ],
-    "zone_code": "Type: WA II o",
+    "zone_code": "WA II o",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -84,7 +84,7 @@
     ],
     "plan_type": "Baustufenplan",
     "plan_name": "Bramfeld",
-    "zone_code": "Type: W I o",
+    "zone_code": "W I o",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [
       {
@@ -103,7 +103,7 @@
     "_notes": [
       "BauNutzungsverordnung from January 23, 1990"
     ],
-    "zone_code": "Type: WR/2W I o /Einzelhaus \"E\"",
+    "zone_code": "WR",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -121,7 +121,7 @@
       "Special Area Shops (II; GRZ 0.4; GFZ 0.4); public roads, paths, squares; private green spaces; urban conservation area \"Fischbek\"",
       "BauNutzungsverordnung from June 26, 1962"
     ],
-    "zone_code": "Type: Public Green Spaces",
+    "zone_code": "Public Green Spaces",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -146,7 +146,7 @@
     "_notes": [
       "BauNutzungsverordnung from June 26, 1962"
     ],
-    "zone_code": "Type: WR I",
+    "zone_code": "WR I",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -165,7 +165,7 @@
     ],
     "plan_type": "Baustufenplan",
     "plan_name": "Bramfeld",
-    "zone_code": "Type: W1o",
+    "zone_code": "W1o",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [
       {
@@ -182,7 +182,7 @@
     "_notes": [
       "BauNutzungsverordnung from September 15, 1977, in the version from December 19, 1986"
     ],
-    "zone_code": "Type: WR",
+    "zone_code": "WR",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -191,25 +191,6 @@
       }
     ],
     "plan_primary_type": "development_plan"
-  },
-  "12": {
-    "development_plan": "Baustufenplan Sasel",
-    "regulations": "",
-    "type": "W 1 o",
-    "_notes": [
-      "Baupolizeiverordnung from June 8, 1938, in the applicable version"
-    ],
-    "plan_type": "Baustufenplan",
-    "plan_name": "Sasel",
-    "zone_code": "Type: W 1 o",
-    "legal_ordinance": "Baupolizeiverordnung",
-    "plan_references": [
-      {
-        "name": "Sasel",
-        "type": "construction_plan"
-      }
-    ],
-    "plan_primary_type": "construction_plan"
   },
   "13": {
     "development_plan": "Volksdorf 40",
@@ -220,7 +201,7 @@
     ],
     "plan_type": "other",
     "plan_name": "Volksdorf 40",
-    "zone_code": "Type: WR I o E 1Wo (c)=120m²",
+    "zone_code": "WR I o",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -240,7 +221,7 @@
     ],
     "plan_type": "Baustufenplan",
     "plan_name": "Lemsahl-Mellingstedt",
-    "zone_code": "Type: W 1 o",
+    "zone_code": "W 1 o",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [],
     "plan_primary_type": "other"
@@ -254,7 +235,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Rahlstedt 65",
-    "zone_code": "Type: WR II o",
+    "zone_code": "WR II o",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -275,7 +256,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Billstedt 90",
-    "zone_code": "Type: WR I o",
+    "zone_code": "WR I o",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -298,7 +279,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Niendorf 10",
-    "zone_code": "Type: WR-I",
+    "zone_code": "WR",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -317,7 +298,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Wilhelmsburg 9",
-    "zone_code": "Type: WA Max II",
+    "zone_code": "WA",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -336,7 +317,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Rahlstedt 45",
-    "zone_code": "Type: WR II o",
+    "zone_code": "WR II o",
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [
       {
@@ -355,7 +336,7 @@
     ],
     "plan_type": "Bebauungsplan",
     "plan_name": "Othmarschen 4 (festgestellt am 01.07.1963)",
-    "zone_code": "Type: W 1 o",
+    "zone_code": "W 1 o",
     "legal_ordinance": "Baupolizeiverordnung",
     "plan_references": [
       {
@@ -664,24 +645,6 @@
     ],
     "plan_primary_type": "development_plan"
   },
-  "53": {
-    "development_plan": "Bebauungsplan Lemsahl-Mellingstedt 20",
-    "regulations": "WR II o; only single houses; GRZ 0.3; building limits (10.00 m x 14.00 m); (c) eaves height max 6.50 m; roof pitch 20° to max 40°",
-    "_notes": [
-      "Baunutzungsverordnung from January 23, 1990"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Lemsahl-Mellingstedt 20",
-    "zone_code": "WR II o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Lemsahl-Mellingstedt 20",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
   "54": {
     "development_plan": "Bebauungsplan Bergstedt 13",
     "regulations": "WR I o; 2 residential units; ED; GRZ 0.3; GFZ 0.4",
@@ -816,19 +779,6 @@
     ],
     "plan_primary_type": "construction_plan"
   },
-  "61": {
-    "development_plan": "Baustufenplan Eidelstedt",
-    "regulations": "S 1 o > Obsolete assessment according to § 34 BauGB",
-    "_notes": [
-      "Baupolizeiverordnung from June 8, 1938"
-    ],
-    "plan_type": "Baustufenplan",
-    "plan_name": "Eidelstedt",
-    "zone_code": "S 1 o",
-    "legal_ordinance": "Baupolizeiverordnung",
-    "plan_references": [],
-    "plan_primary_type": "other"
-  },
   "62": {
     "development_plan": "Bebauungsplan Billstedt 14",
     "regulations": "WR I, building boundaries, non-buildable area",
@@ -941,6 +891,7 @@
     "plan_type": "Bebauungsplan",
     "plan_name": "Wohldorf-Ohlstedt 17",
     "zone_code": "WR IIo",
+    "legal_ordinance": "Baugesetzbuch",
     "plan_references": [
       {
         "name": "Wohldorf-Ohlstedt 17",
@@ -983,24 +934,6 @@
     "plan_references": [
       {
         "name": "Rahlstedt 89",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
-  "70": {
-    "development_plan": "Bebauungsplan Billstedt 76",
-    "regulations": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",
-    "_notes": [
-      "Baunutzungsverordnung from November 26, 1968"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 76",
-    "zone_code": "WR II o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 76",
         "type": "development_plan"
       }
     ],
@@ -1130,6 +1063,7 @@
     "plan_type": "Bebauungsplan",
     "plan_name": "Wohldorf-Ohlstedt 17",
     "zone_code": "WA IIo",
+    "legal_ordinance": "Baugesetzbuch",
     "plan_references": [
       {
         "name": "Wohldorf-Ohlstedt 17",
@@ -1195,57 +1129,6 @@
     ],
     "plan_primary_type": "development_plan"
   },
-  "81": {
-    "development_plan": "Baustufenplan Rahlstedt",
-    "regulations": "W 1 o, minimum plot size 1000 sqm",
-    "preliminary_decision": "Gz.: W/WBZ/04395/2013 from May 24, 2013",
-    "_notes": [
-      "Baupolizeiverordnung from June 8, 1938 in the current version"
-    ],
-    "plan_type": "Baustufenplan",
-    "plan_name": "Rahlstedt",
-    "zone_code": "W 1 o",
-    "legal_ordinance": "Baupolizeiverordnung",
-    "plan_references": [
-      {
-        "name": "Rahlstedt",
-        "type": "construction_plan"
-      },
-      {
-        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
-        "type": "landscape_protection"
-      }
-    ],
-    "plan_primary_type": "construction_plan"
-  },
-  "82": {
-    "development_plan": "Bebauungsplan Billstedt 90",
-    "regulations": "WR I o; 2 Wo; E mandatory; GRZ: 0.3",
-    "green_order_plan": "Green Order Plan Billstedt 90",
-    "landscape_protection_ordinance": "Öjendorf-Billstedter Geest",
-    "_notes": [
-      "Baunutzungsverordnung from January 23, 1990"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 90",
-    "zone_code": "WR I o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      },
-      {
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      },
-      {
-        "name": "Öjendorf-Billstedter Geest",
-        "type": "landscape_protection"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
   "83": {
     "development_plan": "Bebauungsplan Stellingen 14",
     "regulations": "WR II, 2 VG, only single or semi-detached houses",
@@ -1264,29 +1147,6 @@
     ],
     "plan_primary_type": "development_plan"
   },
-  "84": {
-    "development_plan": "Bebauungsplan Billstedt 90",
-    "regulations": "WR I o; 2 Wo; E mandatory; GRZ: 0.3, building boundaries, intended infiltration area",
-    "green_order_plan": "Green Order Plan Billstedt 90",
-    "_notes": [
-      "Baunutzungsverordnung from January 23, 1990"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 90",
-    "zone_code": "WR I o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      },
-      {
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
   "85": {
     "development_plan": "Bebauungsplan Wohldorf-Ohlstedt 17",
     "regulations": "WR Io, 2WE, GRZ 0,2 E",
@@ -1296,6 +1156,7 @@
     "plan_type": "Bebauungsplan",
     "plan_name": "Wohldorf-Ohlstedt 17",
     "zone_code": "WR Io",
+    "legal_ordinance": "Baugesetzbuch",
     "plan_references": [
       {
         "name": "Wohldorf-Ohlstedt 17",
@@ -1331,9 +1192,9 @@
     "development_plan": "Unplanned area in a coherently built-up district according to § 34 BauGB",
     "regulations": "Baugesetzbuch",
     "preliminary_decision": "Gz.: B/WBZ/05907/2018 from April 7, 2020 (partially)",
-    "plan_type": "other",
+    "plan_type": "Unplanned area",
     "plan_name": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-    "zone_code": "Baugesetzbuch",
+    "legal_ordinance": "Baugesetzbuch",
     "plan_references": [
       {
         "name": "built-up district in accordance with § 34 BauGB",
@@ -1364,24 +1225,6 @@
     ],
     "plan_primary_type": "development_plan"
   },
-  "89": {
-    "development_plan": "Bebauungsplan Billstedt 14",
-    "regulations": "WR I (mandatory), building boundary, street line",
-    "_notes": [
-      "Baunutzungsverordnung from June 26, 1962"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 14",
-    "zone_code": "WR I",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 14",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
   "90": {
     "development_plan": "Baustufenplan Niendorf / Lokstedt / Schnelsen",
     "regulations": "W I o, building protection area, Baugesetzbuch",
@@ -1389,6 +1232,7 @@
     "plan_type": "Baustufenplan",
     "plan_name": "Niendorf / Lokstedt / Schnelsen",
     "zone_code": "W I o",
+    "legal_ordinance": "Baugesetzbuch",
     "plan_references": [
       {
         "name": "Niendorf / Lokstedt / Schnelsen",
@@ -1396,24 +1240,6 @@
       }
     ],
     "plan_primary_type": "construction_plan"
-  },
-  "91": {
-    "development_plan": "Bebauungsplan Billstedt 90",
-    "regulations": "WR 1o max 2 apartments, single houses, GRZ 0.3",
-    "_notes": [
-      "Baunutzungsverordnung from January 23, 1990"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 90",
-    "zone_code": "WR 1o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
   },
   "92": {
     "development_plan": "Bebauungsplan Volksdorf 43",
@@ -1452,20 +1278,6 @@
     ],
     "plan_primary_type": "development_plan"
   },
-  "94": {
-    "development_plan": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-    "regulations": "Baugesetzbuch",
-    "plan_type": "other",
-    "plan_name": "Unplanned area in a coherently built-up district according to § 34 BauGB",
-    "zone_code": "Baugesetzbuch",
-    "plan_references": [
-      {
-        "name": "district developed in accordance with Section 34 of the BauGB",
-        "type": "unplanned_area"
-      }
-    ],
-    "plan_primary_type": "unplanned_area"
-  },
   "95": {
     "development_plan": "Bebauungsplan Lurup 57",
     "regulations": "WR I o, 1 Wo, single houses, GFZ 0.3, GR 120 m², roof pitch between 33° and 45°, only roof tiles, walls in red brick, building window",
@@ -1478,42 +1290,6 @@
     "legal_ordinance": "BauNutzungsverordnung",
     "plan_references": [],
     "plan_primary_type": "other"
-  },
-  "96": {
-    "development_plan": "Bebauungsplan Billstedt 90",
-    "regulations": "WR I o; 2 Wo; GRZ 0.3; only single houses",
-    "_notes": [
-      "Baunutzungsverordnung from January 23, 1990"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 90",
-    "zone_code": "WR I o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
-  },
-  "97": {
-    "development_plan": "Bebauungsplan Billstedt 76",
-    "regulations": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries",
-    "_notes": [
-      "Baunutzungsverordnung from November 26, 1968"
-    ],
-    "plan_type": "Bebauungsplan",
-    "plan_name": "Billstedt 76",
-    "zone_code": "WR II o",
-    "legal_ordinance": "BauNutzungsverordnung",
-    "plan_references": [
-      {
-        "name": "Billstedt 76",
-        "type": "development_plan"
-      }
-    ],
-    "plan_primary_type": "development_plan"
   },
   "98": {
     "development_plan": "Bebauungsplan Volksdorf 40",

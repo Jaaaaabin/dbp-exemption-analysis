@@ -24,7 +24,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR I o"
+        "value": "WR I o"
       },
       {
         "source_field": "type",
@@ -66,11 +66,11 @@
       },
       {
         "source_field": "plan_name",
-        "value": "Durchführungsplan 391 B"
+        "value": "391 B"
       },
       {
         "source_field": "plan_type",
-        "value": "other"
+        "value": "Durchführungsplan"
       },
       {
         "source_field": "plan_primary_type",
@@ -95,7 +95,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: Fläche für besondere Zwecke (Sportplatz)"
+        "value": "Fläche für besondere Zwecke (Sportplatz)"
       },
       {
         "source_field": "type",
@@ -107,15 +107,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 37"
+        "value": "§ 37 Abs. 3 HBauO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 15"
+        "value": "§ 15 Abs. 2 GarVo"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 37"
+        "value": "§ 37 Abs. 3 HBauO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -146,11 +146,11 @@
       },
       {
         "source_field": "plan_name",
-        "value": "Durchführungsplan 391 B"
+        "value": "391 B"
       },
       {
         "source_field": "plan_type",
-        "value": "other"
+        "value": "Durchführungsplan"
       },
       {
         "source_field": "plan_primary_type",
@@ -180,7 +180,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: Fläche für besondere Zwecke (Sportplatz)"
+        "value": "Fläche für besondere Zwecke (Sportplatz)"
       },
       {
         "source_field": "type",
@@ -198,15 +198,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 37"
+        "value": "§ 37 Abs. 3 HBauO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 15"
+        "value": "§ 15 Abs. 2 GarVo"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 37"
+        "value": "§ 37 Abs. 3 HBauO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -258,7 +258,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WA II o"
+        "value": "WA II o"
       },
       {
         "source_field": "type",
@@ -290,7 +290,7 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 14"
+        "value": "§ 14 BauVorlVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
@@ -370,7 +370,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: W I o"
+        "value": "W I o"
       },
       {
         "source_field": "type",
@@ -421,7 +421,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR/2W I o /Einzelhaus \"E\""
+        "value": "WR"
       },
       {
         "source_field": "type",
@@ -441,15 +441,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 14"
+        "value": "§ 14 BauVorlVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -511,7 +511,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: Public Green Spaces"
+        "value": "Public Green Spaces"
       },
       {
         "source_field": "type",
@@ -535,22 +535,22 @@
       },
       {
         "source_field": "zone_code",
-        "value": "Type: Public Green Spaces"
+        "value": "Public Green Spaces"
       }
     ],
     "preliminary_decision_documents": [],
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 173 Abs. 1"
+        "value": "§ 173 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 173 Abs. 1"
+        "value": "§ 173 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -602,7 +602,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR I"
+        "value": "WR I"
       },
       {
         "source_field": "type",
@@ -682,7 +682,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: W1o"
+        "value": "W1o"
       },
       {
         "source_field": "type",
@@ -694,11 +694,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -746,7 +746,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR"
+        "value": "WR"
       },
       {
         "source_field": "type",
@@ -758,7 +758,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -766,7 +766,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -785,78 +785,6 @@
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 0,
         "granted_exemption_legal_references": 5
-      },
-      "total_dependencies": 12
-    }
-  },
-  "12": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Baustufenplan Sasel"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Sasel"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Baustufenplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "construction_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Sasel",
-        "type": "construction_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "Baupolizeiverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baupolizeiverordnung from June 8, 1938, in the applicable version"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "zone_code",
-        "value": "Type: W 1 o"
-      },
-      {
-        "source_field": "type",
-        "value": "W 1 o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [
-      {
-        "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 34"
-      },
-      {
-        "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 34"
-      },
-      {
-        "source_field": "granted_exemptions.1.text",
-        "value": "§ 34"
-      }
-    ],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 3
       },
       "total_dependencies": 12
     }
@@ -898,7 +826,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR I o E 1Wo (c)=120m²"
+        "value": "WR I o"
       },
       {
         "source_field": "type",
@@ -910,7 +838,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -926,7 +854,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -989,7 +917,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: W 1 o"
+        "value": "W 1 o"
       },
       {
         "source_field": "type",
@@ -1066,7 +994,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR II o"
+        "value": "WR II o"
       },
       {
         "source_field": "type",
@@ -1078,7 +1006,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1086,7 +1014,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1151,7 +1079,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR I o"
+        "value": "WR I o"
       },
       {
         "source_field": "type",
@@ -1169,15 +1097,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 9"
+        "value": "§ 9 Abs. 13 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 2"
+        "value": "§ 2 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1189,7 +1117,7 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1197,7 +1125,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1277,7 +1205,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR-I"
+        "value": "WR"
       },
       {
         "source_field": "type",
@@ -1289,7 +1217,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1297,7 +1225,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1357,7 +1285,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WA Max II"
+        "value": "WA"
       },
       {
         "source_field": "type",
@@ -1369,15 +1297,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 2"
+        "value": "§ 2 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1437,7 +1365,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: WR II o"
+        "value": "WR II o"
       },
       {
         "source_field": "type",
@@ -1449,7 +1377,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1457,7 +1385,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1517,7 +1445,7 @@
     "regulation_texts": [
       {
         "source_field": "zone_code",
-        "value": "Type: W 1 o"
+        "value": "W 1 o"
       },
       {
         "source_field": "type",
@@ -1529,11 +1457,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1607,11 +1535,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23"
+        "value": "§ 23 Abs. 5 BauNVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 23"
+        "value": "§ 23 Abs. 5 BauNVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1679,7 +1607,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -1687,7 +1615,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1759,15 +1687,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 2 Absatz 15"
+        "value": "§ 2 Abs. 15 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1839,11 +1767,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1911,11 +1839,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -1983,11 +1911,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2055,11 +1983,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2127,7 +2055,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -2139,7 +2067,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2219,11 +2147,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2291,15 +2219,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2380,11 +2308,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Absatz 3"
+        "value": "§ 31 Abs. 3 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Absatz 3"
+        "value": "§ 31 Abs. 3 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2463,11 +2391,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2535,11 +2463,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2607,11 +2535,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2679,11 +2607,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§4"
+        "value": "§ 4"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§4"
+        "value": "§ 4"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2761,65 +2689,6 @@
       "total_dependencies": 9
     }
   },
-  "53": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Lemsahl-Mellingstedt 20"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Lemsahl-Mellingstedt 20"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Lemsahl-Mellingstedt 20",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from January 23, 1990"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR II o; only single houses; GRZ 0.3; building limits (10.00 m x 14.00 m); (c) eaves height max 6.50 m; roof pitch 20° to max 40°"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR II o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
-    }
-  },
   "54": {
     "planning_instruments": [
       {
@@ -2874,11 +2743,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -2946,11 +2815,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3023,11 +2892,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3110,23 +2979,23 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23"
+        "value": "§ 23 BauNVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 9"
+        "value": "§ 9 Abs. 13 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 2"
+        "value": "§ 2 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -3134,15 +3003,15 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 6 paragraph 5 HBauO"
+        "value": "§ 6 Abs. 5 HBauO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 9 paragraph 2 HBauO"
+        "value": "§ 9 Abs. 2 HBauO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3158,7 +3027,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 31 paragraph 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -3266,11 +3135,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3338,15 +3207,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 3"
+        "value": "§ 3 Abs. 3 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3422,11 +3291,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3447,60 +3316,6 @@
         "granted_exemption_legal_references": 4
       },
       "total_dependencies": 13
-    }
-  },
-  "61": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Baustufenplan Eidelstedt"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Eidelstedt"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Baustufenplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "other"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "Baupolizeiverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baupolizeiverordnung from June 8, 1938"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "S 1 o > Obsolete assessment according to § 34 BauGB"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "S 1 o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 4,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 8
     }
   },
   "62": {
@@ -3560,11 +3375,11 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 35 paragraph 4 HBauO"
+        "value": "§ 35 Abs. 4 HBauO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 69 paragraph 1 HBauO"
+        "value": "§ 69 Abs. 1 HBauO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -3675,11 +3490,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3757,7 +3572,7 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 10 paragraph 1 HBauO"
+        "value": "§ 10 Abs. 1 HBauO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
@@ -3896,15 +3711,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 18 paragraph 1"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 19 paragraph 1"
+        "value": "§ 19 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 25"
+        "value": "§ 25 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -3920,7 +3735,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 18 paragraph 1"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -3928,7 +3743,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 19 paragraph 1"
+        "value": "§ 19 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -3995,7 +3810,12 @@
         "type": "development_plan"
       }
     ],
-    "regulatory_ordinances": [],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baugesetzbuch"
+      }
+    ],
     "regulation_texts": [
       {
         "source_field": "regulations",
@@ -4011,11 +3831,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4025,13 +3845,13 @@
     "summary": {
       "category_counts": {
         "planning_instruments": 5,
-        "regulatory_ordinances": 0,
+        "regulatory_ordinances": 1,
         "regulation_texts": 2,
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 0,
         "granted_exemption_legal_references": 3
       },
-      "total_dependencies": 10
+      "total_dependencies": 11
     }
   },
   "68": {
@@ -4089,15 +3909,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4169,11 +3989,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 6"
+        "value": "§ 6 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4190,65 +4010,6 @@
         "granted_exemption_legal_references": 3
       },
       "total_dependencies": 12
-    }
-  },
-  "70": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 76"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 76"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 76",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from November 26, 1968"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR II o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
     }
   },
   "71": {
@@ -4300,15 +4061,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 39"
+        "value": "§ 39 BNatSchG"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4384,11 +4145,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 2"
+        "value": "§ 2 BPlanVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -4396,11 +4157,11 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 52 paragraph 4 HBauO"
+        "value": "§ 52 Abs. 4 HBauO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4497,15 +4258,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 18 Absatz 1 HWG"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4513,7 +4274,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -4521,7 +4282,7 @@
       },
       {
         "source_field": "granted_exemptions.3.legal_ref",
-        "value": "§ 18 Absatz 1 HWG"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.3.text",
@@ -4589,11 +4350,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4750,11 +4511,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 paragraph 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4797,7 +4558,12 @@
         "type": "development_plan"
       }
     ],
-    "regulatory_ordinances": [],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baugesetzbuch"
+      }
+    ],
     "regulation_texts": [
       {
         "source_field": "regulations",
@@ -4818,11 +4584,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4832,13 +4598,13 @@
     "summary": {
       "category_counts": {
         "planning_instruments": 5,
-        "regulatory_ordinances": 0,
+        "regulatory_ordinances": 1,
         "regulation_texts": 2,
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 1,
         "granted_exemption_legal_references": 3
       },
-      "total_dependencies": 11
+      "total_dependencies": 12
     }
   },
   "78": {
@@ -4909,15 +4675,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 18 Absatz 1 HWG"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 19 Absatz 1 HWG"
+        "value": "§ 19 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 22 Absatz 1 HWG"
+        "value": "§ 22 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -4925,7 +4691,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 18 Absatz 1 HWG"
+        "value": "§ 18 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -4933,7 +4699,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 19 Absatz 1 HWG"
+        "value": "§ 19 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -4941,7 +4707,7 @@
       },
       {
         "source_field": "granted_exemptions.3.legal_ref",
-        "value": "§ 19 Absatz 1 HWG"
+        "value": "§ 19 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.3.text",
@@ -4949,7 +4715,7 @@
       },
       {
         "source_field": "granted_exemptions.4.legal_ref",
-        "value": "§ 22 Absatz 1 HWG"
+        "value": "§ 22 Abs. 1 HWG"
       },
       {
         "source_field": "granted_exemptions.4.text",
@@ -5131,11 +4897,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 39 Abs. 5"
+        "value": "§ 39 Abs. 5 BNatSchG"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -5151,7 +4917,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -5188,173 +4954,6 @@
         "granted_exemption_legal_references": 12
       },
       "total_dependencies": 21
-    }
-  },
-  "81": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Baustufenplan Rahlstedt"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Rahlstedt"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Baustufenplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "construction_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Rahlstedt",
-        "type": "construction_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
-        "type": "landscape_protection"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "Baupolizeiverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baupolizeiverordnung from June 8, 1938 in the current version"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "W 1 o, minimum plot size 1000 sqm"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "W 1 o"
-      }
-    ],
-    "landscape_conservation_documents": [
-      {
-        "source_field": "plan_references",
-        "name": "Duvenstedt, Bergstedt, Lemsahl-Mellingstedt, Volksdorf and Rahlstedt",
-        "type": "landscape_protection"
-      }
-    ],
-    "preliminary_decision_documents": [
-      {
-        "source_field": "preliminary_decision",
-        "value": "Gz.: W/WBZ/04395/2013 from May 24, 2013"
-      }
-    ],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 6,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 1,
-        "preliminary_decision_documents": 1,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 12
-    }
-  },
-  "82": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 90"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 90"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "green_order_plan",
-        "value": "Green Order Plan Billstedt 90"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Öjendorf-Billstedter Geest",
-        "type": "landscape_protection"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from January 23, 1990"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR I o; 2 Wo; E mandatory; GRZ: 0.3"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR I o"
-      }
-    ],
-    "landscape_conservation_documents": [
-      {
-        "source_field": "landscape_protection_ordinance",
-        "value": "Öjendorf-Billstedter Geest"
-      },
-      {
-        "source_field": "green_order_plan",
-        "value": "Green Order Plan Billstedt 90"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Öjendorf-Billstedter Geest",
-        "type": "landscape_protection"
-      }
-    ],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 8,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 4,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 16
     }
   },
   "83": {
@@ -5406,7 +5005,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -5414,7 +5013,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -5441,84 +5040,6 @@
       "total_dependencies": 15
     }
   },
-  "84": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 90"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 90"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "green_order_plan",
-        "value": "Green Order Plan Billstedt 90"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from January 23, 1990"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR I o; 2 Wo; E mandatory; GRZ: 0.3, building boundaries, intended infiltration area"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR I o"
-      }
-    ],
-    "landscape_conservation_documents": [
-      {
-        "source_field": "green_order_plan",
-        "value": "Green Order Plan Billstedt 90"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "green space plan Billstedt 90",
-        "type": "green_space_plan"
-      }
-    ],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 7,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 2,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 13
-    }
-  },
   "85": {
     "planning_instruments": [
       {
@@ -5543,7 +5064,12 @@
         "type": "development_plan"
       }
     ],
-    "regulatory_ordinances": [],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baugesetzbuch"
+      }
+    ],
     "regulation_texts": [
       {
         "source_field": "regulations",
@@ -5559,15 +5085,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23 Abs. 3"
+        "value": "§ 23 Abs. 3 BauNVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Abs. 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -5585,13 +5111,13 @@
     "summary": {
       "category_counts": {
         "planning_instruments": 5,
-        "regulatory_ordinances": 0,
+        "regulatory_ordinances": 1,
         "regulation_texts": 2,
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 0,
         "granted_exemption_legal_references": 6
       },
-      "total_dependencies": 13
+      "total_dependencies": 14
     }
   },
   "86": {
@@ -5652,15 +5178,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23"
+        "value": "§ 23 BauNVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -5676,7 +5202,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -5684,7 +5210,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 31 Abs. 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -5735,7 +5261,7 @@
       },
       {
         "source_field": "plan_type",
-        "value": "other"
+        "value": "Unplanned area"
       },
       {
         "source_field": "plan_primary_type",
@@ -5752,14 +5278,15 @@
         "type": "unplanned_area"
       }
     ],
-    "regulatory_ordinances": [],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baugesetzbuch"
+      }
+    ],
     "regulation_texts": [
       {
         "source_field": "regulations",
-        "value": "Baugesetzbuch"
-      },
-      {
-        "source_field": "zone_code",
         "value": "Baugesetzbuch"
       }
     ],
@@ -5795,8 +5322,8 @@
     "summary": {
       "category_counts": {
         "planning_instruments": 6,
-        "regulatory_ordinances": 0,
-        "regulation_texts": 2,
+        "regulatory_ordinances": 1,
+        "regulation_texts": 1,
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 1,
         "granted_exemption_legal_references": 5
@@ -5853,15 +5380,15 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23"
+        "value": "§ 23 BauNVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -5888,65 +5415,6 @@
       "total_dependencies": 15
     }
   },
-  "89": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 14"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 14"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 14",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from June 26, 1962"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR I (mandatory), building boundary, street line"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR I"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
-    }
-  },
   "90": {
     "planning_instruments": [
       {
@@ -5971,7 +5439,12 @@
         "type": "construction_plan"
       }
     ],
-    "regulatory_ordinances": [],
+    "regulatory_ordinances": [
+      {
+        "source_field": "legal_ordinance",
+        "value": "Baugesetzbuch"
+      }
+    ],
     "regulation_texts": [
       {
         "source_field": "regulations",
@@ -5992,7 +5465,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -6000,11 +5473,11 @@
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 30"
+        "value": "§ 30 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -6030,72 +5503,13 @@
     "summary": {
       "category_counts": {
         "planning_instruments": 5,
-        "regulatory_ordinances": 0,
+        "regulatory_ordinances": 1,
         "regulation_texts": 2,
         "landscape_conservation_documents": 0,
         "preliminary_decision_documents": 1,
         "granted_exemption_legal_references": 9
       },
-      "total_dependencies": 17
-    }
-  },
-  "91": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 90"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 90"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from January 23, 1990"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR 1o max 2 apartments, single houses, GRZ 0.3"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR 1o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
+      "total_dependencies": 18
     }
   },
   "92": {
@@ -6152,11 +5566,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 23 Abs. 3"
+        "value": "§ 23 Abs. 3 BauNVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -6168,7 +5582,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -6252,11 +5666,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -6273,56 +5687,6 @@
         "granted_exemption_legal_references": 3
       },
       "total_dependencies": 12
-    }
-  },
-  "94": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Unplanned area in a coherently built-up district according to § 34 BauGB"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "other"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "unplanned_area"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "district developed in accordance with Section 34 of the BauGB",
-        "type": "unplanned_area"
-      }
-    ],
-    "regulatory_ordinances": [],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "Baugesetzbuch"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "Baugesetzbuch"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 0,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 7
     }
   },
   "95": {
@@ -6392,124 +5756,6 @@
       "total_dependencies": 11
     }
   },
-  "96": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 90"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 90"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 90",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from January 23, 1990"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR I o; 2 Wo; GRZ 0.3; only single houses"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR I o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
-    }
-  },
-  "97": {
-    "planning_instruments": [
-      {
-        "source_field": "development_plan",
-        "value": "Bebauungsplan Billstedt 76"
-      },
-      {
-        "source_field": "plan_name",
-        "value": "Billstedt 76"
-      },
-      {
-        "source_field": "plan_type",
-        "value": "Bebauungsplan"
-      },
-      {
-        "source_field": "plan_primary_type",
-        "value": "development_plan"
-      },
-      {
-        "source_field": "plan_references",
-        "name": "Billstedt 76",
-        "type": "development_plan"
-      }
-    ],
-    "regulatory_ordinances": [
-      {
-        "source_field": "legal_ordinance",
-        "value": "BauNutzungsverordnung"
-      },
-      {
-        "source_field": "_notes",
-        "value": "Baunutzungsverordnung from November 26, 1968"
-      }
-    ],
-    "regulation_texts": [
-      {
-        "source_field": "regulations",
-        "value": "WR II o, only single and semi-detached houses allowed, only buildings with no more than two apartments allowed, building boundaries"
-      },
-      {
-        "source_field": "zone_code",
-        "value": "WR II o"
-      }
-    ],
-    "landscape_conservation_documents": [],
-    "preliminary_decision_documents": [],
-    "granted_exemption_legal_references": [],
-    "summary": {
-      "category_counts": {
-        "planning_instruments": 5,
-        "regulatory_ordinances": 2,
-        "regulation_texts": 2,
-        "landscape_conservation_documents": 0,
-        "preliminary_decision_documents": 0,
-        "granted_exemption_legal_references": 0
-      },
-      "total_dependencies": 9
-    }
-  },
   "98": {
     "planning_instruments": [
       {
@@ -6564,11 +5810,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 31 Absatz 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -6580,7 +5826,7 @@
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 31 Absatz 2"
+        "value": "§ 31 Abs. 2 BauGB"
       },
       {
         "source_field": "granted_exemptions.1.text",
@@ -6588,7 +5834,7 @@
       },
       {
         "source_field": "granted_exemptions.2.legal_ref",
-        "value": "§ 31 Absatz 1"
+        "value": "§ 31 Abs. 1 BauGB"
       },
       {
         "source_field": "granted_exemptions.2.text",
@@ -6668,7 +5914,7 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.legal_refs",
@@ -6744,11 +5990,11 @@
     "granted_exemption_legal_references": [
       {
         "source_field": "granted_exemptions.legal_refs",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.legal_ref",
-        "value": "§ 4"
+        "value": "§ 4 BaumschutzVO"
       },
       {
         "source_field": "granted_exemptions.1.text",

@@ -170,6 +170,7 @@ def save_barh(series: pd.Series, title: str, xlabel: str, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(9, max(3.5, len(series) * 0.45)))
     bars = ax.barh(series.index.astype(str), series.values)
     ax.bar_label(bars, padding=3)
+    ax.margins(x=0.08)
     ax.set_title(title, fontweight="bold")
     ax.set_xlabel(xlabel)
     ax.set_ylabel("")
@@ -318,7 +319,7 @@ def plot_item_feature_coverage(items: pd.DataFrame, output_dir: Path) -> None:
         "has_allowed_actions",
         "has_justification",
     ]
-    coverage = items[features].mean().mul(100).sort_values()
+    coverage = items[features].mean().mul(100).round(1).sort_values()
     coverage.index = [
         label.replace("has_", "").replace("_", " ")
         for label in coverage.index
@@ -417,6 +418,7 @@ def plot_record_primary_feature_coverage(items: pd.DataFrame, output_dir: Path) 
         print("Skipped record primary feature heatmap: no item rows")
         return
 
+    group_sizes = items.groupby("record_primary_type").size()
     heat = (
         items.groupby("record_primary_type")[FEATURE_COLUMNS]
         .mean()
@@ -426,6 +428,10 @@ def plot_record_primary_feature_coverage(items: pd.DataFrame, output_dir: Path) 
     if heat.empty:
         print("Skipped record primary feature heatmap: no grouped rows")
         return
+
+    # Annotate small-sample groups so 0%/100% rows aren't read as confident
+    # rates when they're based on just one or two records.
+    heat.index = [f"{label} (n={group_sizes[label]})" for label in heat.index]
 
     fig, ax = plt.subplots(figsize=(9, max(3.5, len(heat) * 0.55)))
     sns.heatmap(

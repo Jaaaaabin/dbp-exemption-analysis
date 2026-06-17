@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-15T16:18:34.225196+00:00",
+  "q1_what_applied_for": {
+    "building_code_subtypes": {
+      "front_garden_structure": 6,
+      "distance_area": 4,
+      "fire_escape_safety": 4,
+      "roof": 2,
+      "unspecified": 2,
+      "play_area": 2,
+      "accessibility": 1
+    },
+    "top_subject_terms": {
+      "area": 25,
+      "building": 23,
+      "exceeding": 22,
+      "hbauo": 19,
+      "abs": 14,
+      "permissible": 10,
+      "front": 9,
+      "plan": 8,
+      "buildable": 8,
+      "residential": 8,
+      "construction": 7,
+      "distance": 7,
+      "boundary": 7,
+      "waiving": 6,
+      "development": 6
+    }
+  },
+  "q2_regulations_affected": {
+    "BaumschutzVO": 35,
+    "BauGB": 21,
+    "HBauO": 18,
+    "BNatSchG": 11,
+    "BauNVO": 6,
+    "BPlanVO": 6,
+    "HWG": 3,
+    "GarVo": 2,
+    "BauVorlVO": 2,
+    "BPVO": 1
+  },
+  "q3_regulatory_domain": {
+    "applications_total": 71,
+    "applications_by_domain": {
+      "Planning / zoning": 24,
+      "Building / technical": 19,
+      "Environmental / nature": 37,
+      "Access / infrastructure": 5,
+      "Other / unclassified": 1
+    },
+    "deviations_by_domain": {
+      "Planning / zoning": 26,
+      "Building / technical": 16,
+      "Environmental / nature": 41,
+      "Access / infrastructure": 7,
+      "Other / unclassified": 20
+    }
+  },
+  "q4_deviations_per_application": {
+    "applications_total": 99,
+    "granted_cohort": 71,
+    "none_cohort": 28,
+    "count_basis": "number_of_exemptions (official); none-cohort pinned to 0",
+    "zero_deviation_apps": 28,
+    "deviations": {
+      "mean": 1.16,
+      "median": 1.0,
+      "max": 4,
+      "total": 115
+    },
+    "items": {
+      "mean": 1.11,
+      "median": 1.0,
+      "max": 6,
+      "total": 110
+    },
+    "legal_refs": {
+      "mean": 1.49,
+      "median": 1.0,
+      "max": 8,
+      "total": 148
+    }
+  }
+}

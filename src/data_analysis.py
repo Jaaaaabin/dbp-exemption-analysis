@@ -25,6 +25,8 @@ import pandas as pd
 from pathlib import Path
 from typing import Any, Callable
 
+from src.text_parser import grants_no_exemption
+
 JsonSource = str | Path | list[dict]
 
 
@@ -42,12 +44,24 @@ def _load(source: JsonSource) -> pd.DataFrame:
 def split_by_missing_columns(
     df: pd.DataFrame,
     col_exemption: str = 'Granted Exemptions',
+    col_count: str = 'Number of Exemptions',
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Split df into (has_exemption, missing_exemption)."""
+    """Split df into (has_exemption, missing_exemption).
+
+    'No exemption' is decided by content, not mere column presence: a row is
+    routed to the none-exemption cohort when its Granted Exemptions text says so
+    (blank / 'N/A' / 'None specified.' — the same rule as the parser's `is_empty`)
+    OR the source's `Number of Exemptions` count is 0. The count only ever
+    *demotes* granted→none (count == 0, e.g. a § 34 BauGB discretion note that
+    grants nothing); a stray count > 0 on a text-empty row is ignored as a source
+    artifact, so the text stays the primary signal.
+    """
     if col_exemption not in df.columns:
         raise ValueError(f"Column '{col_exemption}' not found in DataFrame")
 
-    mask_no_exemption = df[col_exemption].isna() | (df[col_exemption].astype(str).str.strip().str.upper() == 'N/A')
+    mask_no_exemption = df[col_exemption].apply(grants_no_exemption)
+    if col_count in df.columns:
+        mask_no_exemption = mask_no_exemption | (df[col_count] == 0)
     df_has_exemption  = df[~mask_no_exemption].copy()
     df_no_exemption   = df[mask_no_exemption].copy()
 

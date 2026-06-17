@@ -355,8 +355,8 @@ def main() -> None:
     csv_rows = flatten_dependencies(output)
     write_csv(OUTPUT_CSV, csv_rows)
 
-    print(f"Saved {len(output)} request-keyed records → {OUTPUT_FILE}")
-    print(f"Saved {len(csv_rows)} dependency rows → {OUTPUT_CSV}")
+    print(f"Saved {len(output)} request-keyed records -> {OUTPUT_FILE}")
+    print(f"Saved {len(csv_rows)} dependency rows -> {OUTPUT_CSV}")
 
 
 if __name__ == "__main__":

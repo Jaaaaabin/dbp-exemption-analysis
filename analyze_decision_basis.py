@@ -162,6 +162,7 @@ def save_barh(series: pd.Series, title: str, xlabel: str, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(9, max(3.5, len(series) * 0.45)))
     bars = ax.barh(series.index.astype(str), series.values)
     ax.bar_label(bars, padding=3)
+    ax.margins(x=0.08)
     ax.set_title(title, fontweight="bold")
     ax.set_xlabel(xlabel)
     ax.set_ylabel("")
@@ -203,9 +204,15 @@ def plot_legal_ordinance(records: pd.DataFrame, output_dir: Path) -> None:
 
 def plot_zone_prefix(records: pd.DataFrame, output_dir: Path, top_n: int = 20) -> None:
     counts = records["zone_prefix"].value_counts().head(top_n).sort_values()
+    n_total = records["zone_prefix"].nunique()
+    title = (
+        f"Top {top_n} Planning Context Zone Prefixes"
+        if n_total > top_n
+        else "Planning Context Zone Prefixes"
+    )
     save_barh(
         counts,
-        f"Top {top_n} Planning Context Zone Prefixes",
+        title,
         "Number of requests",
         output_dir / "planning_context_zone_prefix_frequency.png",
     )
@@ -297,10 +304,23 @@ def plot_cross_tab(
         print(f"Skipped empty cross-tab: {path}")
         return
 
+    # Color by each row's share of its own total so one dominant cell doesn't
+    # wash out smaller-but-nonzero cells in other rows; annotations still show
+    # the raw counts.
+    row_share = table.div(table.sum(axis=1), axis=0)
+
     fig, ax = plt.subplots(
         figsize=(max(8, len(table.columns) * 1.2), max(4, len(table) * 0.65))
     )
-    sns.heatmap(table, annot=True, fmt="d", cmap="Blues", linewidths=0.5, ax=ax)
+    sns.heatmap(
+        row_share,
+        annot=table,
+        fmt="d",
+        cmap="Blues",
+        linewidths=0.5,
+        cbar_kws={"label": "Share of row total"},
+        ax=ax,
+    )
     ax.set_title(title, fontweight="bold")
     ax.set_xlabel(column.replace("_", " "))
     ax.set_ylabel(row.replace("_", " "))

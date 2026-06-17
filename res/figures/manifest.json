@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-06-12T17:03:18.498404+00:00",
+  "generated_at": "2026-06-15T16:25:15.051864+00:00",
   "sections": [
     {
       "title": "Overview (plot.py)",
       "files": [
+        "res/figures/building_code_subtypes.png",
         "res/figures/exemption_composition_by_authority.png",
         "res/figures/exemption_overview.png",
         "res/figures/legal_ref_frequency.png",
         "res/figures/ordinance_x_exemption.png",
         "res/figures/zone_code_x_exemption.png"
+      ]
+    },
+    {
+      "title": "Scope & Statistics (analyze_scope.py)",
+      "files": [
+        "res/figures/scope/input_stats_both_year_buildinguse.png",
+        "res/figures/scope/input_stats_cohort_distribution.png",
+        "res/figures/scope/input_stats_district_distribution.png",
+        "res/figures/scope/input_stats_hmbtg_type_of_building_by_future_use.png",
+        "res/figures/scope/input_stats_hmbtg_type_of_construction.png",
+        "res/figures/scope/input_stats_hmbtg_type_of_requested_facility.png",
+        "res/figures/scope/input_stats_year_buildinguse_district.png",
+        "res/figures/scope/input_stats_year_issue_date.png"
       ]
     },
     {
@@ -55,25 +69,25 @@
       ]
     },
     {
-      "title": "Items (plot.py)",
-      "files": [
-        "res/figures/items/exemption_treemap.png",
-        "res/figures/items/item_authority_x_type.png",
-        "res/figures/items/item_legal_ref_bar.png",
-        "res/figures/items/item_type_distribution.png",
-        "res/figures/items/keywords_allowed_actions_text.png",
-        "res/figures/items/keywords_combined_text.png",
-        "res/figures/items/keywords_conditions_text.png",
-        "res/figures/items/keywords_justification_text.png",
-        "res/figures/items/keywords_subjects_text.png"
-      ]
-    },
-    {
       "title": "Patterns (analyze_patterns.py)",
       "files": [
         "res/figures/patterns/pattern_gap_breakdown.png",
         "res/figures/patterns/pattern_other_bigrams.png",
         "res/figures/patterns/pattern_other_keywords_by_gap.png"
+      ]
+    },
+    {
+      "title": "Patterns/Explore",
+      "files": [
+        "res/figures/patterns/explore/explore_deviation_subjects.png",
+        "res/figures/patterns/explore/explore_deviations_per_application.png",
+        "res/figures/patterns/explore/explore_justification_patterns.png",
+        "res/figures/patterns/explore/explore_other_item_similarity.png",
+        "res/figures/patterns/explore/explore_regulations_affected.png",
+        "res/figures/patterns/explore/explore_regulatory_domain.png",
+        "res/figures/patterns/explore/explore_section_number_coverage.png",
+        "res/figures/patterns/explore/explore_tfidf_distinctive_terms.png",
+        "res/figures/patterns/explore/explore_type_cooccurrence_lift.png"
       ]
     }
   ]

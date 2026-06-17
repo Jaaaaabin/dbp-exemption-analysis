@@ -33,6 +33,22 @@ _NO_EXEMPTION = re.compile(
 _NOT_GRANTED_SPLIT = re.compile(r'Not Granted Exemptions:\s*', re.IGNORECASE)
 
 
+def grants_no_exemption(text) -> bool:
+    """True when a 'Granted Exemptions' field grants nothing.
+
+    Treats a blank/missing cell, the literal 'N/A', and any 'None specified.' /
+    'no exemption' line as no-exemption — the SAME _NO_EXEMPTION rule the parser
+    uses to set `is_empty`. Sharing it keeps the ETL cohort split and the parsed
+    records in agreement on what counts as 'no exemption granted'.
+    """
+    if text is None:
+        return True
+    s = str(text).strip()
+    if not s or s.lower() == 'nan':
+        return True
+    return bool(_NO_EXEMPTION.search(s))
+
+
 def _to_snake_key(text: str) -> str:
     """'Some Key Name' → 'some_key_name'"""
     text = text.strip().lower()
@@ -80,19 +96,26 @@ def _parse_kv_section(text: str) -> dict:
 # ── Exemption taxonomy ────────────────────────────────────────────────────────
 #
 # Categories:
-#   planning_law       – § 31 BauGB (Ausnahme / Befreiung from development plan)
+#   planning_law       – BauGB (§ 31 Befreiung, § 34 inner area) / BauNVO
+#                        (e.g. § 23 building boundary) / GRZ / built-area limits
 #   tree_environmental – Baumschutzverordnung (§ 4 / § 6)
-#   building_code      – § 69 HBauO or explicit "building code" phrasing
+#   building_code      – any HBauO § deviation (fire protection, staircases,
+#                        roofs, § 69, …) or explicit "building code" phrasing
 #   access_road        – Hamburg Road Law (HWG) or Wegerecht / curb crossing
 #   access_restriction – construction burden (Baulast) or access-securing condition
 #   nature_protection  – federal nature protection (BNatSchG §§ 44, 67)
-#   none               – no exemption granted
+#   no_exemption       – no exemption granted
 #   other              – text present but no recognised pattern
 
 _TAXONOMY_RULES: list[tuple[str, str]] = [
-    ('planning_law',       r'§\s*31\b[^§]{0,30}baugb|baugb[^§]{0,30}§\s*31\b'),
+    # BauGB/BauNVO planning deviations, not just § 31: also § 34 (inner area),
+    # § 23 BauNVO building boundaries, and GRZ / built-area-ratio overruns.
+    # Kept to specific legal/technical terms so generic phrasing in tree or
+    # fire-protection conditions does not get mislabelled as planning_law.
+    ('planning_law',       r'baugb|baunvo|bplanvo|\bgrz\b|grundflächenzahl|baugrenze'),
     ('tree_environmental', r'baumschutz|tree protection|schutz des baumbestandes'),
-    ('building_code',      r'§\s*69\s*(?:hbauo|paragraph)|building code'),
+    # Any HBauO § is a building-code deviation (§ 32/33/35/37 fire & escape, § 69, …).
+    ('building_code',      r'hbauo|building code'),
     ('access_road',        r'§\s*(?:18|19|22|26)\s*(?:absatz\s*\d+\s*)?hwg'
                            r'|wegerecht|curb crossing'),
     ('access_restriction', r'construction burden|baulasten'
@@ -104,20 +127,144 @@ _TAXONOMY_RULES: list[tuple[str, str]] = [
 def classify_exemption_types(text: str) -> list[str]:
     """Return all taxonomy categories present in the exemption text (multi-label)."""
     if not text or _NO_EXEMPTION.search(text.strip()):
-        return ['none']
+        return ['no_exemption']
     tl = text.lower()
     found = [cat for cat, pattern in _TAXONOMY_RULES if re.search(pattern, tl)]
     return found if found else ['other']
 
 
+# building_code spans several distinct subjects. § 69 HBauO is the generic
+# deviation clause (Abweichung); the real subject is the substantive HBauO §
+# it cites. Map those paragraphs to human-readable themes.
+_BUILDING_CODE_SUBTYPE_BY_PARA: dict[str, str] = {
+    '6':  'distance_area',           # Abstandsflächen (separation distances)
+    '9':  'front_garden_structure',  # structures in front gardens / non-buildable area
+    '10': 'play_area',               # Kinderspielplätze (children's play areas)
+    '29': 'fire_escape_safety',      # necessary staircases / escape routes
+    '32': 'fire_escape_safety',
+    '33': 'fire_escape_safety',
+    '35': 'roof',                    # roofs / dormers / attic exits
+    '37': 'fire_escape_safety',      # fire protection
+    '52': 'accessibility',           # barrier-free access / DIN 18040
+}
+
+# A substantive HBauO citation: '§ <n>' followed by 'HBauO' within a short
+# window (covers 'Abs. 3', '(3)', 'paragraph 5', 'Satz 1 Nr. 2', …). The
+# [^§]{0,20}? bound stops a number from "leaping" to a far-away / unrelated
+# HBauO mention or across the next § citation. § 69 (generic deviation) and
+# § 3 (general) are intentionally not mapped above.
+_HBAUO_PARA_RE = re.compile(r'§\s*(\d+)[a-z]?[^§]{0,20}?hbauo', re.IGNORECASE)
+
+# Some subjects are only described in prose under the generic § 69 clause
+# (no substantive § cited), so fall back to subject keywords as well.
+_BUILDING_CODE_KEYWORD_RULES: list[tuple[str, str]] = [
+    ('fire_escape_safety',     r'fire protection|smoke ventilation'
+                               r'|necessary staircase|escape route|rettungsweg'),
+    ('distance_area',          r'distance area|separation distance|abstandsfläche'),
+    ('front_garden_structure', r'front garden|front yard|vorgarten'),
+    # 'dormer'/'attic' alone are ambiguous (building-boundary projections,
+    # floor levels); rely on § 35 and 'eaves' for genuine roof deviations.
+    ('roof',                   r'eaves'),
+    ('play_area',              r'play area|kinderspielplatz'),
+    ('accessibility',          r'barrier-free|barrierefrei|din\s*18040'),
+]
+
+
+def classify_building_code_subtypes(text: str) -> list[str]:
+    """Sub-label a building_code (HBauO) deviation by its substantive subject.
+
+    Combines the substantive HBauO § cited with subject keywords. Returns []
+    when the text has no building_code basis, or ['unspecified'] when it cites
+    HBauO / 'building code' only via the generic § 69 clause with no subject."""
+    if not text or 'building_code' not in classify_exemption_types(text):
+        return []
+    tl = text.lower()
+    subs: list[str] = []
+
+    def add(theme: str) -> None:
+        if theme and theme not in subs:
+            subs.append(theme)
+
+    for para in _HBAUO_PARA_RE.findall(text):
+        add(_BUILDING_CODE_SUBTYPE_BY_PARA.get(para.lstrip('0')))
+    for theme, pattern in _BUILDING_CODE_KEYWORD_RULES:
+        if re.search(pattern, tl):
+            add(theme)
+    return subs or ['unspecified']
+
+
+_LEGAL_REF_RE = re.compile(
+    r'§\s*\d+[a-zA-Z]?'
+    r'(?:\s+(?:Abs(?:atz)?\.?|paragraph)\s*\d+|\s*\(\d+\))?'
+    # German ordinance abbreviations (BauGB, HBauO, BNatSchG, GarVo, ...) start
+    # with one capital but need only one more uppercase letter anywhere after it.
+    r'(?:\s+[A-Z][A-Za-z]*[A-Z][A-Za-z]*)?'
+)
+
+# Spelled-out law names that give their own abbreviation in parentheses,
+# e.g. "Hamburg Road Law (HWG)" or "Federal Nature Conservation Act
+# (BNatSchG)" - reuse that abbreviation directly.
+_PAREN_ABBR_RE = re.compile(r'\(([A-Z][A-Za-z]*[A-Z][A-Za-z]*)\)')
+
+# Spelled-out ordinance names with no parenthetical abbreviation, mapped to
+# the abbreviation used elsewhere in the same dataset, so a bare § number
+# stays tied to its law even when the source text doesn't abbreviate it inline.
+_ORDINANCE_NAME_FALLBACKS: list[tuple[re.Pattern, str]] = [
+    (re.compile(
+        r'tree protection ordinance|baumschutzverordnung'
+        r'|protection of tree stands and hedges|schutz des baumbestandes',
+        re.IGNORECASE,
+    ), 'BaumschutzVO'),
+    (re.compile(r'bauvorlagenverordnung|bauvorlvo', re.IGNORECASE), 'BauVorlVO'),
+    (re.compile(
+        r'(?:verordnung|ordinance|law|vo)\s+(?:zum|to|on)\s+(?:the\s+)?'
+        r'(?:bebauungsplan|development plan)',
+        re.IGNORECASE,
+    ), 'BPlanVO'),
+]
+
+# A captured ref already names its law if it has a word with 2+ uppercase letters.
+_HAS_LAW_NAME = re.compile(r'[A-Z][A-Za-z]*[A-Z]')
+
+_LOOKAHEAD_WINDOW = 100
+
+# Normalise paragraph-indicator wording to "Abs. N" so the same provision
+# (e.g. "§ 31 Abs. 2 BauGB") isn't split across "Abs.", "Absatz",
+# "paragraph", and "(N)" variants when refs are counted/grouped downstream.
+_PARAGRAPH_ABS_RE = re.compile(r'\bAbs(?:atz)?\.?\s*(\d+)', re.IGNORECASE)
+_PARAGRAPH_WORD_RE = re.compile(r'\bparagraph\s*(\d+)', re.IGNORECASE)
+_PARAGRAPH_PAREN_RE = re.compile(r'\((\d+)\)')
+
+
 def extract_legal_refs(text: str) -> list[str]:
-    """Extract every § reference from text and return them normalised."""
-    raw = re.findall(
-        r'§\s*\d+[a-zA-Z]?(?:\s+(?:Abs(?:atz)?\.?|paragraph)\s*\d+)?'
-        r'(?:\s+[A-Z]{2,}[a-zA-Z]*)?',
-        text,
-    )
-    return list(dict.fromkeys(re.sub(r'\s+', ' ', r.strip()) for r in raw))
+    """Extract every § reference from text and return them normalised.
+
+    References whose law name is spelled out instead of abbreviated (e.g.
+    "§ 4 of the Hamburg Tree Protection Ordinance") are tagged with an
+    abbreviation derived from the text immediately following the §-number:
+    either an abbreviation the source text itself gives in parentheses
+    (e.g. "Hamburg Road Law (HWG)"), or - failing that - a fixed mapping in
+    _ORDINANCE_NAME_FALLBACKS.
+    """
+    refs = []
+    for m in _LEGAL_REF_RE.finditer(text):
+        ref = re.sub(r'\s+', ' ', m.group().strip())
+        ref = re.sub(r'^§\s*', '§ ', ref)
+        ref = _PARAGRAPH_ABS_RE.sub(r'Abs. \1', ref)
+        ref = _PARAGRAPH_WORD_RE.sub(r'Abs. \1', ref)
+        ref = _PARAGRAPH_PAREN_RE.sub(r'Abs. \1', ref)
+        if not _HAS_LAW_NAME.search(ref):
+            window = text[m.end():m.end() + _LOOKAHEAD_WINDOW]
+            paren_m = _PAREN_ABBR_RE.search(window)
+            if paren_m:
+                ref = f'{ref} {paren_m.group(1)}'
+            else:
+                for pattern, abbr in _ORDINANCE_NAME_FALLBACKS:
+                    if pattern.search(window):
+                        ref = f'{ref} {abbr}'
+                        break
+        refs.append(ref)
+    return list(dict.fromkeys(refs))
 
 
 # ── Plan reference parsing ────────────────────────────────────────────────────
@@ -330,12 +477,14 @@ def parse_granted_exemptions(text: str) -> dict:
     Use iter_granted_items() to iterate items without worrying about the key names.
     """
     if not text:
-        return {'header': None, 'types': ['none'], 'primary_type': 'none',
+        return {'header': None, 'types': ['no_exemption'], 'primary_type': 'no_exemption',
+                'building_code_subtypes': [],
                 'is_empty': True, 'legal_refs': [], 'subjects': []}
 
     is_empty = bool(_NO_EXEMPTION.search(text.strip()))
     if is_empty:
-        return {'header': None, 'types': ['none'], 'primary_type': 'none',
+        return {'header': None, 'types': ['no_exemption'], 'primary_type': 'no_exemption',
+                'building_code_subtypes': [],
                 'is_empty': True, 'legal_refs': [], 'subjects': []}
 
     body = re.sub(r'^Granted Exemptions:\s*', '', text, flags=re.IGNORECASE).strip()
@@ -348,6 +497,7 @@ def parse_granted_exemptions(text: str) -> dict:
         'header':       header or None,
         'types':        types,
         'primary_type': primary_type,
+        'building_code_subtypes': classify_building_code_subtypes(text),
         'is_empty':     is_empty,
         'legal_refs':   extract_legal_refs(text),
         'subjects':     [],  # filled below
@@ -374,7 +524,8 @@ def parse_granted_exemptions(text: str) -> dict:
 # Keys that are always metadata in a parse_granted_exemptions dict (never item keys).
 # Item keys are digit strings ('1', '2', …); sub-item keys contain a dot ('1.1', …).
 _GE_META: frozenset[str] = frozenset(
-    {'header', 'types', 'primary_type', 'is_empty', 'legal_refs', 'subjects'}
+    {'header', 'types', 'primary_type', 'building_code_subtypes',
+     'is_empty', 'legal_refs', 'subjects'}
 )
 
 
@@ -392,15 +543,27 @@ def iter_sub_items(item: dict):
         yield k, item[k]
 
 
+_REGULATIONS_LABEL_PREFIX = re.compile(r'^Type:\s*', re.IGNORECASE)
+
+# A Regulations line whose content is just a law name (no zone code at all),
+# e.g. "Regulations: Baugesetzbuch" — handled via legal_ordinance instead.
+_REGULATIONS_LEGAL_TEXT = re.compile(
+    r'^(?:baugesetzbuch|baunutzungsverordnung|baupolizeiverordnung)$',
+    re.IGNORECASE,
+)
+
+
 def parse_decision_basis(text: str) -> dict:
     """
     Parse the decision_basis field into structured components.
 
     Returns:
-        plan_type       – 'Bebauungsplan', 'Baustufenplan', or 'other'
+        plan_type       – 'Bebauungsplan', 'Baustufenplan', 'Durchführungsplan',
+                          'Unplanned area', or 'other'
         plan_name       – name of the specific plan (e.g. 'Wellingsbüttel 16')
         zone_code       – leading zone designation from the Regulations line
-        legal_ordinance – 'BauNutzungsverordnung' or 'Baupolizeiverordnung'
+        legal_ordinance – 'BauNutzungsverordnung', 'Baupolizeiverordnung', or
+                          'Baugesetzbuch'
     """
     if not text:
         return {'plan_type': None, 'plan_name': None, 'zone_code': None,
@@ -410,28 +573,38 @@ def parse_decision_basis(text: str) -> dict:
     plan_m = re.search(r'Development Plan:\s*(.+)', text)
     if plan_m:
         plan_text = plan_m.group(1).strip()
-        for pt in ('Bebauungsplan', 'Baustufenplan'):
+        for pt in ('Bebauungsplan', 'Baustufenplan', 'Durchführungsplan'):
             if pt in plan_text:
                 plan_type = pt
                 plan_name = plan_text.replace(pt, '').strip()
                 break
         if not plan_type:
-            plan_type = 'other'
+            if re.search(r'unplanned area', plan_text, re.IGNORECASE):
+                plan_type = 'Unplanned area'
+            else:
+                plan_type = 'other'
             plan_name = plan_text
 
     zone_code = None
     reg_m = re.search(r'Regulations:\s*(.+)', text)
     if reg_m:
-        reg_text = reg_m.group(1).strip()
+        # Some records put the zone designation on a "Type:" line beneath
+        # "Regulations:" instead of directly after it; drop that label so it
+        # doesn't leak into zone_code (e.g. "Type: WR I o" -> "WR I o").
+        reg_text = _REGULATIONS_LABEL_PREFIX.sub('', reg_m.group(1).strip())
         zone_m = re.match(r'([A-Z]{1,4}\s*(?:I{1,3}|[0-9])?\s*[oa]?)\b', reg_text)
-        zone_code = (zone_m.group(1).strip() if zone_m
-                     else reg_text.split(',')[0].split(';')[0].strip())
+        if zone_m:
+            zone_code = zone_m.group(1).strip()
+        elif not _REGULATIONS_LEGAL_TEXT.match(reg_text):
+            zone_code = reg_text.split(',')[0].split(';')[0].strip()
 
     legal_ordinance = None
     if re.search(r'baunutzungsverordnung', text, re.IGNORECASE):
         legal_ordinance = 'BauNutzungsverordnung'
     elif re.search(r'baupolizeiverordnung', text, re.IGNORECASE):
         legal_ordinance = 'Baupolizeiverordnung'
+    elif re.search(r'baugesetzbuch', text, re.IGNORECASE):
+        legal_ordinance = 'Baugesetzbuch'
 
     return {
         'plan_type':       plan_type,
@@ -530,6 +703,7 @@ def _flatten_for_analysis(enriched: dict) -> dict:
     if isinstance(ge, dict):
         flat['exemption_primary_type'] = ge.get('primary_type')
         flat['exemption_types']        = ge.get('types', [])
+        flat['building_code_subtypes'] = ge.get('building_code_subtypes', [])
         flat['exemption_is_empty']     = ge.get('is_empty')
         flat['exemption_legal_refs']   = ge.get('legal_refs', [])
         flat['exemption_subjects']     = ge.get('subjects', [])
@@ -585,6 +759,7 @@ def flatten_to_items(source: JsonSource) -> list[dict]:
                                   or basis.get('zone_code')),
             'exemption_primary_type': ge.get('primary_type'),
             'exemption_types':        ge.get('types', []),
+            'building_code_subtypes': ge.get('building_code_subtypes', []),
         }
 
         is_empty    = ge.get('is_empty', False)
